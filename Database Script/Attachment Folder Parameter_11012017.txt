@@ -1,0 +1,29 @@
+insert into TB_SYSTEM_PARAMETER (Config_Code,Value) 
+values
+('AttachmentPrimaryFolder','Shared Documents'),
+('AttachmentSecondaryFolder','ApplicationAttachments')
+
+go;
+
+insert into aspnet_Roles (ApplicationId,RoleName,LoweredRoleName)
+values('4C0B5391-D2C7-444D-8B6B-16F1B5EADE7D','Collaborator','collaborator')
+
+go;
+
+
+insert into TB_EMAIL_TEMPLATE (Email_Template,Email_Template_Content)
+values
+('CollaborationExistsInvitation','<p>Hi,</p>
+<br />
+<p>You are invited by @@ApplicantEmail to collaborate the @@ProgramName application, please access to the application form by the link below <br/> <a href="@@WebsiteUrl" target="_blank">@@WebsiteUrl</a> to start applying for our Incubation Programmes.</p>
+<br />
+<p>Regards,</p>
+<p>EMS Administrator</p>'),
+
+('CollaborationNewInvitation','    <p>Hi,</p>
+<br />
+<p>You are invited by @@ApplicantEmail to Cyberport Enterperneurship Management System, Please access the link below to set up password for your account.<br/> 
+<a href="@@WebsiteUrl/_layouts/15/AuthenticationPage/ResetPassword.aspx?token=@@ForgotPasswordLink">@@WebsiteUrl/_layouts/15/AuthenticationPage/ResetPassword.aspx?token=@@ForgotPasswordLink</a><br/>
+Once account setup is done, you may start editing the application via the link below.
+<br/> <a href="@@WebsiteUrl" target="_blank">@@WebsiteUrl</a>
+')

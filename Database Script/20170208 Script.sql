@@ -1,0 +1,2 @@
+alter table TB_APPLICATION_COMPANY_CORE_MEMBER
+add CoreMember_Profile ntext

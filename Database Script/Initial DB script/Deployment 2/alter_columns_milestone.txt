@@ -1,0 +1,12 @@
+alter table TB_CCMF_APPLICATION alter column Project_Milestone_M1 nvarchar(MAX)
+alter table TB_CCMF_APPLICATION alter column Project_Milestone_M2 nvarchar(MAX)
+alter table TB_CCMF_APPLICATION alter column Project_Milestone_M3 nvarchar(MAX)
+alter table TB_CCMF_APPLICATION alter column Project_Milestone_M4 nvarchar(MAX)
+alter table TB_CCMF_APPLICATION alter column Project_Milestone_M5 nvarchar(MAX)
+alter table TB_CCMF_APPLICATION alter column Project_Milestone_M6 nvarchar(MAX)
+
+
+alter table TB_INCUBATION_APPLICATION alter column First_6_Months_Milestone nvarchar(MAX)
+alter table TB_INCUBATION_APPLICATION alter column Second_6_Months_Milestone nvarchar(MAX)
+alter table TB_INCUBATION_APPLICATION alter column Third_6_Months_Milestone nvarchar(MAX)
+alter table TB_INCUBATION_APPLICATION alter column Forth_6_Months_Milestone nvarchar(MAX)

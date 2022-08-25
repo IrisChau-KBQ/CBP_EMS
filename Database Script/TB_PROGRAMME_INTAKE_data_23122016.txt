@@ -1,0 +1,225 @@
+USE [CyberportWMS]
+GO
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_INCUBATION_APPLICATION'
+
+GO
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_FUNDING_STATUS'
+
+GO
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_CONTACT_DETAIL'
+
+GO
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_COMPANY_CORE_MEMBER'
+
+GO
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_ATTACHMENT'
+
+GO
+/****** Object:  Table [dbo].[TB_INCUBATION_APPLICATION]    Script Date: 12/30/2016 2:30:46 PM ******/
+DROP TABLE [dbo].[TB_INCUBATION_APPLICATION]
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_FUNDING_STATUS]    Script Date: 12/30/2016 2:30:46 PM ******/
+DROP TABLE [dbo].[TB_APPLICATION_FUNDING_STATUS]
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_CONTACT_DETAIL]    Script Date: 12/30/2016 2:30:46 PM ******/
+DROP TABLE [dbo].[TB_APPLICATION_CONTACT_DETAIL]
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_COMPANY_CORE_MEMBER]    Script Date: 12/30/2016 2:30:46 PM ******/
+DROP TABLE [dbo].[TB_APPLICATION_COMPANY_CORE_MEMBER]
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_ATTACHMENT]    Script Date: 12/30/2016 2:30:46 PM ******/
+DROP TABLE [dbo].[TB_APPLICATION_ATTACHMENT]
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_ATTACHMENT]    Script Date: 12/30/2016 2:30:46 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_ATTACHMENT](
+	[Attachment_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Attachment_Type] [nvarchar](255) NULL,
+	[Attachment_Path] [nvarchar](255) NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_APPLICATION_ATTACHMENT] PRIMARY KEY CLUSTERED 
+(
+	[Attachment_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_COMPANY_CORE_MEMBER]    Script Date: 12/30/2016 2:30:52 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_COMPANY_CORE_MEMBER](
+	[Core_Member_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Name] [nvarchar](255) NOT NULL,
+	[Position] [nvarchar](255) NOT NULL,
+	[HKID] [nvarchar](255) NOT NULL,
+	[Background_Information] [ntext] NULL,
+	[Bootcamp_Eligible_Number] [nvarchar](255) NULL,
+	[Professional_Qualifications] [nvarchar](255) NULL,
+	[Working_Experiences] [nvarchar](255) NULL,
+	[Special_Achievements] [nvarchar](255) NULL,
+ CONSTRAINT [PK_TB_APPLICATION_COMPANY_CORE_MEMBER] PRIMARY KEY CLUSTERED 
+(
+	[Core_Member_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_CONTACT_DETAIL]    Script Date: 12/30/2016 2:30:52 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_CONTACT_DETAIL](
+	[CONTACT_DETAILS_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Last_Name_Eng] [nvarchar](255) NOT NULL,
+	[First_Name_Eng] [nvarchar](255) NOT NULL,
+	[Last_Name_Chi] [nvarchar](255) NULL,
+	[First_Name_Chi] [nvarchar](255) NULL,
+	[Salutation] [nvarchar](255) NOT NULL,
+	[ID_Number] [nvarchar](255) NULL,
+	[Student_ID_Number] [nvarchar](255) NULL,
+	[Education_Institution_Eng] [nvarchar](255) NULL,
+	[Programme_Enrolled_Eng] [nvarchar](255) NULL,
+	[Graduation_Month] [int] NULL,
+	[Graduation_Year] [int] NULL,
+	[Organisation_Name] [nvarchar](255) NULL,
+	[Position] [nvarchar](255) NULL,
+	[Contact_No] [int] NULL,
+	[Contact_No_Type] [nvarchar](20) NULL,
+	[Fax] [int] NULL,
+	[Email] [nvarchar](255) NULL,
+	[Mailing_Address] [ntext] NULL,
+	[Contact_No_Home] [nvarchar](255) NULL,
+	[Contact_No_Office] [nvarchar](255) NULL,
+	[Contact_No_Mobile] [nvarchar](255) NULL,
+ CONSTRAINT [PK_TB_APPLICATION_CONTACT_DETAIL] PRIMARY KEY CLUSTERED 
+(
+	[CONTACT_DETAILS_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_FUNDING_STATUS]    Script Date: 12/30/2016 2:30:52 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_FUNDING_STATUS](
+	[Funding_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[Programme_Name] [nvarchar](255) NOT NULL,
+	[Application_Status] [nvarchar](255) NOT NULL,
+	[Funding_Status] [nvarchar](255) NULL,
+	[Expenditure_Nature] [nvarchar](255) NULL,
+	[Currency] [nvarchar](10) NULL,
+	[Amount_Received] [decimal](15, 2) NULL,
+	[Maximum_Amount] [decimal](15, 2) NULL,
+ CONSTRAINT [PK_TB_APPLICATION_FUNDING_STATUS] PRIMARY KEY CLUSTERED 
+(
+	[Funding_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_INCUBATION_APPLICATION]    Script Date: 12/30/2016 2:30:52 PM ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_INCUBATION_APPLICATION](
+	[CCMF_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Intake_Number] [int] NOT NULL,
+	[Applicant] [nvarchar](255) NOT NULL,
+	[Last_Submitted] [datetime] NOT NULL,
+	[Status] [nvarchar](50) NOT NULL,
+	[Version_Number] [nvarchar](20) NOT NULL,
+	[Question1_1] [bit] NULL,
+	[Question1_2] [bit] NULL,
+	[Question1_3] [bit] NULL,
+	[Question1_4] [bit] NULL,
+	[Question1_5] [bit] NULL,
+	[Question1_6] [bit] NULL,
+	[Question1_7] [bit] NULL,
+	[Question1_8] [bit] NULL,
+	[Question1_9] [bit] NULL,
+	[Question1_10] [bit] NULL,
+	[Company_Name_Eng] [nvarchar](255) NULL,
+	[Company_Name_Chi] [nvarchar](255) NULL,
+	[Abstract] [ntext] NULL,
+	[Objective] [ntext] NULL,
+	[Background] [ntext] NULL,
+	[Pilot_Work_Done] [ntext] NULL,
+	[Additional_Information] [ntext] NULL,
+	[Proposed_Products] [ntext] NULL,
+	[Target_Market] [ntext] NULL,
+	[Competition_Analysis] [ntext] NULL,
+	[Revenus_Model] [ntext] NULL,
+	[Exit_Strategy] [ntext] NULL,
+	[First_6_Months_Milestone] [ntext] NULL,
+	[Second_6_Months_Milestone] [ntext] NULL,
+	[Third_6_Months_Milestone] [ntext] NULL,
+	[Forth_6_Months_Milestone] [ntext] NULL,
+	[Resubmission] [bit] NULL,
+	[Resubmission_Project_Reference] [ntext] NULL,
+	[Resubmission_Main_Differences] [ntext] NULL,
+	[Company_Type] [nchar](10) NULL,
+	[Other_Company_Type] [nvarchar](30) NULL,
+	[Business_Area] [nvarchar](30) NULL,
+	[Other_Bussiness_Area] [nvarchar](30) NULL,
+	[Positioning] [ntext] NULL,
+	[Management_Positioning] [nvarchar](30) NULL,
+	[Other_Positioning] [nvarchar](30) NULL,
+	[Other_Attributes] [ntext] NULL,
+	[Preferred_Track] [nvarchar](30) NULL,
+	[Company_Ownership_Structure] [ntext] NULL,
+	[Core_Members_Profiles] [ntext] NULL,
+	[Major_Partners_Profiles] [ntext] NULL,
+	[Manpower_Distribution] [ntext] NULL,
+	[Equipment_Distribution] [ntext] NULL,
+	[Other_Direct_Costs] [ntext] NULL,
+	[Forecast_Income] [ntext] NULL,
+	[Declaration] [bit] NULL,
+	[Have_Read_Statement] [bit] NULL,
+	[Marketing_Information] [bit] NULL,
+	[Principal_Full_Name] [nvarchar](255) NULL,
+	[Principal_Position_Title] [nvarchar](255) NULL,
+	[Submission_Date] [datetime] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_INCUBATION_APPLICATION] PRIMARY KEY CLUSTERED 
+(
+	[CCMF_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store applicatioin attachment.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_ATTACHMENT'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application company core members.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_COMPANY_CORE_MEMBER'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application contact details.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_CONTACT_DETAIL'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application funding status.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_FUNDING_STATUS'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store incubation programme application.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_INCUBATION_APPLICATION'
+GO

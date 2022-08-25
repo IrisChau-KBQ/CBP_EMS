@@ -1,0 +1,120 @@
+USE [CyberportWMS]
+GO
+
+EXEC sys.sp_dropextendedproperty @name=N'MS_Description' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_CCMF_APPLICATION'
+
+GO
+
+/****** Object:  Table [dbo].[TB_CCMF_APPLICATION]    Script Date: 1/5/2017 1:07:37 PM ******/
+DROP TABLE [dbo].[TB_CCMF_APPLICATION]
+GO
+
+/****** Object:  Table [dbo].[TB_CCMF_APPLICATION]    Script Date: 1/5/2017 1:07:37 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[TB_CCMF_APPLICATION](
+	[Incubation_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Intake_Number] [int] NOT NULL,
+	[Applicant] [nvarchar](255) NOT NULL,
+	[Last_Submitted] [datetime] NOT NULL,
+	[Status] [nvarchar](50) NOT NULL,
+	[Version_Number] [nvarchar](20) NOT NULL,
+	[Programme_Type] [nvarchar](30) NOT NULL,
+	[Hong_Kong_Programme_Stream] [nvarchar](251) NULL,
+	[CrossBorder_Programme_Type] [nvarchar](251) NULL,
+	[CCMF_Application_Type] [nvarchar](251) NULL,
+	[Question2_1_1a] [bit] NULL,
+	[Question2_1_1b] [bit] NULL,
+	[Question2_1_1c] [bit] NULL,
+	[Question2_1_1d] [bit] NULL,
+	[Question2_1_1e] [bit] NULL,
+	[Question2_1_1f] [bit] NULL,
+	[Question2_1_1g] [bit] NULL,
+	[Question2_1_1h] [bit] NULL,
+	[Question2_1_1i] [bit] NULL,
+	[Question2_1_1j] [bit] NULL,
+	[Question2_1_2a] [bit] NULL,
+	[Question2_1_2b] [bit] NULL,
+	[Question2_1_2c] [bit] NULL,
+	[Question2_1_2d] [bit] NULL,
+	[Question2_1_2e] [bit] NULL,
+	[Question2_1_2f] [bit] NULL,
+	[Question2_1_2g] [bit] NULL,
+	[Question2_1_2h] [bit] NULL,
+	[Question2_1_2i] [bit] NULL,
+	[Question2_1_2j] [bit] NULL,
+	[Question2_1_2k] [bit] NULL,
+	[Question2_2a] [bit] NULL,
+	[Question2_2b] [bit] NULL,
+	[Question2_2c] [bit] NULL,
+	[Question2_2d] [bit] NULL,
+	[Question2_2e] [bit] NULL,
+	[Question2_2f] [bit] NULL,
+	[Question2_2g] [bit] NULL,
+	[Question2_2h] [bit] NULL,
+	[Question2_2i] [bit] NULL,
+	[Question2_2j] [bit] NULL,
+	[Question2_2k] [bit] NULL,
+	[Question2_2l] [bit] NULL,
+	[Question2_2m] [bit] NULL,
+	[Question2_3_1a] [bit] NULL,
+	[Question2_3_1b] [bit] NULL,
+	[Question2_3_1c] [bit] NULL,
+	[Question2_3_1d] [bit] NULL,
+	[Question2_3_1e] [bit] NULL,
+	[Question2_3_1f] [bit] NULL,
+	[Question2_3_1g] [bit] NULL,
+	[Question2_3_1h] [bit] NULL,
+	[Question2_3_1i] [bit] NULL,
+	[Question2_3_1j] [bit] NULL,
+	[Question2_3_1k] [bit] NULL,
+	[Project_Name_Eng] [nvarchar](255) NULL,
+	[Project_Name_Chi] [nvarchar](255) NULL,
+	[Abstract_Eng] [ntext] NULL,
+	[Abstract_Chi] [ntext] NULL,
+	[Business_Area] [nvarchar](30) NULL,
+	[Other_Business_Area] [nvarchar](255) NULL,
+	[Commencement_Date] [datetime] NULL,
+	[Completion_Date] [datetime] NULL,
+	[Declaration] [bit] NULL,
+	[Have_Read_Statement] [bit] NULL,
+	[Marketing_Information] [bit] NULL,
+	[Principal_Full_Name] [nvarchar](255) NULL,
+	[Principal_Position_Title] [nvarchar](255) NULL,
+	[Submission_Date] [datetime] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+	[Project_Management_Team] [nvarchar](max) NULL,
+	[Business_Model] [nvarchar](max) NULL,
+	[Innovation] [nvarchar](max) NULL,
+	[Social_Responsibility] [nvarchar](max) NULL,
+	[Competition_Analysis] [nvarchar](max) NULL,
+	[Project_Milestone_M1] [nvarchar](500) NULL,
+	[Project_Milestone_M2] [nvarchar](500) NULL,
+	[Project_Milestone_M3] [nvarchar](500) NULL,
+	[Project_Milestone_M4] [nvarchar](500) NULL,
+	[Project_Milestone_M5] [nvarchar](500) NULL,
+	[Project_Milestone_M6] [nvarchar](500) NULL,
+	[Cost_Projection] [nvarchar](max) NULL,
+	[Exit_Stategy] [nvarchar](max) NULL,
+	[Additional_Information] [nvarchar](max) NULL,
+ CONSTRAINT [PK_TB_CCMF_APPLICATION] PRIMARY KEY CLUSTERED 
+(
+	[Incubation_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store CCMF application.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_CCMF_APPLICATION'
+GO
+
+

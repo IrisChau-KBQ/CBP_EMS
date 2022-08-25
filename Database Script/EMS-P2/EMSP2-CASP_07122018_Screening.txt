@@ -1,0 +1,1 @@
+alter table tb_CASP_Application add Completed_Date datetime null

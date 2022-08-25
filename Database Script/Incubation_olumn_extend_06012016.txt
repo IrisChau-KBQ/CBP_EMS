@@ -1,0 +1,2 @@
+alter table [dbo].[TB_INCUBATION_APPLICATION]
+add Abstract_Chi ntext

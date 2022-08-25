@@ -1,0 +1,5 @@
+alter table TB_CASP_FINANCIAL_ASSISTANCE_REIMBURSEMENT
+add Total_Amount_After_Deduction decimal(15,2)
+
+alter table TB_CASP_FA_REIMBURSEMENT_HISTORY
+add Total_Amount_After_Deduction decimal(15,2)

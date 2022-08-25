@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<Project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ToolsVersion="2.0">
+  <State>$base64$PFNvdXJjZUNvbnRyb2xJbmZvIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOmRkbDI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yIiB4bWxuczpkZGwyXzI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDAzL2VuZ2luZS8yLzIiIHhtbG5zOmRkbDEwMF8xMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDA4L2VuZ2luZS8xMDAvMTAwIiB4bWxuczpkZGwyMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAiIHhtbG5zOmRkbDIwMF8yMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEwL2VuZ2luZS8yMDAvMjAwIiB4bWxuczpkZGwzMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAiIHhtbG5zOmRkbDMwMF8zMDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDExL2VuZ2luZS8zMDAvMzAwIiB4bWxuczpkZGw0MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAiIHhtbG5zOmRkbDQwMF80MDA9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vYW5hbHlzaXNzZXJ2aWNlcy8yMDEyL2VuZ2luZS80MDAvNDAwIiB4bWxuczpkd2Q9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vRGF0YVdhcmVob3VzZS9EZXNpZ25lci8xLjAiPg0KICA8RW5hYmxlZD5mYWxzZTwvRW5hYmxlZD4NCiAgPFByb2plY3ROYW1lPjwvUHJvamVjdE5hbWU+DQogIDxBdXhQYXRoPjwvQXV4UGF0aD4NCiAgPExvY2FsUGF0aD48L0xvY2FsUGF0aD4NCiAgPFByb3ZpZGVyPjwvUHJvdmlkZXI+DQo8L1NvdXJjZUNvbnRyb2xJbmZvPg==</State>
+  <DataSources>
+    <ProjectItem>
+      <Name>EMSDataSource.rds</Name>
+      <FullPath>EMSDataSource.rds</FullPath>
+    </ProjectItem>
+  </DataSources>
+  <DataSets />
+  <Reports>
+    <ProjectItem>
+      <Name>Application_contact_information_list.rdl</Name>
+      <FullPath>Application_contact_information_list.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Application_Statistics_Summary_by_Cluster.rdl</Name>
+      <FullPath>Application_Statistics_Summary_by_Cluster.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CASP_ApplicationLog.rdl</Name>
+      <FullPath>CASP_ApplicationLog.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CASP_JoinedAccelerator.rdl</Name>
+      <FullPath>CASP_JoinedAccelerator.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CASP_ReimbursementLog.rdl</Name>
+      <FullPath>CASP_ReimbursementLog.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CASP_Summary_of_Application.rdl</Name>
+      <FullPath>CASP_Summary_of_Application.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CCMF Application_Funding_Status.rdl</Name>
+      <FullPath>CCMF Application_Funding_Status.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CCMF Statistic Summary.rdl</Name>
+      <FullPath>CCMF Statistic Summary.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CCMF_Summary_of_Team_Applicants_of_Applications.rdl</Name>
+      <FullPath>CCMF_Summary_of_Team_Applicants_of_Applications.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CPIP Application_Funding_Status.rdl</Name>
+      <FullPath>CPIP Application_Funding_Status.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Intake_record_of_Application.rdl</Name>
+      <FullPath>Intake_record_of_Application.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Internal_Record_ Awards.rdl</Name>
+      <FullPath>Internal_Record_ Awards.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Vetting_Comment_Reports.rdl</Name>
+      <FullPath>Vetting_Comment_Reports.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CPIP_IP_Report.rdl</Name>
+      <FullPath>CPIP_IP_Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>Successful Applicants Funding Report.rdl</Name>
+      <FullPath>Successful Applicants Funding Report.rdl</FullPath>
+    </ProjectItem>
+    <ProjectItem>
+      <Name>CCMF_Funding_Status.rdl</Name>
+      <FullPath>CCMF_Funding_Status.rdl</FullPath>
+    </ProjectItem>
+  </Reports>
+  <Configurations>
+    <Configuration>
+      <Name>Debug</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Debug</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>EMSReports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>DebugLocal</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\DebugLocal</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>EMSReports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+    <Configuration>
+      <Name>Release</Name>
+      <Platform>Win32</Platform>
+      <Options>
+        <OutputPath>bin\Release</OutputPath>
+        <TargetServerVersion>SSRS2008R2</TargetServerVersion>
+        <TargetFolder>EMSReports</TargetFolder>
+        <TargetDataSourceFolder>Data Sources</TargetDataSourceFolder>
+        <TargetDatasetFolder>Datasets</TargetDatasetFolder>
+        <TargetReportPartFolder>Report Parts</TargetReportPartFolder>
+      </Options>
+    </Configuration>
+  </Configurations>
+</Project>

@@ -1,0 +1,7 @@
+insert into TB_SYSTEM_PARAMETER(Config_Code,Value)
+values
+('CCEmailCCMFVetting',''),
+('CCEmailCPIPVetting',''),
+('CCEmailCCMF',''),
+('CCEmailCPIP','')
+

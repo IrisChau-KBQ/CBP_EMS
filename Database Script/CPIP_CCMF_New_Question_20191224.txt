@@ -1,0 +1,11 @@
+alter table TB_INCUBATION_APPLICATION
+add Question1_8_1 bit null
+
+alter table TB_INCUBATION_APPLICATION_HISTORY
+add Question1_8_1 bit null	
+
+alter table TB_CCMF_Application
+add Question2_1_2f_1 bit null	
+
+alter table TB_CCMF_Application_History
+add Question2_1_2f_1 bit null	

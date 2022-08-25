@@ -1,0 +1,792 @@
+USE [CyberportWMS]
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_ATTACHMENT]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_ATTACHMENT](
+	[Attachment_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Attachment_Type] [nvarchar](255) NULL,
+	[Attachment_Path] [nvarchar](255) NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_APPLICATION_ATTACHMENT] PRIMARY KEY CLUSTERED 
+(
+	[Attachment_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_COLLABORATOR]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_COLLABORATOR](
+	[Collaborator_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Email] [nvarchar](255) NOT NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_APPLICATION_COLLABORATOR] PRIMARY KEY CLUSTERED 
+(
+	[Collaborator_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_COMPANY_CORE_MEMBER]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_COMPANY_CORE_MEMBER](
+	[Core_Member_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [int] NOT NULL,
+	[Programme_ID] [uniqueidentifier] NOT NULL,
+	[Name] [nvarchar](255) NOT NULL,
+	[Position] [nvarchar](255) NOT NULL,
+	[HKID] [nvarchar](255) NOT NULL,
+	[Background_Information] [ntext] NULL,
+	[Bootcamp_Eligible_Number] [nvarchar](255) NULL,
+ CONSTRAINT [PK_TB_APPLICATION_COMPANY_CORE_MEMBER] PRIMARY KEY CLUSTERED 
+(
+	[Core_Member_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_CONTACT_DETAIL]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_CONTACT_DETAIL](
+	[CONTACT_DETAILS_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Last_Name_Eng] [nvarchar](255) NOT NULL,
+	[First_Name_Eng] [nvarchar](255) NOT NULL,
+	[Last_Name_Chi] [nvarchar](255) NULL,
+	[First_Name_Chi] [nvarchar](255) NULL,
+	[Salutation] [nvarchar](255) NOT NULL,
+	[ID_Number] [nvarchar](255) NULL,
+	[Student_ID_Number] [nvarchar](255) NULL,
+	[Education_Institution_Eng] [nvarchar](255) NULL,
+	[Programme_Enrolled_Eng] [nvarchar](255) NULL,
+	[Graduation_Month] [int] NULL,
+	[Graduation_Year] [int] NULL,
+	[Organisation_Name] [nvarchar](255) NULL,
+	[Position] [nvarchar](255) NULL,
+	[Contact_No] [int] NULL,
+	[Contact_No_Type] [nvarchar](20) NULL,
+	[Fax] [int] NULL,
+	[Email] [nvarchar](255) NULL,
+	[Mailing_Address] [ntext] NULL,
+ CONSTRAINT [PK_TB_APPLICATION_CONTACT_DETAIL] PRIMARY KEY CLUSTERED 
+(
+	[CONTACT_DETAILS_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_FUNDING_STATUS]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_FUNDING_STATUS](
+	[Funding_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[Programme_Name] [nvarchar](255) NOT NULL,
+	[Application_Status] [nvarchar](255) NOT NULL,
+	[Funding_Status] [nvarchar](255) NULL,
+	[Expenditure_Nature] [nvarchar](255) NULL,
+	[Currency] [nvarchar](10) NULL,
+	[Amount_Received] [decimal](15, 2) NULL,
+	[Maximum_Amount] [decimal](15, 2) NULL,
+ CONSTRAINT [PK_TB_APPLICATION_FUNDING_STATUS] PRIMARY KEY CLUSTERED 
+(
+	[Funding_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_APPLICATION_SHORTLISTING]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_APPLICATION_SHORTLISTING](
+	[Application_Shortlisting_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Remarks_To_Vetting] [ntext] NOT NULL,
+	[Shortlisted] [bit] NOT NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_APPLICATION_SHORTLISTING] PRIMARY KEY CLUSTERED 
+(
+	[Application_Shortlisting_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_CCMF_APPLICATION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_CCMF_APPLICATION](
+	[Incubation_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Intake_Number] [int] NOT NULL,
+	[Applicant] [nvarchar](255) NOT NULL,
+	[Last_Submitted] [datetime] NOT NULL,
+	[Status] [nvarchar](50) NOT NULL,
+	[Version_Number] [nvarchar](20) NOT NULL,
+	[Programme_Type] [nvarchar](30) NOT NULL,
+	[Hong_Kong_Programme_Stream] [nvarchar](30) NULL,
+	[CrossBorder_Programme_Type] [nvarchar](30) NULL,
+	[CCMF_Application_Type] [nvarchar](20) NULL,
+	[Question2_1_1a] [bit] NULL,
+	[Question2_1_1b] [bit] NULL,
+	[Question2_1_1c] [bit] NULL,
+	[Question2_1_1d] [bit] NULL,
+	[Question2_1_1e] [bit] NULL,
+	[Question2_1_1f] [bit] NULL,
+	[Question2_1_1g] [bit] NULL,
+	[Question2_1_1h] [bit] NULL,
+	[Question2_1_1i] [bit] NULL,
+	[Question2_1_1j] [bit] NULL,
+	[Question2_1_2a] [bit] NULL,
+	[Question2_1_2b] [bit] NULL,
+	[Question2_1_2c] [bit] NULL,
+	[Question2_1_2d] [bit] NULL,
+	[Question2_1_2e] [bit] NULL,
+	[Question2_1_2f] [bit] NULL,
+	[Question2_1_2g] [bit] NULL,
+	[Question2_1_2h] [bit] NULL,
+	[Question2_1_2i] [bit] NULL,
+	[Question2_1_2j] [bit] NULL,
+	[Question2_1_2k] [bit] NULL,
+	[Question2_2a] [bit] NULL,
+	[Question2_2b] [bit] NULL,
+	[Question2_2c] [bit] NULL,
+	[Question2_2d] [bit] NULL,
+	[Question2_2e] [bit] NULL,
+	[Question2_2f] [bit] NULL,
+	[Question2_2g] [bit] NULL,
+	[Question2_2h] [bit] NULL,
+	[Question2_2i] [bit] NULL,
+	[Question2_2j] [bit] NULL,
+	[Question2_2k] [bit] NULL,
+	[Question2_2l] [bit] NULL,
+	[Question2_2m] [bit] NULL,
+	[Question2_3_1a] [bit] NULL,
+	[Question2_3_1b] [bit] NULL,
+	[Question2_3_1c] [bit] NULL,
+	[Question2_3_1d] [bit] NULL,
+	[Question2_3_1e] [bit] NULL,
+	[Question2_3_1f] [bit] NULL,
+	[Question2_3_1g] [bit] NULL,
+	[Question2_3_1h] [bit] NULL,
+	[Question2_3_1i] [bit] NULL,
+	[Question2_3_1j] [bit] NULL,
+	[Question2_3_1k] [bit] NULL,
+	[Project_Name_Eng] [nvarchar](255) NOT NULL,
+	[Project_Name_Chi] [nvarchar](255) NULL,
+	[Abstract_Eng] [ntext] NULL,
+	[Abstract_Chi] [ntext] NULL,
+	[Business_Area] [nvarchar](30) NULL,
+	[Other_Business_Area] [nvarchar](255) NULL,
+	[Commencement_Date] [datetime] NULL,
+	[Completion_Date] [datetime] NULL,
+	[Declaration] [bit] NULL,
+	[Have_Read_Statement] [bit] NULL,
+	[Marketing_Information] [bit] NULL,
+	[Principal_Full_Name] [nvarchar](255) NULL,
+	[Principal_Position_Title] [nvarchar](255) NULL,
+	[Submission_Date] [datetime] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_CCMF_APPLICATION] PRIMARY KEY CLUSTERED 
+(
+	[Incubation_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_DECLARATION_APPLICATION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_DECLARATION_APPLICATION](
+	[Vetting_Delclaration_ID] [uniqueidentifier] NOT NULL,
+	[Vetting_Meeting_ID] [uniqueidentifier] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK_4.20 TB_DECLARATION_APPLICATION] PRIMARY KEY CLUSTERED 
+(
+	[Vetting_Delclaration_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_EC_RESULT]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_EC_RESULT](
+	[EC_Result_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_EC_RESULT] PRIMARY KEY CLUSTERED 
+(
+	[EC_Result_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_EMAIL_TEMPLATE]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_EMAIL_TEMPLATE](
+	[Email_Template] [nvarchar](50) NOT NULL,
+	[Email_Template_Content] [ntext] NOT NULL,
+ CONSTRAINT [PK_TB_EMAIL_TEMPLATE] PRIMARY KEY CLUSTERED 
+(
+	[Email_Template] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_INCUBATION_APPLICATION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_INCUBATION_APPLICATION](
+	[CCMF_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Intake_Number] [int] NOT NULL,
+	[Applicant] [nvarchar](255) NOT NULL,
+	[Last_Submitted] [datetime] NOT NULL,
+	[Status] [nvarchar](50) NOT NULL,
+	[Version_Number] [nvarchar](20) NOT NULL,
+	[Question1_1] [bit] NULL,
+	[Question1_2] [bit] NULL,
+	[Question1_3] [bit] NULL,
+	[Question1_4] [bit] NULL,
+	[Question1_5] [bit] NULL,
+	[Question1_6] [bit] NULL,
+	[Question1_7] [bit] NULL,
+	[Question1_8] [bit] NULL,
+	[Question1_9] [bit] NULL,
+	[Question1_10] [bit] NULL,
+	[Company_Name_Eng] [nvarchar](255) NOT NULL,
+	[Company_Name_Chi] [nvarchar](255) NULL,
+	[Abstract] [ntext] NULL,
+	[Objective] [ntext] NULL,
+	[Background] [ntext] NULL,
+	[Pilot_Work_Done] [ntext] NULL,
+	[Additional_Information] [ntext] NULL,
+	[Proposed_Products] [ntext] NULL,
+	[Target_Market] [ntext] NULL,
+	[Competition_Analysis] [ntext] NULL,
+	[Revenus_Model] [ntext] NULL,
+	[Exit_Strategy] [ntext] NULL,
+	[First_6_Months_Milestone] [ntext] NULL,
+	[Second_6_Months_Milestone] [ntext] NULL,
+	[Third_6_Months_Milestone] [ntext] NULL,
+	[Forth_6_Months_Milestone] [ntext] NULL,
+	[Resubmission] [bit] NULL,
+	[Resubmission_Project_Reference] [ntext] NULL,
+	[Resubmission_Main_Differences] [ntext] NULL,
+	[Company_Type] [nchar](10) NULL,
+	[Other_Company_Type] [nvarchar](30) NULL,
+	[Business_Area] [nvarchar](30) NULL,
+	[Other_Bussiness_Area] [nvarchar](30) NULL,
+	[Positioning] [nvarchar](30) NULL,
+	[Management_Positioning] [nvarchar](30) NULL,
+	[Other_Positioning] [nvarchar](30) NULL,
+	[Other_Attributes] [ntext] NULL,
+	[Preferred_Track] [nvarchar](30) NULL,
+	[Company_Ownership_Structure] [ntext] NULL,
+	[Core_Members_Profiles] [ntext] NULL,
+	[Major_Partners_Profiles] [ntext] NULL,
+	[Manpower_Distribution] [ntext] NULL,
+	[Equipment_Distribution] [ntext] NULL,
+	[Other_Direct_Costs] [ntext] NULL,
+	[Forecast_Income] [ntext] NULL,
+	[Declaration] [bit] NULL,
+	[Have_Read_Statement] [bit] NULL,
+	[Marketing_Information] [bit] NULL,
+	[Principal_Full_Name] [nvarchar](255) NULL,
+	[Principal_Position_Title] [nvarchar](255) NULL,
+	[Submission_Date] [datetime] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_INCUBATION_APPLICATION] PRIMARY KEY CLUSTERED 
+(
+	[CCMF_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_MASTER_DATA]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_MASTER_DATA](
+	[Data_Id] [nvarchar](30) NOT NULL,
+	[Data_Value] [nvarchar](100) NOT NULL,
+	[Active] [bit] NOT NULL,
+ CONSTRAINT [PK_TB_MASTER_DATA] PRIMARY KEY CLUSTERED 
+(
+	[Data_Id] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_PAST_APPLICATION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_PAST_APPLICATION](
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[ID_Number] [nvarchar](255) NOT NULL
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_PRESENTATION_CCMF_SCORE]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_PRESENTATION_CCMF_SCORE](
+	[CCMF_Scoring_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Member_Email] [nvarchar](255) NOT NULL,
+	[Management_Team] [decimal](2, 2) NOT NULL,
+	[Business_Model] [decimal](2, 2) NOT NULL,
+	[Creativity] [decimal](2, 2) NOT NULL,
+	[Social_Responsibility] [decimal](2, 2) NOT NULL,
+	[Total_Score] [decimal](3, 2) NOT NULL,
+	[Comments] [nvarchar](30) NULL,
+	[Remarks] [ntext] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_PRESENTATION_CCMF_SCORE] PRIMARY KEY CLUSTERED 
+(
+	[CCMF_Scoring_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_PRESENTATION_INCUBATION_SCORE]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_PRESENTATION_INCUBATION_SCORE](
+	[Incubation_Scoring_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Member_Email] [nvarchar](255) NOT NULL,
+	[Management_Team] [decimal](2, 2) NOT NULL,
+	[Creativity] [decimal](2, 2) NOT NULL,
+	[Business_Viability] [decimal](2, 2) NOT NULL,
+	[Benefit_To_Industry] [decimal](2, 2) NOT NULL,
+	[Proposal_Milestones] [decimal](2, 2) NOT NULL,
+	[Total_Score] [decimal](3, 2) NOT NULL,
+	[Comments] [nvarchar](30) NULL,
+	[Remarks] [ntext] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_PRESENTATION_INCUBATION_SCORE] PRIMARY KEY CLUSTERED 
+(
+	[Incubation_Scoring_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_PROGRAMME_INTAKE]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_PROGRAMME_INTAKE](
+	[Programme_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Programme_Name] [nvarchar](50) NOT NULL,
+	[Intake_Number] [int] NOT NULL,
+	[Application_No_Prefix] [nvarchar](30) NOT NULL,
+	[Application_Start] [datetime] NOT NULL,
+	[Application_Deadline] [datetime] NOT NULL,
+	[Application_Deadline_Eng] [nvarchar](50) NOT NULL,
+	[Application_Deadline_TradChin] [nvarchar](50) NULL,
+	[Application_Deadline_SimpChin] [nvarchar](50) NULL,
+	[Vetting_Session_Eng] [nvarchar](50) NOT NULL,
+	[Vetting_Session_TradChin] [nvarchar](50) NULL,
+	[Vetting_Session_SimpChin] [nvarchar](50) NULL,
+	[Result_Announce_Eng] [nvarchar](50) NOT NULL,
+	[Result_Announce_TradChin] [nvarchar](50) NULL,
+	[Result_Announce_Simp_Chin] [nvarchar](50) NULL,
+	[Active] [bit] NOT NULL,
+	[Created_By] [nvarchar](20) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](20) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_PROGRAMME_INTAKE] PRIMARY KEY CLUSTERED 
+(
+	[Programme_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_RESET_PASSWORD]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_RESET_PASSWORD](
+	[Reset_Password_ID] [uniqueidentifier] NOT NULL,
+	[Email] [nvarchar](50) NOT NULL,
+	[Email_Type] [nvarchar](30) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_RESET_PASSWORD] PRIMARY KEY CLUSTERED 
+(
+	[Reset_Password_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_SCREENING_CCMF_SCORE]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_SCREENING_CCMF_SCORE](
+	[CCMF_Scoring_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Reviewer] [nvarchar](255) NOT NULL,
+	[Role] [nvarchar](20) NOT NULL,
+	[Management_Team] [decimal](2, 2) NOT NULL,
+	[Business_Model] [decimal](2, 2) NOT NULL,
+	[Creativity] [decimal](2, 2) NOT NULL,
+	[Social_Responsibility] [decimal](2, 2) NOT NULL,
+	[Total_Score] [decimal](3, 2) NOT NULL,
+	[Comments] [nvarchar](30) NULL,
+	[Remarks] [ntext] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_SCREENING_CCMF_SCORE] PRIMARY KEY CLUSTERED 
+(
+	[CCMF_Scoring_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_SCREENING_HISTORY]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_SCREENING_HISTORY](
+	[Screening_Comments_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Validation_Result] [nvarchar](50) NOT NULL,
+	[Comment_For_Applicants] [ntext] NULL,
+	[Comment_For_Internal_Use] [ntext] NOT NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_SCREENING_HISTORY] PRIMARY KEY CLUSTERED 
+(
+	[Screening_Comments_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_SCREENING_INCUBATION_SCORE]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_SCREENING_INCUBATION_SCORE](
+	[Incubation_Scoring_ID] [int] IDENTITY(1,1) NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Reviewer] [nvarchar](255) NOT NULL,
+	[Role] [nvarchar](20) NOT NULL,
+	[Management_Team] [decimal](2, 2) NOT NULL,
+	[Creativity] [decimal](2, 2) NOT NULL,
+	[Business_Viability] [decimal](2, 2) NOT NULL,
+	[Benefit_To_Industry] [decimal](2, 2) NOT NULL,
+	[Proposal_Milestones] [decimal](2, 2) NOT NULL,
+	[Total_Score] [decimal](3, 2) NOT NULL,
+	[Comments] [nvarchar](30) NULL,
+	[Remarks] [ntext] NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_SCREENING_INCUBATION_SCORE] PRIMARY KEY CLUSTERED 
+(
+	[Incubation_Scoring_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_SYSTEM_PARAMETER]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_SYSTEM_PARAMETER](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Config_Code] [nvarchar](50) NULL,
+	[Value] [nvarchar](255) NULL,
+	[Created_by] [nvarchar](20) NULL,
+	[Created_date] [datetime] NULL,
+	[Modified_by] [nvarchar](20) NULL,
+	[Modified_date] [datetime] NULL,
+ CONSTRAINT [PK__TB_SYSTE__3214EC2716BDAFFD] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_VETTING_APPLICATION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_VETTING_APPLICATION](
+	[Vetting_Application_ID] [uniqueidentifier] NOT NULL,
+	[Vetting_Meeting_ID] [uniqueidentifier] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Presentation_From] [datetime] NULL,
+	[Presentation_To] [datetime] NULL,
+	[Email] [nvarchar](255) NULL,
+	[Mobile_Number] [nvarchar](255) NULL,
+	[Attend] [bit] NULL,
+	[Name_of_Attendees] [ntext] NULL,
+	[Presentation_Tools] [ntext] NULL,
+	[Special_Request] [ntext] NULL,
+ CONSTRAINT [PK_TB_VETTING_APPLICATION] PRIMARY KEY CLUSTERED 
+(
+	[Vetting_Application_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY] TEXTIMAGE_ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_VETTING_DECISION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_VETTING_DECISION](
+	[Vetting_Delclaration_ID] [uniqueidentifier] NOT NULL,
+	[Vetting_Meeting_ID] [uniqueidentifier] NOT NULL,
+	[Application_Number] [nvarchar](50) NOT NULL,
+	[Member_Email] [nvarchar](255) NOT NULL,
+	[Go] [bit] NOT NULL,
+ CONSTRAINT [PK_TB_VETTING_DECISION] PRIMARY KEY CLUSTERED 
+(
+	[Vetting_Delclaration_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_VETTING_DECLARATION]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_VETTING_DECLARATION](
+	[Vetting_Delclaration_ID] [uniqueidentifier] NOT NULL,
+	[Vetting_Meeting_ID] [uniqueidentifier] NOT NULL,
+	[Member_Email] [nvarchar](255) NOT NULL,
+	[DateTime] [datetime] NOT NULL,
+	[Venue] [nvarchar](255) NOT NULL,
+	[Name] [nvarchar](255) NOT NULL,
+	[No_Conflict_Application] [bit] NOT NULL,
+	[Abstained_Voting_Application] [bit] NOT NULL,
+ CONSTRAINT [PK_TB_VETTING_DECLARATION] PRIMARY KEY CLUSTERED 
+(
+	[Vetting_Delclaration_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_VETTING_MEETING]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_VETTING_MEETING](
+	[Vetting_Meeting_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Date] [datetime] NOT NULL,
+	[Venue] [nvarchar](255) NOT NULL,
+	[Vetting_Meeting_From] [datetime] NOT NULL,
+	[Vetting_Meeting_To] [datetime] NOT NULL,
+	[Presentation_From] [datetime] NOT NULL,
+	[Presentation_To] [datetime] NOT NULL,
+	[Vetting_Team_Leader] [nvarchar](255) NOT NULL,
+	[No_of_Attendance] [int] NOT NULL,
+	[Created_By] [nvarchar](50) NOT NULL,
+	[Created_Date] [datetime] NOT NULL,
+	[Modified_By] [nvarchar](50) NOT NULL,
+	[Modified_Date] [datetime] NOT NULL,
+ CONSTRAINT [PK_TB_VETTING_MEETING] PRIMARY KEY CLUSTERED 
+(
+	[Vetting_Meeting_ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+/****** Object:  Table [dbo].[TB_VETTING_MEMBER]    Script Date: 20-12-2016 14:42:57 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE TABLE [dbo].[TB_VETTING_MEMBER](
+	[Vetting_Meeting_ID] [uniqueidentifier] NOT NULL,
+	[Member_Email] [nvarchar](255) NOT NULL
+) ON [PRIMARY]
+
+GO
+INSERT [dbo].[TB_EMAIL_TEMPLATE] ([Email_Template], [Email_Template_Content]) VALUES (N'ForgotPassword', N'<p>Hi,</p>
+<br />
+<p>
+    You are invited to Cyberport Entrepreneurship Management System, please access the link below to set up password for your account.
+    <a href=''@@WebsiteUrl/_layouts/15/AuthenticationPage/ResetPassword.aspx?token=@@ForgotPasswordLink''>@@WebsiteUrl/_layouts/15/AuthenticationPage/ResetPassword.aspx?token=@@ForgotPasswordLink</a>
+</p>
+<br />
+<p>Regards,</p>
+<p>EMS Administrator</p>')
+GO
+INSERT [dbo].[TB_EMAIL_TEMPLATE] ([Email_Template], [Email_Template_Content]) VALUES (N'Registration', N'<p>Hi,</p>
+<br />
+<p>Thank you for registering Entrepreneurship Management System, you may now login to <a href=''@@WebsiteUrl'' target=''_blank''>@@WebsiteUrl</a> to start applying for our Incubation Programmes.</p>
+<br />
+<p>Regards,</p>
+<p>EMS Administrator</p>')
+GO
+SET IDENTITY_INSERT [dbo].[TB_SYSTEM_PARAMETER] ON 
+
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (1, N'EmailSettingHostAddress', N'smtp.gmail.com', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (2, N'EmailSettingHostPort', N'587', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (3, N'EmailSettingEnableSsl', N'true', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (4, N'EmailSettingFromAddress', N'', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (5, N'EmailSettingEmailPassword', N'', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (6, N'ApplicationIsInDebug', N'1', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (7, N'ApplicationDebugEmailSentTo', N'', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (8, N'WebsiteUrl', N'http://win-v2qfathueq3:39974', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (9, N'SPLayoutFolder', N'_layouts/15/', NULL, NULL, NULL, NULL)
+GO
+INSERT [dbo].[TB_SYSTEM_PARAMETER] ([ID], [Config_Code], [Value], [Created_by], [Created_date], [Modified_by], [Modified_date]) VALUES (10, N'SqlMembershipProvider', N'FBAMembership', NULL, NULL, NULL, NULL)
+GO
+SET IDENTITY_INSERT [dbo].[TB_SYSTEM_PARAMETER] OFF
+GO
+ALTER TABLE [dbo].[TB_APPLICATION_SHORTLISTING] ADD  CONSTRAINT [DF_TB_APPLICATION_SHORTLISTING_Shortlisted]  DEFAULT ((0)) FOR [Shortlisted]
+GO
+ALTER TABLE [dbo].[TB_MASTER_DATA] ADD  CONSTRAINT [DF_TB_MASTER_DATA_Active]  DEFAULT ((0)) FOR [Active]
+GO
+ALTER TABLE [dbo].[TB_VETTING_DECISION] ADD  CONSTRAINT [DF_TB_VETTING_DECISION_Go]  DEFAULT ((0)) FOR [Go]
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store applicatioin attachment.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_ATTACHMENT'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application collaborator.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_COLLABORATOR'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application company core members.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_COMPANY_CORE_MEMBER'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application contact details.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_CONTACT_DETAIL'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application funding status.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_FUNDING_STATUS'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store application shortlisting.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_APPLICATION_SHORTLISTING'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store CCMF application.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_CCMF_APPLICATION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store conflict of interest application of a vetting team member' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_DECLARATION_APPLICATION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store EC result' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_EC_RESULT'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store Entrepreneurship Programme and Intake.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_EMAIL_TEMPLATE'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store incubation programme application.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_INCUBATION_APPLICATION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store master data' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_MASTER_DATA'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to import past successful application for duplicated submission checking' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_PAST_APPLICATION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store CCMF presentation score for each vetting team member.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_PRESENTATION_CCMF_SCORE'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store incubation programme presentation score for each vetting team member.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_PRESENTATION_INCUBATION_SCORE'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store Entrepreneurship Programme and Intake.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_PROGRAMME_INTAKE'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store reset password records.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_RESET_PASSWORD'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store CCMF screening score.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_SCREENING_CCMF_SCORE'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store screening history for different stage.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_SCREENING_HISTORY'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store incubation programme screening score.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_SCREENING_INCUBATION_SCORE'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store vetting meeting application.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_VETTING_APPLICATION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store vetting team descision for presentation list' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_VETTING_DECISION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store declaration of interests for each vetting team member' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_VETTING_DECLARATION'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store vetting meeting information.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_VETTING_MEETING'
+GO
+EXEC sys.sp_addextendedproperty @name=N'MS_Description', @value=N'A table to store vetting meeting member.' , @level0type=N'SCHEMA',@level0name=N'dbo', @level1type=N'TABLE',@level1name=N'TB_VETTING_MEMBER'
+GO

@@ -1,0 +1,5 @@
+alter table TB_PRESENTATION_CCMF_SCORE
+alter column Comments nvarchar(255) null
+
+alter table TB_PRESENTATION_INCUBATION_SCORE
+alter column Comments nvarchar(255) null

@@ -1,0 +1,1 @@
+Alter table [dbo].[TB_VETTING_MEETING] add  Meeting_Completed bit null

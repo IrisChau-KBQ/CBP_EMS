@@ -1,0 +1,28 @@
+
+CREATE TABLE [dbo].[TB_APPLICATION_CONTACT_DETAIL_HISTORY](
+	[CONTACT_DETAILS_ID] [int]  NOT NULL,
+	[Application_ID] [uniqueidentifier] NOT NULL,
+	[Programme_ID] [int] NOT NULL,
+	[Last_Name_Eng] [nvarchar](255) NULL,
+	[First_Name_Eng] [nvarchar](255) NULL,
+	[Last_Name_Chi] [nvarchar](255) NULL,
+	[First_Name_Chi] [nvarchar](255) NULL,
+	[Salutation] [nvarchar](255) NOT NULL,
+	[ID_Number] [nvarchar](255) NULL,
+	[Student_ID_Number] [nvarchar](255) NULL,
+	[Education_Institution_Eng] [nvarchar](255) NULL,
+	[Programme_Enrolled_Eng] [nvarchar](255) NULL,
+	[Graduation_Month] [int] NULL,
+	[Graduation_Year] [int] NULL,
+	[Organisation_Name] [nvarchar](255) NULL,
+	[Position] [nvarchar](255) NULL,
+	[Contact_No] [nvarchar](255) NULL,
+	[Contact_No_Type] [nvarchar](20) NULL,
+	[Fax] [nvarchar](20) NULL,
+	[Email] [nvarchar](255) NULL,
+	[Mailing_Address] [ntext] NULL,
+	[Contact_No_Home] [nvarchar](255) NULL,
+	[Contact_No_Office] [nvarchar](255) NULL,
+	[Contact_No_Mobile] [nvarchar](255) NULL,
+	[Area] [nvarchar](30) NULL
+	)

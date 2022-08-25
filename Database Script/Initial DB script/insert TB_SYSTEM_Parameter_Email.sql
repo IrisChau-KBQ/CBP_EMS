@@ -1,0 +1,1 @@
+insert into TB_SYSTEM_PARAMETER(Config_Code,Value)values('UserSharepointEmailSend',0)
