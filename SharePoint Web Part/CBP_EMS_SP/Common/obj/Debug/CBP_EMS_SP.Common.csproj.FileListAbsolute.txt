@@ -1,0 +1,6 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\bin\Debug\CBP_EMS_SP.Common.dll.config
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\bin\Debug\CBP_EMS_SP.Common.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\bin\Debug\CBP_EMS_SP.Common.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\obj\Debug\CBP_EMS_SP.Common.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\obj\Debug\CBP_EMS_SP.Common.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\obj\Debug\CBP_EMS_SP.Common.pdb

@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="3fc54aaf-594f-400f-97a6-1fe0cc46d0f4" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="CBP_EMS_SP.VMCreateWP.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="CBP_EMS_SP.VMCreateWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=0ec5ecb46e815d9d" Namespace="CBP_EMS_SP.VMCreateWP.VMCreateWP" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="CBP_EMS_SP.VMCreateWP_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

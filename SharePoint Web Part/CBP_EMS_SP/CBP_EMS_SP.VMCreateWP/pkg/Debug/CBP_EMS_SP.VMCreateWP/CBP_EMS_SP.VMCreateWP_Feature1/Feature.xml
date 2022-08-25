@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="c462bbc6-6fbc-4630-b159-ca8dc5a331e3" Scope="Site" Title="CBP_EMS_SP.VMCreateWP Feature1">
+  <ElementManifests>
+    <ElementManifest Location="VMCreateWP\Elements.xml" />
+    <ElementFile Location="VMCreateWP\VMCreateWP.webpart" />
+  </ElementManifests>
+</Feature>

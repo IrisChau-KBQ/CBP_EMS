@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.ApplicationServer.Caching.Client</id>
+    <version>1.0.4657.2</version>
+    <title>Microsoft.ApplicationServer.Caching.Client</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>http://msdn.microsoft.com/en-us/cc300389.aspx</licenseUrl>
+    <projectUrl>https://msdn.microsoft.com/en-us/library/hh351318.aspx</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>This package contains Microsoft Application Server Caching Client assemblies.</description>
+    <summary />
+    <releaseNotes>This is the Cumulative Update 7 (KB 3092423) for Microsoft AppFabric 1.1 for Windows Server. This update package fixes several issues that affect the caching and hosting services that are provided by AppFabric 1.1. This cumulative update includes all the features and fixes that were included in earlier cumulative updates for AppFabric 1.1 for Windows Server.</releaseNotes>
+    <tags>appfabric caching cache microsoft</tags>
+    <references>
+      <reference file="Microsoft.ApplicationServer.Caching.Client.dll" />
+      <reference file="Microsoft.ApplicationServer.Caching.Core.dll" />
+    </references>
+  </metadata>
+</package>

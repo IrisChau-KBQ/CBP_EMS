@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="chk_DeclareA" xml:space="preserve">
+    <value>We confirm that we have paid the above items solely for the purpose stated above.&lt;br/&gt;&lt;br/&gt;We understand that if we wilfully give any false information or withhold any material information in this application form, or fail to notify the HKCMCL of any subsequent change of information provided, it will render the company liable to disqualification for the application of such financial assistance or termination in Cyberport Accelerator Support Programme.&lt;br/&gt;&lt;br/&gt;We undertake and agree that we will not obtain any form of financing from any other Government funded scheme in respect of the above reimbursement item.  We also undertake and agree that residual cost (if any) of the reimbursement item should be re-funded to HKCMCL.</value>
+  </data>
+  <data name="chk_DeclareB" xml:space="preserve">
+    <value>We certify that the said employee(s) has/have completed the aforesaid internship period and our company has already paid the said employee(s) his/her/their respective salaries, and we are entitled to the financial assistance of 50% of our internship staffing cost under the terms and conditions of the Cyberport Accelerator Support Programme.  We understand that if we will fully willfully give any false information or withhold any material information in this application form, or fail to notify the HKCMCL of any subsequent change of information provided, it will render the company liable to disqualification for the application of such financial assistance or termination in the Cyberport Accelerator Support Programme.</value>
+  </data>
+  <data name="Gv_Amount" xml:space="preserve">
+    <value>Amount(HK$)</value>
+  </data>
+  <data name="Gv_ForAdvertisement" xml:space="preserve">
+    <value>For Advertisement</value>
+  </data>
+  <data name="Gv_InternsName" xml:space="preserve">
+    <value>Intern's Name</value>
+  </data>
+  <data name="Gv_MonthlySalary" xml:space="preserve">
+    <value>Monthly Salary</value>
+  </data>
+  <data name="Gv_MonthlySalaryFrom" xml:space="preserve">
+    <value>Monthly Period (From):</value>
+  </data>
+  <data name="Gv_MonthlySalaryTo" xml:space="preserve">
+    <value>Monthly Period (To):</value>
+  </data>
+  <data name="Gv_Reimbursement_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Gv_Reimbursement_ItemDescription" xml:space="preserve">
+    <value>Item / Description</value>
+  </data>
+  <data name="Gv_Tax" xml:space="preserve">
+    <value>MPF (HK$)</value>
+  </data>
+  <data name="Gv_Total" xml:space="preserve">
+    <value>Total (HK$)</value>
+  </data>
+  <data name="Header" xml:space="preserve">
+    <value>CASP Financial Assistance Reimbursement Form</value>
+  </data>
+  <data name="lbl_ApplicationProgrammeAttended" xml:space="preserve">
+    <value>Accelerator Programme attended</value>
+  </data>
+  <data name="lbl_ChequePaybleTo" xml:space="preserve">
+    <value>Cheque Payable to</value>
+  </data>
+  <data name="lbl_CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="lbl_DocRef" xml:space="preserve">
+    <value>Doc Ref:  ENC.SF.040</value>
+  </data>
+  <data name="lbl_EstimatedServiceFrom" xml:space="preserve">
+    <value>Estimated service period from:</value>
+  </data>
+  <data name="lbl_EstimatedServiceTo" xml:space="preserve">
+    <value>Estimated service period to:</value>
+  </data>
+  <data name="lbl_FreelancerResume" xml:space="preserve">
+    <value>Freelancer Resume:</value>
+  </data>
+  <data name="lbl_Header" xml:space="preserve">
+    <value>&lt;strong&gt;To: Hong Kong Cyberport Management company Limited ("HKCMCL")&lt;/strong&gt;</value>
+  </data>
+  <data name="lbl_PreApproved" xml:space="preserve">
+    <value>Pre Approved</value>
+  </data>
+  <data name="lbl_Remarks" xml:space="preserve">
+    <value>&lt;strong&gt;** Remark: &lt;u&gt;Please attach the following items with the application (if applicable)&lt;/u&gt;:-&lt;/strong&gt;</value>
+  </data>
+  <data name="lbl_ServiceContract" xml:space="preserve">
+    <value>Service contract</value>
+  </data>
+  <data name="lbl_ServiceProviderName" xml:space="preserve">
+    <value>Service Provider Name</value>
+  </data>
+  <data name="lbl_TotalFee" xml:space="preserve">
+    <value>Total Fee</value>
+  </data>
+  <data name="lbl_undersignDeclaration" xml:space="preserve">
+    <value>We, the undersign, wish to apply for Financial Asssitance from the Cyberport Accelerator Support Programme</value>
+  </data>
+  <data name="pnl_BoardingPass" xml:space="preserve">
+    <value>Boarding Passes</value>
+  </data>
+  <data name="pnl_BusinesCard" xml:space="preserve">
+    <value>Participants business card or other supporting document</value>
+  </data>
+  <data name="pnl_Document_OriginalInvoice" xml:space="preserve">
+    <value>Original Invoice</value>
+  </data>
+  <data name="pnl_Document_OriginalReceipt" xml:space="preserve">
+    <value>Original Receipt</value>
+  </data>
+  <data name="pnl_EmployementContract" xml:space="preserve">
+    <value>Employment Contract</value>
+  </data>
+  <data name="pnl_EventPass" xml:space="preserve">
+    <value>Event Pass</value>
+  </data>
+  <data name="pnl_EventPhoto" xml:space="preserve">
+    <value>Event Photo</value>
+  </data>
+  <data name="pnl_FlightInventory" xml:space="preserve">
+    <value>Flight Itinerary</value>
+  </data>
+  <data name="pnl_HKIDCard" xml:space="preserve">
+    <value>HKID Card</value>
+  </data>
+  <data name="pnl_InternAcademicCertification" xml:space="preserve">
+    <value>Intern's Academic Certification</value>
+  </data>
+  <data name="pnl_internPayroll" xml:space="preserve">
+    <value>Intern's Payroll</value>
+  </data>
+  <data name="pnl_MpfPaymentProof" xml:space="preserve">
+    <value>MPF Payment Proof (if Applicable)</value>
+  </data>
+  <data name="pnl_PrintSample" xml:space="preserve">
+    <value>Printing Material Sample</value>
+  </data>
+  <data name="pnl_Quotation" xml:space="preserve">
+    <value>Quotation</value>
+  </data>
+  <data name="pnl_ResumeCV" xml:space="preserve">
+    <value>Resume / CV</value>
+  </data>
+  <data name="Rdo_Category" xml:space="preserve">
+    <value>Please tick the appropriate categories:</value>
+  </data>
+  <data name="Rdo_PanelF_Declaration1" xml:space="preserve">
+    <value>We declare that, to the best of my knowledge, there is not actual, perceived or potential current conflict of interest that will or may arise as a result of reimbursement of aforementioned service ort Accelerator Support Programme.</value>
+  </data>
+  <data name="Rdo_PanelF_Declaration2" xml:space="preserve">
+    <value>We declare that we do have an actual, perceived or potential current conflict of interest. The following conflict(s) exist</value>
+  </data>
+  <data name="Submission_popup" xml:space="preserve">
+    <value>To submit CASP Financial Assistance Reimbursement Application</value>
+  </data>
+  <data name="Submission_popup_password" xml:space="preserve">
+    <value>Please input your login email and password for confirmation.</value>
+  </data>
+  <data name="Calc_Deduction_ABDEF" xml:space="preserve">
+    <value>Deduct 25% shared by Recipient</value>
+  </data>
+  <data name="Calc_Deduction_C" xml:space="preserve">
+    <value>Deduct 50% shared by Recipient</value>
+  </data>
+  <data name="Calc_Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Calc_TotalReimbursement_ABDEF" xml:space="preserve">
+    <value>Total Amount for reimbursement (75%)</value>
+  </data>
+  <data name="Calc_TotalReimbursement_C" xml:space="preserve">
+    <value>Total Amount for reimbursement (50%)</value>
+  </data>
+  <data name="Error_file_upload" xml:space="preserve">
+    <value>Please select file before upload.</value>
+  </data>
+  <data name="err_AcceleratorProg" xml:space="preserve">
+    <value>Accelerator Programme attended Required</value>
+  </data>
+  <data name="err_CategorySelect" xml:space="preserve">
+    <value>Please select appropriate categories</value>
+  </data>
+  <data name="err_ChequePayble" xml:space="preserve">
+    <value>Cheque Payble to Required</value>
+  </data>
+  <data name="err_Company" xml:space="preserve">
+    <value>Company Name Required</value>
+  </data>
+  <data name="err_FileEmployementContract" xml:space="preserve">
+    <value>Please upload required document : Employement Contract</value>
+  </data>
+  <data name="err_FileInternPayroll" xml:space="preserve">
+    <value>Please upload required document : Intern's Payroll</value>
+  </data>
+  <data name="err_FileOriginalReceiptReq" xml:space="preserve">
+    <value>Please upload required document : Original Receipt</value>
+  </data>
+  <data name="err_FileResumeCV" xml:space="preserve">
+    <value>Please upload required document : Resume/CV</value>
+  </data>
+  <data name="err_FileUploadCount" xml:space="preserve">
+    <value>Can not upload more then 3 Files</value>
+  </data>
+  <data name="err_ReimbursementItem" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: Reimbursement Items</value>
+  </data>
+  <data name="err_ReimbursementSalaryAtleast" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: Reimbursement Salaries</value>
+  </data>
+  <data name="err_SpecialRequestForm" xml:space="preserve">
+    <value>Pre Approved Special Request Required for reimbursement amount is over $10K</value>
+  </data>
+  <data name="err_TotalFee" xml:space="preserve">
+    <value>Total Fee should be number</value>
+  </data>
+  <data name="File_size" xml:space="preserve">
+    <value>File size is limited to 5MB</value>
+  </data>
+  <data name="File_type" xml:space="preserve">
+    <value>File type is limited to PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="File_Type_image" xml:space="preserve">
+    <value>File type is limited to PDF, PNG, JPG, GIF</value>
+  </data>
+  <data name="lbl_warning" xml:space="preserve">
+    <value>*You will be disqualified if it is found that your declaration is not a true statement</value>
+  </data>
+  <data name="lbl_SubsequentSupportDocument" xml:space="preserve">
+    <value>&lt;strong&gt;Supporting docments for subsequent reimbursements&lt;/strong&gt;</value>
+  </data>
+  <data name="lbl_Supporting" xml:space="preserve">
+    <value>&lt;strong&gt;Supporting document for this claim&lt;/strong&gt;</value>
+  </data>
+  <data name="pnl_PaySlip" xml:space="preserve">
+    <value>Employee Payslip for the intern</value>
+  </data>
+  <data name="pnl_SaleryAdjustment" xml:space="preserve">
+    <value>And this following &lt;strong&gt;&lt;u&gt;whenever applicable&lt;/u&gt;&lt;/strong&gt; to this claim&lt;/br&gt;Proof of salery adjustment</value>
+  </data>
+  <data name="err_Checkbox_certify" xml:space="preserve">
+    <value>Please check on the Certify checkbox</value>
+  </data>
+  <data name="err_checkbox_confirm" xml:space="preserve">
+    <value>Please check on the Confirm checkbox</value>
+  </data>
+</root>

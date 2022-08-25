@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\ECProgramList\bin\Debug\ECProgramList.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\ECProgramList\bin\Debug\ECProgramList.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\ECProgramList\obj\Debug\ECProgramList.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\ECProgramList\obj\Debug\ECProgramList.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\ECProgramList\obj\Debug\ECProgramList.pdb

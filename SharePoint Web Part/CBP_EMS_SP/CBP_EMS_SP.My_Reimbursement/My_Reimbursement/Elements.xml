@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="My_Reimbursement" List="113" Url="_catalogs/wp">
+    <File Path="My_Reimbursement\My_Reimbursement.webpart" Url="CBP_EMS_SP.My_Reimbursement_My_Reimbursement.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

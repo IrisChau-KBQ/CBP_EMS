@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="bfdd6329-2eac-4e22-9a34-735ef494e148" solutionId="bfdd6329-2eac-4e22-9a34-735ef494e148" resetWebServer="false" sharePointProductVersion="15.0" name="ContactFormWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="EntityFramework.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="bin\Debug\EntityFramework.dll">
+      <safeControls>
+        <safeControl namespaceName="EntityFramework" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </customAssembly>
+    <customAssembly location="EntityFramework.SqlServer.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="bin\Debug\EntityFramework.SqlServer.dll">
+      <safeControls>
+        <safeControl namespaceName="EntityFramework.SqlServer" typeName="*" isSafeAgainstScript="false" />
+      </safeControls>
+    </customAssembly>
+    <projectOutputAssembly location="CBP_EMS_SP.Model.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.Model\CBP_EMS_SP.Model.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="6e08710f-0848-4299-8abb-aec31cdcfe67" />
+  </features>
+</package>

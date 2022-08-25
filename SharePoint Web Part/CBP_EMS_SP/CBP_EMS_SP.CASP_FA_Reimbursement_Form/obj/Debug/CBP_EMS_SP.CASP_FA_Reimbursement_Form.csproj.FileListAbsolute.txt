@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASP_FA_Reimbursement_Form\bin\Debug\CBP_EMS_SP.CASP_FA_Reimbursement_Form.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASP_FA_Reimbursement_Form\bin\Debug\CBP_EMS_SP.CASP_FA_Reimbursement_Form.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASP_FA_Reimbursement_Form\obj\Debug\CBP_EMS_SP.CASP_FA_Reimbursement_Form.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASP_FA_Reimbursement_Form\obj\Debug\CBP_EMS_SP.CASP_FA_Reimbursement_Form.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASP_FA_Reimbursement_Form\obj\Debug\CBP_EMS_SP.CASP_FA_Reimbursement_Form.pdb

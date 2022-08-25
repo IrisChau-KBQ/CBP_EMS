@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="34760909-f153-400c-8863-21727deb1a38" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="EntityFramework.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="EntityFramework.SqlServer.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Data.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.IncubationFormsWebPart.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="CBP_EMS_SP.IncubationFormsWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c90c85b75a33860f" Namespace="CBP_EMS_SP.IncubationFormsWebPart.IncubationFormInstructions" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="CBP_EMS_SP.IncubationFormsWebPart_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

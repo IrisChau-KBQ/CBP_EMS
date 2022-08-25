@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ad3c827d-c316-40ec-8967-1d249d10c75c" solutionId="ad3c827d-c316-40ec-8967-1d249d10c75c" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.RejectBDMWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="b3624ebb-c7e8-4607-85fd-5c46405bda9a" />
+  </features>
+</package>

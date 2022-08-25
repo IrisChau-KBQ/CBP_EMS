@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="CBP_EMS_SP.IncubationFormsWebPart.IncubationFormInstructions.IncubationFormInstructions, CBP_EMS_SP.IncubationFormsWebPart, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c90c85b75a33860f" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">CBP_EMS_SP.IncubationFormsWebPart - IncubationFormInstructions</property>
+        <property name="Description" type="string">My Visual Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

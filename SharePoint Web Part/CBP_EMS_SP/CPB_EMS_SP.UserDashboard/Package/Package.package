@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a732f94d-51d4-4c8c-a163-7a97c4944fc4" solutionId="a732f94d-51d4-4c8c-a163-7a97c4944fc4" resetWebServer="true" sharePointProductVersion="15.0" name="CPB_EMS_SP.UserDashboard" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="EntityFramework.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <customAssembly location="EntityFramework.SqlServer.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="0de02dbe-110e-4119-9910-15c19de16e1e" />
+  </features>
+</package>

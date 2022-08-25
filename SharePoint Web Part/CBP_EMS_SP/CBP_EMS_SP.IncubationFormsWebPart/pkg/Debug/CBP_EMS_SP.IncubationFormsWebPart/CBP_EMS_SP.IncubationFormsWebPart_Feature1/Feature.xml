@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="6cc8cf3c-a83b-46cc-975c-bf56f0cecc11" Scope="Site" Title="CBP_EMS_SP.IncubationFormsWebPart Feature1">
+  <ElementManifests>
+    <ElementManifest Location="IncubationFormInstructions\Elements.xml" />
+    <ElementFile Location="IncubationFormInstructions\IncubationFormInstructions.webpart" />
+  </ElementManifests>
+</Feature>

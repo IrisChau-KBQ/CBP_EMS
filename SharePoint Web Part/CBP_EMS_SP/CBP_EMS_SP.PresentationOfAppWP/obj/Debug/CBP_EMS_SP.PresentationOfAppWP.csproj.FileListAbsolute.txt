@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationOfAppWP\bin\Debug\CBP_EMS_SP.PresentationOfAppWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationOfAppWP\bin\Debug\CBP_EMS_SP.PresentationOfAppWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationOfAppWP\obj\Debug\CBP_EMS_SP.PresentationOfAppWP.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationOfAppWP\obj\Debug\CBP_EMS_SP.PresentationOfAppWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationOfAppWP\obj\Debug\CBP_EMS_SP.PresentationOfAppWP.pdb

@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CCMFScoreWP\bin\Debug\CBP_EMS_SP.CCMFScoreWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CCMFScoreWP\bin\Debug\CBP_EMS_SP.CCMFScoreWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CCMFScoreWP\obj\Debug\CBP_EMS_SP.CCMFScoreWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CCMFScoreWP\obj\Debug\CBP_EMS_SP.CCMFScoreWP.pdb

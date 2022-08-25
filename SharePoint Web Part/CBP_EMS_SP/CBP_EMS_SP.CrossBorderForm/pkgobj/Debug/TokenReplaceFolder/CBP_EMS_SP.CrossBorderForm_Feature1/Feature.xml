@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="a8bdf46c-b943-4a57-a69c-ce6c35f763ab" Scope="Site" Title="CBP_EMS_SP.CrossBorderForm Feature1">
+  <ElementManifests>
+    <ElementManifest Location="CCMF\Elements.xml" />
+    <ElementFile Location="CCMF\CCMF.webpart" />
+  </ElementManifests>
+</Feature>

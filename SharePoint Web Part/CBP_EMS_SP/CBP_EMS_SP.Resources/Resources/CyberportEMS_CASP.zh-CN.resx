@@ -1,0 +1,744 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Abstract_Error" xml:space="preserve">
+    <value>Please fill in the required field: 1.3 Abstract</value>
+  </data>
+  <data name="Amount_Format" xml:space="preserve">
+    <value>(Please input numbers with two decimals)</value>
+  </data>
+  <data name="ATTACHMENT_Title" xml:space="preserve">
+    <value>ATTACHMENT</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>不正確的電郵地址</value>
+  </data>
+  <data name="Contact_firstname" xml:space="preserve">
+    <value>必须填写英文名字 and 最多准许输入255个字符</value>
+  </data>
+  <data name="Contact_Firstname_required" xml:space="preserve">
+    <value>必须填写英文名字</value>
+  </data>
+  <data name="Contact_Home" xml:space="preserve">
+    <value>Contact No Home invalid</value>
+  </data>
+  <data name="Contact_lastname" xml:space="preserve">
+    <value>Last Name Eng is required and max 255 characters allow.</value>
+  </data>
+  <data name="Contact_Lastname_required" xml:space="preserve">
+    <value>Last name required</value>
+  </data>
+  <data name="Contact_Position" xml:space="preserve">
+    <value>Position length should be less than 255 characters.</value>
+  </data>
+  <data name="Core_member_name" xml:space="preserve">
+    <value>Name is required and max 255 characters allow.</value>
+  </data>
+  <data name="Core_member_position" xml:space="preserve">
+    <value>Position is required and max 255 characters allow.</value>
+  </data>
+  <data name="Core_name_required" xml:space="preserve">
+    <value>Name Required</value>
+  </data>
+  <data name="Core_positions_required" xml:space="preserve">
+    <value>Positions Required</value>
+  </data>
+  <data name="Error6_Deadline_Message" xml:space="preserve">
+    <value>Changes are not saved or submitted</value>
+  </data>
+  <data name="Error_Name_Required" xml:space="preserve">
+    <value>Name Required</value>
+  </data>
+  <data name="Error_Title_required" xml:space="preserve">
+    <value>Position/Title Required</value>
+  </data>
+  <data name="Error_Addidtiona_Info" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.2.4 Additional Information, if Question 1.9 is filled or 1.10 answer is Yes</value>
+  </data>
+  <data name="Error_Applicant_fullname" xml:space="preserve">
+    <value>Please fill in full name of Principal Applicant in page 4</value>
+  </data>
+  <data name="Error_Applicationstatus_required" xml:space="preserve">
+    <value>Application Status Required</value>
+  </data>
+  <data name="Error_atleast_contact" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 3.1 Contact Details.</value>
+  </data>
+  <data name="Error_atleast_coremember" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 1.5 Company Core Members</value>
+  </data>
+  <data name="Error_Business_Area" xml:space="preserve">
+    <value>Please select the required field: 2.5.2 Business Area.</value>
+  </data>
+  <data name="Error_Business_Area_length" xml:space="preserve">
+    <value>Business Area length should be  1-30 characters.</value>
+  </data>
+  <data name="Error_Busniess_Area_Other_lenth" xml:space="preserve">
+    <value>2.5.2 Other Business Area Type should be  1-30 characters.</value>
+  </data>
+  <data name="Error_company_name_chinese" xml:space="preserve">
+    <value>Company Name Chi length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_company_name_length" xml:space="preserve">
+    <value>Company Name Eng length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_company_name_other" xml:space="preserve">
+    <value>2.5.1 Other Company Type should not exceed 255 characters.</value>
+  </data>
+  <data name="Error_company_ownership_structure" xml:space="preserve">
+    <value>Please upload document in the required field: 1.4.2  Company Organisation Chart.</value>
+  </data>
+  <data name="Error_Company_structure" xml:space="preserve">
+    <value>Please fill in the required field: 1.4.1 Company Ownership Structure</value>
+  </data>
+  <data name="Error_Company_Type" xml:space="preserve">
+    <value>Please select the required field: 2.5.1 Company Type.</value>
+  </data>
+  <data name="Error_company_type_length" xml:space="preserve">
+    <value>Company Type length should be  1-10 characters.</value>
+  </data>
+  <data name="Error_Competition_Analysis" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.3 Competition Analysis.</value>
+  </data>
+  <data name="Error_Contact_fillall" xml:space="preserve">
+    <value>Please fill in Last Name, First Name, Salutation, Position, Contact No., Email and Mailing Address for each record in Page 3 Contact Details, or leave all fields blank to remove the Contact.</value>
+  </data>
+  <data name="Error_Contact_Home" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Contact No. in page 3</value>
+  </data>
+  <data name="Error_contact_validation" xml:space="preserve">
+    <value>Contact No. should be number only.</value>
+  </data>
+  <data name="Error_core_member" xml:space="preserve">
+    <value>Please fill in Name, Position/Title, HKID/Passport No. and Core Member's Profile for each record in 3.2 Company Core Members, or leave all fields blank to remove the Company Core Member.</value>
+  </data>
+  <data name="Error_Date_Required" xml:space="preserve">
+    <value>Date Required</value>
+  </data>
+  <data name="Error_Declaration" xml:space="preserve">
+    <value>Please answer if you agree declaration in page 4</value>
+  </data>
+  <data name="Error_Email" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Email in page 3</value>
+  </data>
+  <data name="Error_email_validation" xml:space="preserve">
+    <value>Please input correct email format</value>
+  </data>
+  <data name="Error_file_upload" xml:space="preserve">
+    <value>Please select file before upload.</value>
+  </data>
+  <data name="Error_First_Name_Eng" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: First Name in page 3</value>
+  </data>
+  <data name="Error_Funding_Allfields" xml:space="preserve">
+    <value>Please fill in all fields in each record in 1.6 Funding Status</value>
+  </data>
+  <data name="Error_funding_amount" xml:space="preserve">
+    <value>Amount received should be number only.</value>
+  </data>
+  <data name="Error_funding_maxamount" xml:space="preserve">
+    <value>Maximum Amount should be number only.</value>
+  </data>
+  <data name="Error_Funding_Required" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 1.6</value>
+  </data>
+  <data name="Error_General_Background" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.1 Background</value>
+  </data>
+  <data name="Error_Last_Name_Eng" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Last Name Eng in page 3</value>
+  </data>
+  <data name="Error_Mailing_Address" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Mailing Address in page 3</value>
+  </data>
+  <data name="Error_Major_Partners" xml:space="preserve">
+    <value>Please fill in the required field: 3.2.2 Major Partners' Profiles.</value>
+  </data>
+  <data name="Error_Manpower_Distribution" xml:space="preserve">
+    <value>Please fill in the required field:3.3.1 Manpower Distribution.</value>
+  </data>
+  <data name="Error_Other_Business_Area" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.2 Other Business Area, if 2.5.2 Business Area is Others.</value>
+  </data>
+  <data name="Error_Other_Company_Type" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.1 Other Company Type, if 2.5.1 Company Type is Others.</value>
+  </data>
+  <data name="Error_other_direct_cost" xml:space="preserve">
+    <value>Please fill in the required field:3.3.3 Other Direct Costs.</value>
+  </data>
+  <data name="Error_Personal_information" xml:space="preserve">
+    <value>Please answer if you agree Personal Information in page 5</value>
+  </data>
+  <data name="Error_Pilot_Work" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.2.2 Pilot Work Done.</value>
+  </data>
+  <data name="Error_Position" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Position in page 3</value>
+  </data>
+  <data name="Error_Positioning" xml:space="preserve">
+    <value>Please select the required field: 2.5.3 Positioning.</value>
+  </data>
+  <data name="Error_Positioning_Management" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.3 Positioning (Management, Trading, Services), if 2.5.3 Positioning is Management, Trading, Services.</value>
+  </data>
+  <data name="Error_positioning_management_lenghth" xml:space="preserve">
+    <value>2.5.3 Positioning (Management, Trading, Services) should not exceed 255 characters.</value>
+  </data>
+  <data name="Error_Positioning_Management_others" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.3 Positioning (Others), if 2.5.3 Positioning is Others.</value>
+  </data>
+  <data name="Error_positioning_other_lenghth" xml:space="preserve">
+    <value>2.5.3 Positioning (Others) should not exceed 255 characters.</value>
+  </data>
+  <data name="Error_Position_Applicant" xml:space="preserve">
+    <value>Please fill in position/title of Principal Applicant in page 4</value>
+  </data>
+  <data name="Error_preferred_length" xml:space="preserve">
+    <value>Preferred Track length should be  1-30 characters.</value>
+  </data>
+  <data name="Error_Preferred_track" xml:space="preserve">
+    <value>Please select the required field: 2.5.5 Preferred track of incubation.</value>
+  </data>
+  <data name="Error_principal_position_length" xml:space="preserve">
+    <value>Principal Position Title length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Principal_title_length" xml:space="preserve">
+    <value>Principal Position Title length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_programename_required" xml:space="preserve">
+    <value>Name of Programme Required</value>
+  </data>
+  <data name="Error_Project_Milestone" xml:space="preserve">
+    <value>Please fill in all fields in the required field: 2.4.6 6 months Project Milestone.</value>
+  </data>
+  <data name="Error_Propsed_Products" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.1 Proposed Products / Services.</value>
+  </data>
+  <data name="Error_Resubmission" xml:space="preserve">
+    <value>Please select yes/no in the required field: 2.4.7 Resubmission.</value>
+  </data>
+  <data name="Error_Resubmission_option" xml:space="preserve">
+    <value>Section 2.4.7 and 2.4.8 can not be empty, if 2.4.7 answer is Yes</value>
+  </data>
+  <data name="Error_Revenue_Model" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.4 Revenue Model / Revenue Plan.</value>
+  </data>
+  <data name="Error_Target_Market" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.2 Target Market / Clients and Market Potential.</value>
+  </data>
+  <data name="Error_videourl_validation" xml:space="preserve">
+    <value>Invalid Video Clip Url</value>
+  </data>
+  <data name="Error_Video_link_url" xml:space="preserve">
+    <value>Please fill in valid hyperlink in 5.3 Video Clip.</value>
+  </data>
+  <data name="File_size" xml:space="preserve">
+    <value>File size is limited to 5MB</value>
+  </data>
+  <data name="File_type" xml:space="preserve">
+    <value>File type is limited to PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="File_type_presntation" xml:space="preserve">
+    <value>File type is limited to PDF, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="Finalsubmit_emalandpass" xml:space="preserve">
+    <value>Invalid Email and Password</value>
+  </data>
+  <data name="Funding_Amount" xml:space="preserve">
+    <value>Amount Received should be decimal number with 2 precision digits.</value>
+  </data>
+  <data name="Funding_Application_status" xml:space="preserve">
+    <value>Application status  max 255 characters allow.</value>
+  </data>
+  <data name="Funding_Date" xml:space="preserve">
+    <value>Please Fill Date in funding status</value>
+  </data>
+  <data name="Funding_Date_Empty" xml:space="preserve">
+    <value>Date in Funding cannot be empty</value>
+  </data>
+  <data name="Funding_Expenditure" xml:space="preserve">
+    <value>Expenditure Nature length should be less than 255 characters.</value>
+  </data>
+  <data name="Funding_MaximumAmount" xml:space="preserve">
+    <value>Maximum Amount should be  decimal number with 2 precision digits.</value>
+  </data>
+  <data name="Funding_Programme_name" xml:space="preserve">
+    <value>Programme Name  max 255 characters allow.</value>
+  </data>
+  <data name="Funding_status" xml:space="preserve">
+    <value>Funding Status length should be less than 255 characters.</value>
+  </data>
+  <data name="Instruction_0" xml:space="preserve">
+    <value>您需要:</value>
+  </data>
+  <data name="Instruction_1" xml:space="preserve">
+    <value>填写申请时，请遵守以下规则：</value>
+  </data>
+  <data name="Instruction_1_1" xml:space="preserve">
+    <value>除非另有规定，否则请使用&lt;mark&gt;英语&lt;/mark&gt; 填写申请;</value>
+  </data>
+  <data name="Instruction_1_2" xml:space="preserve">
+    <value>所有货币以 &lt;mark&gt;港元&lt;/mark&gt;填写;</value>
+  </data>
+  <data name="Instruction_1_3" xml:space="preserve">
+    <value>请使用&lt;mark&gt;繁体中文&lt;/mark&gt;填写中文信息;</value>
+  </data>
+  <data name="Instruction_1_4" xml:space="preserve">
+    <value>如资料不适用，请填上&lt;mark&gt;“NA”&lt;/mark&gt;;</value>
+  </data>
+  <data name="Instruction_2" xml:space="preserve">
+    <value>申请人必须于加速器计划开始日期前递交申请表格。未成功提交的申请将被视为无效。</value>
+  </data>
+  <data name="Instruction_3" xml:space="preserve">
+    <value>递交申请表格前，申请机构的董事／拥有人须详阅数码港加速器支援计划申请指南及注意事项。</value>
+  </data>
+  <data name="Instruction_4" xml:space="preserve">
+    <value>本申请表之部份内容已预载申请人先前提交之公司简介；申请人必须就数码港加速器支援计划的申请提供最新的资料；如有需要，申请人亦可更新已预载的资料或提供额外资料。</value>
+  </data>
+  <data name="Instruction_4_1" xml:space="preserve">
+    <value>Please prepare and upload the requested supporting documents in Section 5 including, but not limited, to the following: &lt;br&gt;&lt;br&gt;                         
+&lt;ul&gt;
+  &lt;li&gt;Company documents (e.g. Business Registration, Certificate of Incorporation, etc.) (if applicable)&lt;/li&gt;
+  &lt;li&gt;Other supplementary information such as Corporate Structure / Organisation Chart, Curriculum Vitae of team members, pictures, diagrams and business proposal, etc. for illustration of your project idea (if any)&lt;/li&gt;
+  
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Instruction_5" xml:space="preserve">
+    <value>如有任何查询，请电邮至 &lt;a href="mailto:casp@cyberport.hk"&gt;casp@cyberport.hk&lt;/a&gt;</value>
+  </data>
+  <data name="Instruction_6" xml:space="preserve">
+    <value>Remarks: This application form has been translated into Chinese for reference only. In case of discrepancy, the English version shall prevail.</value>
+  </data>
+  <data name="Instruction_7" xml:space="preserve">
+    <value>Hong Kong Cyberport Management Company Limited</value>
+  </data>
+  <data name="Instruction_8" xml:space="preserve">
+    <value>Hong Kong Cyberport Management Company Limited</value>
+  </data>
+  <data name="intruction_you_are" xml:space="preserve">
+    <value>您需要：</value>
+  </data>
+  <data name="Objective_Error" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.1 Objective.</value>
+  </data>
+  <data name="OtherAttachment" xml:space="preserve">
+    <value>Other Attachment</value>
+  </data>
+  <data name="PresentationSlide" xml:space="preserve">
+    <value>Presentation Slide</value>
+  </data>
+  <data name="Releventdata_error" xml:space="preserve">
+    <value>Could not found the relevent data.</value>
+  </data>
+  <data name="Step_1_1" xml:space="preserve">
+    <value>公司/计划资料</value>
+  </data>
+  <data name="Step_1_2" xml:space="preserve">
+    <value>公司注册地址</value>
+  </data>
+  <data name="Step_1_3" xml:space="preserve">
+    <value>摘要</value>
+  </data>
+  <data name="Step_1_3_Abstractsub" xml:space="preserve">
+    <value>(公司的长远目标，使命和定位的摘要)</value>
+  </data>
+  <data name="Step_1_4" xml:space="preserve">
+    <value>公司股权，组织结构图</value>
+  </data>
+  <data name="Step_1_4_1" xml:space="preserve">
+    <value>公司股權，組織結構圖</value>
+  </data>
+  <data name="Step_1_4_11" xml:space="preserve">
+    <value>司股权结构</value>
+  </data>
+  <data name="Step_1_4_2" xml:space="preserve">
+    <value>公司组织结构图</value>
+  </data>
+  <data name="step_1_dropdown" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Step_1_Profile" xml:space="preserve">
+    <value>公司/计划资料</value>
+  </data>
+  <data name="Step_1_5" xml:space="preserve">
+    <value>公司核心成员</value>
+  </data>
+  <data name="Step_1_5_1" xml:space="preserve">
+    <value>核心成员简介</value>
+  </data>
+  <data name="Step_1_5_1_Name" xml:space="preserve">
+    <value>姓名</value>
+  </data>
+  <data name="Step_1_5_1_Titles" xml:space="preserve">
+    <value>职务 / 职称</value>
+  </data>
+  <data name="Step_1_5_1_CoreMember" xml:space="preserve">
+    <value>简介 (学历和专业资格，工作经验和特殊成就)</value>
+  </data>
+  <data name="Step_1_6" xml:space="preserve">
+    <value>资助状况</value>
+  </data>
+  <data name="Step_1_6_Background" xml:space="preserve">
+    <value>(详细列出(i)申请人(或由其成立的公司)在未来18 个月内或在过去的18 个月内，所有已获得或将获得或有权获得的所有任何公营及/ 或私人机构/计划资助和资金;(ii)这些资助来源所覆盖/将覆盖的支出性质;及(iii)由这些资助来源获得/将获得的金额及最高可获金额</value>
+  </data>
+  <data name="Step_1_7" xml:space="preserve">
+    <value>其他资料 &lt;small&gt; (如适用) &lt;/small&gt;</value>
+  </data>
+  <data name="Step_2" xml:space="preserve">
+    <value>加速器计划名称</value>
+  </data>
+  <data name="Step_2_1_ProgrammeEndorsed" xml:space="preserve">
+    <value>数码港认可的加速器计划 &lt;small&gt;(可参考数码港认可的加速器计划名单)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_1" xml:space="preserve">
+    <value>加速器计划名称</value>
+  </data>
+  <data name="Step_2_1_ProgrammeNotEndorsed" xml:space="preserve">
+    <value>加速器计划开始日期</value>
+  </data>
+  <data name="Step_2_3_1" xml:space="preserve">
+    <value>加速器背景(大约300字)</value>
+  </data>
+  <data name="Step_2_2" xml:space="preserve">
+    <value>加速器计划录取证明文件</value>
+  </data>
+  <data name="Step_2_3" xml:space="preserve">
+    <value>加速器资料</value>
+  </data>
+  <data name="Step_2_3_3" xml:space="preserve">
+    <value>入选初创企业筹募资金的能力 (例如 毕业生募集资金纪录/成绩)</value>
+  </data>
+  <data name="Step_2_3_4" xml:space="preserve">
+    <value>毕业生初创企业网络</value>
+  </data>
+  <data name="Step_2_3_5" xml:space="preserve">
+    <value>加速器在风险投资上的信誉</value>
+  </data>
+  <data name="Step_2_3_6" xml:space="preserve">
+    <value>加速器网址</value>
+  </data>
+  <data name="Step_3" xml:space="preserve">
+    <value>联络资料</value>
+  </data>
+  <data name="Step_3_1" xml:space="preserve">
+    <value>联络人</value>
+  </data>
+  <data name="Step_3_1_Salutation" xml:space="preserve">
+    <value>称呼</value>
+  </data>
+  <data name="Step_3_1_lastname" xml:space="preserve">
+    <value>姓</value>
+  </data>
+  <data name="Step_3_1_Firstname" xml:space="preserve">
+    <value>名</value>
+  </data>
+  <data name="Step_3_1_Position" xml:space="preserve">
+    <value>职位</value>
+  </data>
+  <data name="Step_3_1_Contact" xml:space="preserve">
+    <value>联络电话</value>
+  </data>
+  <data name="Step_3_1_Email" xml:space="preserve">
+    <value>电邮</value>
+  </data>
+  <data name="Step_3_1_mailingAdd" xml:space="preserve">
+    <value>邮寄地址</value>
+  </data>
+  <data name="Step_3_Academic_and_Professionals" xml:space="preserve">
+    <value>Core Member's Profile&lt;i&gt;(Academic and Professional Qualifications,Working Experiences and Special achievements)&lt;/i&gt;</value>
+  </data>
+  <data name="Step_3_Comapny_ownership_sub1" xml:space="preserve">
+    <value>Company Ownership and Organisation Chart</value>
+  </data>
+  <data name="Step_3_Comapny_ownership_sub2" xml:space="preserve">
+    <value>Company Ownership Structure</value>
+  </data>
+  <data name="Step_3_Company_Core_Members" xml:space="preserve">
+    <value>Company Core Members and Major Partners</value>
+  </data>
+  <data name="Step_3_Company_ownership" xml:space="preserve">
+    <value>COMPANY OWNERSHIP, ORGANIZATION CHART, CORE MEMBERS, PARTNERS AND FINANCIAL INFORMATION</value>
+  </data>
+  <data name="CASP_ApplicationHeader" xml:space="preserve">
+    <value>数码港加速器支援计划</value>
+  </data>
+  <data name="Step_2_CommencementDate" xml:space="preserve">
+    <value>加速器计划开始日期</value>
+  </data>
+  <data name="Step_4" xml:space="preserve">
+    <value>声明</value>
+  </data>
+  <data name="Step_4_1" xml:space="preserve">
+    <value>主要申请人姓名</value>
+  </data>
+  <data name="Step_4_2" xml:space="preserve">
+    <value>主要申请人职位</value>
+  </data>
+  <data name="Step_4_Declaration1" xml:space="preserve">
+    <value>申请人没有参加其他公营及/或私人机构资助计划</value>
+  </data>
+  <data name="Step_4_Declaration2" xml:space="preserve">
+    <value>申请人已根据数码港加速器计划之“申请指南及注意事项”对其资助状况提供充分和真确的资料</value>
+  </data>
+  <data name="Step_4_Declaration3" xml:space="preserve">
+    <value>所有申请表格及附上之文件内容均属实，无误导成分，并反映提交申请表格日期之事态。如有任何资料更改，申请人必会即时通知数码港。</value>
+  </data>
+  <data name="Step_4_Declaration4" xml:space="preserve">
+    <value>申请人同意数码港之有关职员可查阅已收取之资料以作申请手续之用途，并同意于日后提供进一步资料。</value>
+  </data>
+  <data name="Step_4_Declaration5" xml:space="preserve">
+    <value>所有申请表格及附上之文件内容均属实，无误导成分，并反映提交申请表格日期之事态。如有任何资料更改，申请人必会即时通知数码港。</value>
+  </data>
+  <data name="Step_4_Declaration6" xml:space="preserve">
+    <value>开发，发展及使用该项目及将作为该项目一部份而开发的产品及/或服务不会侵犯他人的权利或知识产权（不论有否注册），包括但不限于专利，商标及版权。</value>
+  </data>
+  <data name="Step_4_Declaration7" xml:space="preserve">
+    <value>申请人为本申请项目（「该项目」）的原创者，而该项目为原创的项目。据本申请人所知，该项目及将作为该项目一部份而开发的产品及/或服务并不是他人发展中或已完成的项目，产品及/或服务。</value>
+  </data>
+  <data name="Step_4_declarationcheckbox" xml:space="preserve">
+    <value>申请人透过勾选此格确认同意及遵守以下细则:</value>
+  </data>
+  <data name="Step_2_ProgrammeDuration" xml:space="preserve">
+    <value>加速器计划时期 (例如: 三个月/六个月) *除非另有注明, 数码港加速器支援计划之时期将与加速器计划时期一致)</value>
+  </data>
+  <data name="Step_1_6_amount" xml:space="preserve">
+    <value>获得/将获得的金额</value>
+  </data>
+  <data name="Step_1_6_ApplicationStatus" xml:space="preserve">
+    <value>申请状况</value>
+  </data>
+  <data name="Step_1_6_Currency" xml:space="preserve">
+    <value>货币</value>
+  </data>
+  <data name="Step_1_6_Date" xml:space="preserve">
+    <value>日期</value>
+  </data>
+  <data name="Step_1_6_Expenditure" xml:space="preserve">
+    <value>支出性质</value>
+  </data>
+  <data name="Step_1_6_FundingStatus" xml:space="preserve">
+    <value>资助状况</value>
+  </data>
+  <data name="Step_1_6_maximumAmount" xml:space="preserve">
+    <value>最高可获金额</value>
+  </data>
+  <data name="Step_1_6_Programme" xml:space="preserve">
+    <value>计划名称</value>
+  </data>
+  <data name="Step_3_1_Principal_Applicant" xml:space="preserve">
+    <value>(主要申请人)</value>
+  </data>
+  <data name="Error_Accelerator_Admission_RecordFile" xml:space="preserve">
+    <value>Please fill in the required field: 2.2 Accelerator Programme Admission Record</value>
+  </data>
+  <data name="Error_Accelerator_Name" xml:space="preserve">
+    <value>Please fill in the required field: 2.1 Name of accelerator programme admitted to</value>
+  </data>
+  <data name="Error_Commencement_Date" xml:space="preserve">
+    <value>Please fill in the required field: 2.1 Commencement Date</value>
+  </data>
+  <data name="Error_Company_Registered_Address" xml:space="preserve">
+    <value>Please fill in the required field: 1.2 Company Registered Address</value>
+  </data>
+  <data name="Error_Duration" xml:space="preserve">
+    <value>Please fill in the required field: 2.1 Programme Duration (No. of
+Months)</value>
+  </data>
+  <data name="Error_Endorsed_by_Cyberport" xml:space="preserve">
+    <value>Please fill in the required field: 2.1 Programme Endorsed</value>
+  </data>
+  <data name="Error_Fund_Raising_Capabilities" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.3 Fund raising capabilities of admitted start-ups</value>
+  </data>
+  <data name="Error_Offerings_To_Admitted" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.2 Offerings to admitted start-ups</value>
+  </data>
+  <data name="Error_Reputation" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.5 Reputation with VCs</value>
+  </data>
+  <data name="Error_Size_of_Alumni" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.4 Size of alumni network</value>
+  </data>
+  <data name="Error_Website" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.6 Website</value>
+  </data>
+  <data name="Step_4_Contact_Home" xml:space="preserve">
+    <value>联络电话</value>
+  </data>
+  <data name="Contact_ContactNo_Required" xml:space="preserve">
+    <value>必须填写联络电话</value>
+  </data>
+  <data name="Contact_Email_Required" xml:space="preserve">
+    <value>必须填写电邮地址</value>
+  </data>
+  <data name="Contact_Mailing_Address_Required" xml:space="preserve">
+    <value>必须填写电邮地址</value>
+  </data>
+  <data name="Contact_Position_Required" xml:space="preserve">
+    <value>Position Required</value>
+  </data>
+  <data name="Submission_popup" xml:space="preserve">
+    <value>To submit yourr CASP Application</value>
+  </data>
+  <data name="Submission_popup_password" xml:space="preserve">
+    <value>Please input your login email and password for confirmation.</value>
+  </data>
+  <data name="Step_1_1_Category" xml:space="preserve">
+    <value>分类</value>
+  </data>
+  <data name="Step_1_1_Period" xml:space="preserve">
+    <value>时间</value>
+  </data>
+  <data name="AppStatus_Declined" xml:space="preserve">
+    <value>申请被拒</value>
+  </data>
+  <data name="AppStatus_Pending" xml:space="preserve">
+    <value>正等待结果</value>
+  </data>
+  <data name="AppStatus_Success" xml:space="preserve">
+    <value>申请成功</value>
+  </data>
+  <data name="FundStatus_Declined" xml:space="preserve">
+    <value>被拒绝</value>
+  </data>
+  <data name="FundStatus_Pending" xml:space="preserve">
+    <value>正在处理中</value>
+  </data>
+  <data name="FundStatus_Received" xml:space="preserve">
+    <value>已接收</value>
+  </data>
+  <data name="Step_1_fundingadd" xml:space="preserve">
+    <value>请点击“+”并输入每个基金/补助金的相关资料。</value>
+  </data>
+  <data name="Step_1_memberadd" xml:space="preserve">
+    <value>请单击“+”并输入每个核心成员的相关资料。</value>
+  </data>
+  <data name="Step_2_3_2" xml:space="preserve">
+    <value>对入选初创企业的支援</value>
+  </data>
+  <data name="Step_3_contactadd" xml:space="preserve">
+    <value>请单击“+”并输入每个联系人的相关信息。</value>
+  </data>
+  <data name="Step_2_ProgrammeDurationUnit" xml:space="preserve">
+    <value>(月)</value>
+  </data>
+  <data name="Error_Website_Format" xml:space="preserve">
+    <value>2.3.6 Website URL is not in correct format</value>
+  </data>
+</root>

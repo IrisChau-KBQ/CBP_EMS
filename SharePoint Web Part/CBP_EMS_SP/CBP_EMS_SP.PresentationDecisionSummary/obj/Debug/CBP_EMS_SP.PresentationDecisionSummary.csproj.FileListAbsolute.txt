@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationDecisionSummary\bin\Debug\CBP_EMS_SP.PresentationDecisionSummary.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationDecisionSummary\bin\Debug\CBP_EMS_SP.PresentationDecisionSummary.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationDecisionSummary\obj\Debug\CBP_EMS_SP.PresentationDecisionSummary.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationDecisionSummary\obj\Debug\CBP_EMS_SP.PresentationDecisionSummary.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationDecisionSummary\obj\Debug\CBP_EMS_SP.PresentationDecisionSummary.pdb

@@ -1,0 +1,7 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\bin\Debug\CBP_EMS_SP.CASPApplicationForm.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\bin\Debug\CBP_EMS_SP.CASPApplicationForm.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\bin\Debug\CBP_EMS_SP.CASPApplicationForm.dll.CodeAnalysisLog.xml
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\bin\Debug\CBP_EMS_SP.CASPApplicationForm.dll.lastcodeanalysissucceeded
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\obj\Debug\CBP_EMS_SP.CASPApplicationForm.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\obj\Debug\CBP_EMS_SP.CASPApplicationForm.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CASPApplicationForm\obj\Debug\CBP_EMS_SP.CASPApplicationForm.pdb

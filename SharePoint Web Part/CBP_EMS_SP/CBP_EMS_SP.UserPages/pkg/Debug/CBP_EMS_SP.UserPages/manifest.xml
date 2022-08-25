@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="d84cdc0a-45b3-4727-a056-e166e1cbdf6a" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="CBP_EMS_SP.IncubationFormsWebPart.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.UserPages.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Layouts\CBP_EMS_SP_UserPages\EMS-Public.master" />
+    <TemplateFile Location="Layouts\CBP_EMS_SP_UserPages\UserHome.aspx" />
+  </TemplateFiles>
+</Solution>

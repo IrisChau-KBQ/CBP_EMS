@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{379FA992-57CD-4924-BC59-91230B655E59}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CBP_EMS_SP.PublicUserControls</RootNamespace>
+    <AssemblyName>CBP_EMS_SP.PublicUserControls</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <AssemblyDeploymentTarget>WebApplication</AssemblyDeploymentTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.11.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.11\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files\AppFabric 1.1 for Windows Server\Microsoft.ApplicationServer.Caching.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ApplicationServer.Caching.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.SharePoint.IdentityModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\Windows\Microsoft.NET\assembly\GAC_MSIL\Microsoft.SharePoint.IdentityModel\v4.0_15.0.0.0__71e9bce111e9429c\Microsoft.SharePoint.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Spire.Barcode, Version=2.3.0.16040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.Barcode.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.DataExport, Version=3.5.131.4040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.DataExport.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.DataExport.ResourceMgr, Version=1.6.71.4040, Culture=neutral, PublicKeyToken=4bc1500157862925, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.DataExport.ResourceMgr.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Doc, Version=6.5.6.4040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.Doc.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.DocViewer.Forms, Version=3.4.1.14040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.DocViewer.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.License, Version=1.3.6.40, Culture=neutral, PublicKeyToken=b1144360237c8b3f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.License.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Pdf, Version=4.5.1.2040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.Pdf.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.PdfViewer.Forms, Version=3.4.1.14340, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.PdfViewer.Forms.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.Presentation, Version=3.5.1.9040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.Presentation.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Spire.XLS, Version=8.5.0.6040, Culture=neutral, PublicKeyToken=663f351905198cb3, processorArchitecture=MSIL">
+      <HintPath>..\packages\FreeSpire.Office.3.0\lib\net40\Spire.XLS.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChangePassword\ChangePassword.ascx.cs">
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePassword\ChangePassword.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ChangePassword.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FooterWebPart\FooterWebPart.ascx.cs">
+      <DependentUpon>FooterWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="FooterWebPart\FooterWebPart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FooterWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="HeaderWebPart\HeaderWebPart.ascx.cs">
+      <DependentUpon>HeaderWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="HeaderWebPart\HeaderWebPart.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HeaderWebPart.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="InternalUserApplications\InternalUserApplications.ascx.cs">
+      <DependentUpon>InternalUserApplications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="InternalUserApplications\InternalUserApplications.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>InternalUserApplications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyApplications\MyApplications.ascx.cs">
+      <DependentUpon>MyApplications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="MyApplications\MyApplications.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MyApplications.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgrammeManagement\ProgrammeManagement.ascx.cs">
+      <DependentUpon>ProgrammeManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="ProgrammeManagement\ProgrammeManagement.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProgrammeManagement.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserLeftSidebar\UserLeftSidebar.ascx.cs">
+      <DependentUpon>UserLeftSidebar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="UserLeftSidebar\UserLeftSidebar.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>UserLeftSidebar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="VettingTeam\VettingTeam.ascx.cs">
+      <DependentUpon>VettingTeam.ascx</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="VettingTeam\VettingTeam.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VettingTeam.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ChangePassword\ChangePassword.webpart" />
+    <None Include="ChangePassword\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9014b283-27be-42ac-b775-6b8959bfff38}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Feature1\Feature1.feature">
+      <FeatureId>{682e3741-fba1-4b86-ae8f-fc5a0af2d2c8}</FeatureId>
+    </None>
+    <None Include="FooterWebPart\FooterWebPart.webpart" />
+    <None Include="FooterWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60a85516-94ac-4727-8456-66f9e0a9d21e}</SharePointProjectItemId>
+    </None>
+    <None Include="HeaderWebPart\HeaderWebPart.webpart" />
+    <None Include="HeaderWebPart\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{8d3feca5-8436-495c-a936-333500b5b147}</SharePointProjectItemId>
+    </None>
+    <None Include="InternalUserApplications\InternalUserApplications.webpart" />
+    <None Include="InternalUserApplications\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{15e3272a-36f1-4fac-818f-1ee45abb74f2}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="MyApplications\MyApplications.webpart" />
+    <None Include="MyApplications\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4f190f45-5ff5-44da-b771-6b44ed89222e}</SharePointProjectItemId>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{9ee5b449-0be2-4442-9d50-ab34a08f2755}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="ProgrammeManagement\ProgrammeManagement.webpart" />
+    <None Include="ProgrammeManagement\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ef1cb2dc-ad3d-40ec-b97e-aaf752ac60b6}</SharePointProjectItemId>
+    </None>
+    <None Include="UserLeftSidebar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{589df7fc-925e-4fd1-90f6-d2224347fcd9}</SharePointProjectItemId>
+    </None>
+    <None Include="UserLeftSidebar\UserLeftSidebar.webpart" />
+    <None Include="VettingTeam\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e1635576-84e0-41eb-94fd-cf857607b5c6}</SharePointProjectItemId>
+    </None>
+    <None Include="VettingTeam\VettingTeam.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj">
+      <Project>{214aabe5-f9aa-441e-9a74-f7f2da04592d}</Project>
+      <Name>CBP_EMS_SP.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CBP_EMS_SP.Common.csproj">
+      <Project>{3c2dec95-02ac-488b-a3d3-6ffa609d3b32}</Project>
+      <Name>CBP_EMS_SP.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ChangePassword\ChangePassword.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ChangePassword.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="ChangePassword\Elements.xml" />
+    <Content Include="Features\Feature1\Feature1.Template.xml">
+      <DependentUpon>Feature1.feature</DependentUpon>
+    </Content>
+    <Content Include="FooterWebPart\Elements.xml" />
+    <Content Include="FooterWebPart\FooterWebPart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>FooterWebPart.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="HeaderWebPart\Elements.xml" />
+    <Content Include="HeaderWebPart\HeaderWebPart.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>HeaderWebPart.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="InternalUserApplications\Elements.xml" />
+    <Content Include="InternalUserApplications\InternalUserApplications.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>InternalUserApplications.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="MyApplications\Elements.xml" />
+    <Content Include="MyApplications\MyApplications.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MyApplications.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="ProgrammeManagement\Elements.xml" />
+    <Content Include="ProgrammeManagement\ProgrammeManagement.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ProgrammeManagement.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="UserLeftSidebar\Elements.xml" />
+    <Content Include="UserLeftSidebar\UserLeftSidebar.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>UserLeftSidebar.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="VettingTeam\Elements.xml" />
+    <Content Include="VettingTeam\VettingTeam.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>VettingTeam.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

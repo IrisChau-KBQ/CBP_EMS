@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="9ee5b449-0be2-4442-9d50-ab34a08f2755" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="EntityFramework.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="EntityFramework.SqlServer.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Data.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="itextsharp.dll" DeploymentTarget="WebApplication" />
+    <Assembly Location="CBP_EMS_SP.PublicUserControls.dll" DeploymentTarget="WebApplication">
+      <SafeControls>
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.HeaderWebPart" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.FooterWebPart" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.UserLeftSidebar" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.MyApplications" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.ProgrammeManagement" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.InternalUserApplications" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.VettingTeam" TypeName="*" />
+        <SafeControl Assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" Namespace="CBP_EMS_SP.PublicUserControls.ChangePassword" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="CBP_EMS_SP.UserControls_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

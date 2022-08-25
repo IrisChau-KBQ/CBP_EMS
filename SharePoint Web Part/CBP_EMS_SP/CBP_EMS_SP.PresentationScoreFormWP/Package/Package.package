@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9d41aa51-c6d2-414b-b0d8-0e06b1e67c5a" solutionId="9d41aa51-c6d2-414b-b0d8-0e06b1e67c5a" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.PresentationScoreFormWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="d1cfefcb-1818-487e-a41f-f9e4d621af4b" />
+  </features>
+</package>

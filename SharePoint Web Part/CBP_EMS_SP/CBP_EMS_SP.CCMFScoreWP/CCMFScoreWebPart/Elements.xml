@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CCMFScoreWebPart" List="113" Url="_catalogs/wp">
+    <File Path="CCMFScoreWebPart\CCMFScoreWebPark.webpart" Url="CBP_EMS_SP.CCMFScoreWP_CCMFScoreWebPark.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

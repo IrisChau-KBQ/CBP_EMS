@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="9a863f82-37d9-4595-8022-f2b4770c2be7" solutionId="9a863f82-37d9-4595-8022-f2b4770c2be7" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.ECResultWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="00f66d2b-7a66-4642-8c13-854c3206b66d" />
+  </features>
+</package>

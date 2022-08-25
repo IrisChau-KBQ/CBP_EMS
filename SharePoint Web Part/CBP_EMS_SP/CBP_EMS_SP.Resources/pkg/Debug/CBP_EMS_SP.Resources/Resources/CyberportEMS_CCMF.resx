@@ -1,0 +1,1284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CCMF_Comp_1_A" xml:space="preserve">
+    <value>Are you presently a registered company limited by shares (or in progress of incorporation) under the Companies Ordinance in HKSAR upon application deadline?&lt;br/&gt;(Please upload your Certificate of Incorporation (CI) or receipt of application and business registration under Section 6.1.)</value>
+  </data>
+  <data name="CCMF_Comp_1_B" xml:space="preserve">
+    <value>If not, do you agree to set up a company registered as a legal entity and incorporated in Hong Kong upon admission to the Cyberport Creative Micro fund?</value>
+  </data>
+  <data name="CCMF_IndComp_2_A" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below between the ages of 18 and 30 upon the application deadline?</value>
+  </data>
+  <data name="CCMF_IndComp_2_B" xml:space="preserve">
+    <value>Does your project management team listed in Section 4.1 (a) below consist of 50% of Hong Kong permanent resident(s)?</value>
+  </data>
+  <data name="CCMF_IndComp_2_C" xml:space="preserve">
+    <value>Are all the Hong Kong project management team members listed in Section 4.1 below currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Hong Kong?</value>
+  </data>
+  <data name="CCMF_IndComp_2_D" xml:space="preserve">
+    <value>Are all the Shenzhen/Guangdong project management team members listed in Section 4.1 below currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Shenzhen/Guangdong respectively?</value>
+  </data>
+  <data name="CCMF_IndComp_2_E" xml:space="preserve">
+    <value>Is your project rooted in digital tech related areas?</value>
+  </data>
+  <data name="CCMF_IndComp_2_F" xml:space="preserve">
+    <value>Have your proposed project or your other similar digital tech project(s) applied for or received any grant or funding from any publicly and/or privately funded organizations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CCMF_IndComp_2_G" xml:space="preserve">
+    <value>Is your proposed project or your other similar digital tech projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and/or privately-funded organizations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CCMF_IndComp_2_H" xml:space="preserve">
+    <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CCMF_IndComp_2_I" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.2.1 (h) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="CCMF_IndComp_2_J" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 4.10 below.  Also, please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="CCMF_Ind_1_A" xml:space="preserve">
+    <value>Does the Hong Kong Team Leader listed in Section 4.1 below a Hong Kong Permanent ID Card holder?</value>
+  </data>
+  <data name="Company_Applicant" xml:space="preserve">
+    <value>Company Applicant</value>
+  </data>
+  <data name="Company_Application" xml:space="preserve">
+    <value>Company Application</value>
+  </data>
+  <data name="Cross_Border_Programme_Supported_by_CCMF" xml:space="preserve">
+    <value>Cross-Border Programme(s) Supported by CCMF</value>
+  </data>
+  <data name="Cyberport_Guangdong__Hong_Kong_Young_Entrepreneur_Programme" xml:space="preserve">
+    <value>-Cyberport Guangdong- Hong Kong Young Entrepreneur Programme</value>
+  </data>
+  <data name="Cyberport_Shenzhen_Hong_Kong_Young_Entrepreneur_Programme" xml:space="preserve">
+    <value>-Cyberport Shenzhen - Hong Kong Young Entrepreneur Programme</value>
+  </data>
+  <data name="HKP_Pro_Stream_Comp_1_A" xml:space="preserve">
+    <value>Are you presently a registered company limited by shares (or in progress of incorporation) under the Companies Ordinance in HKSAR upon application deadline?&lt;br/&gt;(Please upload your Certificate of Incorporation (CI) or receipt of application and business registration under Section 6.1.)</value>
+  </data>
+  <data name="HKP_Pro_Stream_Comp_1_B" xml:space="preserve">
+    <value>If not, do you agree to set up a company registered as a legal entity and incorporated in Hong Kong upon admission to the Cyberport Creative Micro fund?</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_A" xml:space="preserve">
+    <value>Is your project rooted in digital tech related areas?</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_B" xml:space="preserve">
+    <value>Have you and your core team members, proposed project or your other similar digital tech project(s) or other tech related projects applied for or received any grant or funding from any publicly and/or privately funded organisations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_C" xml:space="preserve">
+    <value>Have you and your core team members, your proposed project or your other similar digital tech projects or other tech related projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and/or privately-funded organisations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_D" xml:space="preserve">
+    <value>Have you and your project team members, your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_E" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.1.1 (d) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.&lt;/br&gt;&lt;/br&gt;Remark: If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_F" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest? If “Yes”, please provide details in Section 4.10 below.</value>
+  </data>
+  <data name="HKP_Pro_Stream_Ind_1_A" xml:space="preserve">
+    <value>Are you at or above 18 years old?</value>
+    <comment>Are you and all of your project management team members listed in Section 4.1 below between the ages of 18 to 30 upon the application deadline?</comment>
+  </data>
+  <data name="HKP_Pro_Stream_Ind_1_B" xml:space="preserve">
+    <value>Are you a Hong Kong ID Card holder(s)?</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_1_A" xml:space="preserve">
+    <value>Are you presently a registered company limited by shares (or in progress of incorporation) under the Companies Ordinance in HKSAR upon application deadline?&lt;br/&gt;(Please upload your Certificate of Incorporation (CI) or receipt of application and business registration under Section 6.1.)</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_1_B" xml:space="preserve">
+    <value>If not, do you agree to set up a company registered as a legal entity and incorporated in Hong Kong upon admission to the Cyberport Creative Micro fund?</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_A" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) between the ages of 18 and 30 upon the application deadline?</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_B" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Hong Kong?</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_C" xml:space="preserve">
+    <value>Is your project rooted in digital tech related areas?</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_D" xml:space="preserve">
+    <value>Have you and the core team members, your proposed project or your other similar digital tech project(s) or other tech related projects applied for or received any grant or funding from any publicly and/or privately funded organisations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_E" xml:space="preserve">
+    <value>Have you and the core team members, your proposed project or your other similar digital tech projects or other tech related projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and/or privately-funded organisations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_F" xml:space="preserve">
+    <value>Have you and the core team members, your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_G" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.1.2 (d) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_H" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest? If “Yes”, please provide details in Section 4.10 below</value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_1_A" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 below between the ages of 18 to 30 upon the application deadline?</value>
+  </data>
+  <data name="Hong_Kong_Programme" xml:space="preserve">
+    <value>Cyberport Creative Micro Fund</value>
+  </data>
+  <data name="Hong_Kong_Young_Entrepreneur_Programme" xml:space="preserve">
+    <value>CCMF Hong Kong Young Entrepreneur Programme</value>
+  </data>
+  <data name="Individual_and_Company_Applicant" xml:space="preserve">
+    <value>Individual and Company Applicant</value>
+  </data>
+  <data name="Individual_Applicant" xml:space="preserve">
+    <value>Individual Applicant</value>
+  </data>
+  <data name="Individual_Application" xml:space="preserve">
+    <value>Individual Application</value>
+  </data>
+  <data name="Instruction_1" xml:space="preserve">
+    <value>To observe the following requirements when filling in the application:</value>
+  </data>
+  <data name="Instruction_1_1" xml:space="preserve">
+    <value>Use &lt;mark&gt;English&lt;/mark&gt; to complete the application unless otherwise specified;</value>
+  </data>
+  <data name="Instruction_1_2" xml:space="preserve">
+    <value>Present all monetary figures in &lt;mark&gt;Hong Kong Dollar;&lt;/mark&gt;</value>
+  </data>
+  <data name="Instruction_1_3" xml:space="preserve">
+    <value>Use &lt;mark&gt;Traditional Chinese characters&lt;/mark&gt; for Chinese information;</value>
+  </data>
+  <data name="Instruction_1_4" xml:space="preserve">
+    <value>Put &lt;mark&gt;“NA”&lt;/mark&gt; where the information sought is not applicable or not available;</value>
+  </data>
+  <data name="Instruction_2" xml:space="preserve">
+    <value>To read the &lt;mark class="mark-2"&gt;&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt; CCMF Guides and Notes for the Applicants (ENC.RF.015a)&lt;/a&gt;&lt;/mark&gt; before filling in this Application Form, especially part 1, 2 and 3.</value>
+  </data>
+  <data name="Instruction_3" xml:space="preserve">
+    <value>The form must be completed by the applicant. If the applicant is a company, the form must be completed by the director or owner of the applicant organisation. Otherwise it will not be processed.</value>
+  </data>
+  <data name="Instruction_4" xml:space="preserve">
+    <value>&lt;mark class="mark-2"&gt;ONE email address for EACH CCMF Programme application&lt;/mark&gt;, and that email address would receive all the emails in respect of the submitted application.  If you have another project to apply for CCMF Programme, please use a separate email address for that application.  </value>
+  </data>
+  <data name="Instruction_4_1" xml:space="preserve">
+    <value>Please prepare and upload the requested supporting documents in Section 6 including, but not limited to, the following:&lt;br/&gt;&lt;br/&gt;
+&lt;ul&gt;
+ &lt;li&gt;Company documents (e.g. Business Registration, Certificate of Incorporation, Company Ownership document,etc.) (if applicable)&lt;/li&gt;
+  &lt;li&gt;Identity documents (e.g. copy of Hong Kong Identity Card, Passport, etc.) (if applicable))&lt;/li&gt;
+  &lt;li&gt;Other supplementary information such as Corporate Structure / Organisation Chart, Curriculum Vitae of team members, pictures, diagrams and business proposal, etc. for illustration of your project (if any) &lt;/li&gt;
+&lt;li&gt;You are recommended to prepare a 1-minute video clip/presentation file/slide show to illustrate your project. Kindly provide the link if there is any.
+&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Professional_Stream" xml:space="preserve">
+    <value>CCMF Professional Programme</value>
+  </data>
+  <data name="Step1_CCMF_Selection" xml:space="preserve">
+    <value>Please choose one of the types of CCMF below:</value>
+  </data>
+  <data name="Step1_Types_Of_CCMF" xml:space="preserve">
+    <value>TYPES OF CCMF</value>
+  </data>
+  <data name="Step2_Heading" xml:space="preserve">
+    <value>YOUR PROFILE AND ELIGIBILITY</value>
+  </data>
+  <data name="Hong_Kong_Young_Entrepreneur" xml:space="preserve">
+    <value>CCMF Hong Kong Young Entrepreneur Programme</value>
+  </data>
+  <data name="Instruction_5" xml:space="preserve">
+    <value>For enquiries, please email to &lt;mark class="mark-2"&gt;ccmf_enquiry@cyberport.hk&lt;/mark&gt;.</value>
+  </data>
+  <data name="Instruction_6" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Instruction_7" xml:space="preserve">
+    <value>Remarks: This application form has been translated into Chinese for reference only. In case of discrepancy, the English version shall prevail.</value>
+  </data>
+  <data name="Instruction_8" xml:space="preserve">
+    <value>Hong Kong Cyberport Management Company Limited</value>
+  </data>
+  <data name="Step3_Abstract" xml:space="preserve">
+    <value>Abstract</value>
+  </data>
+  <data name="Step3_Abstract_summary" xml:space="preserve">
+    <value>(A summary of your project’s vision, mission and positioning.)</value>
+  </data>
+  <data name="Step3_English" xml:space="preserve">
+    <value>English &lt;small&gt;(Within 300 words)&lt;/small&gt;</value>
+  </data>
+  <data name="Step3_PROJECT_INFORMATION" xml:space="preserve">
+    <value>PROJECT INFORMATION</value>
+  </data>
+  <data name="Step3_Project_Name" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="Ste3_BusinessAreasub" xml:space="preserve">
+    <value>(Please choose one closest to your nature)</value>
+  </data>
+  <data name="Step3_AnticipatedDate" xml:space="preserve">
+    <value>Anticipated Commencement and Completion Date</value>
+  </data>
+  <data name="Step3_AppDesign" xml:space="preserve">
+    <value>Application Development</value>
+  </data>
+  <data name="Step3_Blockchain" xml:space="preserve">
+    <value>Blockchain</value>
+  </data>
+  <data name="Step3_Cybersecurity" xml:space="preserve">
+    <value>Cybersecurity</value>
+  </data>
+  <data name="Step3_BusinessArea" xml:space="preserve">
+    <value>Business Area</value>
+  </data>
+  <data name="Step3_Chinese" xml:space="preserve">
+    <value>Chinese &lt;small&gt;(Within 500 words)&lt;/small&gt;</value>
+  </data>
+  <data name="Step3_Complete_Date" xml:space="preserve">
+    <value>Completion Date</value>
+  </data>
+  <data name="Step3_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Step3_day_month_year" xml:space="preserve">
+    <value>(day-month-year)</value>
+  </data>
+  <data name="Step3_ECommerce" xml:space="preserve">
+    <value>RetailTech / E-commerce</value>
+  </data>
+  <data name="Step3_Edutech" xml:space="preserve">
+    <value>EdTech</value>
+  </data>
+  <data name="Step3_EnvironmenTech" xml:space="preserve">
+    <value>EnvironmenTech</value>
+  </data>
+  <data name="Step3_Fintech" xml:space="preserve">
+    <value>FinTech</value>
+  </data>
+  <data name="Step3_Gaming" xml:space="preserve">
+    <value>E-sports / Digital Entertainment</value>
+  </data>
+  <data name="Step3_Healthcare" xml:space="preserve">
+    <value>HealthTech</value>
+  </data>
+  <data name="Step3_MarTech" xml:space="preserve">
+    <value>MarTech</value>
+  </data>
+  <data name="Step3_OpenData" xml:space="preserve">
+    <value>AI / Big Data</value>
+  </data>
+  <data name="Step3_Social_Media" xml:space="preserve">
+    <value>Social Media</value>
+  </data>
+  <data name="Step3_Smart_Building" xml:space="preserve">
+    <value>Smart Building</value>
+  </data>
+  <data name="Step3_Smart_Mobility" xml:space="preserve">
+    <value>Smart Mobility</value>
+  </data>
+  <data name="Step3_Wearable" xml:space="preserve">
+    <value>Robotics / IoT</value>
+  </data>
+  <data name="Step3_Others" xml:space="preserve">
+    <value>Others (Please specify):</value>
+  </data>
+  <data name="Step_4_additional_information" xml:space="preserve">
+    <value>Additional Information &lt;small&gt;(If applicable)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_Amount_received" xml:space="preserve">
+    <value>Amount received/to be received</value>
+  </data>
+  <data name="Step_4_Applicatin_Information" xml:space="preserve">
+    <value>APPLICATION INFORMATION</value>
+  </data>
+  <data name="Step_4_Application_Status" xml:space="preserve">
+    <value>Application Status</value>
+  </data>
+  <data name="Step_4_Business_model" xml:space="preserve">
+    <value>Business Model &amp; Time to Market &lt;small&gt;(Vetting Weighting: 30%)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_Business_modelsub" xml:space="preserve">
+    <value>Effective communication and the qualities of vision, direction, short and long term objectives, market need for product, target market and marketing strategy, and realistic assessment of the Project viability.  In addition, a product launch within three months from grant disbursement will be encouraged.</value>
+  </data>
+  <data name="Step_4_competition" xml:space="preserve">
+    <value>Competition Analysis &lt;small&gt;(If applicable)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_Cost_Projections" xml:space="preserve">
+    <value>Cost Projections:</value>
+  </data>
+  <data name="Step_4_Cost_Projectionssub" xml:space="preserve">
+    <value>(Cost of development and on-going operations )</value>
+  </data>
+  <data name="Step_4_creativity" xml:space="preserve">
+    <value>Creativity and Innovation of the Proposed Project, Product and Service &lt;small&gt;(Vetting Weighting： 30%)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_creativitysub" xml:space="preserve">
+    <value>Factors such as the use of innovative technologies, creative solutions, disruptive technology capability, emerging, or breakthrough problem-solving technologies.</value>
+  </data>
+  <data name="Step_4_Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="Step_4_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Step_4_Exit_strategy" xml:space="preserve">
+    <value>Exit Strategy &lt;small&gt;(If applicable)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_expenditure" xml:space="preserve">
+    <value>Nature of expenditure covered</value>
+  </data>
+  <data name="Step_4_Funding_Status" xml:space="preserve">
+    <value>Funding Status</value>
+  </data>
+  <data name="Step_4_Funding_Statussub" xml:space="preserve">
+    <value>(List out in detail (i) all grants and funding received/to be received from other publicly and/or privately funded organizations/ programmes which the applicant (or companies established by he/she/it) has applied for, will receive or will be entitled to receive in the coming 18 months, or have received in the past 18 months; (ii) the nature of expenditure covered/to be covered by such funding sources; and (iii) the amount and the maximum amount received/to be received under such funding sources )&lt;br/&gt;&lt;br/&gt;Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.    Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants – Hong Kong Programme.&lt;/a&gt;</value>
+  </data>
+  <data name="Step_4_Maximum_amount" xml:space="preserve">
+    <value>Maximum amount to be received</value>
+  </data>
+  <data name="Step_4_Milestone" xml:space="preserve">
+    <value>Milestone</value>
+  </data>
+  <data name="Step_4_Month_1" xml:space="preserve">
+    <value>Months - 1</value>
+  </data>
+  <data name="Step_4_Month_2" xml:space="preserve">
+    <value>Months - 2</value>
+  </data>
+  <data name="Step_4_Month_3" xml:space="preserve">
+    <value>Months - 3</value>
+  </data>
+  <data name="Step_4_Month_4" xml:space="preserve">
+    <value>Months - 4</value>
+  </data>
+  <data name="Step_4_Month_5" xml:space="preserve">
+    <value>Months - 5</value>
+  </data>
+  <data name="Step_4_Month_6" xml:space="preserve">
+    <value>Months - 6</value>
+  </data>
+  <data name="Step_4_Name_of_Programme" xml:space="preserve">
+    <value>Name of Programme</value>
+  </data>
+  <data name="Step_4_Projectmilestone" xml:space="preserve">
+    <value>6-Month Project Milestone</value>
+  </data>
+  <data name="Step_4_Projectmilestonesub" xml:space="preserve">
+    <value>(The Milestone proposed will form as a basis for continuous project review and evaluation if the Grant is awarded.. The Month-1 should be started from the following month of the CCMF application deadline (e.g., application deadline is 3 Dec 2018, Month-1 is counted as Jan 2019, Month-2 is Feb 2019 ……and so on) )</value>
+  </data>
+  <data name="Step_4_project_management" xml:space="preserve">
+    <value>Project Management Team &lt;small&gt;(Vetting Weighting: 30%)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_project_managementsub" xml:space="preserve">
+    <value>The ability of the project management team reflected from its prior track record, execution ability, good probability of launch to market, individual qualifications, and team job allocation.</value>
+  </data>
+  <data name="Step_4_socialresponsibility" xml:space="preserve">
+    <value>Social Responsibility &lt;small&gt;(Vetting Weighting: 10%)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_socialresponsibilitysub" xml:space="preserve">
+    <value>Preference will be given to projects that incorporate social responsibility objectives as a project focus (including contribution to open source, creative commons and other “progressive” technologies with a social focus), demonstration of ethical decision making, or contribution towards solving problems that originate from the social environment.</value>
+  </data>
+  <data name="Step_5_applicable" xml:space="preserve">
+    <value>(If applicable)</value>
+  </data>
+  <data name="Step_5_CONTACT_DETAILS" xml:space="preserve">
+    <value>CONTACT DETAILS</value>
+  </data>
+  <data name="Step_5_Contact_No" xml:space="preserve">
+    <value>Contact No.</value>
+  </data>
+  <data name="Step_5_Contact_Person" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="Step_5_dateofgrad" xml:space="preserve">
+    <value>Date of graduation (Month-Year)</value>
+  </data>
+  <data name="Step_5_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Step_5_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Step_5_First_Name" xml:space="preserve">
+    <value>First Name (Eng)</value>
+  </data>
+  <data name="Step_5_First_Name_Chi" xml:space="preserve">
+    <value>First Name (Chi)</value>
+  </data>
+  <data name="Step_5_Identity_Card_No" xml:space="preserve">
+    <value>Identity Card No.</value>
+  </data>
+  <data name="Step_5_Institutiuon" xml:space="preserve">
+    <value>Name of Education Institution (Eng)</value>
+  </data>
+  <data name="Step_5_Last_Name" xml:space="preserve">
+    <value>Last Name (Eng)</value>
+  </data>
+  <data name="Step_5_Last_Name_Chi" xml:space="preserve">
+    <value>Last Name (Chi)</value>
+  </data>
+  <data name="Step_5_Mailing_Address" xml:space="preserve">
+    <value>Mailing Address</value>
+  </data>
+  <data name="Step_5_Org_name" xml:space="preserve">
+    <value>Organisation Name (Eng)</value>
+  </data>
+  <data name="Step_5_Position" xml:space="preserve">
+    <value>Position:</value>
+  </data>
+  <data name="Step_5_Programme_Enrolled_Eng" xml:space="preserve">
+    <value>Programme Enrolled(Eng)</value>
+  </data>
+  <data name="Step_5_Salution" xml:space="preserve">
+    <value>Salutation</value>
+  </data>
+  <data name="Step_5_Student_idcard" xml:space="preserve">
+    <value>Student Identity Card No.</value>
+  </data>
+  <data name="Step_6_Full_Name" xml:space="preserve">
+    <value>Full Name of Principal Applicant</value>
+  </data>
+  <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
+    <value>Position Title of Principal Applicant</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>We acknowledge that HKCMCL has absolute discretion</value>
+  </data>
+  <data name="CUPP_heading" xml:space="preserve">
+    <value>Cyberport University Partnership Programme</value>
+  </data>
+  <data name="CUPP_IndComp_2_A" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) between the ages of 18 and 30 upon the application deadline?</value>
+  </data>
+  <data name="CUPP_IndComp_2_B" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Hong Kong?</value>
+  </data>
+  <data name="CUPP_IndComp_2_C" xml:space="preserve">
+    <value>Is your project rooted in digital tech related areas?</value>
+  </data>
+  <data name="CUPP_IndComp_2_D" xml:space="preserve">
+    <value>Have your proposed project or your other similar digital tech project(s) applied for or received any grant or funding from any publicly and/or privately funded organizations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CUPP_IndComp_2_E" xml:space="preserve">
+    <value>Is your proposed project or your other similar digital tech projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and/or privately-funded organizations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CUPP_IndComp_2_F" xml:space="preserve">
+    <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CUPP_IndComp_2_G" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.1.2 (i) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="CUPP_IndComp_2_H" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 4.10 below.  Also, please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="Cyberport_University_Partnership_Programme" xml:space="preserve">
+    <value>Cyberport University Partnership Programme</value>
+  </data>
+  <data name="step3_Commencement" xml:space="preserve">
+    <value>Commencement Date</value>
+  </data>
+  <data name="CyberportGuangdong__Hong_Kong_Young_Entrepreneur_Programme1" xml:space="preserve">
+    <value>Cyberport Guangdong- Hong Kong Young Entrepreneur Programme</value>
+  </data>
+  <data name="CyberportShenzhen_Hong_Kong_Young_Entrepreneur_Programme1" xml:space="preserve">
+    <value>Cyberport Shenzhen - Hong Kong Young Entrepreneur Programme</value>
+  </data>
+  <data name="Step_6_Access" xml:space="preserve">
+    <value>Access to and Correction of Your Data</value>
+  </data>
+  <data name="Step_6_Access_1" xml:space="preserve">
+    <value>You have the right to request access to, and correction of, Your Data held by us. We may charge a reasonable fee for administering and processing your data access request. If you need to check whether we hold Your Data or if you wish to have access to, correct any of Your Data which is inaccurate, please write via e-mail to our Data Protection Officer at &lt;span class="bold graylbl-2"&gt;dpo@cyberport.hk&lt;/span&gt; or via mail to Level 6, Cyberport 2, 100 Cyberport Road, Hong Kong.</value>
+  </data>
+  <data name="Step_6_Consideration" xml:space="preserve">
+    <value>In consideration of Hong Kong Cyberport Management Company Limited (“HKCMCL”) considering and processing our application for funding from CCMF, we confirm our agreement and undertake the following by checking this box</value>
+  </data>
+  <data name="Step_6_Consideration_1" xml:space="preserve">
+    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.O15) governing the application of the Cyberport Creative Micro Fund Scheme.</value>
+  </data>
+  <data name="Step_6_Consideration_2" xml:space="preserve">
+    <value>All information provided in this application as well as the accompanying information is true, not misleading in any manner and reflects the status of affairs as at the date of submission. I shall inform the Administration of the Cyberport Creative Micro Fund immediately if there are any changes to the above information.</value>
+  </data>
+  <data name="Step_6_Consideration_3" xml:space="preserve">
+    <value>We are the creators of our proposed project the details of which have been described in Section 3 of this CCMF Application Form ("Project") and our Project is original. To the best of our knowledge, the Project and the product(s) and/or service(s) to be developed as a part of the Project are not under development or available anywhere in the world.</value>
+  </data>
+  <data name="Step_6_Consideration_4" xml:space="preserve">
+    <value>The development, completion and use of the Project and the product(s) and/or service(s) to be developed as a part of the Project will not infringe the rights or intellectual property rights of any other party (whether registered or not), including but not limited to patent rights, trade mark rights, and copyright.</value>
+  </data>
+  <data name="Step_6_Consideration_5" xml:space="preserve">
+    <value>Other than the funding programme(s) specified in Section 4.8 of this Application Form, we (whether individually or as part of any team) have not applied for or received any other grant or funding from any publicly and/or privately funded organisations/programmes for the Project in the past 18 months and we are not applying for nor will we be entitled to receive any other grant or funding from any publicly and/or privately funded organisations/programmes for the Project in the future 18 months. We will notify Cyberport immediately if we apply for or become entitled to any grant or funding from any publicly and/or privately funded organisations/programmes for the Project and when requested, provide evidence of payments made or received in respect of such programmes.</value>
+  </data>
+  <data name="Step_6_Consideration_6" xml:space="preserve">
+    <value>We will use any grant to be received from the CCMF (if any) for the sole purpose of developing and completing the Project. We will not give away, share or othen/vise use any grant to be received from the CCMF in contravention of the law or any of the terms which apply to application for funding from the CCMF.</value>
+  </data>
+  <data name="Step_6_Consideration_7" xml:space="preserve">
+    <value>We understand the information provided in this application will be disclosed to authorised Cyberport staff and vetting team for screening and vetting purposes. No Confidential Agreement of any kind will be signed with Cyberport or the authorised Cyberport staff and vetting members on any occasion.</value>
+  </data>
+  <data name="Step_6_Consideration_8" xml:space="preserve">
+    <value>We give our consent to authorised Cyberport staff to carry out necessary due diligence/reference check for the purpose of assessing this application.</value>
+  </data>
+  <data name="Step_6_Consideration_9" xml:space="preserve">
+    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.O15), this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
+  </data>
+  <data name="Step_6_cyberport" xml:space="preserve">
+    <value>“Cyberport”</value>
+  </data>
+  <data name="Step_6_cyberport_1" xml:space="preserve">
+    <value>means the community or development located at Telegraph Bay, Pokfulam including its offices, centres and arcade.</value>
+  </data>
+  <data name="Step_6_cyberport_2" xml:space="preserve">
+    <value>We cannot use Your Data for direct marketing unless we have received your consent or indication of no objection. You may write to our Data Protection Officer or contact us via the contact information provided in our direct marketing materials to opt out from direct marketing at any time.</value>
+  </data>
+  <data name="Step_6_DECLARATION" xml:space="preserve">
+    <value>DECLARATION</value>
+  </data>
+  <data name="Step_6_Direct_marketing" xml:space="preserve">
+    <value>Direct Marketing</value>
+  </data>
+  <data name="Step_6_Direct_marketing_1" xml:space="preserve">
+    <value>In connection with direct marketing, we intend to use your name and email address to market and promote the services, products, facilities, activities, contests, conferences, lucky draws, events and promotional campaigns from time to time available relating to us or "Cyberport", or shops or merchants or hotel in the "Cyberport" or offered or hosted at "Cyberport" (including consumer goods, food and beverages, books and stationery, children goods and services, fashion and accessories, optical products, watches, jewellery, luxurious goods, personal care, health and beauty products and services, furniture and lifestyle goods, home furnishing and appliances, florists, sports gear and products, electronic products and appliances, banking and financial services, cinemas and theatres, cultural, entertainment facilities and activities, charity activities, leisure activities and performances, gift redemptions and car parking facilities)</value>
+  </data>
+  <data name="step_6_marketing" xml:space="preserve">
+    <value>I agree to receive direct marketing information.</value>
+  </data>
+  <data name="Step_6_PERSONAL_INFORMATION" xml:space="preserve">
+    <value>PERSONAL INFORMATION COLLECTION STATEMENT</value>
+  </data>
+  <data name="Step_6_PERSONAL_INFORMATION_1" xml:space="preserve">
+    <value>This Personal Information Collection Statement of Hong Kong Cyberport Management Company Limited ("us" or "we") applies to the personal data collected in this CCMF Application Form ("Personal Data").</value>
+  </data>
+  <data name="step_6_personal_information_collection" xml:space="preserve">
+    <value>l have read the Personal Information Collection Statement above.</value>
+  </data>
+  <data name="Step_6_Privacy" xml:space="preserve">
+    <value>Our Privacy Policy and Practices</value>
+  </data>
+  <data name="Step_6_Privacy_1" xml:space="preserve">
+    <value>Please see our Privacy Policy Statement at</value>
+  </data>
+  <data name="Step_6_Privacy_2" xml:space="preserve">
+    <value>Please see our Privacy Policy Statement at &lt;span class="bold graylbl-2"&gt;http://www.cyberport.hk/en/privacy_policy&lt;/span&gt; for our general policy and practices in respect of our collection and use of personal data.</value>
+  </data>
+  <data name="Step_6_Purpose" xml:space="preserve">
+    <value>Purpose and Use of Your Data</value>
+  </data>
+  <data name="Step_6_Purpose_1" xml:space="preserve">
+    <value>The Personal Data will be used for one or more of the following purposes:</value>
+  </data>
+  <data name="Step_6_Purpose_2" xml:space="preserve">
+    <value>processing your application;</value>
+  </data>
+  <data name="Step_6_Purpose_3" xml:space="preserve">
+    <value>communicating with you if we have any/or question and update about your application;</value>
+  </data>
+  <data name="Step_6_Purpose_4" xml:space="preserve">
+    <value>providing updates, services, products, facilities or activities and matters relating to our administration, management, operation and maintenance;</value>
+  </data>
+  <data name="Step_6_Purpose_5" xml:space="preserve">
+    <value>designing, reviewing, evaluating and enhancing our services, products, facilities or activities (including conducting research, survey and analysis for those purposes);</value>
+  </data>
+  <data name="Step_6_Purpose_6" xml:space="preserve">
+    <value>direct marketing (please see "Direct Marketing" section below); and</value>
+  </data>
+  <data name="Step_6_Purpose_7" xml:space="preserve">
+    <value>handling complaints, legal, safety and security purposes.</value>
+  </data>
+  <data name="Step_6_Purpose_8" xml:space="preserve">
+    <value>It is mandatory to provide the requested personal data, or we will not be able to process your application.</value>
+  </data>
+  <data name="STEP_6_STATEMENT" xml:space="preserve">
+    <value>This Statement is written in the English language and may be translated into other languages. In the event of any inconsistency between the English version and the translated version of this Statement, the English version shall prevail.</value>
+  </data>
+  <data name="Step_6_Transfer_data" xml:space="preserve">
+    <value>Transfer of Your Data</value>
+  </data>
+  <data name="Step_6_Transfer_data_1" xml:space="preserve">
+    <value>Your Data will not generally be disclosed or transferred to any other party in a form that would identify you, except in the following circumstances:</value>
+  </data>
+  <data name="Step_6_Transfer_data_2" xml:space="preserve">
+    <value>If we use third party suppliers or service providers who provide services to support our business operation or facilitate provision of our services, products, facilities or activities, we may provide Your Data to these suppliers or service providers.</value>
+  </data>
+  <data name="Step_6_Transfer_data_3" xml:space="preserve">
+    <value>We may disclose Your Data to any governmental or law enforcement agency, judicial body or regulatory authority to whom we are required to make disclosure according to any law, regulation, court order, direction, code or guideline.</value>
+  </data>
+  <data name="Step_6_Transfer_data_4" xml:space="preserve">
+    <value>In addition, Your Data may be accessed by, disclosed or transferred to any person under a duty of confidentiality to us (including our accountants, auditors, legal advisers or other professional advisers) for the purposes described in the "Purpose and Use of Your Data" section above.</value>
+  </data>
+  <data name="File_size" xml:space="preserve">
+    <value>File size is limited to 5MB</value>
+  </data>
+  <data name="File_type" xml:space="preserve">
+    <value>File type is limited to PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="File_type_presntation" xml:space="preserve">
+    <value>File type is limited to PDF, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="BRCOPY" xml:space="preserve">
+    <value>Certificate of Incorporation and Business Registration/Receipt of Application (if you are in process of company incorporation) (if applicable)</value>
+  </data>
+  <data name="HKID" xml:space="preserve">
+    <value>HK ID</value>
+  </data>
+  <data name="OtherAttachment" xml:space="preserve">
+    <value>Other supplementary information, e.g., business plan (if any)</value>
+  </data>
+  <data name="PresentationSlide" xml:space="preserve">
+    <value>Presentation Slide</value>
+  </data>
+  <data name="StudentID" xml:space="preserve">
+    <value>Student ID or Graduation Certificate</value>
+  </data>
+  <data name="VideoClip" xml:space="preserve">
+    <value>Video Clip</value>
+  </data>
+  <data name="Step_1_CCMF_app" xml:space="preserve">
+    <value>Please choose one of the types of CCMF application below:</value>
+  </data>
+  <data name="Step_3_Background" xml:space="preserve">
+    <value>Background Information of the Core Member</value>
+  </data>
+  <data name="Step_3_Hkid" xml:space="preserve">
+    <value>HKID or Passport No. (Required)</value>
+  </data>
+  <data name="Step_3_Name" xml:space="preserve">
+    <value>Full Name (Required)</value>
+  </data>
+  <data name="Step_3_Position" xml:space="preserve">
+    <value>Position / Title (Required)</value>
+  </data>
+  <data name="Step_5_Principal_Applicant" xml:space="preserve">
+    <value>(Principal Applicant / HK Team Leader)</value>
+  </data>
+  <data name="CCMF_Ind_1_B" xml:space="preserve">
+    <value>Does the Hong Kong Team Leader listed in Section 4.1 below a Hong Kong Permanent ID Card holder?</value>
+  </data>
+  <data name="Step6_Attachment_Header" xml:space="preserve">
+    <value>Attachment</value>
+  </data>
+  <data name="CCMF_CrossBorder_Header" xml:space="preserve">
+    <value>Cyberport Creative Micro Fund - Cross Border</value>
+  </data>
+  <data name="CCMF_HK_Header" xml:space="preserve">
+    <value>Cyberport Creative Micro Fund - Hong Kong</value>
+  </data>
+  <data name="CUPP_Header" xml:space="preserve">
+    <value>Cyberport University Partnership Programme</value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_1_B" xml:space="preserve">
+    <value>Are you a Hong Kong ID Card holder(s)?</value>
+  </data>
+  <data name="Amount_Format" xml:space="preserve">
+    <value>(Please input numbers with two decimals)</value>
+  </data>
+  <data name="ID_Passport_Format" xml:space="preserve">
+    <value>(For HKID holder please input full ID no. e.g.A123456(1). For Passport No., input the full number)</value>
+  </data>
+  <data name="Step_4_Advisor" xml:space="preserve">
+    <value>Advisor Info.</value>
+  </data>
+  <data name="Step_6_Transfer_data_note" xml:space="preserve">
+    <value>As the parties mentioned above may be located outside Hong Kong, Your Data may be transferred out of Hong Kong.</value>
+  </data>
+  <data name="Instruction_0" xml:space="preserve">
+    <value>You are required:</value>
+  </data>
+  <data name="Error_2_1_1a" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.1(a)</value>
+  </data>
+  <data name="Error_2_1_1b" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.1(b)</value>
+  </data>
+  <data name="Error_2_1_2a" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.2(a)</value>
+  </data>
+  <data name="Error_2_1_2b" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.2(b)</value>
+  </data>
+  <data name="Error_2_1_2breq" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.1(b)</value>
+  </data>
+  <data name="Error_2_1_2c" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.2(c)</value>
+  </data>
+  <data name="Error_2_1_2d" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.2(d)</value>
+  </data>
+  <data name="Error_2_1_2dreq" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(e), if Question 2.1.2(d) answer is Yes</value>
+  </data>
+  <data name="Error_2_1_2e" xml:space="preserve">
+    <value>Please select yes / no in the required field:  2.1.2(e)</value>
+  </data>
+  <data name="Error_2_1_2f" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.2(f)</value>
+  </data>
+  <data name="Error_2_1_2g" xml:space="preserve">
+    <value>Please select yes / no in the required field:  2.1.2(g)</value>
+  </data>
+  <data name="Error_2_1_2greq" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(g), if Question 2.1.2(f) answer is Yes</value>
+  </data>
+  <data name="Error_2_1_2h" xml:space="preserve">
+    <value>Please select yes / no in the required field:  2.1.2(h)</value>
+  </data>
+  <data name="Error_2_1_2i" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(i)</value>
+  </data>
+  <data name="Error_2_1_2j" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(j)</value>
+  </data>
+  <data name="Error_Abstract_chi_length" xml:space="preserve">
+    <value>Abstract(Chinese) should be within 500 words.</value>
+  </data>
+  <data name="Error_Abstract_eng" xml:space="preserve">
+    <value>Please fill in the required field: 3.3.1 Abstract(Eng).</value>
+  </data>
+  <data name="Error_Abstract_eng_length" xml:space="preserve">
+    <value>Abstract(English) should be within 300 words.</value>
+  </data>
+  <data name="Error_additinalreq" xml:space="preserve">
+    <value>Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(g) is filled or 2.1.2(h) is Yes</value>
+  </data>
+  <data name="Error_additinal_info" xml:space="preserve">
+    <value>Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(e) is filled or 2.1.2(f) is Yes</value>
+  </data>
+  <data name="Error_Applicant_name_title" xml:space="preserve">
+    <value>Principal Name length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_applicant_position" xml:space="preserve">
+    <value>Please fill in position/title of Principal Applicant in page 6</value>
+  </data>
+  <data name="Error_Applicant_position_lenghth" xml:space="preserve">
+    <value>Principal Position Title length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_appstatus_required" xml:space="preserve">
+    <value>Application Status Required</value>
+  </data>
+  <data name="Error_brcopy" xml:space="preserve">
+    <value>Please upload document in the required field:  BR Copy if 2.1.1(A) is yes.</value>
+  </data>
+  <data name="Error_Businessarea" xml:space="preserve">
+    <value>Please fill Business Area in 3.4</value>
+  </data>
+  <data name="Error_businessarea_length" xml:space="preserve">
+    <value>Business Area length should be less than 30 characters.</value>
+  </data>
+  <data name="Error_Businessarea_other" xml:space="preserve">
+    <value>Please fill in the required field: 3.4 Business Area (Others), if 3.4 Business Area is Others.</value>
+  </data>
+  <data name="Error_Businessmodel" xml:space="preserve">
+    <value>Please fill in the required field 4.2 Business Model &amp; Time to Market</value>
+  </data>
+  <data name="Error_ccmfapplication" xml:space="preserve">
+    <value>CCMF Application Type length should be less than 251 characters.</value>
+  </data>
+  <data name="Error_CCMF_oprtions" xml:space="preserve">
+    <value>Please Select an answer in Question 1.2 before save or go next page</value>
+  </data>
+  <data name="Error_Commenbcemenbtdate" xml:space="preserve">
+    <value>Please Fill Date in Commencement Date</value>
+  </data>
+  <data name="Error_commencement" xml:space="preserve">
+    <value>Please fill in the required field 3.5 Commencement Date</value>
+  </data>
+  <data name="Error_Completion" xml:space="preserve">
+    <value>Please fill in the required field 3.5 Completion Date</value>
+  </data>
+  <data name="Error_Completiondate" xml:space="preserve">
+    <value>Please Fill Date in Completion Date</value>
+  </data>
+  <data name="Error_completion_and_commencemnt" xml:space="preserve">
+    <value>Completion Date must be later than Commencement Date in 3.4</value>
+  </data>
+  <data name="Error_contact" xml:space="preserve">
+    <value>Please fill in Last Name, First Name, Salutation, Contact No., Email and Mailing Address in Page 5 Contact Details, or leave all fields blank to remove the Contact.</value>
+  </data>
+  <data name="Error_contact_area" xml:space="preserve">
+    <value>First contact in 5 Contact Details must be Hong Kong, second contact must be China.</value>
+  </data>
+  <data name="Error_contact_atleast" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: Page 5 Contact Details.</value>
+  </data>
+  <data name="Error_Contact_contact" xml:space="preserve">
+    <value>Contact No. Invalid</value>
+  </data>
+  <data name="Error_Contact_dateformat" xml:space="preserve">
+    <value>Please select Date of graduation in Contact Details:</value>
+  </data>
+  <data name="Error_Contact_education" xml:space="preserve">
+    <value>Education Institution Eng length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Contact_email" xml:space="preserve">
+    <value>Email invalid</value>
+  </data>
+  <data name="Error_Contact_fax" xml:space="preserve">
+    <value>Fax invalid</value>
+  </data>
+  <data name="Error_Contact_firstname" xml:space="preserve">
+    <value>First Name Eng is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_Contact_firstnamechi" xml:space="preserve">
+    <value>First Name Chi length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_contact_firstname_req" xml:space="preserve">
+    <value>First name required</value>
+  </data>
+  <data name="Error_Contact_Lastname" xml:space="preserve">
+    <value>Last Name Eng is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_Contact_lastnamechi" xml:space="preserve">
+    <value>Last Name Chi length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_contact_lastname_req" xml:space="preserve">
+    <value>Last name required</value>
+  </data>
+  <data name="Error_Contact_no" xml:space="preserve">
+    <value>Contact No. should be number only.</value>
+  </data>
+  <data name="Error_Contact_organisation" xml:space="preserve">
+    <value>Organisation Name length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Contact_position" xml:space="preserve">
+    <value>Position length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Contact_programme" xml:space="preserve">
+    <value>Programme Enrolled Eng length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Contact_salutation" xml:space="preserve">
+    <value>Salutation required</value>
+  </data>
+  <data name="Error_Contact_studentid" xml:space="preserve">
+    <value>Student ID Number length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_core_bootcamp" xml:space="preserve">
+    <value>Bootcamp Eligible Number length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_core_hkid" xml:space="preserve">
+    <value>HKID is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_core_name" xml:space="preserve">
+    <value>Name is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_core_position" xml:space="preserve">
+    <value>Position is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_Cost_Projection" xml:space="preserve">
+    <value>Please fill in the required field 4.7 Cost Projection</value>
+  </data>
+  <data name="Error_crossborder_options" xml:space="preserve">
+    <value>Select an options from CrossBorder Programme</value>
+  </data>
+  <data name="Error_date_required" xml:space="preserve">
+    <value>Date Required</value>
+  </data>
+  <data name="Error_declaration" xml:space="preserve">
+    <value>Please answer if you agree declaration in page 6</value>
+  </data>
+  <data name="Error_email" xml:space="preserve">
+    <value>Please input correct email format</value>
+  </data>
+  <data name="Error_fax" xml:space="preserve">
+    <value>Fax should be number only.</value>
+  </data>
+  <data name="Error_file_format" xml:space="preserve">
+    <value>Uploaded file must be of pdf.doc,docx,xls,xlsx,ppt,pptx,png,jpg,gif format</value>
+  </data>
+  <data name="Error_file_presentation_format" xml:space="preserve">
+    <value>File type is limited to PDF, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="Error_file_size" xml:space="preserve">
+    <value>File size should not be larger than 5MB</value>
+  </data>
+  <data name="Error_Finalsubmit_emalandpass" xml:space="preserve">
+    <value>Invalid Email and Password</value>
+  </data>
+  <data name="Error_full_applicant" xml:space="preserve">
+    <value>Please fill in full name of Principal Applicant in page 6</value>
+  </data>
+  <data name="Error_Fundingall" xml:space="preserve">
+    <value>Please fill in all fields in 4.8 Funding status</value>
+  </data>
+  <data name="Error_fundingatleast" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 4.8 Funding Status, if Question 2.1.2b or Question 2.1.2c or Question 2.1.2d answer is Yes.</value>
+  </data>
+  <data name="Error_fundingreq" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 4.8 Funding Status, if Question 2.1.2d or Question 2.1.2e or Question 2.1.2f answer is Yes.</value>
+  </data>
+  <data name="Error_fundingreq1" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 4.8 Funding Status, if Question 2.1.2f or Question 2.1.2g or Question 2.1.2h answer is Yes.</value>
+  </data>
+  <data name="Error_Funding_Amount" xml:space="preserve">
+    <value>Amount Received should be decimal number with 2 precision digits.</value>
+  </data>
+  <data name="Error_funding_amount1" xml:space="preserve">
+    <value>Amount received should be number only.</value>
+  </data>
+  <data name="Error_Funding_appstatus" xml:space="preserve">
+    <value>Application status is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_Funding_date" xml:space="preserve">
+    <value>Please Fill Date in funding status</value>
+  </data>
+  <data name="Error_Funding_daterequired" xml:space="preserve">
+    <value>Date in Funding cannot be empty</value>
+  </data>
+  <data name="Error_funding_expenditure" xml:space="preserve">
+    <value>Expenditure Nature length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Funding_MaximumAmount" xml:space="preserve">
+    <value>Maximum Amount should be  decimal number with 2 precision digits.</value>
+  </data>
+  <data name="Error_Funding_Programmename" xml:space="preserve">
+    <value>Programme Name is required and max 255 characters allow.</value>
+  </data>
+  <data name="Error_funding_status" xml:space="preserve">
+    <value>Funding Status length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_have_read" xml:space="preserve">
+    <value>Please answer if you have read statements in page 6</value>
+  </data>
+  <data name="Error_hkid" xml:space="preserve">
+    <value>Please upload document in the required field: HK ID</value>
+  </data>
+  <data name="Error_hkid_required" xml:space="preserve">
+    <value>HKID or Passport No. Required</value>
+  </data>
+  <data name="Error_hongkngstream" xml:space="preserve">
+    <value>Hong Kong Programme Stream length should be less than 251 characters.</value>
+  </data>
+  <data name="Error_hongkong_options" xml:space="preserve">
+    <value>Please select an options from Hong Kong Programme before save or go next page</value>
+  </data>
+  <data name="Error_hyperlink" xml:space="preserve">
+    <value>Please fill in valid hyperlink in 5.3 Video Clip.</value>
+  </data>
+  <data name="Error_Innovation" xml:space="preserve">
+    <value>Please fill in the required field 4.3 Innovation</value>
+  </data>
+  <data name="Error_max_amt_number" xml:space="preserve">
+    <value>Maximum Amount should be number only.</value>
+  </data>
+  <data name="Error_name_required" xml:space="preserve">
+    <value>Name of Programme Required</value>
+  </data>
+  <data name="Error_otherbusiness_length" xml:space="preserve">
+    <value>Other Business Area should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Projectmember_atleast" xml:space="preserve">
+    <value>At least one Project Member should be provided. Please fill in Name, Position, HK ID or Passport No. and Background Information of the Project Member, or leave all fields blank to remove the Project Member in Page 4</value>
+  </data>
+  <data name="Error_Project_Milestone" xml:space="preserve">
+    <value>Please fill in all fields in the required field: 4.6 6 months Project Milestone.</value>
+  </data>
+  <data name="Error_Projname_eng" xml:space="preserve">
+    <value>Please fill in the required field: 3.1 Project Name(Eng).</value>
+  </data>
+  <data name="Error_proname_chi" xml:space="preserve">
+    <value>Project Name Chi length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_proname_eng" xml:space="preserve">
+    <value>Project Name Eng length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_social_responsibility" xml:space="preserve">
+    <value>Please fill in the required field 4.4 Social Responsibility</value>
+  </data>
+  <data name="Error_studentid" xml:space="preserve">
+    <value>Please upload document in the required field:  StudentID</value>
+  </data>
+  <data name="Error_upload_file" xml:space="preserve">
+    <value>Please upload File</value>
+  </data>
+  <data name="Step_2_fundingadd" xml:space="preserve">
+    <value>Please click the “+” and input the relevant information for each fund / grant.</value>
+  </data>
+  <data name="Step_3_memberadd" xml:space="preserve">
+    <value>Please click the “+” and input the relevant information for each core member.</value>
+  </data>
+  <data name="Step_4_fundingadd" xml:space="preserve">
+    <value>Please click the “+” and input the relevant information for each fund / grant.</value>
+  </data>
+  <data name="Step_4_project_managementadd" xml:space="preserve">
+    <value>Please click the “+” and input the relevant information for each team member.</value>
+  </data>
+  <data name="Error_Contact_Empty" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Contact No. in page 5</value>
+  </data>
+  <data name="Error_Email_Empty" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Email in page 5</value>
+  </data>
+  <data name="Error_First_Name_Eng" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: First Name Eng in page 5</value>
+  </data>
+  <data name="Error_Last_Name_Eng" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Last Name Eng in page 5</value>
+  </data>
+  <data name="Error_Mailing_Address" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Mailing Address in page 5</value>
+  </data>
+  <data name="Error6_Deadline_Message" xml:space="preserve">
+    <value>Changes are not saved or submitted</value>
+  </data>
+  <data name="Error_1_3Ageval" xml:space="preserve">
+    <value>If You answer "Yes" in question 1.3, You are not eligible to submit </value>
+  </data>
+  <data name="Error_Age_Validation" xml:space="preserve">
+    <value>Only 18-30 of Age are Allowed to submit the Application at 2.1.1 (c)</value>
+  </data>
+  <data name="Error_CompanyName_length" xml:space="preserve">
+    <value>CompanyName length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_ProjectName_length" xml:space="preserve">
+    <value>Project Name length should be less than 255 characters.</value>
+  </data>
+  <data name="Step3_1b_CompanyName" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Step3_1c_Establishment" xml:space="preserve">
+    <value>Year of Establishment of Your Company in HK</value>
+  </data>
+  <data name="Step3_1d_CountryOFOrigin" xml:space="preserve">
+    <value>Place of Origin</value>
+  </data>
+  <data name="Step3_1d_NewHK" xml:space="preserve">
+    <value>NEW to HK ?</value>
+  </data>
+  <data name="Step_1_Remark" xml:space="preserve">
+    <value>If your project exceeded early-stage development, you may consider apply for Cyberport Incubation Programme (CIP).</value>
+  </data>
+  <data name="Step_4_Email" xml:space="preserve">
+    <value>Email  (Required)</value>
+  </data>
+  <data name="Step_4_Nationality" xml:space="preserve">
+    <value>Place of Origin</value>
+  </data>
+  <data name="Step_3_Smart_Space" xml:space="preserve">
+    <value>Are you/ your team member(s) currently a Cyberport Smart-Space tenant?</value>
+  </data>
+  <data name="Step_3_Smart_Space_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Step_3_Smart_Space_Others" xml:space="preserve">
+    <value>Yes, tenant in other Smart-Spaces at Cyberport</value>
+  </data>
+  <data name="Step_3_Smart_Space_SS8" xml:space="preserve">
+    <value>Yes, Smart-Space 8 (SS8) tenant in Tsuen Wan</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_F_note" xml:space="preserve">
+    <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.  &lt;br/&gt;&lt;br/&gt;If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.&lt;/b&gt;&lt;/b&gt;
+Application eligibility of CCMF is stated in the &lt;a href="http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf" target="_blank"&gt; CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_1_C" xml:space="preserve">
+    <value>Are you and all of your project management team members/owners of the company listed in Section 4.1 below between the ages of 18 and 30 upon the application deadline?</value>
+    <comment>Is there at least one of the company founders listed in Section 4.1 at the age between 18 to 35?</comment>
+  </data>
+  <data name="HKP_Pro_Young_Comp_1_C_note" xml:space="preserve">
+    <value>Note: The founder or at least one of the founders listed in Section 4.1 below must be aged between 18 and 30 to qualify applying HKYEP of the CCMF Hong Kong Programme.&lt;br/&gt;&lt;br/&gt;
+The designated founder/ co-founder fulfilling the application eligibility must play the same position in the company and project team while applying, admitting and during the 6-month project period after admission.</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_2_D" xml:space="preserve">
+    <value>Have you and your core team member(s), your proposed project or other similar digital tech or other digital tech related project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_2_E" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.1.1 (d) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_2_F" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 4.10 below.  Also, please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_2_F_Note" xml:space="preserve">
+    <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period. &lt;br/&gt;&lt;br/&gt;If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.&lt;br/&gt;&lt;br/&gt;
+Application eligibility of CCMF is stated in the&lt;a href="http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf" target="_blank"&gt; CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.</value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_1_C" xml:space="preserve">
+    <value>Are you/ Is the principal applicant of the application listed in Section 4.1 below between the ages of 18 and 30? </value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_1_C_note" xml:space="preserve">
+    <value>Note: The principal applicant of Individual Application of HKYEP of CCMF Hong Kong Programme must be aged between 18 and 30</value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_2_D" xml:space="preserve">
+    <value>Have you and your core team member(s), your proposed project or other similar digital tech or other digital tech related project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_2_E" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.1.1 (d) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="HKP_Pro_Young_Ind_2_F" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 4.10 below.  Also, please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="Step1_CCMF_3" xml:space="preserve">
+    <value>f</value>
+  </data>
+  <data name="Step1_CCMF_3_note" xml:space="preserve">
+    <value>(If yes: please show up the message and does not allow the applicant to submit the application)&lt;br/&gt;&lt;br/&gt;
+CCMF sponsors high potential digital tech start-up projects and business ideas with a HK$100,000 grant to develop a prototype/ MVP of the idea for proof of concept (POC).  &lt;br/&gt;&lt;br/&gt;
+If the project currently has developed the prototype/ MVP or launched to testers/ market, you may NOT eligible to apply CCMF.   For enquiry: &lt;a href="ccmf_enquiry@cyberport.hk"&gt;ccmf_enquiry@cyberport.hk&lt;/a&gt;&lt;br/&gt;&lt;br/&gt; 
+Interested party to apply Cyberport Incubation Programme, please visit&lt;a href = "http://www.cyberport.hk/en/about_cyberport/cyberport_entrepreneurs/cyberport_incubation_programme" target="_blank"&gt;HERE&lt;/s&gt;.</value>
+  </data>
+  <data name="CCMF_IndComp_2_k" xml:space="preserve">
+    <value>Is your project generating revenue / incomes in Hong Kong or other markets?</value>
+  </data>
+  <data name="Error_core_Nationality" xml:space="preserve">
+    <value>Place of Origin Invalid</value>
+  </data>
+  <data name="Error_CountryOrigin_length" xml:space="preserve">
+    <value>Place of Origin length should be less than 255 characters.</value>
+  </data>
+  <data name="Step1_Note" xml:space="preserve">
+    <value>Note: The principal applicant of Individual Application must be permanent HKID card holder.  Otherwise, please consider submit application as Company Application.&lt;br/&gt;Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.&lt;br/&gt;</value>
+  </data>
+  <data name="Step1_Question1_3" xml:space="preserve">
+    <value>Is your project applying CCMF exceeded/not in the early-stage development, for example: launched and generated sustainable revenue, or planning/ going to plan overseas marketing expansion?</value>
+  </data>
+  <data name="Step2_Note" xml:space="preserve">
+    <value>Note: Applicants should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period after admission.  &lt;br&gt;&lt;br&gt;
+If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.
+&lt;br&gt;&lt;br&gt;
+Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants – Hong Kong Programme &lt;/a&gt;.</value>
+  </data>
+  <data name="Step_4_Funding_Statussub2" xml:space="preserve">
+    <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.  Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt; CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.</value>
+  </data>
+  <data name="Step3_1b_CompanyNameDetail" xml:space="preserve">
+    <value> (For Company Applicant only, please input the name of the registered limited company in Hong Kong. If you do not setup a company currently, you are still required to propose a company name that you will setup when you admit into CCMF programme.)</value>
+  </data>
+  <data name="Error_2_1_1c" xml:space="preserve">
+    <value>Please select yes / no in the required field: 2.1.1(c)</value>
+  </data>
+  <data name="Error_1_3" xml:space="preserve">
+    <value>Please select yes / no in the required field: 1.3</value>
+  </data>
+  <data name="Error_3_6" xml:space="preserve">
+    <value>Please select a option in the required field: 3.6</value>
+  </data>
+  <data name="Error_Company_Name_Required" xml:space="preserve">
+    <value>Please fill in the required field 3.2 Company Name</value>
+  </data>
+  <data name="Error_Establishment_Year_Required" xml:space="preserve">
+    <value>Please fill in the required field 3.2(a) Year of Establishment of Your Company in HK</value>
+  </data>
+  <data name="Error_New_to_HK_Required" xml:space="preserve">
+    <value>Please select yes / no in the required field: 3.2(c)</value>
+  </data>
+  <data name="Error_Year_of_EstablishmentInvalid" xml:space="preserve">
+    <value>3.2 a  is not in correct Date format MMM-yyyy</value>
+  </data>
+  <data name="HKP_Pro_Stream_IndComp_2_F_1" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="HKP_Pro_Young_IndComp_2_F_1" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="Remarks" xml:space="preserve">
+    <value>Remarks</value>
+  </data>
+</root>

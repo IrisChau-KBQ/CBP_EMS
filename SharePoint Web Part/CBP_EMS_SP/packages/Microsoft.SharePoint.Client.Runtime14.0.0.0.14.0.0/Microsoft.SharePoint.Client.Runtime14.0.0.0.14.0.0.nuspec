@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.SharePoint.Client.Runtime14.0.0.0</id>
+    <version>14.0.0</version>
+    <title>Microsoft.SharePoint.Client.Runtime 14.0.0.0</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Microsoft.SharePoint.Client.Runtime.dll</description>
+    <summary />
+    <copyright>Copyright 2017</copyright>
+    <tags>Microsoft SharePoint 2010 14 SSOM</tags>
+  </metadata>
+</package>

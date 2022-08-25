@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VPResultSummary\bin\Debug\VPResultSummary.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VPResultSummary\bin\Debug\VPResultSummary.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VPResultSummary\obj\Debug\VPResultSummary.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VPResultSummary\obj\Debug\VPResultSummary.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VPResultSummary\obj\Debug\VPResultSummary.pdb

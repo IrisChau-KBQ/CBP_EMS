@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.IncubationFormsWebPart\obj\Debug\CBP_EMS_SP.IncubationFormsWebPart.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.IncubationFormsWebPart\bin\Debug\CBP_EMS_SP.IncubationFormsWebPart.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.IncubationFormsWebPart\bin\Debug\CBP_EMS_SP.IncubationFormsWebPart.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.IncubationFormsWebPart\obj\Debug\CBP_EMS_SP.IncubationFormsWebPart.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.IncubationFormsWebPart\obj\Debug\CBP_EMS_SP.IncubationFormsWebPart.pdb

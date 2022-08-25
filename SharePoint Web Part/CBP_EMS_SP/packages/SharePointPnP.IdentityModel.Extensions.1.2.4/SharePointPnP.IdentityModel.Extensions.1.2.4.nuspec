@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>SharePointPnP.IdentityModel.Extensions</id>
+    <version>1.2.4</version>
+    <title>SharePoint PnP IdentityModel Extensions Library</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <licenseUrl>https://github.com/SharePoint/PnP-IdentityModel/blob/master/LICENSE</licenseUrl>
+    <projectUrl>http://aka.ms/sppnp</projectUrl>
+    <iconUrl>https://api.nuget.org/v3-flatcontainer/sharepointpnp.identitymodel.extensions/1.2.4/icon</iconUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>A port of Microsoft.IdentityModel.Extensions.dll packaged as a NuGet package by the SharePoint PnP team.</description>
+    <summary>Handles authentication and authorization for SharePoint provider-hosted apps.</summary>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>SharePoint Office Authentication AddInModel AppModel Office365 SharePointOnline</tags>
+    <dependencies>
+      <dependency id="Microsoft.IdentityModel" version="6.1.7600.16394" />
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="System.Web" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Web.Extensions" targetFramework="" />
+      <frameworkAssembly assemblyName="System.IdentityModel" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework="" />
+      <frameworkAssembly assemblyName="System.Runtime.Serialization" targetFramework="" />
+    </frameworkAssemblies>
+  </metadata>
+</package>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="dc6eeaf0-deea-4a31-810b-1117ba60eca1" solutionId="dc6eeaf0-deea-4a31-810b-1117ba60eca1" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.LoginWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="7f3d0670-164b-4429-b837-29a62d06d3ba" />
+  </features>
+</package>

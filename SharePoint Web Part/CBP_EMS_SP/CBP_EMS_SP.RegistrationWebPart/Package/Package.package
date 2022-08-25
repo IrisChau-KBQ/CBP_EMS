@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="ab0b803c-fd9d-43f7-9c1f-9e61f0c3a779" solutionId="ab0b803c-fd9d-43f7-9c1f-9e61f0c3a779" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.RegistrationWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="28ad129f-c495-4f95-ac10-5fb7dfe8a9c7" />
+  </features>
+</package>

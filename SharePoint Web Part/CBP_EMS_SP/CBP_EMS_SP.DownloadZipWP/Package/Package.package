@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1522c771-eb9f-4fbe-b2d0-f61338d440da" solutionId="1522c771-eb9f-4fbe-b2d0-f61338d440da" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.DownloadZipWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="C:\bin\ICSharpCode.SharpZipLib.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="974861b1-fd7a-4daa-b3f2-e1996c6c1753" />
+  </features>
+</package>

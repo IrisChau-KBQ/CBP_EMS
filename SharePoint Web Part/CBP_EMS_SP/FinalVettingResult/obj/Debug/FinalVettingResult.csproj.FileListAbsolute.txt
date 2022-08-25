@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\FinalVettingResult\bin\Debug\FinalVettingResult.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\FinalVettingResult\bin\Debug\FinalVettingResult.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\FinalVettingResult\obj\Debug\FinalVettingResult.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\FinalVettingResult\obj\Debug\FinalVettingResult.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\FinalVettingResult\obj\Debug\FinalVettingResult.pdb

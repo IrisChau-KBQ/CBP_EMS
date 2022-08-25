@@ -1,0 +1,465 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Apply" xml:space="preserve">
+    <value>申請</value>
+  </data>
+  <data name="Edit_Submission" xml:space="preserve">
+    <value>修改申請</value>
+  </data>
+  <data name="Error_login_acc_lock" xml:space="preserve">
+    <value>由於無效登錄太多，此帳戶被鎖定。請重新設置您的密碼。</value>
+  </data>
+  <data name="Error_login_email_notregistered" xml:space="preserve">
+    <value>此電郵未有註冊</value>
+  </data>
+  <data name="Error_login_fill_passnemail" xml:space="preserve">
+    <value>請填寫用戶名和密碼</value>
+  </data>
+  <data name="Error_login_invalid_pass" xml:space="preserve">
+    <value>密碼錯誤</value>
+  </data>
+  <data name="Error_Registration_" xml:space="preserve">
+    <value>註冊錯誤</value>
+  </data>
+  <data name="Error_Registration_email" xml:space="preserve">
+    <value>請填寫電郵地址</value>
+  </data>
+  <data name="Error_Registration_invalid_emailpass" xml:space="preserve">
+    <value>電郵和密碼錯誤</value>
+  </data>
+  <data name="Error_Registration_Password" xml:space="preserve">
+    <value>請填寫密碼</value>
+  </data>
+  <data name="Error_Registration_Passwordconfirmation" xml:space="preserve">
+    <value>密碼與確認密碼不符。</value>
+  </data>
+  <data name="Error_Registration_Pass_validation" xml:space="preserve">
+    <value>您的密碼應在8-20個字之間，並且至少包含1個小寫字母，1個大寫字母，1個數字和1個特殊符號。</value>
+  </data>
+  <data name="Forget_password_heading" xml:space="preserve">
+    <value>忘記密碼</value>
+  </data>
+  <data name="Forgot_pass_btnsubmit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Forgot_pass_emailaddress" xml:space="preserve">
+    <value>電郵格式不符</value>
+  </data>
+  <data name="Forgot_pass_emaildublication" xml:space="preserve">
+    <value>此電郵帳戶尚未註冊。 請確保電郵帳戶是正確的。</value>
+  </data>
+  <data name="Forgot_pass_subheading" xml:space="preserve">
+    <value>忘記密碼？ 在下面輸入您的電郵地址，我們將發送電郵重置密碼。</value>
+  </data>
+  <data name="Forgot_pass_successfull_msg" xml:space="preserve">
+    <value>密碼重置鏈接已發送到您的電郵</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>主頁</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>登入</value>
+  </data>
+  <data name="Login_forgot_password" xml:space="preserve">
+    <value>忘記密碼？</value>
+  </data>
+  <data name="Login_heading" xml:space="preserve">
+    <value>創業管理系統</value>
+  </data>
+  <data name="Login_Registration" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="Login_Remember_me" xml:space="preserve">
+    <value>Remember Me</value>
+  </data>
+  <data name="My_Applications" xml:space="preserve">
+    <value>我的申請表</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>下一頁</value>
+  </data>
+  <data name="PasswordInstruction" xml:space="preserve">
+    <value>密碼應包含小寫和大寫字母，數字，長度為8-20個字符</value>
+  </data>
+  <data name="Previous" xml:space="preserve">
+    <value>上一頁</value>
+  </data>
+  <data name="Registration_email_dublication" xml:space="preserve">
+    <value>電郵帳戶已經存在</value>
+  </data>
+  <data name="Registration_Email_Format" xml:space="preserve">
+    <value>電郵格式不符</value>
+  </data>
+  <data name="Registration_Email_restriction" xml:space="preserve">
+    <value>電郵地址不能以@cyberport.hk結尾</value>
+  </data>
+  <data name="Registration_internal_error" xml:space="preserve">
+    <value>internal error</value>
+  </data>
+  <data name="Registration_Invalid_email" xml:space="preserve">
+    <value>電郵地址錯誤</value>
+  </data>
+  <data name="Registration_invalid_question" xml:space="preserve">
+    <value>Invalid security question</value>
+  </data>
+  <data name="Registration_invalid_security_ans" xml:space="preserve">
+    <value>Invalid Security answer.</value>
+  </data>
+  <data name="Registration_newbtn" xml:space="preserve">
+    <value>建立新帳戶</value>
+  </data>
+  <data name="Registration_Passwordmessage" xml:space="preserve">
+    <value>您的密碼應在8-20個字之間，並且至少包含1個小寫字母，1個大寫字母，1個數字和1個特殊符號。</value>
+  </data>
+  <data name="Registration_Pass_notsecure" xml:space="preserve">
+    <value>密碼不安全</value>
+  </data>
+  <data name="Registration_signuodetails" xml:space="preserve">
+    <value>如果要申數碼港培育計劃，數碼港創意微型基金或CASP，請先在創業管理系統註冊</value>
+  </data>
+  <data name="Registration_signup" xml:space="preserve">
+    <value>註冊</value>
+  </data>
+  <data name="Result_Announcement" xml:space="preserve">
+    <value>結果公告</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>保存</value>
+  </data>
+  <data name="Submission_Deadline" xml:space="preserve">
+    <value>提交截止日期</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>提交</value>
+  </data>
+  <data name="Vetting_and_Presentation" xml:space="preserve">
+    <value>審核 和 介绍</value>
+  </data>
+  <data name="Error_MyApp_Collabratoralreadyexsist" xml:space="preserve">
+    <value>系統已經存有此合作者的記錄</value>
+  </data>
+  <data name="Error_MyApp_emaillimitation" xml:space="preserve">
+    <value>不能使用 cyberport.hk結尾的電郵地址</value>
+  </data>
+  <data name="Error_MyApp_sameuser" xml:space="preserve">
+    <value>您不能邀請與註冊電郵帳戶相同的電郵帳戶。</value>
+  </data>
+  <data name="MyApp_successfullyinvited" xml:space="preserve">
+    <value>邀請成功</value>
+  </data>
+  <data name="My_App_Collaboration" xml:space="preserve">
+    <value>申請合作</value>
+  </data>
+  <data name="My_App_deletepopup" xml:space="preserve">
+    <value>確定刪除？</value>
+  </data>
+  <data name="lbl_no" xml:space="preserve">
+    <value>否</value>
+  </data>
+  <data name="lbl_yes" xml:space="preserve">
+    <value>是</value>
+  </data>
+  <data name="Mail_App_submitted" xml:space="preserve">
+    <value>Your EMS Application (@@Applicationnumber) submitted successfully</value>
+  </data>
+  <data name="Mail_Invite_Collaborator" xml:space="preserve">
+    <value>邀請合作者</value>
+  </data>
+  <data name="Mail_Regestration" xml:space="preserve">
+    <value>賬戶註冊</value>
+  </data>
+  <data name="Mail_Reset_Password" xml:space="preserve">
+    <value>重設密碼</value>
+  </data>
+  <data name="ResetPassword" xml:space="preserve">
+    <value>重置密碼</value>
+  </data>
+  <data name="ResetPass_expired" xml:space="preserve">
+    <value>密碼重置已過期。 請重新設置。</value>
+  </data>
+  <data name="ResetPass_Mismatch" xml:space="preserve">
+    <value>Password Mismatch</value>
+  </data>
+  <data name="ResetPass_subheading" xml:space="preserve">
+    <value>請輸入以下帳戶的新密碼。</value>
+  </data>
+  <data name="ResetPass_Successfully" xml:space="preserve">
+    <value>密碼重置成功 請再次登錄</value>
+  </data>
+  <data name="Reset_Pass_expred" xml:space="preserve">
+    <value>密碼重置已過期。 請重新設置。</value>
+  </data>
+  <data name="Application_Summary_Lbl_Applicant" xml:space="preserve">
+    <value>申請人</value>
+  </data>
+  <data name="Application_Summary_Lbl_AppNum" xml:space="preserve">
+    <value>申請表編號</value>
+  </data>
+  <data name="Application_Summary_Lbl_Deadline" xml:space="preserve">
+    <value>截止日期</value>
+  </data>
+  <data name="Application_Summary_Lbl_Intake" xml:space="preserve">
+    <value>Intake</value>
+  </data>
+  <data name="Application_Summary_Lbl_LastSubmit" xml:space="preserve">
+    <value>最後提交日期</value>
+  </data>
+  <data name="btn_Continue_Text" xml:space="preserve">
+    <value>繼續</value>
+  </data>
+  <data name="ECResultMail_To_Applicants" xml:space="preserve">
+    <value>ECResultMail</value>
+  </data>
+  <data name="Error_Vetting_meeting_confirm" xml:space="preserve">
+    <value>Cannot be confirmed because vetting member declaration is not completed</value>
+  </data>
+  <data name="btn_Collaboration" xml:space="preserve">
+    <value>合作</value>
+  </data>
+  <data name="Menu_Applications" xml:space="preserve">
+    <value>Applications</value>
+  </data>
+  <data name="Menu_Presentation_Summary_Result" xml:space="preserve">
+    <value>Presentation Summary Result</value>
+  </data>
+  <data name="Menu_Programme_List" xml:space="preserve">
+    <value>Programme List</value>
+  </data>
+  <data name="Menu_Programme_Management" xml:space="preserve">
+    <value>Programme Management</value>
+  </data>
+  <data name="Menu_Programme_Results" xml:space="preserve">
+    <value>Programme Results</value>
+  </data>
+  <data name="Menu_Vetting_Meetings" xml:space="preserve">
+    <value>Vetting Meetings</value>
+  </data>
+  <data name="Menu_Vetting_Meeting_List" xml:space="preserve">
+    <value>Vetting Meeting List</value>
+  </data>
+  <data name="Menu_Vetting_Team" xml:space="preserve">
+    <value>Vetting Team</value>
+  </data>
+  <data name="Application_submitted_Restriction" xml:space="preserve">
+    <value>You are not authorize to access this page. Intake is closed.</value>
+  </data>
+  <data name="btn_ChangePassword" xml:space="preserve">
+    <value>更改密碼</value>
+  </data>
+  <data name="error_Changepass_oldpass" xml:space="preserve">
+    <value>Old Password Cannot be empty</value>
+  </data>
+  <data name="Appication_submission" xml:space="preserve">
+    <value>Your application @@submit Successfully.</value>
+  </data>
+  <data name="Mail_App_submitted_Requestor" xml:space="preserve">
+    <value>Additonal information updated from (@@Applicationnumber)</value>
+  </data>
+  <data name="Menu_Change_Password" xml:space="preserve">
+    <value>更改密碼</value>
+  </data>
+  <data name="My_Invitations" xml:space="preserve">
+    <value>我的邀請</value>
+  </data>
+  <data name="Final_Vetting_Confirmation" xml:space="preserve">
+    <value>Final Vetting Result Confirm successful</value>
+  </data>
+  <data name="Error_Vetting_Decision_TBC_application" xml:space="preserve">
+    <value>Cannot confirm Presentation Result, when there is application(s) result in TBC or no score.</value>
+  </data>
+  <data name="Error_Vetting_meeting_Decision_confirm" xml:space="preserve">
+    <value>Please confirm vetting member decision first.</value>
+  </data>
+  <data name="Error_Vetting_Confimation_Error_NOWithdraw" xml:space="preserve">
+    <value>Can not be confirm until application(s) is in Withdraw.</value>
+  </data>
+  <data name="Placeholder_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Placeholder_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Vetting_Member_Invitation" xml:space="preserve">
+    <value>EMS Vetting Member invitation</value>
+  </data>
+  <data name="Vetting_Meeting_Result_Confirmed" xml:space="preserve">
+    <value>Vetting Meeting Summary confirm successful</value>
+  </data>
+  <data name="TeamLeader_already_Confirmed" xml:space="preserve">
+    <value>Team Lead had already confirmed, cannot confirm again.</value>
+  </data>
+  <data name="Vetting_Meeting_Confirmed" xml:space="preserve">
+    <value>Vetting Meeting List is successfully confirmed</value>
+  </data>
+  <data name="Vetting_Metting_Application_Confirmed" xml:space="preserve">
+    <value>Vetting Meeting Application List is successfully confirmed</value>
+  </data>
+  <data name="Final_Vetting_Presentation_Confirmation" xml:space="preserve">
+    <value>Please final confirm the Final Presentation result.</value>
+  </data>
+  <data name="Menu_User_Reimbursements" xml:space="preserve">
+    <value>我的報銷表格</value>
+  </data>
+  <data name="Dashboard_CASPAppInfo" xml:space="preserve">
+    <value>申請人須在加速器計劃開始之前遞交申請表</value>
+  </data>
+  <data name="lbl_CASP_Reimbursement" xml:space="preserve">
+    <value>數碼港加速器支援計劃報銷表格</value>
+  </data>
+  <data name="lbl_Category" xml:space="preserve">
+    <value>類別</value>
+  </data>
+  <data name="lbl_Company" xml:space="preserve">
+    <value>公司</value>
+  </data>
+  <data name="lbl_Status" xml:space="preserve">
+    <value>狀態</value>
+  </data>
+  <data name="lbl_Submission_Date" xml:space="preserve">
+    <value>提交日期</value>
+  </data>
+  <data name="Reimbursement_FA_New_Create_Btn" xml:space="preserve">
+    <value>New Finance Assistance</value>
+  </data>
+  <data name="Reimbursement_SR_New_Create_Btn" xml:space="preserve">
+    <value>New Special Request</value>
+  </data>
+  <data name="Menu_User_Company" xml:space="preserve">
+    <value>我的公司簡介</value>
+  </data>
+  <data name="Menu_Company_Profile_List" xml:space="preserve">
+    <value>Company Profiles</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>取消</value>
+  </data>
+  <data name="Submission_popup" xml:space="preserve">
+    <value>Your submission for intake</value>
+  </data>
+  <data name="Submission_popup_deadline" xml:space="preserve">
+    <value>, deadline is</value>
+  </data>
+  <data name="Submission_popup_password" xml:space="preserve">
+    <value>Please input your login email and password for confirmation.</value>
+  </data>
+  <data name="Footer_Message" xml:space="preserve">
+    <value>香港數碼港管理有限公司 。</value>
+  </data>
+</root>

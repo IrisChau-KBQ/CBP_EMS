@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d775f4dd-61c2-4c24-b230-65189acc4a9f" solutionId="d775f4dd-61c2-4c24-b230-65189acc4a9f" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.My_Reimbursement" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+    <customAssembly location="EntityFramework.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <customAssembly location="EntityFramework.SqlServer.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="e06378dd-fbfa-409a-848d-5262c4ff9a54" />
+  </features>
+</package>

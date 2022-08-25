@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="00928423-9f31-4901-9a6c-e8ef07375744" solutionId="00928423-9f31-4901-9a6c-e8ef07375744" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.CPIP_Special_Request_Form" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="5c7734c9-b3fd-4121-a333-80bca783e45d" />
+  </features>
+</package>

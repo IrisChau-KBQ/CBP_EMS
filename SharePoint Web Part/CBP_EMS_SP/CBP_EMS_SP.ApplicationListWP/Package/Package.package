@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="5ef3a90a-566d-43fd-82f7-77bb3c8bf2d7" solutionId="5ef3a90a-566d-43fd-82f7-77bb3c8bf2d7" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.ApplicationListWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="Library\ICSharpCode.SharpZipLib.dll" />
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+    <customAssembly location="itextsharp.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="bin\Debug\itextsharp.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="8f854549-75e6-4be5-80a9-660a7a5dd8c8" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="2a437ffb-cd33-40e3-9cd2-bd27f9dc1939" />
+  </projectItems>
+</package>

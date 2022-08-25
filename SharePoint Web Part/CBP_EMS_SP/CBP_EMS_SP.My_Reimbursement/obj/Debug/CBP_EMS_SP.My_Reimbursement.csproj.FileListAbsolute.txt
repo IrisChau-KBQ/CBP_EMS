@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.My_Reimbursement\bin\Debug\CBP_EMS_SP.My_Reimbursement.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.My_Reimbursement\bin\Debug\CBP_EMS_SP.My_Reimbursement.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.My_Reimbursement\obj\Debug\CBP_EMS_SP.My_Reimbursement.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.My_Reimbursement\obj\Debug\CBP_EMS_SP.My_Reimbursement.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.My_Reimbursement\obj\Debug\CBP_EMS_SP.My_Reimbursement.pdb

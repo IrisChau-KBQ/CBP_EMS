@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="41a3af53-31fe-4c4d-9c37-2bb302a211ce" solutionId="41a3af53-31fe-4c4d-9c37-2bb302a211ce" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.ECWebPartCASP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+    <customAssembly location="EntityFramework.dll" deploymentTarget="WebApplication" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <customAssembly location="EntityFramework.SqlServer.dll" deploymentTarget="WebApplication" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="WebApplication" sourcePath="C:\bin\ICSharpCode.SharpZipLib.dll" />
+    <customAssembly location="DocX.dll" deploymentTarget="WebApplication" sourcePath="..\packages\DocX.1.0.0.22\lib\net40\DocX.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="134e0855-85d9-4ecf-89d3-84aed3f948a4" />
+  </features>
+</package>

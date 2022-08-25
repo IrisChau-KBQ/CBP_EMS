@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RejectBDMWP\bin\Debug\CBP_EMS_SP.RejectBDMWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RejectBDMWP\bin\Debug\CBP_EMS_SP.RejectBDMWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RejectBDMWP\obj\Debug\CBP_EMS_SP.RejectBDMWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RejectBDMWP\obj\Debug\CBP_EMS_SP.RejectBDMWP.pdb

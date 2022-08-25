@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="187e9027-9d29-4a0c-81c2-03ae91be8004" solutionId="187e9027-9d29-4a0c-81c2-03ae91be8004" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.Resources" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="0e7ba0e3-25de-4cc0-a9aa-804bd50a720d" />
+    <projectItemReference itemId="fafa2098-60c1-49ff-9a3f-3eb78d2883c5" />
+    <projectItemReference itemId="63e33f73-940a-47fa-b049-596b73fd6483" />
+    <projectItemReference itemId="a45893fe-e47d-4d59-96be-94e370186b9c" />
+  </projectItems>
+</package>

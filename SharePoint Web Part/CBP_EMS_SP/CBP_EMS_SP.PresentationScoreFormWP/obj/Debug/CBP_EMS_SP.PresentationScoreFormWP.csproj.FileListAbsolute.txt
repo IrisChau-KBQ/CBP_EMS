@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationScoreFormWP\bin\Debug\CBP_EMS_SP.PresentationScoreFormWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationScoreFormWP\bin\Debug\CBP_EMS_SP.PresentationScoreFormWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationScoreFormWP\obj\Debug\CBP_EMS_SP.PresentationScoreFormWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.PresentationScoreFormWP\obj\Debug\CBP_EMS_SP.PresentationScoreFormWP.pdb

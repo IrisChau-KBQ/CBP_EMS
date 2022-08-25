@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResponse\bin\Debug\CBP_EMS_SP.InvitationResponse.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResponse\bin\Debug\CBP_EMS_SP.InvitationResponse.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResponse\obj\Debug\CBP_EMS_SP.InvitationResponse.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResponse\obj\Debug\CBP_EMS_SP.InvitationResponse.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResponse\obj\Debug\CBP_EMS_SP.InvitationResponse.pdb

@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DecInterestWP\bin\Debug\CBP_EMS_SP.DecInterestWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DecInterestWP\bin\Debug\CBP_EMS_SP.DecInterestWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DecInterestWP\obj\Debug\CBP_EMS_SP.DecInterestWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DecInterestWP\obj\Debug\CBP_EMS_SP.DecInterestWP.pdb

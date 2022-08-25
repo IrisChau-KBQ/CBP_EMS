@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" Id="3e61eeb3-2ddc-41ae-9833-807364e72207" Scope="Site" Title="CBP_EMS_SP.PublicUserControls Feature1">
+  <ElementManifests>
+    <ElementManifest Location="HeaderWebPart\Elements.xml" />
+    <ElementFile Location="HeaderWebPart\HeaderWebPart.webpart" />
+    <ElementManifest Location="FooterWebPart\Elements.xml" />
+    <ElementFile Location="FooterWebPart\FooterWebPart.webpart" />
+    <ElementManifest Location="UserLeftSidebar\Elements.xml" />
+    <ElementFile Location="UserLeftSidebar\UserLeftSidebar.webpart" />
+    <ElementManifest Location="MyApplications\Elements.xml" />
+    <ElementFile Location="MyApplications\MyApplications.webpart" />
+    <ElementManifest Location="ProgrammeManagement\Elements.xml" />
+    <ElementFile Location="ProgrammeManagement\ProgrammeManagement.webpart" />
+    <ElementManifest Location="InternalUserApplications\Elements.xml" />
+    <ElementFile Location="InternalUserApplications\InternalUserApplications.webpart" />
+    <ElementManifest Location="VettingTeam\Elements.xml" />
+    <ElementFile Location="VettingTeam\VettingTeam.webpart" />
+    <ElementManifest Location="ChangePassword\Elements.xml" />
+    <ElementFile Location="ChangePassword\ChangePassword.webpart" />
+  </ElementManifests>
+</Feature>

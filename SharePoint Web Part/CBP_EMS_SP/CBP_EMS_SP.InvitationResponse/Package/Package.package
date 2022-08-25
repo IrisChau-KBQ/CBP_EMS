@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="568cd3ad-3033-447d-a424-1abf88dad9a2" solutionId="568cd3ad-3033-447d-a424-1abf88dad9a2" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.InvitationResponse" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="9dddbbcb-e66e-4041-aa96-2f8a6f2b757d" />
+  </features>
+</package>

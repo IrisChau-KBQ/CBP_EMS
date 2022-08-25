@@ -1,0 +1,1133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Incubation" xml:space="preserve">
+    <value>Cyberport Incubation Programme</value>
+  </data>
+  <data name="Step_1_Profile" xml:space="preserve">
+    <value>YOUR PROFILE AND ELIGIBILITY</value>
+  </data>
+  <data name="Step_1_Q2" xml:space="preserve">
+    <value>Do you have a viable business plan for a product or service to be ready for marketing in 12 to 18 months?</value>
+  </data>
+  <data name="Step_1_Q3" xml:space="preserve">
+    <value>Do the founder(s) of the Applicant collectively (legally and beneficially) hold at least 51% of the company shares or absolute control of the Applicant at the time of application submission and throughout the Programme Period? </value>
+  </data>
+  <data name="Step_1_Q4" xml:space="preserve">
+    <value>Are you presently  a registered digital tech company limited by shares (or in progress of incorporation) under the Companies Ordinance in HKSAR with date of incorporation less than 7 years upon application deadline?  
+(Please upload your Certificate of Incorporation (CI) or receipt of application under Section 5.1.  In any case of pending for incorporation in Companies Registry, the process should be completed within 30 calendar days after the application deadline)</value>
+  </data>
+  <data name="Step_1_Q5" xml:space="preserve">
+    <value>You have read &lt;u&gt;&lt;a href="https://www.cyberport.hk/guides_and_notes/cip/ENC_RF_010_eng.pdf" target="_blank"&gt;Cyberport Incubation Programme Guides and Notes for the Applicants&lt;/a&gt;&lt;/u&gt; (ENC.RF.010) and confirmed that a principal applicant working for the applicant cannot be a founder, co-founder or director who is working for any of the following:
+&lt;Blockquote&gt;(i)	            A company in the same nature currently in any incubation programme(s) operated by Hong Kong Cyberport Management Company, Hong Kong Science &amp; Technology Parks Corporation, or Hong Kong Design Centre (together the “HK Incubators”); or&lt;/Blockquote&gt;
+&lt;Blockquote&gt;(ii)	A company in the same nature that has previously joined and graduated from any incubation programme  operated by any of the HK Incubators &lt;/Blockquote&gt;</value>
+  </data>
+  <data name="Step_1_Q6" xml:space="preserve">
+    <value>Have your proposed project or your other similar digital tech project(s) applied for or received any grant or funding from any publicly and / or privately funded organizations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 2.3.2.3 below.</value>
+  </data>
+  <data name="Step_1_Q7" xml:space="preserve">
+    <value>Is your proposed project or your other similar digital tech projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and / or privately-funded organizations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 2.3.2.3 below.</value>
+  </data>
+  <data name="Step_1_Q8" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 2.3.2.4.</value>
+  </data>
+  <data name="Step_1_Q9" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes. If yes, please set out the project reference of the previous application in Section 2.3.2.4 and highlight the main differences of this application vis-à- vis the previous one</value>
+  </data>
+  <data name="Step_1_Q10" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes. If yes, please set out the project reference of the previous application in Section 2.3.2.4 and highlight the main differences of this application vis-à- vis the previous one.</value>
+  </data>
+  <data name="Step2_COMPANY_INFORMATION" xml:space="preserve">
+    <value>COMPANY INFORMATION</value>
+  </data>
+  <data name="Step_1_Q1" xml:space="preserve">
+    <value>Is your idea rooted in digital tech related areas?</value>
+  </data>
+  <data name="Step2_Company_Name" xml:space="preserve">
+    <value>Company Name</value>
+  </data>
+  <data name="Instruction_1" xml:space="preserve">
+    <value>To observe the following requirements when filling in the application:</value>
+  </data>
+  <data name="Instruction_1_1" xml:space="preserve">
+    <value>Use &lt;mark&gt;English&lt;/mark&gt; to complete the application unless otherwise specified;</value>
+  </data>
+  <data name="Instruction_1_2" xml:space="preserve">
+    <value>Present all monetary figures in &lt;mark&gt;Hong Kong Dollar;&lt;/mark&gt;</value>
+  </data>
+  <data name="Instruction_1_3" xml:space="preserve">
+    <value>Use &lt;mark&gt;Traditional Chinese characters&lt;/mark&gt; for Chinese information;</value>
+  </data>
+  <data name="Instruction_1_4" xml:space="preserve">
+    <value>Put &lt;mark&gt;“NA”&lt;/mark&gt; where the information sought is not applicable or not available;</value>
+  </data>
+  <data name="Instruction_2" xml:space="preserve">
+    <value>To read the &lt;mark class="mark-2"&gt;&lt;a href="https://www.cyberport.hk/guides_and_notes/cip/ENC_RF_010_eng.pdf" target="_blank"&gt;Cyberport Incubation Programme Guides and Notes for the Applicants  (ENC.RF.010)&lt;/a&gt;&lt;/mark&gt; before filling in this Application Form.</value>
+  </data>
+  <data name="Instruction_3" xml:space="preserve">
+    <value>The form must be completed by the applicant. If the applicant is a company, the form must be completed by the director or owner of the applicant organisation. Otherwise it will not be processed.</value>
+  </data>
+  <data name="Instruction_4" xml:space="preserve">
+    <value>To submit &lt;mark class="mark-2"&gt;&lt;u&gt;1 online application associated with 1 email account is required in applying Cyberport Incubation Programme&lt;/u&gt;&lt;/mark&gt;</value>
+  </data>
+  <data name="Instruction_4_1" xml:space="preserve">
+    <value>For enquiries, please email to &lt;a href="mailto:cip_enquiry@cyberport.hk"&gt;cip_enquiry@cyberport.hk.&lt;/a&gt;&lt;br&gt;&lt;br&gt;
+Please prepare and upload the requested supporting documents including but not limited to the following if applicable: &lt;br&gt;
+&lt;ul&gt;
+ &lt;li&gt;Company documents (e.g. Business Registration, Certificate of Incorporation, etc.)
+&lt;/li&gt;                         
+  &lt;li&gt;Identity documents (e.g. copy of Hong Kong Identity Card, Passport, etc.)
+&lt;/li&gt;
+  &lt;li&gt;Other supplementary information such as Corporate Structure / Organisation Chart, Curriculum Vitae of team members, pictures, diagrams and business proposal etc. for illustration of your project (if any) 
+&lt;/li&gt;
+&lt;/ul&gt;
+  &lt;br&gt;&lt;br&gt;You are recommended to prepare a 1-minute video clip/presentation file/slide show to illustrate your project if applicable. Kindly provide the link in Section 5.3, if there is any.
+
+</value>
+  </data>
+  <data name="Step_2_Abstract" xml:space="preserve">
+    <value>Abstract</value>
+  </data>
+  <data name="Step_2_Revenue_model" xml:space="preserve">
+    <value>Revenue Model / Revenue Plan</value>
+  </data>
+  <data name="Step_2_Business_model" xml:space="preserve">
+    <value>Business Performance Milestones set for every six months during the entire incubation period.</value>
+  </data>
+  <data name="Step2_Heading" xml:space="preserve">
+    <value>YOUR PROFILE AND ELIGIBILITY</value>
+  </data>
+  <data name="Instruction_5" xml:space="preserve">
+    <value>For enquiries, please email to &lt;mark class="mark-2"&gt;cip_enquiry@cyberport.hk.&lt;/mark&gt;</value>
+  </data>
+  <data name="Instruction_6" xml:space="preserve">
+    <value>&lt;i&gt;Remarks: This application form has been translated into Chinese for reference only. In case of discrepancy, the English version shall prevail&lt;/i&gt;.</value>
+  </data>
+  <data name="Instruction_7" xml:space="preserve">
+    <value>Hong Kong Cyberport Management Company Limited</value>
+  </data>
+  <data name="Instruction_8" xml:space="preserve">
+    <value>Hong Kong Cyberport Management Company Limited</value>
+  </data>
+  <data name="Step_2_English" xml:space="preserve">
+    <value>English &lt;small&gt;(Within 300 words)&lt;/small&gt;</value>
+  </data>
+  <data name="Step3_PROJECT_INFORMATION" xml:space="preserve">
+    <value>PROJECT INFORMATION</value>
+  </data>
+  <data name="Step3_Project_Name" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="Step_2_Abstractsub" xml:space="preserve">
+    <value>(A summary of your company’s vision, mission and positioning.)</value>
+  </data>
+  <data name="Step_2_Details" xml:space="preserve">
+    <value>Details</value>
+  </data>
+  <data name="Step2_AppDesign" xml:space="preserve">
+    <value>Application Development</value>
+  </data>
+  <data name="Step2_Blockchain" xml:space="preserve">
+    <value>Blockchain</value>
+  </data>
+  <data name="Step2_Cybersecurity" xml:space="preserve">
+    <value>Cybersecurity</value>
+  </data>
+  <data name="Step2_BusinessArea" xml:space="preserve">
+    <value>Business Area &lt;small&gt;(Please choose one closest to your nature)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_Chinese" xml:space="preserve">
+    <value>Chinese &lt;small&gt;(Within 500 words)&lt;/small&gt;</value>
+  </data>
+  <data name="Step3_Complete_Date" xml:space="preserve">
+    <value>Complete Date</value>
+  </data>
+  <data name="Step3_Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Step3_day_month_year" xml:space="preserve">
+    <value>(day-month-year)</value>
+  </data>
+  <data name="Step2_ECommerce" xml:space="preserve">
+    <value>RetailTech / E-commerce</value>
+  </data>
+  <data name="Step2_Edutech" xml:space="preserve">
+    <value>EdTech</value>
+  </data>
+  <data name="Step2_EnvironmenTech" xml:space="preserve">
+    <value>EnvironmenTech</value>
+  </data>
+  <data name="Step2_Fintech" xml:space="preserve">
+    <value>FinTech</value>
+  </data>
+  <data name="Step2_Gaming" xml:space="preserve">
+    <value>E-sports / Digital Entertainment</value>
+  </data>
+  <data name="Step2_Healthcare" xml:space="preserve">
+    <value>HealthTech</value>
+  </data>
+  <data name="Step2_MarTech" xml:space="preserve">
+    <value>MarTech</value>
+  </data>
+  <data name="Step2_OpenData" xml:space="preserve">
+    <value>AI / Big Data</value>
+  </data>
+  <data name="Step2_Others" xml:space="preserve">
+    <value>Others (Please specify):</value>
+  </data>
+  <data name="Step2_Social_Media" xml:space="preserve">
+    <value>Social Media</value>
+  </data>
+  <data name="Step2_Wearable" xml:space="preserve">
+    <value>Robotics / IoT</value>
+  </data>
+  <data name="Step2_Smart_Building" xml:space="preserve">
+    <value>Smart Building</value>
+  </data>
+  <data name="Step2_Smart_Mobility" xml:space="preserve">
+    <value>Smart Mobility</value>
+  </data>
+  <data name="Step_2_Company_Details" xml:space="preserve">
+    <value>Company Details</value>
+  </data>
+  <data name="Step_2_Objectives" xml:space="preserve">
+    <value>Objectives - the “why” of the company</value>
+  </data>
+  <data name="Step_2_Background" xml:space="preserve">
+    <value>Background</value>
+  </data>
+  <data name="Step_2_Backgroundsub" xml:space="preserve">
+    <value>General background, history and ownership of this company. Please provide supporting documents, such as CI copy, company annual return, and names of the company’s founder(s), owner(s), major shareholder(s) and key member(s).</value>
+  </data>
+  <data name="Step_2_pilot" xml:space="preserve">
+    <value>Has any pilot work been done by your company and / or company partners in preparation for this company? If yes, please describe the work done.</value>
+  </data>
+  <data name="Step_2_Application_status" xml:space="preserve">
+    <value>Application Status</value>
+  </data>
+  <data name="Step_2_expendiuture_covered" xml:space="preserve">
+    <value>Nature of expenditure covered</value>
+  </data>
+  <data name="Step_2_amount_received" xml:space="preserve">
+    <value>Amount received/to be received</value>
+  </data>
+  <data name="Step_2_additionalinfo" xml:space="preserve">
+    <value>Additional Information &lt;small&gt;(If applicable)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_Implementation" xml:space="preserve">
+    <value>Implementation
+									&lt;small&gt;(A summary of your company’s vision, mission and positioning.)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_proposed_products" xml:space="preserve">
+    <value>Proposed Products / Services</value>
+  </data>
+  <data name="Step_2_Currency" xml:space="preserve">
+    <value>Currency</value>
+  </data>
+  <data name="Step_2_target_market" xml:space="preserve">
+    <value>Target Market / Clients and Market Potential</value>
+  </data>
+  <data name="Step_2_Exit_strategy" xml:space="preserve">
+    <value>Exit Strategy &lt;small&gt;(If applicable)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_competition_analysis" xml:space="preserve">
+    <value>Competition analysis: Any other similar or competitive products / services in the market? If yes, how do you differentiate your products / services from them and what are your competitive edges?</value>
+  </data>
+  <data name="Step_4_Funding_Status" xml:space="preserve">
+    <value>Funding Status</value>
+  </data>
+  <data name="Step_4_Funding_Statussub" xml:space="preserve">
+    <value>(List out in detail (i) all grants and funding received/to be received from other publicly and/or privately funded organizations/ programmes which the applicant (or companies established by he/she/it) has applied for, will receive or will be entitled to receive in the coming 18 months, or have received in the past 18 months; (ii) the nature of expenditure covered/to be covered by such funding sources; and (iii) the amount and the maximum amount received/to be received under such funding sources )</value>
+  </data>
+  <data name="Step_2_Maximum_amount" xml:space="preserve">
+    <value>Maximum amount to be received</value>
+  </data>
+  <data name="Step_2_Milestone" xml:space="preserve">
+    <value>Milestone</value>
+  </data>
+  <data name="Step_2_Month_1" xml:space="preserve">
+    <value>First 6 Months</value>
+  </data>
+  <data name="Step_2_Month_2" xml:space="preserve">
+    <value>Second 6 Months</value>
+  </data>
+  <data name="Step_2_Month_3" xml:space="preserve">
+    <value>Third 6 Months</value>
+  </data>
+  <data name="Step_2_Month_4" xml:space="preserve">
+    <value>Forth 6 Months</value>
+  </data>
+  <data name="Step_4_Name_of_Programme" xml:space="preserve">
+    <value>Name of Programme</value>
+  </data>
+  <data name="Step_4_Projectmilestone" xml:space="preserve">
+    <value>6-Month Project Milestone</value>
+  </data>
+  <data name="Step_4_Projectmilestonesub" xml:space="preserve">
+    <value>(The Milestone proposed will form as a basis for continuous project review and evaluation if the Grant is awarded )</value>
+  </data>
+  <data name="Step_4_project_management" xml:space="preserve">
+    <value>Project Management Team &lt;small&gt;(Vetting Weighting: 30%)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_project_managementsub" xml:space="preserve">
+    <value>The ability of the project management team reflected from its prior track record, execution ability, good probability of launch to market, individual qualifications, and team job allocation.</value>
+  </data>
+  <data name="Step_4_socialresponsibility" xml:space="preserve">
+    <value>Social Responsibility &lt;small&gt;(Vetting Weighting: 10%)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_4_socialresponsibilitysub" xml:space="preserve">
+    <value>Preference will be given to projects that incorporate social responsibility objectives as a project focus (including contribution to open source, creative commons and other “progressive” technologies with a social focus), demonstration of ethical decision making, or contribution towards solving problems that originate from the social environment.</value>
+  </data>
+  <data name="Step_4_CONTACT_DETAILS" xml:space="preserve">
+    <value>CONTACT DETAILS</value>
+  </data>
+  <data name="Step_4_Contact_No_Mobile" xml:space="preserve">
+    <value>Contact No. (Mobile)</value>
+  </data>
+  <data name="Step_4_Contact_Person" xml:space="preserve">
+    <value>Contact Person</value>
+  </data>
+  <data name="Step_4_Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="Step_4_Fax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="Step_4_First_Name" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Step_4_Principal_Applicant" xml:space="preserve">
+    <value>(Principal Applicant)</value>
+  </data>
+  <data name="Step_4_Contact_Office" xml:space="preserve">
+    <value>Contact No. (Office)</value>
+  </data>
+  <data name="Step_4_Last_Name" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="Step_4_Contact_Home" xml:space="preserve">
+    <value>Contact No. (Home)</value>
+  </data>
+  <data name="Step_4_Mailing_Address" xml:space="preserve">
+    <value>Mailing Address</value>
+  </data>
+  <data name="Step_4_Position" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="Step_4_Salution" xml:space="preserve">
+    <value>Salution</value>
+  </data>
+  <data name="Step_5_Full_Name" xml:space="preserve">
+    <value>Full Name of Principal Applicant</value>
+  </data>
+  <data name="Step_5_Title_Principal_Applicant" xml:space="preserve">
+    <value>Position Title of Principal Applicant</value>
+  </data>
+  <data name="Step_2_Resubmission" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-rejected application to Cyberport, and / or other Government-administered funding schemes. If yes, please set out the project reference of the previous application, in Section 2.4.8</value>
+  </data>
+  <data name="Step_2_App_Design" xml:space="preserve">
+    <value>App Design/ Web Production</value>
+  </data>
+  <data name="Step_2_Classification_of_Company" xml:space="preserve">
+    <value>Classification of Company</value>
+  </data>
+  <data name="step_2_Company_Type" xml:space="preserve">
+    <value>Company Type</value>
+  </data>
+  <data name="Step_2_Content_creation" xml:space="preserve">
+    <value>Content creation</value>
+  </data>
+  <data name="Step_2_Limited" xml:space="preserve">
+    <value>Limited</value>
+  </data>
+  <data name="Step_2_Main_Difference" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.4.7 above, please highlight the main differences of this application vis-à- vis the previous one and explain how the differences have addressed the previously-raised concerns.</value>
+  </data>
+  <data name="Step_2_Management" xml:space="preserve">
+    <value>Management / trading / service</value>
+  </data>
+  <data name="Step_2_Other_Attributes" xml:space="preserve">
+    <value>Other Attributes, if any</value>
+  </data>
+  <data name="Step_2_Platform" xml:space="preserve">
+    <value>Platform / device development</value>
+  </data>
+  <data name="Step_2_Position" xml:space="preserve">
+    <value>Positioning &lt;small&gt;(You may choose more than one)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_Preferred_Track" xml:space="preserve">
+    <value>Please indicate your preferred track of incubation
+											&lt;small&gt;(You may choose ONLY one)&lt;/small&gt;</value>
+  </data>
+  <data name="Step_2_Publicly_listed" xml:space="preserve">
+    <value>Publicly listed</value>
+  </data>
+  <data name="Step_2_Publslishing" xml:space="preserve">
+    <value>Publishing / distribution / delivery</value>
+  </data>
+  <data name="step_2_Unlimited" xml:space="preserve">
+    <value>Unlimited (private)</value>
+  </data>
+  <data name="Step_3_Academic_and_Professionals" xml:space="preserve">
+    <value>Core Member's Profile&lt;i&gt;(Academic and Professional Qualifications,Working Experiences and Special achievements)&lt;/i&gt;</value>
+  </data>
+  <data name="Step_3_Comapny_ownership_sub1" xml:space="preserve">
+    <value>Company Ownership and Organisation Chart</value>
+  </data>
+  <data name="Step_3_Comapny_ownership_sub2" xml:space="preserve">
+    <value>Company Ownership Structure</value>
+  </data>
+  <data name="Step_3_Company_Core_Members" xml:space="preserve">
+    <value>Company Core Members and Major Partners</value>
+  </data>
+  <data name="Step_3_Company_ownership" xml:space="preserve">
+    <value>COMPANY OWNERSHIP, ORGANIZATION CHART, CORE MEMBERS, PARTNERS AND FINANCIAL INFORMATION</value>
+  </data>
+  <data name="Step_3_Equipment" xml:space="preserve">
+    <value>Equipment Distribution</value>
+  </data>
+  <data name="Step_3_Expenditure" xml:space="preserve">
+    <value>Expenditure Distribution and Forecast Income</value>
+  </data>
+  <data name="Step_3_Forest_Income" xml:space="preserve">
+    <value>Forecast Income</value>
+  </data>
+  <data name="Step_3_HKID" xml:space="preserve">
+    <value>HKID or Passport No.</value>
+  </data>
+  <data name="Step_3_Major_Partner_Profiles" xml:space="preserve">
+    <value>Major Partners’ Profiles</value>
+  </data>
+  <data name="Step_3_Manpower_Distribution" xml:space="preserve">
+    <value>Manpower Distribution</value>
+  </data>
+  <data name="Step_3_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Step_3_Other_cost" xml:space="preserve">
+    <value>Other Direct Costs</value>
+  </data>
+  <data name="Step_3_Postitions" xml:space="preserve">
+    <value>Positions / Titles</value>
+  </data>
+  <data name="Step_3_Profiles" xml:space="preserve">
+    <value>Core Members’ Profiles</value>
+  </data>
+  <data name="Step_5_agree" xml:space="preserve">
+    <value>I agree to receive direct marketing information.</value>
+  </data>
+  <data name="Step_5_Declaration1" xml:space="preserve">
+    <value>We agree with all the terms and conditions set out in the Cyberport Incubation Programme Guides and Notes for the Applicants (ENC.RF.010) governing the application of the Cyberport Incubation Programme</value>
+  </data>
+  <data name="Step_5_Declaration2" xml:space="preserve">
+    <value>All information provided in this application as well as the accompanying information is true, not misleading in any manner and reflects the status of affairs as at the date of submission. I shall inform the Administration of the Cyberport Incubation Programme immediately if there are any changes to the above information.</value>
+  </data>
+  <data name="Step_5_Declaration3" xml:space="preserve">
+    <value>We are the creators of our proposed project the details of which have been described in Section 2.4.1 of this Cyberport Incubation Programme Application Form ("Project") and our Project is original. To the best of our knowledge, the Project and the product(s) and/or service(s) to be developed as a part of the Project are not under development or available anywhere in the world.</value>
+  </data>
+  <data name="Step_5_Declaration4" xml:space="preserve">
+    <value>The development, completion and use of the Project and the product(s) and/or service(s) to be developed as a part of the Project will not infringe the rights or intellectual property rights of any other party (whether registered or not), including but not limited to patent rights, trade mark rights, and copyright.</value>
+  </data>
+  <data name="Step_5_Declaration5" xml:space="preserve">
+    <value>Other than the funding programme(s) specified in Section 2.3.2.3 of this Application Form, we (whether individually or as part of any team) have not applied for or received any other grant or funding from any publicly and/or privately funded organisations/programmes for the Project in the past 18 months and we are not applying for nor will we be entitled to receive any other grant or funding from any publicly and/or privately funded organisations/programmes for the Project in the future 18 months. We will notify Cyberport immediately if we apply for or become entitled to any grant or funding from any publicly and/or privately funded organisations/programmes for the Project and when requested, provide evidence of payments made or received in respect of such programmes.</value>
+  </data>
+  <data name="Step_5_Declaration6" xml:space="preserve">
+    <value>We will use any grant or financial assistance to be received from the Cyberport Incubation Programme (if any) for the sole purpose of developing and completing the Project.  We will not give away, share or otherwise use any grant or financial assistance to be received from the Cyberport Incubation Programme in contravention of the law or any of the terms which apply to application for funding from the Cyberport Incubation Programme</value>
+  </data>
+  <data name="Step_5_have_read" xml:space="preserve">
+    <value>In consideration of HKCMCL considering and processing our application for funding from Cyberport Incubation
+Programme, we confirm our agreement and undertake the following by checking this box</value>
+  </data>
+  <data name="Step_5_Personal_Information" xml:space="preserve">
+    <value>PERSONAL INFORMATION COLLECTION STATEMENT</value>
+  </data>
+  <data name="Step_5_visit" xml:space="preserve">
+    <value>Please visit our website http://www.cyberport.hk/en/pics for the Personal Information Collection Statement of Hong Kong Cyberport Management Company Limited.</value>
+  </data>
+  <data name="tep_2_Production" xml:space="preserve">
+    <value>Production / post-production</value>
+  </data>
+  <data name="Step_6_PERSONAL_INFORMATION" xml:space="preserve">
+    <value>PERSONAL INFORMATION COLLECTION STATEMENT</value>
+  </data>
+  <data name="Step_6_PERSONAL_INFORMATION_1" xml:space="preserve">
+    <value>This Personal Information Collection Statement of Hong Kong Cyberport Management Company Limited ("us" or "we") applies to the personal data collected in this Cyberport Incubation Programme Application Form ("Personal Data").</value>
+  </data>
+  <data name="step_6_personal_information_collection" xml:space="preserve">
+    <value>l have read the Personal Information Collection Statement above.</value>
+  </data>
+  <data name="Step_6_Privacy" xml:space="preserve">
+    <value>Our Privacy Policy and Practices</value>
+  </data>
+  <data name="Step_6_Privacy_1" xml:space="preserve">
+    <value>Please see our Privacy Policy Statement at</value>
+  </data>
+  <data name="Step_6_Privacy_2" xml:space="preserve">
+    <value>Please see our Privacy Policy Statement at &lt;span class="bold graylbl-2"&gt;http://www.cyberport.hk/en/privacy_policy&lt;/span&gt; for our general policy and practices in respect of our collection and use of personal data.</value>
+  </data>
+  <data name="Step_6_Purpose" xml:space="preserve">
+    <value>Purpose and Use of Your Data</value>
+  </data>
+  <data name="Step_6_Purpose_1" xml:space="preserve">
+    <value>The Personal Data will be used for one or more of the following purposes:</value>
+  </data>
+  <data name="Step_6_Purpose_2" xml:space="preserve">
+    <value>processing your application;</value>
+  </data>
+  <data name="Step_6_Purpose_3" xml:space="preserve">
+    <value>communicating with you if we have any/or question and update about your application;</value>
+  </data>
+  <data name="Step_6_Purpose_4" xml:space="preserve">
+    <value>providing updates, services, products, facilities or activities and matters relating to our administration, management, operation and maintenance;</value>
+  </data>
+  <data name="Step_6_Purpose_5" xml:space="preserve">
+    <value>designing, reviewing, evaluating and enhancing our services, products, facilities or activities (including conducting research, survey and analysis for those purposes);</value>
+  </data>
+  <data name="Step_6_Purpose_6" xml:space="preserve">
+    <value>direct marketing (please see "Direct Marketing" section below); and</value>
+  </data>
+  <data name="Step_6_Purpose_7" xml:space="preserve">
+    <value>handling complaints, legal, safety and security purposes.</value>
+  </data>
+  <data name="Step_6_Purpose_8" xml:space="preserve">
+    <value>It is mandatory to provide the requested personal data, or we will not be able to process your application.</value>
+  </data>
+  <data name="STEP_6_STATEMENT" xml:space="preserve">
+    <value>This Statement is written in the English language and may be translated into other languages. In the event of any inconsistency between the English version and the translated version of this Statement, the English version shall prevail.</value>
+  </data>
+  <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
+    <value>Position Title of Principal Applicant</value>
+  </data>
+  <data name="Step_6_Transfer_data" xml:space="preserve">
+    <value>Transfer of Your Data</value>
+  </data>
+  <data name="Step_6_Transfer_data_1" xml:space="preserve">
+    <value>Your Data will not generally be disclosed or transferred to any other party in a form that would identify you, except in the following circumstances:</value>
+  </data>
+  <data name="Step_6_Transfer_data_2" xml:space="preserve">
+    <value>If we use third party suppliers or service providers who provide services to support our business operation or facilitate provision of our services, products, facilities or activities, we may provide Your Data to these suppliers or service providers.</value>
+  </data>
+  <data name="Step_6_Transfer_data_3" xml:space="preserve">
+    <value>We may disclose Your Data to any governmental or law enforcement agency, judicial body or regulatory authority to whom we are required to make disclosure according to any law, regulation, court order, direction, code or guideline.</value>
+  </data>
+  <data name="Step_6_Transfer_data_4" xml:space="preserve">
+    <value>In addition, Your Data may be accessed by, disclosed or transferred to any person under a duty of confidentiality to us (including our accountants, auditors, legal advisers or other professional advisers) for the purposes described in the "Purpose and Use of Your Data" section above.</value>
+  </data>
+  <data name="BRCOPY" xml:space="preserve">
+    <value>Certificate of Incorporation / Receipt of Application (if you are in process of company incorporation)</value>
+  </data>
+  <data name="CompanyAnnualReturn" xml:space="preserve">
+    <value>Company Annual Return</value>
+  </data>
+  <data name="File_size" xml:space="preserve">
+    <value>File size is limited to 5MB</value>
+  </data>
+  <data name="File_type" xml:space="preserve">
+    <value>File type is limited to PDF, DOC, DOCX, XLS, XLSX, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="File_type_presntation" xml:space="preserve">
+    <value>File type is limited to PDF, PPT, PPTX, PNG, JPG, GIF</value>
+  </data>
+  <data name="OtherAttachment" xml:space="preserve">
+    <value>Other Attachment</value>
+  </data>
+  <data name="Step_6_Access" xml:space="preserve">
+    <value>Access to and Correction of Your Data</value>
+  </data>
+  <data name="Step_6_Access_1" xml:space="preserve">
+    <value>You have the right to request access to, and correction of, Your Data held by us. We may charge a reasonable fee for administering and processing your data access request. If you need to check whether we hold Your Data or if you wish to have access to, correct any of Your Data which is inaccurate, please write via e-mail to our Data Protection Officer at &lt;span class="bold graylbl-2"&gt;dpo@cyberport.hk&lt;/span&gt; or via mail to Level 6, Cyberport 2, 100 Cyberport Road, Hong Kong.</value>
+  </data>
+  <data name="Step_6_cyberport_1" xml:space="preserve">
+    <value>means the community or development located at Telegraph Bay, Pokfulam including its offices, centres and arcade.</value>
+  </data>
+  <data name="Step_6_cyberport_2" xml:space="preserve">
+    <value>We cannot use Your Data for direct marketing unless we have received your consent or indication of no objection. You may write to our Data Protection Officer or contact us via the contact information provided in our direct marketing materials to opt out from direct marketing at any time.</value>
+  </data>
+  <data name="Step_6_Direct_marketing" xml:space="preserve">
+    <value>Direct Marketing</value>
+  </data>
+  <data name="Step_6_Direct_marketing_1" xml:space="preserve">
+    <value>In connection with direct marketing, we intend to use your name and email address to market and promote the services, products, facilities, activities, contests, conferences, lucky draws, events and promotional campaigns from time to time available relating to us or "Cyberport", or shops or merchants or hotel in the "Cyberport" or offered or hosted at "Cyberport" (including consumer goods, food and beverages, books and stationery, children goods and services, fashion and accessories, optical products, watches, jewellery, luxurious goods, personal care, health and beauty products and services, furniture and lifestyle goods, home furnishing and appliances, florists, sports gear and products, electronic products and appliances, banking and financial services, cinemas and theatres, cultural, entertainment facilities and activities, charity activities, leisure activities and performances, gift redemptions and car parking facilities)</value>
+  </data>
+  <data name="step_6_marketing" xml:space="preserve">
+    <value>I agree to receive direct marketing information.</value>
+  </data>
+  <data name="VideoClip" xml:space="preserve">
+    <value>Video Clip&lt;br&gt; &lt;p style="color:#808080"&gt;&lt;i&gt;(Recommended item)&lt;/i&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="intruction_you_are" xml:space="preserve">
+    <value>You are required:</value>
+  </data>
+  <data name="PresentationSlide" xml:space="preserve">
+    <value>Presentation Slide&lt;br&gt;&lt;p style="color:#808080"&gt; &lt;i&gt;(Recommended item)&lt;/i&gt;&lt;/p&gt;</value>
+  </data>
+  <data name="Step_2_Off_site_incubation" xml:space="preserve">
+    <value>Off-site incubation</value>
+  </data>
+  <data name="Step_2_On_site_incubation" xml:space="preserve">
+    <value>On-site incubation</value>
+  </data>
+  <data name="ATTACHMENT_Title" xml:space="preserve">
+    <value>ATTACHMENT</value>
+  </data>
+  <data name="Step_2_5_5_Note" xml:space="preserve">
+    <value>Note: On-site incubatee should maintain a reasonable level of utilisation of the office space allocated on a regular basis.   If the monthly utilisation rate is lower than 50% in any 3 months during the term, the use of allocated office space will be terminated.  Office space will be allocated subject to availability.</value>
+  </data>
+  <data name="Step_5_Declaration7" xml:space="preserve">
+    <value>We understand the information provided in this application will be disclosed to authorised Cyberport staff and vetting team for screening and vetting purposes. No Confidential Agreement of any kind will be signed with Cyberport or the authorised Cyberport staff and vetting members on any occasion.</value>
+  </data>
+  <data name="Step_5_Declaration8" xml:space="preserve">
+    <value>We give our consent to authorised Cyberport staff to carry out necessary due diligence/reference check for the purpose of assessing this application.</value>
+  </data>
+  <data name="Step_5_Declaration9" xml:space="preserve">
+    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant or financial assistance received by the applicant if any member of the team breaches any of the terms and conditions in the Cyberport Incubation Programme Guides and Notes for the Applicants (ENC.RF.010), this Cyberport Incubation Programme Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
+  </data>
+  <data name="Step_6_Transfer_data_note" xml:space="preserve">
+    <value>As the parties mentioned above may be located outside Hong Kong, Your Data may be transferred out of Hong Kong.</value>
+  </data>
+  <data name="Amount_Format" xml:space="preserve">
+    <value>(Please input numbers with two decimals)</value>
+  </data>
+  <data name="Step_6_cyberport" xml:space="preserve">
+    <value>“Cyberport”</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>Email invalid</value>
+  </data>
+  <data name="Contact_Fax" xml:space="preserve">
+    <value>Fax invalid</value>
+  </data>
+  <data name="Contact_firstname" xml:space="preserve">
+    <value>First Name Eng is required and max 255 characters allow.</value>
+  </data>
+  <data name="Contact_Home" xml:space="preserve">
+    <value>Contact No Home invalid</value>
+  </data>
+  <data name="Contact_lastname" xml:space="preserve">
+    <value>Last Name Eng is required and max 255 characters allow.</value>
+  </data>
+  <data name="Contact_Mobile" xml:space="preserve">
+    <value>Contact No Mobile invalid</value>
+  </data>
+  <data name="Contact_Office" xml:space="preserve">
+    <value>Contact No Office invalid</value>
+  </data>
+  <data name="Contact_Position" xml:space="preserve">
+    <value>Position length should be less than 255 characters.</value>
+  </data>
+  <data name="Core_member_HKID" xml:space="preserve">
+    <value>HKID is required and max 255 characters allow.</value>
+  </data>
+  <data name="Core_member_name" xml:space="preserve">
+    <value>Name is required and max 255 characters allow.</value>
+  </data>
+  <data name="Core_member_position" xml:space="preserve">
+    <value>Position is required and max 255 characters allow.</value>
+  </data>
+  <data name="Finalsubmit_emalandpass" xml:space="preserve">
+    <value>Invalid Email and Password</value>
+  </data>
+  <data name="Funding_Amount" xml:space="preserve">
+    <value>Amount Received should be decimal number with 2 precision digits.</value>
+  </data>
+  <data name="Funding_Application_status" xml:space="preserve">
+    <value>Application status  max 255 characters allow.</value>
+  </data>
+  <data name="Funding_Date" xml:space="preserve">
+    <value>Please Fill Date in funding status</value>
+  </data>
+  <data name="Funding_Date_Empty" xml:space="preserve">
+    <value>Date in Funding cannot be empty</value>
+  </data>
+  <data name="Funding_Expenditure" xml:space="preserve">
+    <value>Expenditure Nature length should be less than 255 characters.</value>
+  </data>
+  <data name="Funding_MaximumAmount" xml:space="preserve">
+    <value>Maximum Amount should be  decimal number with 2 precision digits.</value>
+  </data>
+  <data name="Funding_Programme_name" xml:space="preserve">
+    <value>Programme Name  max 255 characters allow.</value>
+  </data>
+  <data name="Funding_status" xml:space="preserve">
+    <value>Funding Status length should be less than 255 characters.</value>
+  </data>
+  <data name="Question_1_1" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.1</value>
+  </data>
+  <data name="Question_1_10" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.10</value>
+  </data>
+  <data name="Question_1_2" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.2</value>
+  </data>
+  <data name="Question_1_3" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.3</value>
+  </data>
+  <data name="Question_1_4" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.4</value>
+  </data>
+  <data name="Question_1_5" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.5</value>
+  </data>
+  <data name="Question_1_6" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.6</value>
+  </data>
+  <data name="Question_1_7" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.7</value>
+  </data>
+  <data name="Question_1_8" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.8</value>
+  </data>
+  <data name="Question_1_9" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.9</value>
+  </data>
+  <data name="Releventdata_error" xml:space="preserve">
+    <value>Could not found the relevent data.</value>
+  </data>
+  <data name="Abstract_Chinese_Error" xml:space="preserve">
+    <value>Please fill in the required field: 2.2.2 Abstract (Chinese).</value>
+  </data>
+  <data name="Abstract_Error" xml:space="preserve">
+    <value>Please fill in the required field: 2.2.1 Abstract (English)</value>
+  </data>
+  <data name="Comapny_Name_Error" xml:space="preserve">
+    <value>Please fill in the required field: 2.1 Company Name(English).</value>
+  </data>
+  <data name="Contact_Firstname_required" xml:space="preserve">
+    <value>First name required</value>
+  </data>
+  <data name="Contact_Lastname_required" xml:space="preserve">
+    <value>Last name required</value>
+  </data>
+  <data name="Core_hkid_required" xml:space="preserve">
+    <value>HKID Required</value>
+  </data>
+  <data name="Core_name_required" xml:space="preserve">
+    <value>Name Required</value>
+  </data>
+  <data name="Core_positions_required" xml:space="preserve">
+    <value>Positions Required</value>
+  </data>
+  <data name="Error_Abstract_chinese_length" xml:space="preserve">
+    <value>2.2.2 Abstract(Chinese) should be within 500 words.</value>
+  </data>
+  <data name="Error_Abstract_english_length" xml:space="preserve">
+    <value>2.2.1 Abstract(English) should be within 300 words.</value>
+  </data>
+  <data name="Error_Addidtiona_Info" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.2.4 Additional Information, if Question 1.9 is Yes</value>
+  </data>
+  <data name="Error_Applicant_fullname" xml:space="preserve">
+    <value>Please fill in full name of Principal Applicant in page 5</value>
+  </data>
+  <data name="Error_Applicationstatus_required" xml:space="preserve">
+    <value>Application Status Required</value>
+  </data>
+  <data name="Error_atleast_contact" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 4.1 Contact Details.</value>
+  </data>
+  <data name="Error_atleast_coremember" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 3.2 Company Core Members</value>
+  </data>
+  <data name="Error_BR_Copy" xml:space="preserve">
+    <value>Please upload document in the required field:  5.1 Certificate of Incorporation / Receipt of Application</value>
+  </data>
+  <data name="Error_Business_Area" xml:space="preserve">
+    <value>Please select the required field: 2.5.2 Business Area.</value>
+  </data>
+  <data name="Error_Business_Area_length" xml:space="preserve">
+    <value>Business Area length should be  1-30 characters.</value>
+  </data>
+  <data name="Error_Busniess_Area_Other_lenth" xml:space="preserve">
+    <value>2.5.2 Other Business Area Type should be  1-30 characters.</value>
+  </data>
+  <data name="Error_company_name_chinese" xml:space="preserve">
+    <value>Company Name Chi length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_company_name_length" xml:space="preserve">
+    <value>Company Name Eng length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_company_name_other" xml:space="preserve">
+    <value>2.5.1 Other Company Type should not exceed 255 characters.</value>
+  </data>
+  <data name="Error_company_ownership_structure" xml:space="preserve">
+    <value>Please upload document in the required field:3.1.2  Company Organisation Chart.</value>
+  </data>
+  <data name="Error_Company_structure" xml:space="preserve">
+    <value>Please fill in the required field: 3.1.1 Company Ownership Structure.</value>
+  </data>
+  <data name="Error_Company_Type" xml:space="preserve">
+    <value>Please select the required field: 2.5.1 Company Type.</value>
+  </data>
+  <data name="Error_company_type_length" xml:space="preserve">
+    <value>Company Type length should be  1-10 characters.</value>
+  </data>
+  <data name="Error_Competition_Analysis" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.3 Competition Analysis.</value>
+  </data>
+  <data name="Error_Contact_fillall" xml:space="preserve">
+    <value>Please fill in Last Name, First Name, Salutation, Position, Contact No., Contact No. Type, Email and Mailing Address for each record in Page 4 Contact Details, or leave all fields blank to remove the Contact.</value>
+  </data>
+  <data name="Error_core_member" xml:space="preserve">
+    <value>Please fill in Name, Position/Title, HKID/Passport No. and Core Member's Profile for each record in 3.2 Company Core Members, or leave all fields blank to remove the Company Core Member.</value>
+  </data>
+  <data name="Error_Date_Required" xml:space="preserve">
+    <value>Date Required</value>
+  </data>
+  <data name="Error_Declaration" xml:space="preserve">
+    <value>Please answer if you agree declaration in page 5</value>
+  </data>
+  <data name="Error_equipment_distribution" xml:space="preserve">
+    <value>Please fill in the required field:3.3.2 Equipment Distribution.</value>
+  </data>
+  <data name="Error_file_upload" xml:space="preserve">
+    <value>Please select file before upload.</value>
+  </data>
+  <data name="Error_Forecast_income" xml:space="preserve">
+    <value>Please fill in the required field:3.3.4 Forecast Income.</value>
+  </data>
+  <data name="Error_Funding_Allfields" xml:space="preserve">
+    <value>Please fill in all fields in each record in 2.3.2.3 Funding Status</value>
+  </data>
+  <data name="Error_funding_amount" xml:space="preserve">
+    <value>Amount received should be number only.</value>
+  </data>
+  <data name="Error_funding_maxamount" xml:space="preserve">
+    <value>Maximum Amount should be number only.</value>
+  </data>
+  <data name="Error_Funding_Required" xml:space="preserve">
+    <value>Please fill in at least one record in the required field: 2.3.2.3 Funding Status, if Question 1.6 or Question 1.7 or Question 1.8 answer is Yes.</value>
+  </data>
+  <data name="Error_General_Background" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.2.1 General Background History and Ownership.</value>
+  </data>
+  <data name="Error_Major_Partners" xml:space="preserve">
+    <value>Please fill in the required field: 3.2.2 Major Partners' Profiles.</value>
+  </data>
+  <data name="Error_Manpower_Distribution" xml:space="preserve">
+    <value>Please fill in the required field:3.3.1 Manpower Distribution.</value>
+  </data>
+  <data name="Error_Other_Business_Area" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.2 Other Business Area, if 2.5.2 Business Area is Others.</value>
+  </data>
+  <data name="Error_Other_Company_Type" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.1 Other Company Type, if 2.5.1 Company Type is Others.</value>
+  </data>
+  <data name="Error_other_direct_cost" xml:space="preserve">
+    <value>Please fill in the required field:3.3.3 Other Direct Costs.</value>
+  </data>
+  <data name="Error_Personal_information" xml:space="preserve">
+    <value>Please answer if you agree Personal Information in page 5</value>
+  </data>
+  <data name="Error_Pilot_Work" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.2.2 Pilot Work Done.</value>
+  </data>
+  <data name="Error_Positioning" xml:space="preserve">
+    <value>Please select the required field: 2.5.3 Positioning.</value>
+  </data>
+  <data name="Error_Positioning_Management" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.3 Positioning (Management, Trading, Services), if 2.5.3 Positioning is Management, Trading, Services.</value>
+  </data>
+  <data name="Error_positioning_management_lenghth" xml:space="preserve">
+    <value>2.5.3 Positioning (Management, Trading, Services) should not exceed 255 characters.</value>
+  </data>
+  <data name="Error_Positioning_Management_others" xml:space="preserve">
+    <value>Please fill in the required field: 2.5.3 Positioning (Others), if 2.5.3 Positioning is Others.</value>
+  </data>
+  <data name="Error_positioning_other_lenghth" xml:space="preserve">
+    <value>2.5.3 Positioning (Others) should not exceed 255 characters.</value>
+  </data>
+  <data name="Error_Position_Applicant" xml:space="preserve">
+    <value>Please fill in position/title of Principal Applicant in page 5</value>
+  </data>
+  <data name="Error_preferred_length" xml:space="preserve">
+    <value>Preferred Track length should be  1-30 characters.</value>
+  </data>
+  <data name="Error_Preferred_track" xml:space="preserve">
+    <value>Please select the required field: 2.5.5 Preferred track of incubation.</value>
+  </data>
+  <data name="Error_principal_position_length" xml:space="preserve">
+    <value>Principal Position Title length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Principal_title_length" xml:space="preserve">
+    <value>Principal Position Title length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_programename_required" xml:space="preserve">
+    <value>Name of Programme Required</value>
+  </data>
+  <data name="Error_Project_Milestone" xml:space="preserve">
+    <value>Please fill in all fields in the required field: 2.4.6 6 months Project Milestone.</value>
+  </data>
+  <data name="Error_Propsed_Products" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.1 Proposed Products / Services.</value>
+  </data>
+  <data name="Error_Resubmission" xml:space="preserve">
+    <value>Please select yes/no in the required field: 2.4.7 Resubmission.</value>
+  </data>
+  <data name="Error_Resubmission_option" xml:space="preserve">
+    <value>2.4.8 can not be empty, if 2.4.7 answer is Yes</value>
+  </data>
+  <data name="Error_Revenue_Model" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.4 Revenue Model / Revenue Plan.</value>
+  </data>
+  <data name="Error_Target_Market" xml:space="preserve">
+    <value>Please fill in the required field: 2.4.2 Target Market / Clients and Market Potential.</value>
+  </data>
+  <data name="Error_Video_link_url" xml:space="preserve">
+    <value>Please fill in valid hyperlink in 5.3 Video Clip.</value>
+  </data>
+  <data name="Objective_Error" xml:space="preserve">
+    <value>Please fill in the required field: 2.3.1 Objective.</value>
+  </data>
+  <data name="Error_contact_validation" xml:space="preserve">
+    <value>Contact No. should be number only.</value>
+  </data>
+  <data name="Error_email_validation" xml:space="preserve">
+    <value>Please input correct email format</value>
+  </data>
+  <data name="Error_fax_validation" xml:space="preserve">
+    <value>Fax should be number only.</value>
+  </data>
+  <data name="Error_videourl_validation" xml:space="preserve">
+    <value>Invalid Video Clip Url</value>
+  </data>
+  <data name="Instruction_0" xml:space="preserve">
+    <value>You are required:</value>
+  </data>
+  <data name="Error_Contact_Home" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Contact No. (Home) in page 4</value>
+  </data>
+  <data name="Error_Contact_Mobile" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Contact No. (Mobile) in page 4</value>
+  </data>
+  <data name="Error_Contact_Office" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Contact No. (Office) in page 4</value>
+  </data>
+  <data name="Error_Email" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Email in page 4</value>
+  </data>
+  <data name="Error_First_Name_Eng" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: First Name Eng in page 4</value>
+  </data>
+  <data name="Error_Last_Name_Eng" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Last Name Eng in page 4</value>
+  </data>
+  <data name="Error_Mailing_Address" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Mailing Address in page 4</value>
+  </data>
+  <data name="Error_Position" xml:space="preserve">
+    <value>Please fill in Contact Detail {0}: Position in page 4</value>
+  </data>
+  <data name="Error6_Deadline_Message" xml:space="preserve">
+    <value>Changes are not saved or submitted</value>
+  </data>
+  <data name="Step2_Company_Name_Sub" xml:space="preserve">
+    <value>(Same as the Name of Business/ Corporation on valid Business Registration Certificate in Hong Kong)</value>
+  </data>
+  <data name="Contact_Nationality" xml:space="preserve">
+    <value>Place of Origin Invalid</value>
+  </data>
+  <data name="Error_CountryOrigin_length" xml:space="preserve">
+    <value>Place of Origin length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_ProjectName_length" xml:space="preserve">
+    <value>Project Name length should be less than 255 characters.</value>
+  </data>
+  <data name="Step2_2a_ProjectName" xml:space="preserve">
+    <value>Project Name</value>
+  </data>
+  <data name="Step2_2b_Establishment" xml:space="preserve">
+    <value>Year of Establishment of Your Company in HK</value>
+  </data>
+  <data name="Step2_2c_CountryOFOrigin" xml:space="preserve">
+    <value>Place of Origin</value>
+  </data>
+  <data name="Step2_2d_NewHK" xml:space="preserve">
+    <value>NEW to HK ?</value>
+  </data>
+  <data name="Step2_Company_NameSub" xml:space="preserve">
+    <value>(Same as the Name of Business/ Corporation on valid Business Registration Certificate in Hong Kong)</value>
+  </data>
+  <data name="Step_4_Nationality" xml:space="preserve">
+    <value>Place of Origin</value>
+  </data>
+  <data name="Error_Website_length" xml:space="preserve">
+    <value>Website length should be less than 255 characters.</value>
+  </data>
+  <data name="Error_Year_of_EstablishmentInvalid" xml:space="preserve">
+    <value>Invalid date format in Year of Establishment</value>
+  </data>
+  <data name="Step2_Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Question_1_1_Note" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt; 1.1 You are not eligible to submit: Projects must be rooted in digital tech related
+areas.</value>
+  </data>
+  <data name="Question_1_1_SubmitError" xml:space="preserve">
+    <value>Question 1.1 Must select "Yes" to qualify for  submission.</value>
+  </data>
+  <data name="Question_1_2_Note" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt; 1.2 You are not eligible to submit: The applicant should have a viable business plan for a product or service to
+be ready for marketing in 12 to 18 months.</value>
+  </data>
+  <data name="Question_1_2_SubmitError" xml:space="preserve">
+    <value>Question 1.2 Must select "Yes" to qualify for  submission.</value>
+  </data>
+  <data name="Question_1_3_Note" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt; 1.3 You are not eligible to submit: The applicant should collectively (legally and beneficially) hold at least 51% of the company shares or absolute control of the Applicant at the time of application submission and throughout the Programme Period.</value>
+  </data>
+  <data name="Question_1_3_SubmitError" xml:space="preserve">
+    <value>Question 1.3 Must select "Yes" to qualify for  submission.</value>
+  </data>
+  <data name="Question_1_4_Note" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt; 1.4 You are not eligible to submit: The applicant must be a digital tech company registered and incorporated (or in progress of incorporation) in HKSAR less than 7 years upon application deadline.</value>
+  </data>
+  <data name="Question_1_4_SubmitError" xml:space="preserve">
+    <value>Question 1.4 Must select "Yes" to qualify for  submission.</value>
+  </data>
+  <data name="Question_1_5_Note" xml:space="preserve">
+    <value>&lt;b&gt;Note&lt;/b&gt; 1.5 You are not eligible to submit: A principal applicant working for the applicant
+cannot be a founder, co-founder or director who is working for any of the
+following: a company in the same nature currently in any incubation programme(s)
+operated by Hong Kong Cyberport Management Company, Hong Kong Science &amp;
+Technology Parks Corporation, or Hong Kong Design Centre (together the “HK
+Incubators”); or a company in the same nature that has previously joined and
+graduated from any incubation programme operated by any of the HK Incubators.</value>
+  </data>
+  <data name="Question_1_5_SubmitError" xml:space="preserve">
+    <value>Question 1.5 Must select "Yes" to qualify for  submission.</value>
+  </data>
+  <data name="Declaration_Title" xml:space="preserve">
+    <value>DECLARATION</value>
+  </data>
+  <data name="CI_Reminder" xml:space="preserve">
+    <value>If company name has changed, please also provide the original Certificate(s) of Incorporation through Section 5.5 below</value>
+  </data>
+  <data name="Question_1_8_1" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 1.9</value>
+  </data>
+  <data name="Step_1_Q8_1" xml:space="preserve">
+    <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Creative Micro Funds (CCMF) in the same intake? If “Yes”, Hong Kong Cyberport Management Company Limited (HKCMCL) shall only consider your application of Cyberport Incubation Programme for this intake without further notice.</value>
+  </data>
+  <data name="Error_CI_Copy" xml:space="preserve">
+    <value>Please upload document in the required field: 5.1 Certificate of Incorporation / Receipt of Application</value>
+  </data>
+</root>

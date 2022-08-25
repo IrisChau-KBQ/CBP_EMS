@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="CASP_Special_Request_Form" List="113" Url="_catalogs/wp">
+    <File Path="CASP_Special_Request_Form\CASP_Special_Request_Form.webpart" Url="CBP_EMS_SP.CASP_Special_Request_Form_CASP_Special_Request_Form.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

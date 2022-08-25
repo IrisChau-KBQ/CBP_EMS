@@ -1,0 +1,322 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DC2D3006-B473-48AA-90EA-A998145ACCDD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CBP_EMS_SP.Resources</RootNamespace>
+    <AssemblyName>CBP_EMS_SP.Resources</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\CPB_EMS_Localization.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CPB_EMS_Localization.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_CASP.zh-CN.Designer.cs">
+      <DependentUpon>CyberportEMS_CASP.zh-CN.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_CASP.zh-HK.Designer.cs">
+      <DependentUpon>CyberportEMS_CASP.zh-HK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_CASP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_CASP.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_CCMF.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_CCMF.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_CCMF.zh-HK.Designer.cs">
+      <DependentUpon>CyberportEMS_CCMF.zh-HK.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_Common.Designer.cs">
+      <DependentUpon>CyberportEMS_Common.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_Incubation.Designer.cs">
+      <DependentUpon>CyberportEMS_Incubation.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_CCMF.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_CCMF.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_Incubation.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_Incubation.zh-CN.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_Incubation.zh-HK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_Incubation.zh-HK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_Common.zh-HK.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_Common.zh-HK.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\CyberportEMS_Common.zh-CN.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_Common.zh-CN.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="DocumentTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a45893fe-e47d-4d59-96be-94e370186b9c}</SharePointProjectItemId>
+    </None>
+    <None Include="Images\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0e7ba0e3-25de-4cc0-a9aa-804bd50a720d}</SharePointProjectItemId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{187e9027-9d29-4a0c-81c2-03ae91be8004}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Resources\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{63e33f73-940a-47fa-b049-596b73fd6483}</SharePointProjectItemId>
+    </None>
+    <None Include="STYLES\CBP_Styles\EMS-Public.master" />
+    <None Include="STYLES\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{fafa2098-60c1-49ff-9a3f-3eb78d2883c5}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DocumentTemplates\ApplicationAttachement\text.txt" />
+    <Content Include="DocumentTemplates\CBP_Email\Tbl_ForgotPassword.html" />
+    <Content Include="DocumentTemplates\CBP_Email\Tpl_Registration.html" />
+    <Content Include="Images\CBP_Images\11.png" />
+    <Content Include="Images\CBP_Images\2.png" />
+    <Content Include="Images\CBP_Images\ajax-loader.gif" />
+    <Content Include="Images\CBP_Images\Calender.png" />
+    <Content Include="Images\CBP_Images\close.png" />
+    <Content Include="Images\CBP_Images\Cross Border.png" />
+    <Content Include="Images\CBP_Images\delete.png" />
+    <Content Include="Images\CBP_Images\dir-1.png" />
+    <Content Include="Images\CBP_Images\dir.png" />
+    <Content Include="Images\CBP_Images\downword menu.png" />
+    <Content Include="Images\CBP_Images\edit_gray.png" />
+    <Content Include="Images\CBP_Images\Forget Password.png" />
+    <Content Include="Images\CBP_Images\fst.png" />
+    <Content Include="Images\CBP_Images\gereenDropdownMenu.png" />
+    <Content Include="Images\CBP_Images\Globe.png" />
+    <Content Include="Images\CBP_Images\HK.png" />
+    <Content Include="Images\CBP_Images\ICAC.png" />
+    <Content Include="Images\CBP_Images\icon_x.gif" />
+    <Content Include="Images\CBP_Images\Internal Use-6.5-Delete.png" />
+    <Content Include="Images\CBP_Images\Internal Use-6.5-Edit Button.png" />
+    <Content Include="Images\CBP_Images\Internal Use-6.5-Reset Password.png" />
+    <Content Include="Images\CBP_Images\Intrnal Use-Drop Down.png" />
+    <Content Include="Images\CBP_Images\invite.png" />
+    <Content Include="Images\CBP_Images\loader.png" />
+    <Content Include="Images\CBP_Images\logo 1.png" />
+    <Content Include="Images\CBP_Images\more.png" />
+    <Content Include="Images\CBP_Images\password.png" />
+    <Content Include="Images\CBP_Images\Programme.png" />
+    <Content Include="Images\CBP_Images\question-mark.png" />
+    <Content Include="Images\CBP_Images\remove_red.png" />
+    <Content Include="Images\CBP_Images\Reset Password.png" />
+    <Content Include="Images\CBP_Images\right.png" />
+    <Content Include="Images\CBP_Images\scd.png" />
+    <Content Include="Images\CBP_Images\SearchIcon.png" />
+    <Content Include="Images\CBP_Images\sign up icon.png" />
+    <Content Include="Images\CBP_Images\spIcon.png" />
+    <Content Include="Images\CBP_Images\transparent.png" />
+    <Content Include="Images\CBP_Images\userName.png" />
+    <Content Include="Images\CBP_Images\withdraw.png" />
+    <Content Include="STYLES\CBP_Styles\Cookies.js" />
+    <Content Include="STYLES\CBP_Styles\customLogin.css" />
+    <Content Include="STYLES\CBP_Styles\bootstrap.min.css" />
+    <Content Include="STYLES\CBP_Styles\bootstrap.min.js" />
+    <Content Include="STYLES\CBP_Styles\jquery-1.10.2.min.js" />
+    <Content Include="STYLES\CBP_Styles\images\ui-icons_444444_256x240.png" />
+    <Content Include="STYLES\CBP_Styles\images\ui-icons_555555_256x240.png" />
+    <Content Include="STYLES\CBP_Styles\images\ui-icons_777620_256x240.png" />
+    <Content Include="STYLES\CBP_Styles\images\ui-icons_777777_256x240.png" />
+    <Content Include="STYLES\CBP_Styles\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="STYLES\CBP_Styles\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.css" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.js" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.min.css" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.min.js" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.structure.css" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.structure.min.css" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.theme.css" />
+    <Content Include="STYLES\CBP_Styles\jquery-ui.theme.min.css" />
+    <Content Include="STYLES\CBP_Styles\jquery.js" />
+    <Content Include="STYLES\CBP_Styles\Muserstyle.css" />
+    <Content Include="STYLES\CBP_Styles\userscripts.js" />
+    <Content Include="STYLES\CBP_Styles\userstyles.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CPB_EMS_Localization.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CPB_EMS_Localization.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CCMF.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CCMF.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_Incubation.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_Incubation.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CCMF.zh-HK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CCMF.zh-HK.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CCMF.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CCMF.zh-CN.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_Incubation.zh-CN.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_Incubation.zh-CN.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_Incubation.zh-HK.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_Incubation.zh-HK.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_Common.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_Common.zh-HK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_Common.zh-HK.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_Common.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_Common.zh-CN.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Features\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CASP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CASP.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CASP.zh-HK.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CASP.zh-HK.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CASP.zh-CN.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CASP.zh-CN.Designer.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CASP_Reimbursement.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEms_CASP_SR.resx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.Sql.UnitTesting.targets" Condition="'$(SQLDBExtensionsRefPath)' == ''" />
+  <PropertyGroup>
+    <SsdtUnitTestVersion>2.0</SsdtUnitTestVersion>
+  </PropertyGroup>
+</Project>

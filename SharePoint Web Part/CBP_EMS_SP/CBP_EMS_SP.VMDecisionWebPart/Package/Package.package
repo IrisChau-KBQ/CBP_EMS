@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="4a49e00a-366e-4fde-ac5f-ed3c7bd8307d" solutionId="4a49e00a-366e-4fde-ac5f-ed3c7bd8307d" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.VMDecisionWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\..\..\Patrick\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\Common\CBP_EMS_SP.Common.csproj" />
+    <customAssembly location="EntityFramework.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\..\..\..\..\Patrick\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+    <customAssembly location="EntityFramework.SqlServer.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="d240d210-d508-4034-bd07-e2d055f827df" />
+  </features>
+</package>

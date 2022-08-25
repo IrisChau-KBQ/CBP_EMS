@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ApplicationListWebPart" List="113" Url="_catalogs/wp">
+    <File Path="ApplicationListWebPart\ApplicationListWebPart.webpart" Url="CBP_EMS_SP.ApplicationListWP_ApplicationListWebPart.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Custom" />
+    </File>
+  </Module>
+</Elements>

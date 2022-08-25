@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="48bcc13c-32e5-46dd-9bf9-d43dc6547728" solutionId="48bcc13c-32e5-46dd-9bf9-d43dc6547728" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.InvitationResSum" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="51d8b37b-8ef0-451a-8766-343dd5ffe19b" />
+  </features>
+</package>

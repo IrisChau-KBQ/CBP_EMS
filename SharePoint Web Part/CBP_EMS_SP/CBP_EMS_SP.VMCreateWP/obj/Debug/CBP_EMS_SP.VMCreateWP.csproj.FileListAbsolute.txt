@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMCreateWP\bin\Debug\CBP_EMS_SP.VMCreateWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMCreateWP\bin\Debug\CBP_EMS_SP.VMCreateWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMCreateWP\obj\Debug\CBP_EMS_SP.VMCreateWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMCreateWP\obj\Debug\CBP_EMS_SP.VMCreateWP.pdb

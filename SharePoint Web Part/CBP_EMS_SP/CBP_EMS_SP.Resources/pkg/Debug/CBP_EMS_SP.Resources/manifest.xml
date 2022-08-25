@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="187e9027-9d29-4a0c-81c2-03ae91be8004" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="CBP_EMS_SP.Resources.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <RootFiles>
+    <RootFile Location="Resources\CPB_EMS_Localization.resx" />
+    <RootFile Location="Resources\CyberportEMS_CCMF.resx" />
+    <RootFile Location="Resources\CyberportEMS_Incubation.resx" />
+    <RootFile Location="Resources\CyberportEMS_CCMF.zh-HK.resx" />
+    <RootFile Location="Resources\CyberportEMS_CCMF.zh-CN.resx" />
+    <RootFile Location="Resources\CyberportEMS_Incubation.zh-CN.resx" />
+    <RootFile Location="Resources\CyberportEMS_Incubation.zh-HK.resx" />
+    <RootFile Location="Resources\CyberportEMS_Common.resx" />
+    <RootFile Location="Resources\CyberportEMS_Common.zh-HK.resx" />
+    <RootFile Location="Resources\CyberportEMS_Common.zh-CN.resx" />
+    <RootFile Location="Resources\CyberportEMS_CASP.resx" />
+    <RootFile Location="Resources\CyberportEMS_CASP.zh-HK.resx" />
+    <RootFile Location="Resources\CyberportEMS_CASP.zh-CN.resx" />
+    <RootFile Location="Resources\CyberportEMS_CASP_Reimbursement.resx" />
+    <RootFile Location="Resources\CyberportEms_CASP_SR.resx" />
+  </RootFiles>
+  <TemplateFiles>
+    <TemplateFile Location="Images\CBP_Images\11.png" />
+    <TemplateFile Location="Images\CBP_Images\2.png" />
+    <TemplateFile Location="Images\CBP_Images\ajax-loader.gif" />
+    <TemplateFile Location="Images\CBP_Images\Calender.png" />
+    <TemplateFile Location="Images\CBP_Images\close.png" />
+    <TemplateFile Location="Images\CBP_Images\Cross Border.png" />
+    <TemplateFile Location="Images\CBP_Images\delete.png" />
+    <TemplateFile Location="Images\CBP_Images\dir-1.png" />
+    <TemplateFile Location="Images\CBP_Images\dir.png" />
+    <TemplateFile Location="Images\CBP_Images\downword menu.png" />
+    <TemplateFile Location="Images\CBP_Images\edit_gray.png" />
+    <TemplateFile Location="Images\CBP_Images\Forget Password.png" />
+    <TemplateFile Location="Images\CBP_Images\fst.png" />
+    <TemplateFile Location="Images\CBP_Images\gereenDropdownMenu.png" />
+    <TemplateFile Location="Images\CBP_Images\Globe.png" />
+    <TemplateFile Location="Images\CBP_Images\HK.png" />
+    <TemplateFile Location="Images\CBP_Images\ICAC.png" />
+    <TemplateFile Location="Images\CBP_Images\icon_x.gif" />
+    <TemplateFile Location="Images\CBP_Images\Internal Use-6.5-Delete.png" />
+    <TemplateFile Location="Images\CBP_Images\Internal Use-6.5-Edit Button.png" />
+    <TemplateFile Location="Images\CBP_Images\Internal Use-6.5-Reset Password.png" />
+    <TemplateFile Location="Images\CBP_Images\Intrnal Use-Drop Down.png" />
+    <TemplateFile Location="Images\CBP_Images\invite.png" />
+    <TemplateFile Location="Images\CBP_Images\loader.png" />
+    <TemplateFile Location="Images\CBP_Images\logo 1.png" />
+    <TemplateFile Location="Images\CBP_Images\more.png" />
+    <TemplateFile Location="Images\CBP_Images\password.png" />
+    <TemplateFile Location="Images\CBP_Images\Programme.png" />
+    <TemplateFile Location="Images\CBP_Images\question-mark.png" />
+    <TemplateFile Location="Images\CBP_Images\remove_red.png" />
+    <TemplateFile Location="Images\CBP_Images\Reset Password.png" />
+    <TemplateFile Location="Images\CBP_Images\right.png" />
+    <TemplateFile Location="Images\CBP_Images\scd.png" />
+    <TemplateFile Location="Images\CBP_Images\SearchIcon.png" />
+    <TemplateFile Location="Images\CBP_Images\sign up icon.png" />
+    <TemplateFile Location="Images\CBP_Images\spIcon.png" />
+    <TemplateFile Location="Images\CBP_Images\transparent.png" />
+    <TemplateFile Location="Images\CBP_Images\userName.png" />
+    <TemplateFile Location="Images\CBP_Images\withdraw.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\EMS-Public.master" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\Cookies.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\customLogin.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\bootstrap.min.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\bootstrap.min.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-1.10.2.min.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\images\ui-icons_444444_256x240.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\images\ui-icons_555555_256x240.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\images\ui-icons_777620_256x240.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\images\ui-icons_777777_256x240.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\images\ui-icons_cc0000_256x240.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\images\ui-icons_ffffff_256x240.png" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.min.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.min.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.structure.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.structure.min.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.theme.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery-ui.theme.min.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\jquery.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\Muserstyle.css" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\userscripts.js" />
+    <TemplateFile Location="LAYOUTS\STYLES\CBP_Styles\userstyles.css" />
+    <TemplateFile Location="DocumentTemplates\ApplicationAttachement\text.txt" />
+    <TemplateFile Location="DocumentTemplates\CBP_Email\Tbl_ForgotPassword.html" />
+    <TemplateFile Location="DocumentTemplates\CBP_Email\Tpl_Registration.html" />
+  </TemplateFiles>
+</Solution>

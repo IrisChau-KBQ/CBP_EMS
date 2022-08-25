@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7784e976-cdd6-4e69-81be-423f907ae16b" solutionId="7784e976-cdd6-4e69-81be-423f907ae16b" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.PreListAppWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="beb47f23-8ecc-46fa-ae5f-b80ea0d3efba" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="d061f152-26d2-4607-abae-0a741d002f5b" />
+  </projectItems>
+</package>

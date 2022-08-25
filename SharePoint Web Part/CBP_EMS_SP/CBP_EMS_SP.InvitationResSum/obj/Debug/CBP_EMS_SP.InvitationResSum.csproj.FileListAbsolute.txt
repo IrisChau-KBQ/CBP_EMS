@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResSum\bin\Debug\CBP_EMS_SP.InvitationResSum.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResSum\bin\Debug\CBP_EMS_SP.InvitationResSum.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResSum\obj\Debug\CBP_EMS_SP.InvitationResSum.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.InvitationResSum\obj\Debug\CBP_EMS_SP.InvitationResSum.pdb

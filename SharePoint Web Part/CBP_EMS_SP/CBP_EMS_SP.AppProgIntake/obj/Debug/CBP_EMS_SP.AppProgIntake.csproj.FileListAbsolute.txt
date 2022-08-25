@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.AppProgIntake\bin\Debug\CBP_EMS_SP.AppProgIntake.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.AppProgIntake\bin\Debug\CBP_EMS_SP.AppProgIntake.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.AppProgIntake\obj\Debug\CBP_EMS_SP.AppProgIntake.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.AppProgIntake\obj\Debug\CBP_EMS_SP.AppProgIntake.pdb

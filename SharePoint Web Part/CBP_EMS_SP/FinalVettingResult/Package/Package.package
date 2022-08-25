@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="f2fbf2b3-3518-4d8f-98d6-aa37d5b59df2" solutionId="f2fbf2b3-3518-4d8f-98d6-aa37d5b59df2" resetWebServer="false" sharePointProductVersion="15.0" name="FinalVettingResult" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="DocX.dll" deploymentTarget="WebApplication" sourcePath="..\packages\DocX.1.0.0.22\lib\net40\DocX.dll" />
+  </assemblies>
+  <features>
+    <featureReference itemId="66dda4e7-4060-47bf-989d-e6dbce96460d" />
+  </features>
+</package>

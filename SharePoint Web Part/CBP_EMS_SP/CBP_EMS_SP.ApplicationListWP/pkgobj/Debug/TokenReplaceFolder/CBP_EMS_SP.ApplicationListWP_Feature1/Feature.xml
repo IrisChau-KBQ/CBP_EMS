@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Feature xmlns="http://schemas.microsoft.com/sharepoint/" AlwaysForceInstall="TRUE" Id="e8e22c95-1680-4a9f-bb2a-42a9c18b3c2d" Scope="Site" Title="CBP_EMS_SP.ApplicationListWP Feature1">
+  <ElementManifests>
+    <ElementManifest Location="ApplicationListWebPart\Elements.xml" />
+    <ElementFile Location="ApplicationListWebPart\ApplicationListWebPart.webpart" />
+  </ElementManifests>
+</Feature>

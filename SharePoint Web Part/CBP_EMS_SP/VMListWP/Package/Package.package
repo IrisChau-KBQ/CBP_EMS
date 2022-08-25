@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e65d89eb-12e6-4039-96a8-1c2699970c9b" solutionId="e65d89eb-12e6-4039-96a8-1c2699970c9b" resetWebServer="false" sharePointProductVersion="15.0" name="VMListWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="726b6f6e-5a35-4854-993b-4a0ebd6d8ffa" />
+  </features>
+</package>

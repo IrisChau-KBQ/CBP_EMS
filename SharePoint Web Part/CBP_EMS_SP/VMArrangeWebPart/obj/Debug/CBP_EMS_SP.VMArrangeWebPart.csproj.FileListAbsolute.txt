@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VMArrangeWebPart\bin\Debug\VMArrangeWebPart.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VMArrangeWebPart\bin\Debug\VMArrangeWebPart.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VMArrangeWebPart\obj\Debug\VMArrangeWebPart.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\VMArrangeWebPart\obj\Debug\VMArrangeWebPart.pdb

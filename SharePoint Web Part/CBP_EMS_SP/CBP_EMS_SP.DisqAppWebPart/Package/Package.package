@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="7e3d2083-1b20-4646-8c2b-484acea3f3c6" solutionId="7e3d2083-1b20-4646-8c2b-484acea3f3c6" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.DisqAppWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="7ecf43fd-a407-4bc0-adef-f4071ced9ab3" />
+  </features>
+</package>

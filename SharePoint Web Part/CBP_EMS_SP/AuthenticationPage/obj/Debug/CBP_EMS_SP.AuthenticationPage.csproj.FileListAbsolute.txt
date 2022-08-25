@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\AuthenticationPage\bin\Debug\AuthenticationPage.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\AuthenticationPage\bin\Debug\AuthenticationPage.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\AuthenticationPage\obj\Debug\CBP_EMS_SP.AuthenticationPage.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\AuthenticationPage\obj\Debug\AuthenticationPage.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\AuthenticationPage\obj\Debug\AuthenticationPage.pdb

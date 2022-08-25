@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="56812b98-be95-4e07-bc3c-4b504f466f6f" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="EntityFramework.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="EntityFramework.SqlServer.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Data.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.CrossBorderForm.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="CBP_EMS_SP.CrossBorderForm, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c9e9dee73d9b683e" Namespace="CBP_EMS_SP.CrossBorderForm.CCMF" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="CBP_EMS_SP.CrossBorderForm_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

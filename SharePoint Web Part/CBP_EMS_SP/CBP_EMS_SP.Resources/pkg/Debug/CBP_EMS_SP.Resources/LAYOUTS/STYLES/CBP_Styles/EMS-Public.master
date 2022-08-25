@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" %>
+<%@ Register TagPrefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register TagPrefix="Utilities" Namespace="Microsoft.SharePoint.Utilities" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Import Namespace="Microsoft.SharePoint.ApplicationPages" %>
+<%@ Register tagprefix="HeaderWebPart" namespace="CBP_EMS_SP.PublicUserControls.HeaderWebPart" assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" %>
+<%@ Register tagprefix="FooterWebPart" namespace="CBP_EMS_SP.PublicUserControls.FooterWebPart" assembly="CBP_EMS_SP.PublicUserControls, Version=1.0.0.0, Culture=neutral, PublicKeyToken=1d62458234b92c2e" %>
+
+<html dir="ltr">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <SharePoint:RobotsMetaTag runat="server"></SharePoint:RobotsMetaTag>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="/_layouts/15/Styles/CBP_Styles/customLogin.css" rel="stylesheet" />
+    <link href="/_layouts/15/Styles/CBP_Styles/userstyles.css" rel="stylesheet" />
+    <script src="/_layouts/15/Styles/CBP_Styles/userscripts.js" type="text/javascript"></script>
+
+    <script src="/_layouts/15/Styles/CBP_Styles/bootstrap.min.js" type="text/javascript"></script>
+
+    <link href="/_layouts/15/Styles/CBP_Styles/bootstrap.min.css" rel="stylesheet" />
+    <link href="/_layouts/15/Styles/CBP_Styles/Muserstyle.css" rel="stylesheet" />
+</head>
+
+<body class="background-theme emscontent">
+
+    <form id="form1" runat="server">
+        <div class="page">
+    	
+    		<HeaderWebPart:HeaderWebPart runat="server" Description="My Visual Web Part" ImportErrorMessage="$Resources:core,ImportErrorMessage;" Title="CBP_EMS_SP.PublicUserControls - HeaderWebPart" __MarkupType="vsattributemarkup" __WebPartId="{3c8c1c23-7e30-496b-9ff7-e591c259318e}" WebPart="true" __designer:IsClosed="false" id="g_3c8c1c23_7e30_496b_9ff7_e591c259318e"></HeaderWebPart:HeaderWebPart>
+
+            <div class="section">
+                <div class="table full-width">
+                    <div class="table-row">
+                       
+
+							<asp:ContentPlaceHolder ID="ContentPlaceHolderLeft" runat="server">
+                            </asp:ContentPlaceHolder>
+                       
+
+                        <div class="table-col tabs-wrpr">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+<FooterWebPart:FooterWebPart runat="server" Description="My Visual Web Part" ImportErrorMessage="$Resources:core,ImportErrorMessage;" Title="CBP_EMS_SP.PublicUserControls - FooterWebPart" __MarkupType="vsattributemarkup" __WebPartId="{fb67f47e-0ebc-42ee-a87a-44f9a023a16c}" WebPart="true" __designer:IsClosed="false" id="g_fb67f47e_0ebc_42ee_a87a_44f9a023a16c"></FooterWebPart:FooterWebPart>
+        
+    </form>
+
+</body>
+</html>

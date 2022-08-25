@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="2bddf021-5dd4-4fa8-83c5-f003e84a00e5" solutionId="2bddf021-5dd4-4fa8-83c5-f003e84a00e5" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.PresentationOfAppWP" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <assemblies>
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="C:\bin\ICSharpCode.SharpZipLib.dll" />
+    <projectOutputAssembly location="CBP_EMS_SP.Common.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\Common\CBP_EMS_SP.Common.csproj" />
+    <projectOutputAssembly location="CBP_EMS_SP.Data.dll" deploymentTarget="GlobalAssemblyCache" projectPath="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj" />
+  </assemblies>
+  <features>
+    <featureReference itemId="8fe9ebea-1015-4a58-93f9-1ad5b5de42ec" />
+  </features>
+</package>

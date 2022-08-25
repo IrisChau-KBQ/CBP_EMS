@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CPB_EMS_SP.UserDashboard\bin\Debug\CPB_EMS_SP.UserDashboard.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CPB_EMS_SP.UserDashboard\bin\Debug\CPB_EMS_SP.UserDashboard.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CPB_EMS_SP.UserDashboard\obj\Debug\CPB_EMS_SP.UserDashboard.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CPB_EMS_SP.UserDashboard\obj\Debug\CPB_EMS_SP.UserDashboard.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CPB_EMS_SP.UserDashboard\obj\Debug\CPB_EMS_SP.UserDashboard.pdb

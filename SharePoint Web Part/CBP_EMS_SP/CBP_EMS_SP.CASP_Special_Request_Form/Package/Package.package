@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="d32f9fc9-12f2-4f2b-8a1b-4062c02ceffe" solutionId="d32f9fc9-12f2-4f2b-8a1b-4062c02ceffe" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.CASP_Special_Request_Form" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="56a9fc54-bd6e-4ac9-a650-51d9246d1bd4" />
+  </features>
+</package>

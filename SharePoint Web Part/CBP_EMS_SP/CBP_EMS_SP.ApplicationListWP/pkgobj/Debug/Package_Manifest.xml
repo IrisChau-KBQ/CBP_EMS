@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="5ef3a90a-566d-43fd-82f7-77bb3c8bf2d7" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="ICSharpCode.SharpZipLib.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Common.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.Data.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="itextsharp.dll" DeploymentTarget="GlobalAssemblyCache" />
+    <Assembly Location="CBP_EMS_SP.ApplicationListWP.dll" DeploymentTarget="GlobalAssemblyCache">
+      <SafeControls>
+        <SafeControl Assembly="CBP_EMS_SP.ApplicationListWP, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6744be4d3ff8a2e7" Namespace="CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart" TypeName="*" />
+      </SafeControls>
+    </Assembly>
+  </Assemblies>
+  <TemplateFiles>
+    <TemplateFile Location="Images\CBP_EMS_SP.ApplicationListWP\bootstrap.min.css" />
+    <TemplateFile Location="Images\CBP_EMS_SP.ApplicationListWP\bootstrap.min.js" />
+    <TemplateFile Location="Images\CBP_EMS_SP.ApplicationListWP\Information1.png" />
+    <TemplateFile Location="Images\CBP_EMS_SP.ApplicationListWP\information.png" />
+    <TemplateFile Location="Images\CBP_EMS_SP.ApplicationListWP\jquery-1.10.2.min.js" />
+  </TemplateFiles>
+  <FeatureManifests>
+    <FeatureManifest Location="CBP_EMS_SP.ApplicationListWP_Feature1\Feature.xml" />
+  </FeatureManifests>
+</Solution>

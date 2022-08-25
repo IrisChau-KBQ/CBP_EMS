@@ -1,0 +1,4 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RemarkVWP\bin\Debug\CBP_EMS_SP.RemarkVWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RemarkVWP\bin\Debug\CBP_EMS_SP.RemarkVWP.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RemarkVWP\obj\Debug\CBP_EMS_SP.RemarkVWP.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.RemarkVWP\obj\Debug\CBP_EMS_SP.RemarkVWP.pdb

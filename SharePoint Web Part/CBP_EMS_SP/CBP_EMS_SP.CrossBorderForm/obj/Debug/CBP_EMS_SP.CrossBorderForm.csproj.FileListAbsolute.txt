@@ -1,0 +1,9 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\obj\Debug\CBP_EMS_SP.CrossBorderForm.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\bin\Debug\CBP_EMS_SP.CrossBorderForm.dll.config
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\bin\Debug\CBP_EMS_SP.CrossBorderForm.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\bin\Debug\CBP_EMS_SP.CrossBorderForm.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\bin\Debug\Microsoft.SharePoint.Client.Runtime.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\bin\Debug\Microsoft.SharePoint.Client.ServerRuntime.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\bin\Debug\Microsoft.SharePoint.Client.Runtime.xml
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\obj\Debug\CBP_EMS_SP.CrossBorderForm.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.CrossBorderForm\obj\Debug\CBP_EMS_SP.CrossBorderForm.pdb

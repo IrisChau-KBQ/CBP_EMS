@@ -1,0 +1,5 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMDecisionWebPart\bin\Debug\CBP_EMS_SP.VMDecisionWebPart.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMDecisionWebPart\bin\Debug\CBP_EMS_SP.VMDecisionWebPart.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMDecisionWebPart\obj\Debug\CBP_EMS_SP.VMDecisionWebPart.csprojResolveAssemblyReference.cache
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMDecisionWebPart\obj\Debug\CBP_EMS_SP.VMDecisionWebPart.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.VMDecisionWebPart\obj\Debug\CBP_EMS_SP.VMDecisionWebPart.pdb

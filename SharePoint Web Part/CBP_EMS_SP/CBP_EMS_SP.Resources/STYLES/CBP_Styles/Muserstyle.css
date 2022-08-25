@@ -1,0 +1,164 @@
+﻿a{
+    color: #428bca;
+    text-decoration: none;
+}
+
+.textGreenFont a{
+    color: #80C343 !important;
+    font-weight: 600;
+}
+
+.outsideboard img {
+    vertical-align: top;
+}
+
+.outsideboard input{
+    line-height: normal;
+}
+
+.btnBox input{
+    width: 170px;
+    margin-right: 30px;
+    cursor:pointer;
+}
+
+.titleFont{
+	color:#075CA9 !important;
+    font-weight: 600;
+    font-size: 30px;
+    text-align:left;
+    margin-bottom: 35px;
+}
+
+.textBlueFont{
+	color:#075CA9 !important;
+    font-weight: 600;
+}
+
+.textBlackFont{
+    color:#66666b !important;
+}
+
+.textLightBlueFont{
+	/*color:#91d8ef !important;*/
+	color:#0891C8 !important;
+}
+
+.textGreenFont{
+	color:#80C343 !important;
+    font-weight: 600;
+}
+
+.selectboxcolor select{
+    background: #E9E9EA !important;
+}
+.selectboxheight select{
+    height: 40px;
+    background: url(/_layouts/15/Images/CBP_Images/Intrnal%20Use-Drop%20Down.png) no-repeat right !important;
+    appearance: none;
+    -moz-appearance:none;
+    -webkit-appearance: none;
+    Padding-right:50px;
+    padding-left: 5px;
+}
+
+.selectboxGreenIcon select{
+    background: url(/_layouts/15/Images/CBP_Images/gereenDropdownMenu.png) no-repeat right !important;
+}
+
+/*for IE10*/
+.selectboxheight select::-ms-expand{
+    display: none;
+}
+
+input.inputStyle{
+    padding: 8px 12px;
+    margin-bottom: 6px;
+    background: #E9E9EA;
+}
+input.FileUploadinputStyle{
+    padding: 4px;
+    margin-bottom: 6px;
+    background: #E9E9EA;
+    float: left;
+    margin-right: 10px;
+}
+
+textarea.txtarea {
+    max-width:100%;
+    min-width:80%;
+    max-height:250px;
+    min-height:150px;
+    height:150px !important;
+    background: #E9E9EA;
+    margin-bottom: 20px;
+}
+.VTMbtn{
+    margin-left: 38px;
+    padding-top: 14px;
+    display:inline;
+    margin-right: 13px;
+}
+.VTMbtn .btnmove{
+    min-width: 2em;
+    margin-bottom: 6px;
+    width: 38px;
+    padding: 5px;
+}
+
+
+    .GridViewstyle {
+        border:none;
+    }
+
+
+    .GridViewstyle th {
+        color: #075CA9;
+        font-weight: bold;
+    }
+
+    .GridViewstyle th, .GridViewstyle td {
+    padding: 10px;
+    text-align: left;
+}
+    .messagered {
+        color:red;
+    }
+
+.greencheckbox {
+
+}
+
+.greenheaderborder {
+    border-top: 10px solid rgb(129,194,73);
+}
+
+.fontbold{
+    font-weight:bold;
+}
+
+.whitebackground {
+    background: #FFFFFF;
+}
+
+.greenbackground {
+    background: #80C343;
+}
+
+.ddpwidth {
+    max-width:100%;
+    min-width:50%;
+}
+
+.textFont300{
+    font-weight: 300;
+}
+.Historyscroll{
+    height: 270px;
+    overflow-y: auto;
+    border: 1px #e6e2e2 solid;
+}    
+.spmDeadline{
+    margin-top: -35px;
+    margin-bottom: 23px;
+}

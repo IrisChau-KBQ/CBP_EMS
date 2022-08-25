@@ -1,0 +1,10 @@
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\CBP_EMS_SP.Data.dll.config
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\CBP_EMS_SP.Data.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\CBP_EMS_SP.Data.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\EntityFramework.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\EntityFramework.xml
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\obj\Debug\CBP_EMS_SP.Data.dll
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\obj\Debug\CBP_EMS_SP.Data.pdb
+C:\Source\CBP_EMS\SharePoint Web Part\CBP_EMS_SP\CBP_EMS_SP.DBEntityModels\obj\Debug\CBP_EMS_SP.Data.csprojResolveAssemblyReference.cache

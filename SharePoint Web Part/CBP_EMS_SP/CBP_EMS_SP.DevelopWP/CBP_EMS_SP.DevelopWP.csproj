@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{69EA573D-5D6B-40CB-BA4F-F463439152BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CBP_EMS_SP.DevelopWP</RootNamespace>
+    <AssemblyName>CBP_EMS_SP.DevelopWP</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aspnet_Applications.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Membership.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Paths.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_PersonalizationAllUsers.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_PersonalizationPerUser.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Profile.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Roles.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_SchemaVersions.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_Users.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="aspnet_WebEvent_Events.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactForm.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactFormProblemTag.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactFormRefProblemTag.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ContactFormResponsibleSale.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CYModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CYModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CYModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CYModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CYModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="C__MigrationHistory.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DevelopWP\DevelopWP.ascx.cs">
+      <DependentUpon>DevelopWP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="DevelopWP\DevelopWP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DevelopWP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TB_APPLICATION_ATTACHMENT.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_APPLICATION_COLLABORATOR.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_APPLICATION_COMPANY_CORE_MEMBER.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_APPLICATION_CONTACT_DETAIL.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_APPLICATION_FUNDING_STATUS.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_APPLICATION_SHORTLISTING.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_CCMF_APPLICATION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_DECLARATION_APPLICATION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_EC_RESULT.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_EMAIL_TEMPLATE.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_INCUBATION_APPLICATION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_MASTER_DATA.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PAST_APPLICATION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PRESENTATION_CCMF_SCORE.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PRESENTATION_INCUBATION_SCORE.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_PROGRAMME_INTAKE.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_RESET_PASSWORD.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SCREENING_CCMF_SCORE.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SCREENING_HISTORY.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SCREENING_INCUBATION_SCORE.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_SYSTEM_PARAMETER.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_VETTING_APPLICATION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_VETTING_DECISION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_VETTING_DECLARATION.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_VETTING_MEETING.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TB_VETTING_MEMBER.cs">
+      <DependentUpon>CYModel.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EntityDeploy Include="CYModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>CYModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="App.Config" />
+    <None Include="CYModel.edmx.diagram">
+      <DependentUpon>CYModel.edmx</DependentUpon>
+    </None>
+    <None Include="DevelopWP\DevelopWP.webpart" />
+    <None Include="DevelopWP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f2e67bdd-bcfc-4a0f-8a57-f7577177aa1a}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\DevelopWPFeature\DevelopWPFeature.feature">
+      <FeatureId>{e10483e8-7601-4063-9ce1-5bd53250e756}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="packages.config" />
+    <None Include="Package\Package.package">
+      <PackageId>{4cd264b2-c77d-4a86-ae9e-11adb3247e59}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CYModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CYModel.edmx</DependentUpon>
+      <LastGenOutput>CYModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="CYModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>CYModel.edmx</DependentUpon>
+      <LastGenOutput>CYModel.cs</LastGenOutput>
+    </Content>
+    <Content Include="DevelopWP\DevelopWP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>DevelopWP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="DevelopWP\Elements.xml" />
+    <Content Include="Features\DevelopWPFeature\DevelopWPFeature.Template.xml">
+      <DependentUpon>DevelopWPFeature.feature</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CBP_EMS_SP.DBEntityModels\CBP_EMS_SP.Data.csproj">
+      <Project>{214aabe5-f9aa-441e-9a74-f7f2da04592d}</Project>
+      <Name>CBP_EMS_SP.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\CBP_EMS_SP.Common.csproj">
+      <Project>{3c2dec95-02ac-488b-a3d3-6ffa609d3b32}</Project>
+      <Name>CBP_EMS_SP.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
