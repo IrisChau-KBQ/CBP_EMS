@@ -135,6 +135,9 @@
   <data name="CCMF_GBAYEP_Header" xml:space="preserve">
     <value>Cyberport Creative Micro Fund - Greater Bay Area Young Entrepreneurship Programme</value>
   </data>
+  <data name="CCMF_GBAYEP_Heading" xml:space="preserve">
+    <value>Cyberport Greater Bay Area Young Entrepreneurship Programme Supported by CCMF</value>
+  </data>
   <data name="CCMF_HK_Header" xml:space="preserve">
     <value>Cyberport Creative Micro Fund - Hong Kong</value>
   </data>
@@ -230,6 +233,9 @@
   </data>
   <data name="Cyberport_University_Partnership_Programme" xml:space="preserve">
     <value>Cyberport University Partnership Programme</value>
+  </data>
+  <data name="Cyberport_Greater_Bay_Area_Young_Entrepreneurship_Programme_Supported_by_CCMF" xml:space="preserve">
+    <value>Cyberport Greater Bay Area Young Entrepreneurship Programme Supported by CCMF</value>
   </data>
   <data name="Error6_Deadline_Message" xml:space="preserve">
     <value>Changes are not saved or submitted</value>
@@ -635,7 +641,7 @@
   </data>
   <data name="HKP_Pro_Stream_IndComp_2_F_note" xml:space="preserve">
     <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.  &lt;br/&gt;&lt;br/&gt;If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.&lt;/b&gt;&lt;/b&gt;
-Application eligibility of CCMF is stated in the &lt;a href="http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf" target="_blank"&gt; CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.</value>
+Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt; Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt;.</value>
   </data>
   <data name="HKP_Pro_Stream_Ind_1_A" xml:space="preserve">
     <value>Are you at or above 18 years old?</value>
@@ -669,7 +675,7 @@ The designated founder/ co-founder fulfilling the application eligibility must p
   </data>
   <data name="HKP_Pro_Young_Comp_2_F_Note" xml:space="preserve">
     <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period. &lt;br/&gt;&lt;br/&gt;If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.&lt;br/&gt;&lt;br/&gt;
-Application eligibility of CCMF is stated in the&lt;a href="http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf" target="_blank"&gt; CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.</value>
+Application eligibility of CCMF is stated in the&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt; Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt;.</value>
   </data>
   <data name="HKP_Pro_Young_IndComp_2_A" xml:space="preserve">
     <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) between the ages of 18 and 30 upon the application deadline?</value>
@@ -759,7 +765,7 @@ Application eligibility of CCMF is stated in the&lt;a href="http://www.cyberport
     <value>Put &lt;mark&gt;“NA”&lt;/mark&gt; where the information sought is not applicable or not available;</value>
   </data>
   <data name="Instruction_2" xml:space="preserve">
-    <value>To read the &lt;mark class="mark-2"&gt;&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt; CCMF Guides and Notes for the Applicants (ENC.RF.015a)&lt;/a&gt;&lt;/mark&gt; before filling in this Application Form, especially part 1, 2 and 3.</value>
+    <value>To read the &lt;mark class="mark-2"&gt;&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt; Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme (ENC.RF.015b)&lt;/a&gt;&lt;/mark&gt; before filling in this Application Form, especially part 1, 2 and 3.</value>
   </data>
   <data name="Instruction_3" xml:space="preserve">
     <value>The form must be completed by the applicant. If the applicant is a company, the form must be completed by the director or owner of the applicant organisation. Otherwise it will not be processed.</value>
@@ -817,7 +823,7 @@ Interested party to apply Cyberport Incubation Programme, please visit&lt;a href
     <value>Please choose one of the types of CCMF below:</value>
   </data>
   <data name="Step1_Note" xml:space="preserve">
-    <value>Note: The principal applicant of Individual Application must be permanent HKID card holder.  Otherwise, please consider submit application as Company Application.&lt;br/&gt;Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.&lt;br/&gt;</value>
+    <value>Note: The principal applicant of Individual Application must be permanent HKID card holder.  Otherwise, please consider submit application as Company Application.&lt;br/&gt;Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt;.&lt;br/&gt;</value>
   </data>
   <data name="Step1_Question1_3" xml:space="preserve">
     <value>Is your project applying CCMF exceeded/not in the early-stage development, for example: launched and generated sustainable revenue, or planning/ going to plan overseas marketing expansion?</value>
@@ -832,7 +838,7 @@ Interested party to apply Cyberport Incubation Programme, please visit&lt;a href
     <value>Note: Applicants should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period after admission.  &lt;br&gt;&lt;br&gt;
 If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.
 &lt;br&gt;&lt;br&gt;
-Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants – Hong Kong Programme &lt;/a&gt;.</value>
+Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt;.</value>
   </data>
   <data name="Step3_1b_CompanyName" xml:space="preserve">
     <value>Company Name</value>
@@ -1030,10 +1036,10 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
     <value>Funding Status</value>
   </data>
   <data name="Step_4_Funding_Statussub" xml:space="preserve">
-    <value>(List out in detail (i) all grants and funding received/to be received from other publicly and/or privately funded organizations/ programmes which the applicant (or companies established by he/she/it) has applied for, will receive or will be entitled to receive in the coming 18 months, or have received in the past 18 months; (ii) the nature of expenditure covered/to be covered by such funding sources; and (iii) the amount and the maximum amount received/to be received under such funding sources )&lt;br/&gt;&lt;br/&gt;Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.    Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants – Hong Kong Programme.&lt;/a&gt;</value>
+    <value>(List out in detail (i) all grants and funding received/to be received from other publicly and/or privately funded organizations/ programmes which the applicant (or companies established by he/she/it) has applied for, will receive or will be entitled to receive in the coming 18 months, or have received in the past 18 months; (ii) the nature of expenditure covered/to be covered by such funding sources; and (iii) the amount and the maximum amount received/to be received under such funding sources )&lt;br/&gt;&lt;br/&gt;Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.    Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt;.</value>
   </data>
   <data name="Step_4_Funding_Statussub2" xml:space="preserve">
-    <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.  Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt; CCMF Guides and Notes for Applicants – Hong Kong Programme&lt;/a&gt;.</value>
+    <value>Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.  Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt; Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt;.</value>
   </data>
   <data name="Step_4_Maximum_amount" xml:space="preserve">
     <value>Maximum amount to be received</value>
@@ -1156,7 +1162,7 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
     <value>In consideration of Hong Kong Cyberport Management Company Limited (“HKCMCL”) considering and processing our application for funding from CCMF, we confirm our agreement and undertake the following by checking this box</value>
   </data>
   <data name="Step_6_Consideration_1" xml:space="preserve">
-    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.O15) governing the application of the Cyberport Creative Micro Fund Scheme.</value>
+    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme&lt;/a&gt; (ENC.RF.015b) governing the application of the Cyberport Creative Micro Fund Scheme.</value>
   </data>
   <data name="Step_6_Consideration_2" xml:space="preserve">
     <value>All information provided in this application as well as the accompanying information is true, not misleading in any manner and reflects the status of affairs as at the date of submission. I shall inform the Administration of the Cyberport Creative Micro Fund immediately if there are any changes to the above information.</value>
@@ -1180,7 +1186,7 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
     <value>We give our consent to authorised Cyberport staff to carry out necessary due diligence/reference check for the purpose of assessing this application.</value>
   </data>
   <data name="Step_6_Consideration_9" xml:space="preserve">
-    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.O15), this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
+    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme (ENC.RF.015b)&lt;/a&gt;, this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
   </data>
   <data name="Step_6_cyberport" xml:space="preserve">
     <value>“Cyberport”</value>
@@ -1202,6 +1208,9 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
   </data>
   <data name="Step_6_Full_Name" xml:space="preserve">
     <value>Full Name of Principal Applicant</value>
+  </data>
+  <data name="Step_6_Full_Name_2" xml:space="preserve">
+    <value>Full Name of Secondary Applicant</value>
   </data>
   <data name="step_6_marketing" xml:space="preserve">
     <value>I agree to receive direct marketing information.</value>
@@ -1257,6 +1266,9 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
   <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
     <value>Position Title of Principal Applicant</value>
   </data>
+  <data name="Step_6_Title_2nd_Applicant" xml:space="preserve">
+    <value>Position Title of Secondary Applicant</value>
+  </data>
   <data name="Step_6_Transfer_data" xml:space="preserve">
     <value>Transfer of Your Data</value>
   </data>
@@ -1274,6 +1286,51 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
   </data>
   <data name="Step_6_Transfer_data_note" xml:space="preserve">
     <value>As the parties mentioned above may be located outside Hong Kong, Your Data may be transferred out of Hong Kong.</value>
+  </data>
+  <data name="CCMFGBAYEP_Ind_1_A" xml:space="preserve">
+    <value>Does the Hong Kong Team Leader listed in Section 4.1 below a Hong Kong ID Card holder and Macau/Guangdong Team Leader listed in Section 4.1 below is Macau/China PRC ID Card holder?</value>
+  </data>
+  <data name="CCMFGBAYEP_Comp_1_A" xml:space="preserve">
+    <value>Do you presently have a company registered as a legal entity and incorporated in Hong Kong?</value>
+  </data>
+  <data name="CCMFGBAYEP_Comp_1_B" xml:space="preserve">
+    <value>If not, do you agree to set up a company registered as a legal entity and incorporated in Hong Kong upon admission to the Cyberport Creative Micro fund?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_C" xml:space="preserve">
+    <value>Did you and all of your project management team members listed in Section 4.1 below attend and complete the entrepreneurship bootcamp?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_D" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 below between the ages of 18 and 30 upon the application deadline?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_E" xml:space="preserve">
+    <value>Does your project management team listed in Section 4.1 below consist of 50% of Hong Kong resident(s)?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_F" xml:space="preserve">
+    <value>Are all the Hong Kong project management team members listed in Section 4.1 below currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Hong Kong/Macau/Guangdong region?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_G" xml:space="preserve">
+    <value>Are all the Guangdong/Macau project management team members listed in Section 4.1 below currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Guangdong/Macau respectively?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_H" xml:space="preserve">
+    <value>Is your project rooted in digital tech related areas?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_I" xml:space="preserve">
+    <value>Have your proposed project or your other similar digital tech project(s) applied for or received any grant or funding from any publicly and/or privately funded organisations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_J" xml:space="preserve">
+    <value>Is your proposed project or your other similar digital tech projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and/or privately-funded organisations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_K" xml:space="preserve">
+    <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_L" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.2 (k) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_M" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest? If “Yes”, please provide details in Section 4.10 below.</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_N" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes. If yes, please set out the project reference of the previous application in Section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
   </data>
   <data name="String1" xml:space="preserve">
     <value>We acknowledge that HKCMCL has absolute discretion</value>
