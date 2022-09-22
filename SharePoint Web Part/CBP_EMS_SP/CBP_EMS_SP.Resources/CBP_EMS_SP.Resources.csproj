@@ -90,6 +90,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\CyberportEMS_CCMFGBAYEP.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CyberportEMS_CCMFGBAYEP.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\CyberportEMS_Common.Designer.cs">
       <DependentUpon>CyberportEMS_Common.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -272,6 +277,7 @@
     <Content Include="Resources\CyberportEMS_Common.zh-HK.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>CyberportEMS_Common.zh-HK.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -307,6 +313,23 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Resources\CyberportEms_CASP_SR.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CCMFGBAYEP.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CyberportEMS_CCMFGBAYEP.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CCMFGBAYEP.zh-HK.resx">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\CyberportEMS_CCMFGBAYEP.zh-CN.resx">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>

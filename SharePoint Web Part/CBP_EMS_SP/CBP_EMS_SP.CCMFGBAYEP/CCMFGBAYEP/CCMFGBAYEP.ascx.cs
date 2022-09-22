@@ -18,6 +18,7 @@ using System.Web;
 using System.Web.Configuration;
 using System.Web.UI.WebControls;
 using System.Web.UI.WebControls.WebParts;
+using System.Web.Security;
 
 namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
 {
@@ -95,6 +96,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                 else
                 {
                     IncubationSubmitPopup.Visible = false;
+                    Incubation2ndSignGroup.Visible = false;
                     FillIntakeDetails();
                 }
             }
@@ -210,7 +212,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                 }
                 else if (rdo_CCMFGBAYEP.Checked)
                 {
-                    //TODO: 001 Add value of switchStep2UI
+                    //TODO: 001a Add value of switchStep2UI
                     if (rdo_CCMFApplication.SelectedValue == "Company")
                         switchStep2UI("ccmfgbayepc");
                     else
@@ -434,10 +436,10 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         rdo212j.Text = Convert.ToString(objIncubation.Question2_1_2j);
                         rdo211c.Text = Convert.ToString(objIncubation.Question2_1_1c);
                         //CCMFGBAYEP
-                        //rdo212k.Text = Convert.ToString(objIncubation.Question2_1_2j);
-                        //rdo212l.Text = Convert.ToString(objIncubation.Question2_1_2j);
-                        //rdo212m.Text = Convert.ToString(objIncubation.Question2_1_2j);
-                        //rdo212n.Text = Convert.ToString(objIncubation.Question2_1_2j);
+                        rdo212k.Text = Convert.ToString(objIncubation.Question2_1_2k);
+                        rdo212l.Text = Convert.ToString(objIncubation.Question2_1_2l);
+                        rdo212m.Text = Convert.ToString(objIncubation.Question2_1_2m);
+                        rdo212n.Text = Convert.ToString(objIncubation.Question2_1_2n);
 
                         English.Text = objIncubation.Project_Name_Eng;
                         lblEnglish.Text = objIncubation.Project_Name_Eng;
@@ -540,6 +542,13 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
 
                         txtPosition_PrincipalApplicant.Text = objIncubation.Principal_Position_Title;
                         lblPosition_PrincipalApplicant.Text = objIncubation.Principal_Position_Title;
+
+                        txtName_2ndApplicant.Text = objIncubation.Principal_2nd_Full_Name;
+                        lblName_2ndApplicant.Text = objIncubation.Principal_2nd_Full_Name;
+
+                        txtPosition_2ndApplicant.Text = objIncubation.Principal_2nd_Position_Title;
+                        lblPosition_2ndApplicant.Text = objIncubation.Principal_2nd_Position_Title;
+
                         if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Declaration)))
                             chkDeclaration.Checked = Convert.ToBoolean(objIncubation.Declaration);
                         if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Marketing_Information)))
@@ -921,20 +930,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     SaveStep1Data();
             }
 
-            //else if ((Convert.ToInt32(hdn_ActiveStep.Value) + 1) == 4)
-            //{
-
-            //    InitializeFundingStatus();
-            //}
-            //else
-            //if ((Convert.ToInt16(hdn_ActiveStep.Value) + 1) == 3)
-            //{
-            //    InitialCoreMembers();
-            //}
-            //else if ((Convert.ToInt16(hdn_ActiveStep.Value) + 1) == 3)
-            //{
-            //    FillContact();
-            //}
             if (IsError == false)
             {
                 SetPanelVisibilityOfStep(Convert.ToInt16(hdn_ActiveStep.Value) + 1);
@@ -971,7 +966,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             {
                 if ((Convert.ToInt32(hdn_ActiveStep.Value) + 1) == 2)
                 {
-                    if (rdo_CCMFApplication.SelectedValue == "" && ((!rdo_HK.Checked) || (!rdo_Crossborder.Checked) || (!rdo_CUPP.Checked)))
+                    if (rdo_CCMFApplication.SelectedValue == "" && ((!rdo_HK.Checked) || (!rdo_Crossborder.Checked) || (!rdo_CUPP.Checked) || (!rdo_CCMFGBAYEP.Checked)))
                     {
                         // ShowbottomMessage(Localize("Error_CCMF_oprtions"), false);
                         IsError = true;
@@ -1004,28 +999,32 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     {
                         SaveStep1Data();
                     }
+                    else if (rdo_CCMFApplication.SelectedValue != "" && (rdo_CCMFGBAYEP.Checked))
+                    {
+                        SaveStep1Data();
+                    }
                 }
             }
-            //else if (ActiveStep == 2)
-            //{
-            //    SaveStep2Data();
-            //}
-            //else if (ActiveStep == 3)
-            //{
-            //    SaveStep3Data();
-            //}
-            //else if (ActiveStep == 4)
-            //{
-            //    SaveStep4Data();
-            //}
-            //else if (ActiveStep == 5)
-            //{
-            //    SaveStep5Data(out IsError);
-            //}
-            //else if (ActiveStep == 6)
-            //{
-            //    SaveStep6Data();
-            //}
+            else if (ActiveStep == 2)
+            {
+                SaveStep2Data();
+            }
+            else if (ActiveStep == 3)
+            {
+                SaveStep3Data();
+            }
+            else if (ActiveStep == 4)
+            {
+                SaveStep4Data();
+            }
+            else if (ActiveStep == 5)
+            {
+                SaveStep5Data(out IsError);
+            }
+            else if (ActiveStep == 6)
+            {
+                SaveStep6Data();
+            }
             ShowHideControlsBasedUponUserData();
 
         }
@@ -1040,6 +1039,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             btn_StepNext.Visible = true;
             btn_Submit.Visible = false;
             IncubationSubmitPopup.Visible = false;
+            Incubation2ndSignGroup.Visible = false;
             if (ActiveStep > 0)
             {
                 quicklnk_1.CssClass = "";
@@ -1136,7 +1136,16 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             else
                                 switchStep2UI("cbui");
                         }
+                        else if (rdo_CCMFGBAYEP.Checked)
+                        {
+                            //TODO: 001b Add value of switchStep2UI
+                            if (rdo_CCMFApplication.SelectedValue == "Company")
+                                switchStep2UI("ccmfgbayepc");
+                            else
+                                switchStep2UI("ccmfgbayepi");
+                        }
                     }
+
                     break;
                 case 3:
                     {
@@ -1565,6 +1574,10 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     objTB_CCMF_APPLICATION.Programme_Type = rdo_CrossborderOptions.SelectedValue;
                                 }
                             }
+                            else if (rdo_CCMFGBAYEP.Checked) //20220921 Added
+                            {
+                                objTB_CCMF_APPLICATION.Programme_Type = "GBAYEPCCMF";
+                            }
                             else if (rdo_CUPP.Checked)
                                 objTB_CCMF_APPLICATION.Programme_Type = "CUPP";
                             if (rdo_CCMFApplication.SelectedValue != "")
@@ -1609,6 +1622,10 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                 if (rdo_CrossborderOptions.SelectedValue != "")
                                     objTB_CCMF_APPLICATION.Programme_Type = rdo_CrossborderOptions.SelectedValue;
                             }
+                            else if (rdo_CCMFGBAYEP.Checked) //20220921 Added
+                            {
+                                objTB_CCMF_APPLICATION.Programme_Type = "GBAYEPCCMF";
+                            }
                             else if (rdo_CUPP.Checked)
                                 objTB_CCMF_APPLICATION.Programme_Type = "CUPP";
                             if (rdo_CCMFApplication.SelectedValue != "")
@@ -1634,7 +1651,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             }
         }
 
-        protected void SaveStep4Data()
+        protected void  SaveStep4Data()
         {
             string ErrorMessage = string.Empty;
             try
@@ -1845,14 +1862,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         if (rdo212f_1.SelectedValue != "")
                             objIncubation.Question2_1_2f_1 = Convert.ToBoolean(rdo212f_1.SelectedValue);
                         //CCMFGBAYEP
-                        //if (rdo212k.SelectedValue != "")
-                        //    objIncubation.Question2_1_2k = Convert.ToBoolean(rdo212k.SelectedValue);
-                        //if (rdo212l.SelectedValue != "")
-                        //    objIncubation.Question2_1_2l = Convert.ToBoolean(rdo212l.SelectedValue);
-                        //if (rdo212m.SelectedValue != "")
-                        //    objIncubation.Question2_1_2m = Convert.ToBoolean(rdo212m.SelectedValue);
-                        //if (rdo212n.SelectedValue != "")
-                        //    objIncubation.Question2_1_2n = Convert.ToBoolean(rdo212n.SelectedValue);
+                        if (rdo212k.SelectedValue != "")
+                            objIncubation.Question2_1_2k = Convert.ToBoolean(rdo212k.SelectedValue);
+                        if (rdo212l.SelectedValue != "")
+                            objIncubation.Question2_1_2l = Convert.ToBoolean(rdo212l.SelectedValue);
+                        if (rdo212m.SelectedValue != "")
+                            objIncubation.Question2_1_2m = Convert.ToBoolean(rdo212m.SelectedValue);
+                        if (rdo212n.SelectedValue != "")
+                            objIncubation.Question2_1_2n = Convert.ToBoolean(rdo212n.SelectedValue);
 
                         objIncubation.Modified_By = new SPFunctions().GetCurrentUser();
                         objIncubation.Modified_Date = DateTime.Now;
@@ -2084,7 +2101,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     if (objIncubation != null)
                     {
 
-
                         if (!string.IsNullOrEmpty(txtVideoClip.Text))
                         {
                             if (Common.CBPRegularExpression.RegExValidate(CBPRegularExpression.Url, txtVideoClip.Text.Trim()))
@@ -2096,6 +2112,9 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             }
 
                         }
+
+                        //20220922 handle save attachment?
+
                         //                SPFunctions objSPFunctions = new SPFunctions();
 
                         //                string _fileUrl = string.Empty;
@@ -2145,6 +2164,9 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             objIncubation.Have_Read_Statement = Personal_Information.Checked;
                             objIncubation.Principal_Full_Name = txtName_PrincipalApplicant.Text.Trim();
                             objIncubation.Principal_Position_Title = txtPosition_PrincipalApplicant.Text.Trim();
+                            objIncubation.Principal_2nd_Full_Name = txtName_2ndApplicant.Text.Trim();
+                            objIncubation.Principal_2nd_Position_Title = txtPosition_2ndApplicant.Text.Trim();
+
                             dbContext.SaveChanges();
                             ShowbottomMessage("Saved Successfully", true);
 
@@ -2198,6 +2220,62 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
         {
 
         }
+
+        protected void btn_gotoInsert2ndSign_Click(object sender, EventArgs e)
+        {
+            Incubation2ndSignGroup.Visible = true;
+            UserCustomerrorLogin2.InnerText = "";
+        }
+
+        protected void btn_submit2ndSign_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (CBPRegularExpression.RegExValidate(CBPRegularExpression.Email, txtLogin2ndSignEmail.Text) && !string.IsNullOrEmpty(txtLogin2ndSignPassword.Text))
+                {
+                    #region 20220922 Use MembershipUser Object
+                    String SqlMembershipProvider = string.Empty;
+
+                    using (var db = new CBP_EMS_SP.Data.Models.CyberportEMS_EDM())
+                    {
+                        SqlMembershipProvider = db.TB_SYSTEM_PARAMETER.FirstOrDefault(x => x.Config_Code == "SqlMembershipProvider").Value;
+                    }
+
+                    bool status = Membership.Providers[SqlMembershipProvider].ValidateUser(txtLogin2ndSignEmail.Text.Trim(), txtLogin2ndSignPassword.Text);
+                    #endregion
+
+                    if (!status)
+                    {
+                        Incubation2ndSignGroup.Visible = true;
+                        UserCustomerrorLogin2.InnerText = Localize("Error_Finalsubmit_emalandpass");
+                    }
+                    else if (txtLogin2ndSignEmail.Text.Equals(lblApplicant.Text))
+                    {
+                        Incubation2ndSignGroup.Visible = true;
+                        UserCustomerrorLogin2.InnerText = "Email cannot same as current login user";
+                    }
+                    else
+                    {
+                        txtName_2ndApplicant.Text = txtInsert2ndFullName.Text;
+                        txtPosition_2ndApplicant.Text = txtInsert2ndPosition.Text;
+                        Incubation2ndSignGroup.Visible = false;
+                        ShowbottomMessage("Full Name and Position Title of Principal Applicant (GuangDong or Macau Leader) added successfully", true);
+                    }
+
+                }
+                else
+                {
+                    Incubation2ndSignGroup.Visible = true;
+                    UserCustomerrorLogin2.InnerText = Localize("Error_Finalsubmit_emalandpass");
+                }
+            }
+            catch (Exception ex)
+            {
+                Incubation2ndSignGroup.Visible = true;
+                UserCustomerrorLogin2.InnerText = ex.Message; //Debug
+            }
+        }
+
 
         protected void btn_submitFinal_Click(object sender, EventArgs e)
         {
@@ -2281,6 +2359,8 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     oldObjCCMF.Other_Business_Area = objCCMF.Other_Business_Area;
                                     oldObjCCMF.Principal_Full_Name = objCCMF.Principal_Full_Name;
                                     oldObjCCMF.Principal_Position_Title = objCCMF.Principal_Position_Title;
+                                    oldObjCCMF.Principal_2nd_Full_Name = objCCMF.Principal_2nd_Full_Name;               //new field for CCMFGBAYEP
+                                    oldObjCCMF.Principal_2nd_Position_Title = objCCMF.Principal_2nd_Position_Title;     //new field for CCMFGBAYEP
                                     //oldObjCCMF.Modified_Date = DateTime.Now;
                                     oldObjCCMF.Programme_ID = objCCMF.Programme_ID;
                                     oldObjCCMF.Programme_Type = objCCMF.Programme_Type;
@@ -2303,16 +2383,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     oldObjCCMF.Question2_1_1h = objCCMF.Question2_1_1h;
                                     oldObjCCMF.Question2_1_1i = objCCMF.Question2_1_1i;
                                     oldObjCCMF.Question2_1_1j = objCCMF.Question2_1_1j;
-                                    //oldObjCCMF.Question2_1_2a = objIncubation.Question2_1_1c;
-                                    //oldObjCCMF.Question2_1_2b = objIncubation.Question2_1_1d;
-                                    //oldObjCCMF.Question2_1_2c = objIncubation.Question2_1_1e;
-                                    //oldObjCCMF.Question2_1_2d = objIncubation.Question2_1_1f;
-                                    //oldObjCCMF.Question2_1_2e = objIncubation.Question2_1_1g;
-                                    //oldObjCCMF.Question2_1_2f = objIncubation.Question2_1_1h;
-                                    //oldObjCCMF.Question2_1_2g = objIncubation.Question2_1_1i;
-                                    //oldObjCCMF.Question2_1_2h = objIncubation.Question2_1_2h;
-                                    //oldObjCCMF.Question2_1_2i = objIncubation.Question2_1_2i;
-                                    //oldObjCCMF.Question2_1_2j = objIncubation.Question2_1_2j;
+
                                     oldObjCCMF.Question2_1_2a = objCCMF.Question2_1_2a;
                                     oldObjCCMF.Question2_1_2b = objCCMF.Question2_1_2b;
                                     oldObjCCMF.Question2_1_2c = objCCMF.Question2_1_2c;
@@ -2324,6 +2395,9 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     oldObjCCMF.Question2_1_2i = objCCMF.Question2_1_2i;
                                     oldObjCCMF.Question2_1_2j = objCCMF.Question2_1_2j;
                                     oldObjCCMF.Question2_1_2k = objCCMF.Question2_1_2k;
+                                    oldObjCCMF.Question2_1_2l = objCCMF.Question2_1_2l;                 //new field for CCMFGBAYEP
+                                    oldObjCCMF.Question2_1_2m = objCCMF.Question2_1_2m;                 //new field for CCMFGBAYEP
+                                    oldObjCCMF.Question2_1_2n = objCCMF.Question2_1_2n;                 //new field for CCMFGBAYEP
                                     oldObjCCMF.Social_Responsibility = objCCMF.Social_Responsibility;
                                     oldObjCCMF.Status = "Submitted"; //oldObjCCMF.Status = objIncubation.Status;
 
@@ -2382,7 +2456,8 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                 string WebsiteUrl = objTbParams.FirstOrDefault(x => x.Config_Code == "WebsiteUrl").Value;
                                 WebsiteUrl = WebsiteUrl.EndsWith("/") ? (WebsiteUrl.Remove(WebsiteUrl.LastIndexOf("/"))) : WebsiteUrl;
 
-                                string applicationType = "CCMF.aspx";
+                                //string applicationType = "CCMF.aspx";
+                                string applicationType = "CCMFGBAYEP.aspx";
                                 string token = "/SitePages/" + applicationType + "?prog=" + objCCMF.Programme_ID + "&app=" + objCCMF.CCMF_ID;
                                 if (isrequestor == true)
                                 {
@@ -2495,6 +2570,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             SPFunctions objFUnction = new SPFunctions();
             txtLoginUserName.Text = objFUnction.GetCurrentUser();
         }
+
+        protected void btn_HideSubmit2ndSignPopup_Click(object sender, EventArgs e)
+        {
+            Incubation2ndSignGroup.Visible = false;
+            //SPFunctions objFUnction = new SPFunctions();
+            //txtLoginUserName.Text = objFUnction.GetCurrentUser();
+        }
+
         protected void ShowbottomMessage(string Message, bool Success)
         {
             lbl_success.InnerHtml = "";
@@ -2948,7 +3031,20 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         div211b.Visible = true;
                         lbl211a.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_Comp_1_A", "CyberportEMS_CCMFGBAYEP");
                         lbl211b.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_Comp_1_B", "CyberportEMS_CCMFGBAYEP");
-
+                        #endregion
+                        #region 2.1.2
+                        spn212c.InnerHtml = "c)";
+                        lbl212dtd.Text = "d)";
+                        lbl212etdd.Text = "e)";
+                        lbl212ftd.Text = "f)";
+                        lbl212gtd.Text = "g)";
+                        spn212h.InnerHtml = "h)";
+                        lbl212itd.Text = "i)";
+                        spn212j.InnerHtml = "j)";
+                        spn212k.InnerHtml = "k)";
+                        spn212l.InnerHtml = "l)";
+                        spn212m.InnerHtml = "m)";
+                        spn212n.InnerHtml = "n)";
                         lbl212c.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_C", "CyberportEMS_CCMFGBAYEP");
                         lbl212d.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_D", "CyberportEMS_CCMFGBAYEP");
                         lbl212e.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_E", "CyberportEMS_CCMFGBAYEP");
@@ -2961,8 +3057,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         lbl212l.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_L", "CyberportEMS_CCMFGBAYEP");
                         lbl212m.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_M", "CyberportEMS_CCMFGBAYEP");
                         lbl212n.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_N", "CyberportEMS_CCMFGBAYEP");
-                        #endregion
-                        #region 2.1.2
                         #endregion
 
                     }
@@ -2978,7 +3072,20 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         div211a.Visible = true;
                         div211b.Visible = false;
                         lbl211a.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_Ind_1_A", "CyberportEMS_CCMFGBAYEP");
-
+                        #endregion
+                        #region 2.1.2
+                        spn212c.InnerHtml = "b)";
+                        lbl212dtd.Text = "c)";
+                        lbl212etdd.Text = "d)";
+                        lbl212ftd.Text = "e)";
+                        lbl212gtd.Text = "f)";
+                        spn212h.InnerHtml = "g)";
+                        lbl212itd.Text = "h)";
+                        spn212j.InnerHtml = "i)";
+                        spn212k.InnerHtml = "j)";
+                        spn212l.InnerHtml = "k)";
+                        spn212m.InnerHtml = "l)";
+                        spn212n.InnerHtml = "m)";
                         lbl212c.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_C", "CyberportEMS_CCMFGBAYEP");
                         lbl212d.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_D", "CyberportEMS_CCMFGBAYEP");
                         lbl212e.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_E", "CyberportEMS_CCMFGBAYEP");
@@ -2988,11 +3095,9 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         lbl212i.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_I", "CyberportEMS_CCMFGBAYEP");
                         lbl212j.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_J", "CyberportEMS_CCMFGBAYEP");
                         lbl212k.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_K", "CyberportEMS_CCMFGBAYEP");
-                        lbl212l.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_L", "CyberportEMS_CCMFGBAYEP");
+                        lbl212l.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_L", "CyberportEMS_CCMFGBAYEP").Replace("2.2 (j)", "2.2 (i)");
                         lbl212m.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_M", "CyberportEMS_CCMFGBAYEP");
                         lbl212n.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_N", "CyberportEMS_CCMFGBAYEP");
-                        #endregion
-                        #region 2.1.2
                         #endregion
                     }
                     break;
@@ -3087,28 +3192,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                             }
                                         }
 
-                                        //if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                        //{
-                                        //    if (Activation.ToLower() == "company")
-                                        //    {
-                                        //        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)) && objIncubation.Question2_1_1a == false)
-                                        //        {
-                                        //            IsError = true;
-
-                                        //            errlist.Add(Localize("Error_2_1_1b"));
-                                        //        }
-                                        //    }
-                                        //    else
-                                        //    {
-                                        //        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                        //        {
-                                        //            IsError = true;
-
-                                        //            errlist.Add(Localize("Error_2_1_1b"));
-
-                                        //        }
-                                        //    }
-                                        //}
                                     }
 
 
@@ -3261,20 +3344,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                         //}
                                     }
 
-
-                                    //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2a)))
-                                    //{
-                                    //    IsError = true;
-                                    //    errlist.Add(Localize("Error_2_1_2a"));
-                                    //}
-
-                                    //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2b)))
-                                    //{
-
-                                    //    IsError = true;
-                                    //    errlist.Add(Localize("Error_2_1_2b"));
-
-                                    //}
                                     if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
                                     {
 
@@ -4787,6 +4856,44 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     lblHKID.Text = Localize("Error_upload_file");
                                 }
                                 break;
+                            //case 6:
+                            //    if (fuCompanyDocument.HasFile)
+                            //    {
+                            //        if (fuCompanyDocument.PostedFile.ContentLength <= (5 * 1024 * 1024))
+                            //        {
+
+                            //            string Extension = fuCompanyDocument.FileName.Remove(0, fuCompanyDocument.FileName.LastIndexOf(".") + 1);
+                            //            if (Extension.ToLower() == "pdf" || Extension.ToLower() == "doc" || Extension.ToLower() == "docx" || Extension.ToLower() == "xls" ||
+                            //                Extension.ToLower() == "xlsx" || Extension.ToLower() == "ppt" || Extension.ToLower() == "pptx" || Extension.ToLower() == "png" ||
+                            //                Extension.ToLower() == "jpg" || Extension.ToLower() == "gif")
+                            //            {
+                            //                List<TB_APPLICATION_ATTACHMENT> attachments = dbContext.TB_APPLICATION_ATTACHMENT.Where(x => x.Application_ID == objCCMF.CCMF_ID).ToList();
+                            //                attachments = attachments.Where(x => x.Attachment_Type.ToLower() == enumAttachmentType.Company_Document.ToString().ToLower()).ToList();
+
+                            //                _fileUrl = objSPFunctions.AttachmentSave(objCCMF.Application_Number, dbContext.TB_PROGRAMME_INTAKE.FirstOrDefault(x => x.Programme_ID == progId),
+                            //                fuCompanyDocument, enumAttachmentType.Company_Document, attachments.Count().ToString());
+                            //                SaveAttachmentUrl(_fileUrl, enumAttachmentType.Company_Document, objCCMF.CCMF_ID, objCCMF.Programme_ID);
+                            //                CompanyDocument.Text = "";
+                            //                InitializeUploadsDocument();
+                            //            }
+                            //            else
+                            //            {
+                            //                IsError = true;
+                            //                CompanyDocument.Text = Localize("Error_file_format");
+                            //            }
+                            //        }
+                            //        else
+                            //        {
+                            //            IsError = true;
+                            //            CompanyDocument.Text = Localize("Error_file_size");
+                            //        }
+                            //    }
+                            //    else
+                            //    {
+                            //        IsError = true;
+                            //        CompanyDocument.Text = Localize("Error_upload_file");
+                            //    }
+                            //    break;
                         }
                     }
                 }
@@ -5028,127 +5135,138 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         List<TB_APPLICATION_ATTACHMENT> objTB_APPLICATION_ATTACHMENT = IncubationContext.ListofTB_APPLICATION_ATTACHMENTGGet(objIncubation.CCMF_ID, objIncubation.Programme_ID);
                         bool isDisabled = lblEnglish.Visible;
 
-                        string apptype = objIncubation.CCMF_Application_Type;
-                        if (apptype.ToLower() == "company")
-                        {
-                            attachbrcopy.Visible = true;
-                            attachhkid.Visible = false;
-                            br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+                        #region 20220922 Setup Step 6 in CCMFGBAYEP
+                        attachhkid.Visible = false;
+                        attachstudentid.Visible = false;
+                        attachbrcopy.Visible = true;
+
+                        br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+                        video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        #endregion
+
+                        //string apptype = objIncubation.CCMF_Application_Type;
+                        //if (apptype.ToLower() == "company")
+                        //{
+                        //    attachbrcopy.Visible = true;
+                        //    attachhkid.Visible = false;
+                        //    br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
 
 
-                            studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
+                        //    studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
 
-                            video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                            presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                            other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
-
-
-                        }
-                        else
-                        {
-                            attachbrcopy.Visible = false;
-                            attachhkid.Visible = true;
+                        //    video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //    presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //    other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
 
 
-                            studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
-                            hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
-                            video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                            presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                            other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
-                        }
-
-                        if (!string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream))
-                        {
-                            if (objIncubation.Hong_Kong_Programme_Stream.ToLower() != "professional")
-                            {
-                                if (apptype.ToLower() == "company")
-                                {
-                                    attachstudentid.Visible = false;
-                                    attachbrcopy.Visible = true;
-                                    attachhkid.Visible = true;
-
-                                    br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
-                                    hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";                                                                               //ss8 changes
-                                    //  studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
-
-                                    video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                                    presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                                    other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        //}
+                        //else
+                        //{
+                        //    attachbrcopy.Visible = false;
+                        //    attachhkid.Visible = true;
 
 
-                                }
-                                else
-                                {
-                                    attachstudentid.Visible = false;
-                                    attachbrcopy.Visible = false;
-                                    attachhkid.Visible = true;
-                                    //ss8 changes
-                                    //  studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
-                                    hk_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
-                                    video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                                    presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                                    other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
-                                }
+                        //    studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
+                        //    hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
+                        //    video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //    presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //    other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        //}
 
-                                //ss8 changes
-                                //  attachstudentid.Visible = true;
-                                attachstudentid.Visible = false;
-                            }
-                            else
-                            {
-                                if (apptype.ToLower() == "company")
-                                {
+                        //if (!string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream))
+                        //{
+                        //    if (objIncubation.Hong_Kong_Programme_Stream.ToLower() != "professional")
+                        //    {
+                        //        if (apptype.ToLower() == "company")
+                        //        {
+                        //            attachstudentid.Visible = false;
+                        //            attachbrcopy.Visible = true;
+                        //            attachhkid.Visible = true;
 
-                                    br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+                        //            br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+                        //            hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";                                                                               //ss8 changes
+                        //            //  studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
 
-
-                                    video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                                    presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                                    other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        //            video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //            presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //            other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
 
 
-                                }
-                                else
-                                {
+                        //        }
+                        //        else
+                        //        {
+                        //            attachstudentid.Visible = false;
+                        //            attachbrcopy.Visible = false;
+                        //            attachhkid.Visible = true;
+                        //            //ss8 changes
+                        //            //  studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
+                        //            hk_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
+                        //            video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //            presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //            other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        //        }
+
+                        //        //ss8 changes
+                        //        //  attachstudentid.Visible = true;
+                        //        attachstudentid.Visible = false;
+                        //    }
+                        //    else
+                        //    {
+                        //        if (apptype.ToLower() == "company")
+                        //        {
+
+                        //            br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+
+
+                        //            video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //            presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //            other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+
+
+                        //        }
+                        //        else
+                        //        {
 
 
 
-                                    hk_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
-                                    video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                                    presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                                    other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
-                                }
-                            }
-                        }
-                        else if (objIncubation.Programme_Type.ToLower() != "hongkong")
-                        {
-                            if (apptype.ToLower() == "company")
-                            {
+                        //            hk_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
+                        //            video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //            presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //            other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        //        }
+                        //    }
+                        //}
+                        //else if (objIncubation.Programme_Type.ToLower() != "hongkong")
+                        //{
+                        //    if (apptype.ToLower() == "company")
+                        //    {
 
-                                br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
-                                studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
+                        //        br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+                        //        studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
 
-                                video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                                presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                                other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
-
-
-                            }
-                            else
-                            {
+                        //        video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //        presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //        other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
 
 
-                                studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
-                                hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
-                                video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                                presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                                other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
-                            }
-
-                            attachstudentid.Visible = true;
+                        //    }
+                        //    else
+                        //    {
 
 
-                        }
+                        //        studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMFGBAYEP");//Student ID";
+                        //        hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMFGBAYEP");//HK ID";
+                        //        video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                        //        presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                        //        other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        //    }
+
+                        //    attachstudentid.Visible = true;
+
+
+                        //}
                         if (ForLanguageOnly == false)
                         {
 
@@ -5669,18 +5787,20 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         itemAttachment["Application_Number"] = Application_number;
 
                         itemAttachment["Programme_ID"] = Programme_Id;
-                        if (!ProgrammeName.ToLower().Contains("cupp") && !ProgrammeName.ToLower().Contains("hongkong"))
-                        {
-                            itemAttachment["Programme_Name"] = "CCMF – Cross Border";
-                        }
-                        else if (!ProgrammeName.ToLower().Contains("crossborder") && !ProgrammeName.ToLower().Contains("cupp"))
-                        {
-                            itemAttachment["Programme_Name"] = "CCMF – Hong Kong";
-                        }
-                        else
-                        {
-                            itemAttachment["Programme_Name"] = "CCMF – CUPP";
-                        }
+
+                        itemAttachment["Programme_Name"] = "CCMF – GBAYEP";
+                        //if (!ProgrammeName.ToLower().Contains("cupp") && !ProgrammeName.ToLower().Contains("hongkong"))
+                        //{
+                        //    itemAttachment["Programme_Name"] = "CCMF – Cross Border";
+                        //}
+                        //else if (!ProgrammeName.ToLower().Contains("crossborder") && !ProgrammeName.ToLower().Contains("cupp"))
+                        //{
+                        //    itemAttachment["Programme_Name"] = "CCMF – Hong Kong";
+                        //}
+                        //else
+                        //{
+                        //    itemAttachment["Programme_Name"] = "CCMF – CUPP";
+                        //}
                         itemAttachment["Programme_Name"] = "CCMF-" + ProgrammeName;
                         itemAttachment["Intake_Number"] = Intake;
                         itemAttachment["Applicant"] = Applicant;
@@ -6198,6 +6318,34 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             return myValue.ToString().Replace(Environment.NewLine, "<br>");
         }
 
+
+        //protected void rptrCompanyDocument_ItemDataBound(object sender, RepeaterItemEventArgs e)
+        //{
+        //    if (e.Item.ItemType == ListItemType.AlternatingItem || e.Item.ItemType == ListItemType.AlternatingItem)
+        //    {
+        //        using (var dbContext = new CyberportEMS_EDM())
+        //        {
+        //            int progId = Convert.ToInt32(hdn_ProgramID.Value);
+        //            TB_CCMF_APPLICATION objIncubation = GetExistingCCMF(dbContext, progId);
+
+        //            SPFunctions objSp = new SPFunctions();
+        //            string AccessUser = lblApplicant.Text.Trim();
+        //            string CurrentUser = objSp.GetCurrentUser();
+        //            if (objIncubation.Applicant.ToLower() != objSp.GetCurrentUser().ToLower() && objIncubation.Modified_By.ToLower() != objSp.GetCurrentUser().ToLower())
+        //            {
+
+        //                LinkButton lnkAttachmentDelete = (LinkButton)e.Item.FindControl("lnkAttachmentDelete");
+        //                lnkAttachmentDelete.Enabled = false;
+        //                if (e.Item.FindControl("hypNavigation") != null)
+        //                {
+        //                    HyperLink hypNavigation = (HyperLink)e.Item.FindControl("hypNavigation");
+        //                    hypNavigation.Enabled = false;
+        //                }
+
+        //            }
+        //        }
+        //    }
+        //}
 
         protected void rptrOtherAttachement_ItemDataBound(object sender, RepeaterItemEventArgs e)
         {

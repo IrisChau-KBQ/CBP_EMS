@@ -89,6 +89,12 @@ namespace CBP_EMS_SP.Data.Models
         public bool? Question2_1_2j { get; set; }
 
         public bool? Question2_1_2k { get; set; }
+        
+        public bool? Question2_1_2l { get; set; }
+        
+        public bool? Question2_1_2m { get; set; }
+        
+        public bool? Question2_1_2n { get; set; }
 
         public bool? Question1_3 { get; set; }
 
@@ -174,6 +180,12 @@ namespace CBP_EMS_SP.Data.Models
 
         [StringLength(255)]
         public string Principal_Position_Title { get; set; }
+
+        [StringLength(255)]
+        public string Principal_2nd_Full_Name { get; set; }
+
+        [StringLength(255)]
+        public string Principal_2nd_Position_Title { get; set; }
 
         public DateTime? Submission_Date { get; set; }
 

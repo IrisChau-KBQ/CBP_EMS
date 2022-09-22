@@ -926,6 +926,10 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Button btn_gotoInsert2ndSign;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
         protected global::System.Web.UI.WebControls.CheckBox Personal_Information;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
@@ -979,6 +983,38 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
         protected global::System.Web.UI.WebControls.BulletedList lblgrouperror;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.TextBox txtLogin2ndSignEmail;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.TextBox txtLogin2ndSignPassword;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.TextBox txtInsert2ndFullName;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.TextBox txtInsert2ndPosition;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Button Button1;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Button Button2;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl UserCustomerrorLogin2;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Panel Incubation2ndSignGroup;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
@@ -2874,10 +2910,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ID = "rdo212d";
             @__ctrl.RepeatDirection = global::System.Web.UI.WebControls.RepeatDirection.Horizontal;
             @__ctrl.CssClass = "width90 listcss";
-            @__ctrl.AutoPostBack = true;
             this.@__BuildControl__control53(@__ctrl.Items);
-            @__ctrl.SelectedIndexChanged -= new System.EventHandler(this.rdo212d_SelectedIndexChanged);
-            @__ctrl.SelectedIndexChanged += new System.EventHandler(this.rdo212d_SelectedIndexChanged);
             return @__ctrl;
         }
         
@@ -3149,10 +3182,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ID = "rdo212f";
             @__ctrl.RepeatDirection = global::System.Web.UI.WebControls.RepeatDirection.Horizontal;
             @__ctrl.CssClass = "width90 listcss";
-            @__ctrl.AutoPostBack = true;
             this.@__BuildControl__control65(@__ctrl.Items);
-            @__ctrl.SelectedIndexChanged -= new System.EventHandler(this.rdo212f_SelectedIndexChanged);
-            @__ctrl.SelectedIndexChanged += new System.EventHandler(this.rdo212f_SelectedIndexChanged);
             return @__ctrl;
         }
         
@@ -3424,10 +3454,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ID = "rdo212h";
             @__ctrl.RepeatDirection = global::System.Web.UI.WebControls.RepeatDirection.Horizontal;
             @__ctrl.CssClass = "width90 listcss";
-            @__ctrl.AutoPostBack = true;
             this.@__BuildControl__control77(@__ctrl.Items);
-            @__ctrl.SelectedIndexChanged -= new System.EventHandler(this.rdo212h_SelectedIndexChanged);
-            @__ctrl.SelectedIndexChanged += new System.EventHandler(this.rdo212h_SelectedIndexChanged);
             return @__ctrl;
         }
         
@@ -9737,8 +9764,12 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             parameterContainer.Controls[1].RenderControl(@__w);
             @__w.Write("\r\n\r\n\r\n                                ");
             parameterContainer.Controls[2].RenderControl(@__w);
-            @__w.Write("\r\n                            </div>\r\n\r\n\r\n\r\n                        </div>\r\n     " +
-                    "               </div>\r\n                ");
+            @__w.Write("\r\n                            </div>\r\n\r\n                            <p class=\"for" +
+                    "m-group\">");
+                                          @__w.Write(SPFunctions.LocalizeUI("Step_5_Notice", "CyberportEMS_CCMFGBAYEP") );
+
+            @__w.Write(" </p>\r\n\r\n                        </div>\r\n                    </div>\r\n            " +
+                    "    ");
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -11241,6 +11272,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.CssClass = "input-sm";
             @__ctrl.ID = "txtPosition_PrincipalApplicant";
+            @__ctrl.ReadOnly = true;
             return @__ctrl;
         }
         
@@ -11268,6 +11300,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.CssClass = "input-sm";
             @__ctrl.ID = "txtName_2ndApplicant";
+            @__ctrl.ReadOnly = true;
             return @__ctrl;
         }
         
@@ -11295,6 +11328,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.CssClass = "input-sm";
             @__ctrl.ID = "txtPosition_2ndApplicant";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Enable", "false");
             return @__ctrl;
         }
         
@@ -11309,6 +11343,23 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.CssClass = "label-text";
             @__ctrl.ID = "lblPosition_2ndApplicant";
             @__ctrl.Visible = false;
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Button @__BuildControlbtn_gotoInsert2ndSign() {
+            global::System.Web.UI.WebControls.Button @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Button();
+            this.btn_gotoInsert2ndSign = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "btn_gotoInsert2ndSign";
+            @__ctrl.Visible = true;
+            @__ctrl.Text = "Insert GuangDong or Macau Leader Full name and Position Title";
+            @__ctrl.CssClass = "btnSubmitIncubation apply-btn skytheme";
+            @__ctrl.Click -= new System.EventHandler(this.btn_gotoInsert2ndSign_Click);
+            @__ctrl.Click += new System.EventHandler(this.btn_gotoInsert2ndSign_Click);
             return @__ctrl;
         }
         
@@ -11435,12 +11486,15 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             global::System.Web.UI.WebControls.Label @__ctrl28;
             @__ctrl28 = this.@__BuildControllblPosition_2ndApplicant();
             @__parser.AddParsedSubObject(@__ctrl28);
-            global::System.Web.UI.WebControls.CheckBox @__ctrl29;
-            @__ctrl29 = this.@__BuildControlPersonal_Information();
+            global::System.Web.UI.WebControls.Button @__ctrl29;
+            @__ctrl29 = this.@__BuildControlbtn_gotoInsert2ndSign();
             @__parser.AddParsedSubObject(@__ctrl29);
             global::System.Web.UI.WebControls.CheckBox @__ctrl30;
-            @__ctrl30 = this.@__BuildControlMarketing_Information();
+            @__ctrl30 = this.@__BuildControlPersonal_Information();
             @__parser.AddParsedSubObject(@__ctrl30);
+            global::System.Web.UI.WebControls.CheckBox @__ctrl31;
+            @__ctrl31 = this.@__BuildControlMarketing_Information();
+            @__parser.AddParsedSubObject(@__ctrl31);
             @__ctrl.SetRenderMethodDelegate(new System.Web.UI.RenderMethod(this.@__Renderpnl_IncubationStep6));
             return @__ctrl;
         }
@@ -11459,7 +11513,8 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             parameterContainer.Controls[1].RenderControl(@__w);
             @__w.Write("\r\n\r\n                        ");
             parameterContainer.Controls[2].RenderControl(@__w);
-            @__w.Write("\r\n\r\n                        <div class=\"row\">\r\n                            ");
+            @__w.Write("\r\n\r\n                        \r\n\r\n                        <div class=\"row\">\r\n      " +
+                    "                      ");
             parameterContainer.Controls[3].RenderControl(@__w);
             @__w.Write("\r\n                            <div class=\"col-md-6\">\r\n                           " +
                     "     <div class=\"dirbox\">\r\n                                    ");
@@ -11584,7 +11639,10 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__w.Write("\r\n                            ");
             parameterContainer.Controls[27].RenderControl(@__w);
             @__w.Write("\r\n                        </div>\r\n                    </div>\r\n                   " +
-                    " <h2 class=\"subheading text-center\" style=\"margin: 20px 0;\">");
+                    " <div class=\"row\">\r\n                        ");
+            parameterContainer.Controls[28].RenderControl(@__w);
+            @__w.Write("\r\n                    </div>\r\n\r\n                    <h2 class=\"subheading text-ce" +
+                    "nter\" style=\"margin: 20px 0;\">");
                                                                        @__w.Write(SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CCMFGBAYEP") );
 
             @__w.Write(" \r\n                    </h2>\r\n\r\n                    <p class=\"form-group\">");
@@ -11669,12 +11727,12 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
 
             @__w.Write(" </p>\r\n\r\n\r\n                    <div class=\"green-clr-theme\">\r\n                   " +
                     "     ");
-            parameterContainer.Controls[28].RenderControl(@__w);
+            parameterContainer.Controls[29].RenderControl(@__w);
             @__w.Write("\r\n                        ");
                 @__w.Write(SPFunctions.LocalizeUI("step_6_personal_information_collection", "CyberportEMS_CCMFGBAYEP") );
 
             @__w.Write("\r\n                        <br />\r\n                        ");
-            parameterContainer.Controls[29].RenderControl(@__w);
+            parameterContainer.Controls[30].RenderControl(@__w);
             @__w.Write("\r\n                        ");
                 @__w.Write(SPFunctions.LocalizeUI("step_6_marketing", "CyberportEMS_CCMFGBAYEP") );
 
@@ -11863,6 +11921,166 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ID = "lblgrouperror";
             @__ctrl.CssClass = "text-danger";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "margin-top: 12px; margin-left: 44px");
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtLogin2ndSignEmail() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtLogin2ndSignEmail = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "input";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("placeholder", "Email");
+            @__ctrl.ID = "txtLogin2ndSignEmail";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtLogin2ndSignPassword() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtLogin2ndSignPassword = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "input";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("placeholder", "Password");
+            @__ctrl.TextMode = global::System.Web.UI.WebControls.TextBoxMode.Password;
+            @__ctrl.ID = "txtLogin2ndSignPassword";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtInsert2ndFullName() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtInsert2ndFullName = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "input";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("placeholder", "Full Name of Principal Applicant (GuandDong or Macau Leader)");
+            @__ctrl.ID = "txtInsert2ndFullName";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxtInsert2ndPosition() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txtInsert2ndPosition = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "input";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("placeholder", "Position Title of Principal Applicant (GuandDong or Macau Leader)");
+            @__ctrl.ID = "txtInsert2ndPosition";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Button @__BuildControlButton1() {
+            global::System.Web.UI.WebControls.Button @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Button();
+            this.Button1 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "Button1";
+            @__ctrl.Text = "Cancel";
+            @__ctrl.CssClass = "apply-btn graytheme";
+            @__ctrl.Click -= new System.EventHandler(this.btn_HideSubmit2ndSignPopup_Click);
+            @__ctrl.Click += new System.EventHandler(this.btn_HideSubmit2ndSignPopup_Click);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Button @__BuildControlButton2() {
+            global::System.Web.UI.WebControls.Button @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Button();
+            this.Button2 = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "Button2";
+            @__ctrl.Text = "Submit";
+            @__ctrl.CssClass = "apply-btn skytheme";
+            @__ctrl.Click -= new System.EventHandler(this.btn_submit2ndSign_Click);
+            @__ctrl.Click += new System.EventHandler(this.btn_submit2ndSign_Click);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.HtmlControls.HtmlGenericControl @__BuildControlUserCustomerrorLogin2() {
+            global::System.Web.UI.HtmlControls.HtmlGenericControl @__ctrl;
+            @__ctrl = new global::System.Web.UI.HtmlControls.HtmlGenericControl("p");
+            this.UserCustomerrorLogin2 = @__ctrl;
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "text-danger");
+            @__ctrl.ID = "UserCustomerrorLogin2";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Panel @__BuildControlIncubation2ndSignGroup() {
+            global::System.Web.UI.WebControls.Panel @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Panel();
+            this.Incubation2ndSignGroup = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "Incubation2ndSignGroup";
+            @__ctrl.DefaultButton = "btn_submitFinal";
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
+    <div class=""popup-overlay""></div>
+    <div class=""popup IncubationSubmitPopup"">
+        <div class=""pos-relative card-theme full-width"">
+            <p class=""popup--para"">                	 
+                
+                Please input GuangDong or Macau Leader login email and password for confirmation.
+            </p>
+
+            <div class=""table full-width"">
+                <div class=""form-group"">
+                    "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl1;
+            @__ctrl1 = this.@__BuildControltxtLogin2ndSignEmail();
+            @__parser.AddParsedSubObject(@__ctrl1);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </div>\r\n                <div class=\"form-group\">\r\n             " +
+                        "       "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl2;
+            @__ctrl2 = this.@__BuildControltxtLogin2ndSignPassword();
+            @__parser.AddParsedSubObject(@__ctrl2);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </div>\r\n                <div class=\"form-group\">\r\n             " +
+                        "       "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl3;
+            @__ctrl3 = this.@__BuildControltxtInsert2ndFullName();
+            @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </div>\r\n                <div class=\"form-group\">\r\n             " +
+                        "       "));
+            global::System.Web.UI.WebControls.TextBox @__ctrl4;
+            @__ctrl4 = this.@__BuildControltxtInsert2ndPosition();
+            @__parser.AddParsedSubObject(@__ctrl4);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </div>\r\n\r\n                <div class=\"form-group\">\r\n           " +
+                        "         "));
+            global::System.Web.UI.WebControls.Button @__ctrl5;
+            @__ctrl5 = this.@__BuildControlButton1();
+            @__parser.AddParsedSubObject(@__ctrl5);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                    "));
+            global::System.Web.UI.WebControls.Button @__ctrl6;
+            @__ctrl6 = this.@__BuildControlButton2();
+            @__parser.AddParsedSubObject(@__ctrl6);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </div>\r\n                <div style=\"padding: 12px 0;\">\r\n       " +
+                        "             "));
+            global::System.Web.UI.HtmlControls.HtmlGenericControl @__ctrl7;
+            @__ctrl7 = this.@__BuildControlUserCustomerrorLogin2();
+            @__parser.AddParsedSubObject(@__ctrl7);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </div>\r\n            </div>\r\n        </div>\r\n    </div>\r\n"));
             return @__ctrl;
         }
         
@@ -12269,19 +12487,22 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
 
 <!---728x90--->
 <!-----//end-main---->
-
 "));
             global::System.Web.UI.WebControls.Panel @__ctrl20;
-            @__ctrl20 = this.@__BuildControlIncubationSubmitPopup();
+            @__ctrl20 = this.@__BuildControlIncubation2ndSignGroup();
             @__parser.AddParsedSubObject(@__ctrl20);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n"));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n\r\n\r\n"));
             global::System.Web.UI.WebControls.Panel @__ctrl21;
-            @__ctrl21 = this.@__BuildControlpnlsubmissionpopup();
+            @__ctrl21 = this.@__BuildControlIncubationSubmitPopup();
             @__parser.AddParsedSubObject(@__ctrl21);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n"));
             global::System.Web.UI.WebControls.Panel @__ctrl22;
-            @__ctrl22 = this.@__BuildControlpnlRestricted();
+            @__ctrl22 = this.@__BuildControlpnlsubmissionpopup();
             @__parser.AddParsedSubObject(@__ctrl22);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n"));
+            global::System.Web.UI.WebControls.Panel @__ctrl23;
+            @__ctrl23 = this.@__BuildControlpnlRestricted();
+            @__parser.AddParsedSubObject(@__ctrl23);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n<link href=\"/_layouts/15/Styles/CBP_Styles/jquery-ui.css\" rel=\"stylesheet\" />" +
                         "\r\n\r\n<script src=\"/_layouts/15/Styles/CBP_Styles/jquery-ui.js\" type=\"text/javascr" +
                         "ipt\"></script>\r\n<style id=\'hideMonth\'></style>\r\n\r\n<script>\r\n    $(\".datepickerMo" +

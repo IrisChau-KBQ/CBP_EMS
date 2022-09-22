@@ -795,6 +795,9 @@ Application eligibility of CCMF is stated in the&lt;a href="https://www.cyberpor
   <data name="Instruction_8" xml:space="preserve">
     <value>Hong Kong Cyberport Management Company Limited</value>
   </data>
+  <data name="CompanyDocument" xml:space="preserve">
+    <value>Company Documents (if applicable)</value>
+  </data>
   <data name="OtherAttachment" xml:space="preserve">
     <value>Other supplementary information, e.g., business plan (if any)</value>
   </data>
@@ -1152,6 +1155,9 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
   <data name="Step_5_Student_idcard" xml:space="preserve">
     <value>Student Identity Card No.</value>
   </data>
+  <data name="Step_5_Notice" xml:space="preserve">
+    <value>* CCMF grant payment will be disbursed to bank account of HK Team Leader of admitted project (Individual Application) with reference to Clause 8.1 of Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme (ENC.RF.015b)</value>
+  </data>
   <data name="Step_6_Access" xml:space="preserve">
     <value>Access to and Correction of Your Data</value>
   </data>
@@ -1207,10 +1213,10 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
     <value>In connection with direct marketing, we intend to use your name and email address to market and promote the services, products, facilities, activities, contests, conferences, lucky draws, events and promotional campaigns from time to time available relating to us or "Cyberport", or shops or merchants or hotel in the "Cyberport" or offered or hosted at "Cyberport" (including consumer goods, food and beverages, books and stationery, children goods and services, fashion and accessories, optical products, watches, jewellery, luxurious goods, personal care, health and beauty products and services, furniture and lifestyle goods, home furnishing and appliances, florists, sports gear and products, electronic products and appliances, banking and financial services, cinemas and theatres, cultural, entertainment facilities and activities, charity activities, leisure activities and performances, gift redemptions and car parking facilities)</value>
   </data>
   <data name="Step_6_Full_Name" xml:space="preserve">
-    <value>Full Name of Principal Applicant</value>
+    <value>Full Name of Principal Applicant (HK Leader)</value>
   </data>
   <data name="Step_6_Full_Name_2" xml:space="preserve">
-    <value>Full Name of Secondary Applicant</value>
+    <value>Full Name of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="step_6_marketing" xml:space="preserve">
     <value>I agree to receive direct marketing information.</value>
@@ -1264,10 +1270,10 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
     <value>This Statement is written in the English language and may be translated into other languages. In the event of any inconsistency between the English version and the translated version of this Statement, the English version shall prevail.</value>
   </data>
   <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
-    <value>Position Title of Principal Applicant</value>
+    <value>Position Title of Principal Applicant (HK Leader)</value>
   </data>
   <data name="Step_6_Title_2nd_Applicant" xml:space="preserve">
-    <value>Position Title of Secondary Applicant</value>
+    <value>Position Title of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="Step_6_Transfer_data" xml:space="preserve">
     <value>Transfer of Your Data</value>
@@ -1324,7 +1330,7 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
     <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
   </data>
   <data name="CCMFGBAYEP_IndComp_2_L" xml:space="preserve">
-    <value>If you have answered “yes” to Question 2.2 (k) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+    <value>If you have answered “yes” to Question 2.2 (j) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
   </data>
   <data name="CCMFGBAYEP_IndComp_2_M" xml:space="preserve">
     <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest? If “Yes”, please provide details in Section 4.10 below.</value>

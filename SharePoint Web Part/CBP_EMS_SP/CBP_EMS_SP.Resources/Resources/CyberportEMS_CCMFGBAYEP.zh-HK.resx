@@ -812,6 +812,9 @@
   <data name="Instruction_8" xml:space="preserve">
     <value>香港數碼港管理有限公司</value>
   </data>
+  <data name="CompanyDocument" xml:space="preserve">
+    <value>公司文件(如適用)</value>
+  </data>
   <data name="OtherAttachment" xml:space="preserve">
     <value>其他補充資料, 如商業計劃書 (如適用)</value>
   </data>
@@ -1179,6 +1182,9 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
   <data name="Step_5_Student_idcard" xml:space="preserve">
     <value>學生編號</value>
   </data>
+  <data name="Step_5_Notice" xml:space="preserve">
+    <value>* 資金會根據數碼港大灣區青年創業計劃申請指引及需知(ENC.RF.015b)第8.1條款，發放至香港團隊領導者的個人銀行戶口（個人申請）。</value>
+  </data>
   <data name="Step_6_Access" xml:space="preserve">
     <value>Access to and Correction of Your Data</value>
   </data>
@@ -1234,10 +1240,10 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>In connection with direct marketing, we intend to use your name and email address to market and promote the services, products, facilities, activities, contests, conferences, lucky draws, events and promotional campaigns from time to time available relating to us or "Cyberport", or shops or merchants or hotel in the "Cyberport" or offered or hosted at "Cyberport" (including consumer goods, food and beverages, books and stationery, children goods and services, fashion and accessories, optical products, watches, jewellery, luxurious goods, personal care, health and beauty products and services, furniture and lifestyle goods, home furnishing and appliances, florists, sports gear and products, electronic products and appliances, banking and financial services, cinemas and theatres, cultural, entertainment facilities and activities, charity activities, leisure activities and performances, gift redemptions and car parking facilities)</value>
   </data>
   <data name="Step_6_Full_Name" xml:space="preserve">
-    <value>Full Name of Principal Applicant</value>
+    <value>Full Name of Principal Applicant (HK Leader)</value>
   </data>
   <data name="Step_6_Full_Name_2" xml:space="preserve">
-    <value>Full Name of Secondary Applicant</value>
+    <value>Full Name of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="step_6_marketing" xml:space="preserve">
     <value>I agree to receive direct marketing information.</value>
@@ -1291,10 +1297,10 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>This Statement is written in the English language and may be translated into other languages. In the event of any inconsistency between the English version and the translated version of this Statement, the English version shall prevail.</value>
   </data>
   <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
-    <value>Position Title of Principal Applicant</value>
+    <value>Position Title of Principal Applicant (HK Leader)</value>
   </data>
   <data name="Step_6_Title_2nd_Applicant" xml:space="preserve">
-    <value>Position Title of Secondary Applicant</value>
+    <value>Position Title of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="Step_6_Transfer_data" xml:space="preserve">
     <value>Transfer of Your Data</value>
@@ -1357,7 +1363,7 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>您現正提交申請CCMF的項目或與之相似的項目有否申請數碼港培育計劃？如回答“是”，請在下文第4.8節詳細列出。</value>
   </data>
   <data name="CCMFGBAYEP_IndComp_2_L" xml:space="preserve">
-    <value>如您於問題2.2 (k) 回答“是”，您是以相同或相似的培育項目在申請CCMF嗎？如果相似或不同，請澄清，並在下文第4.10節詳細列出，使我們的評審小組能區別這申請及任何其他申請。</value>
+    <value>如您於問題2.2 (j) 回答“是”，您是以相同或相似的培育項目在申請CCMF嗎？如果相似或不同，請澄清，並在下文第4.10節詳細列出，使我們的評審小組能區別這申請及任何其他申請。</value>
   </data>
   <data name="CCMFGBAYEP_IndComp_2_M" xml:space="preserve">
     <value>申請人是否有機會構成任何利益衝突？如回答“是”， 請在下文第4.10節詳細列出。</value>

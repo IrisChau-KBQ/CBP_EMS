@@ -382,7 +382,7 @@
                                             <asp:Label ID="lbl212d" runat="server" class="bluelbl" /></span>
                                     </td>
                                     <td>
-                                        <asp:RadioButtonList ID="rdo212d" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" OnSelectedIndexChanged="rdo212d_SelectedIndexChanged" AutoPostBack="true">
+                                        <asp:RadioButtonList ID="rdo212d" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss">
                                             <asp:ListItem Value="True" Text="&nbsp;"></asp:ListItem>
                                             <asp:ListItem Value="False" Text="&nbsp;"></asp:ListItem>
                                         </asp:RadioButtonList>
@@ -412,7 +412,7 @@
                                             <asp:Label ID="lbl212f" runat="server" class="bluelbl" /></span>
                                     </td>
                                     <td>
-                                        <asp:RadioButtonList ID="rdo212f" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" OnSelectedIndexChanged="rdo212f_SelectedIndexChanged" AutoPostBack="true">
+                                        <asp:RadioButtonList ID="rdo212f" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss">
                                             <asp:ListItem Value="True" Text="&nbsp;"></asp:ListItem>
                                             <asp:ListItem Value="False" Text="&nbsp;"></asp:ListItem>
                                         </asp:RadioButtonList>
@@ -441,7 +441,7 @@
                                             <asp:Label ID="lbl212h" runat="server" class="bluelbl" /></span>
                                     </td>
                                     <td>
-                                        <asp:RadioButtonList ID="rdo212h" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" OnSelectedIndexChanged="rdo212h_SelectedIndexChanged" AutoPostBack="true">
+                                        <asp:RadioButtonList ID="rdo212h" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss">
                                             <asp:ListItem Value="True" Text="&nbsp;"></asp:ListItem>
                                             <asp:ListItem Value="False" Text="&nbsp;" />
                                         </asp:RadioButtonList>
@@ -1401,7 +1401,7 @@
                                 <asp:Label CssClass="text-danger" ID="lblcontactdetails" runat="server" />
                             </div>
 
-
+                            <p class="form-group"><%=SPFunctions.LocalizeUI("Step_5_Notice", "CyberportEMS_CCMFGBAYEP") %> </p>
 
                         </div>
                     </div>
@@ -1535,6 +1535,45 @@
                             </div>
                         </div>
 
+                        <%--<div class="row">
+                            <label class="col-md-6 lbl" runat="server" id="Company_Document">
+                                <asp:PlaceHolder runat="server"><%=SPFunctions.LocalizeUI("CompanyDocument", "CyberportEMS_CCMFGBAYEP") %></asp:PlaceHolder>
+                            </label>
+                            <div class="col-md-6">
+                                <div class="dirbox">
+                                    <asp:FileUpload AllowMultiple="false" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.png,.jpg,.gif"
+                                        CssClass="input-sm input-half input-trs" ID="fuCompanyDocument" runat="server" />
+                                    <asp:ImageButton ImageUrl="/_layouts/15/Images/CBP_Images/dir.png" runat="server" OnClick="SaveAttachment_Click" CommandName="6" ID="btnCompanyDocument" ToolTip="Click to Upload" />
+                                    <br />
+                                    <asp:Repeater runat="server" ID="rptrCompanyDocument" OnItemCommand="Attachments_ItemCommand" OnItemDataBound="rptrCompanyDocument_ItemDataBound">
+                                        <HeaderTemplate>
+                                            <table style="width: 100%;" cellpadding="1">
+                                        </HeaderTemplate>
+                                        <ItemTemplate>
+                                            <tr>
+                                                <td>
+                                                    <asp:HyperLink ID="hypNavigation" runat="server" NavigateUrl='<%#SPContext.GetContext(System.Web.HttpContext.Current).Site.Url +"/"+Eval("Attachment_Path") %>' Target="_blank">
+                                                        <%#((Convert.ToString(Eval("Attachment_Path")) != "") ? Convert.ToString(Eval("Attachment_Path")).Remove(0,  Convert.ToString(Eval("Attachment_Path")).LastIndexOf("/") + 1) : "") %></asp:HyperLink>
+                                                </td>
+                                                <td>
+                                                    <asp:LinkButton Text="X" ID="lnkAttachmentDelete" CommandName="RemoveAttachment" CommandArgument='<%#Eval("Attachment_ID") %>' ForeColor="Red" runat="server" />
+                                                </td>
+                                            </tr>
+                                        </ItemTemplate>
+                                        <FooterTemplate>
+                                            </table>
+                                        </FooterTemplate>
+                                    </asp:Repeater>
+                                    <br />
+                                    <asp:Label Text="" ID="Label11" runat="server" CssClass="text-gray-client"><%=SPFunctions.LocalizeUI("File_type", "CyberportEMS_CCMFGBAYEP") %></asp:Label>
+                                    <br />
+                                    <asp:Label Text=" " ID="Label12" runat="server" CssClass="text-gray-client"><%=SPFunctions.LocalizeUI("File_size", "CyberportEMS_CCMFGBAYEP") %></asp:Label>
+                                    <br />
+                                    <asp:Label Text="" ID="CompanyDocument" runat="server" CssClass="text-danger" />
+                                </div>
+                            </div>
+                        </div>--%>
+
                         <div class="row">
                             <label class="col-md-6 lbl" runat="server" id="video_clip">
                                 <asp:PlaceHolder runat="server"><%=SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP") %></asp:PlaceHolder>
@@ -1658,22 +1697,26 @@
                         </div>
                         <div class="col-md-6">
                             <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Title_Principal_Applicant", "CyberportEMS_CCMFGBAYEP") %></p>
-                            <asp:TextBox CssClass="input-sm" ID="txtPosition_PrincipalApplicant" runat="server" />
+                            <asp:TextBox CssClass="input-sm" ID="txtPosition_PrincipalApplicant" runat="server" ReadOnly="true"/>
                             <asp:Label CssClass="label-text" ID="lblPosition_PrincipalApplicant" runat="server" Visible="false" />
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-6">
                             <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Full_Name_2", "CyberportEMS_CCMFGBAYEP") %></p>
-                            <asp:TextBox CssClass="input-sm" ID="txtName_2ndApplicant" runat="server" />
+                            <asp:TextBox CssClass="input-sm" ID="txtName_2ndApplicant" runat="server" ReadOnly="true"/>
                             <asp:Label CssClass="label-text" ID="lblName_2ndApplicant" runat="server" Visible="false" />
                         </div>
                         <div class="col-md-6">
                             <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Title_2nd_Applicant", "CyberportEMS_CCMFGBAYEP") %></p>
-                            <asp:TextBox CssClass="input-sm" ID="txtPosition_2ndApplicant" runat="server" />
-                            <asp:Label CssClass="label-text" ID="lblPosition_2ndApplicant" runat="server" Visible="false" />
+                            <asp:TextBox CssClass="input-sm" ID="txtPosition_2ndApplicant" runat="server" Enable ="false"/>
+                            <asp:Label CssClass="label-text" ID="lblPosition_2ndApplicant" runat="server" Visible ="false" />
                         </div>
                     </div>
+                    <div class="row">
+                        <asp:Button ID="btn_gotoInsert2ndSign" Visible="true" OnClick="btn_gotoInsert2ndSign_Click" runat="server" Text="Insert GuangDong or Macau Leader Full name and Position Title" CssClass="btnSubmitIncubation apply-btn skytheme" />
+                    </div>
+
                     <h2 class="subheading text-center" style="margin: 20px 0;"><%=SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CCMFGBAYEP") %> 
                     </h2>
 
@@ -1758,6 +1801,42 @@
 
 <!---728x90--->
 <!-----//end-main---->
+<asp:Panel ID="Incubation2ndSignGroup" runat="server" DefaultButton="btn_submitFinal">
+    <div class="popup-overlay"></div>
+    <div class="popup IncubationSubmitPopup">
+        <div class="pos-relative card-theme full-width">
+            <p class="popup--para">                	 
+                <%--<%=SPFunctions.LocalizeUI("Submission_popup_password_GDorMacau", "CyberportEMS_Common") %>--%>
+                Please input GuangDong or Macau Leader login email and password for confirmation.
+            </p>
+
+            <div class="table full-width">
+                <div class="form-group">
+                    <asp:TextBox CssClass="input" placeholder="Email" ID="txtLogin2ndSignEmail" runat="server"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <asp:TextBox CssClass="input" placeholder="Password" TextMode="Password" ID="txtLogin2ndSignPassword" runat="server"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <asp:TextBox CssClass="input" placeholder="Full Name of Principal Applicant (GuandDong or Macau Leader)" ID="txtInsert2ndFullName" runat="server"></asp:TextBox>
+                </div>
+                <div class="form-group">
+                    <asp:TextBox CssClass="input" placeholder="Position Title of Principal Applicant (GuandDong or Macau Leader)" ID="txtInsert2ndPosition" runat="server"></asp:TextBox>
+                </div>
+
+                <div class="form-group">
+                    <asp:Button ID="Button1" OnClick="btn_HideSubmit2ndSignPopup_Click" Text="Cancel" runat="server" CssClass="apply-btn graytheme" />
+                    <asp:Button ID="Button2" OnClick="btn_submit2ndSign_Click" Text="Submit" runat="server" CssClass="apply-btn skytheme" />
+                </div>
+                <div style="padding: 12px 0;">
+                    <p class="text-danger" id="UserCustomerrorLogin2" runat="server"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</asp:Panel>
+
+
 
 <asp:Panel ID="IncubationSubmitPopup" runat="server" DefaultButton="btn_submitFinal">
     <div class="popup-overlay"></div>
