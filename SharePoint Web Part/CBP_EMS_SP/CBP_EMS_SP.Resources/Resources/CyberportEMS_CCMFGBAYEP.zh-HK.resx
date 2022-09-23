@@ -297,6 +297,18 @@
   <data name="Error_2_1_2j" xml:space="preserve">
     <value>Please select yes / no in the required field: Question 2.1.2(j)</value>
   </data>
+  <data name="Error_2_1_2k" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(k)</value>
+  </data>
+  <data name="Error_2_1_2l" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(l)</value>
+  </data>
+  <data name="Error_2_1_2m" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(m)</value>
+  </data>
+  <data name="Error_2_1_2n" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(n)</value>
+  </data>
   <data name="Error_3_6" xml:space="preserve">
     <value>Please select a option in the required field: 3.6</value>
   </data>
@@ -313,7 +325,7 @@
     <value>Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(g) is filled or 2.1.2(h) is Yes</value>
   </data>
   <data name="Error_additinal_info" xml:space="preserve">
-    <value>Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(e) is filled or 2.1.2(f) is Yes</value>
+    <value>Please fill in the required field: 4.10 Additional Information</value>
   </data>
   <data name="Error_Age_Validation" xml:space="preserve">
     <value>Only 18-30 of Age are Allowed to submit the Application at 2.1.1 (c)</value>
@@ -323,6 +335,9 @@
   </data>
   <data name="Error_applicant_position" xml:space="preserve">
     <value>Please fill in position/title of Principal Applicant in page 6</value>
+  </data>
+  <data name="Error_2nd_applicant_position" xml:space="preserve">
+    <value>Please fill in position/title of Principal Applicant (GuangDong or Macau Leader) in page 6</value>
   </data>
   <data name="Error_Applicant_position_lenghth" xml:space="preserve">
     <value>Principal Position Title length should be less than 255 characters.</value>
@@ -485,6 +500,9 @@
   </data>
   <data name="Error_full_applicant" xml:space="preserve">
     <value>Please fill in full name of Principal Applicant in page 6</value>
+  </data>
+  <data name="Error_full_2nd_applicant" xml:space="preserve">
+    <value>Please fill in full name of Principal Applicant (GuangDong or Macau Leader) in page 6</value>
   </data>
   <data name="Error_Fundingall" xml:space="preserve">
     <value>Please fill in all fields in 4.8 Funding status</value>
@@ -1171,7 +1189,10 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>職位:</value>
   </data>
   <data name="Step_5_Principal_Applicant" xml:space="preserve">
-    <value>(主要申請人 / 香港隊長)</value>
+    <value>(主要申請人 / 香港團隊領導者)</value>
+  </data>
+  <data name="Step_5_Principal_2nd_Applicant" xml:space="preserve">
+    <value>(主要申請人 / 廣東或澳門團隊領導者)</value>
   </data>
   <data name="Step_5_Programme_Enrolled_Eng" xml:space="preserve">
     <value>登記學科(英文)</value>
@@ -1244,6 +1265,9 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
   </data>
   <data name="Step_6_Full_Name_2" xml:space="preserve">
     <value>Full Name of Principal Applicant (GuangDong or Macau Leader)</value>
+  </data>
+  <data name="Step_6_2nd_Email" xml:space="preserve">
+    <value>Email of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="step_6_marketing" xml:space="preserve">
     <value>I agree to receive direct marketing information.</value>

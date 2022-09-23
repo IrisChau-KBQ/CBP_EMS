@@ -96,8 +96,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBP_EMS_SP.ECWebPartCASPSR"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CBP_EMS_SP.CCMFGBAYEP", "CBP_EMS_SP.CCMFGBAYEP\CBP_EMS_SP.CCMFGBAYEP.csproj", "{702BAACC-E946-4A23-926E-AD29BD04EAFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mytestwebpart", "Mytestwebpart\Mytestwebpart.csproj", "{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -364,12 +362,6 @@ Global
 		{702BAACC-E946-4A23-926E-AD29BD04EAFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{702BAACC-E946-4A23-926E-AD29BD04EAFB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{702BAACC-E946-4A23-926E-AD29BD04EAFB}.Release|Any CPU.Deploy.0 = Release|Any CPU
-		{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B321FCEF-7B06-446B-96F6-8F6AA5EA146A}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

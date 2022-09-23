@@ -305,40 +305,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         rdo_HK.Visible = false;
                         mainpagelogo.ImageUrl = "images/_layouts/15/Images/CBP_Images/HK.png";
                         mainpagelogo.CssClass = "head-logo";
-
-                        //if (objProgram.Programme_Name.ToLower().Contains("cross border"))
-                        //{
-                        //    rdo_Crossborder.Checked = true;
-                        //    rdo_CrossborderOptions.Enabled = true;
-
-                        //    rdo_HK_Option.Visible = false;
-                        //    rdo_HK.Visible = false;
-                        //    rdo_CUPP.Visible = false;
-                        //    mainpagelogo.ImageUrl = "images/_layouts/15/Images/CBP_Images/Cross Border.png";
-                        //    mainpagelogo.CssClass = "head-logo";
-                        //}
-                        //else if (objProgram.Programme_Name.ToLower().Contains("hong kong"))
-                        //{
-                        //    rdo_CUPP.Visible = false;
-                        //    rdo_Crossborder.Visible = false;
-                        //    rdo_CrossborderOptions.Visible = false;
-
-                        //    rdo_HK.Checked = true;
-                        //    rdo_HK_Option.Enabled = true;
-                        //    mainpagelogo.ImageUrl = "images/_layouts/15/Images/CBP_Images/HK.png";
-                        //    mainpagelogo.CssClass = "head-logo";
-                        //}
-                        //else
-                        //{
-                        //    rdo_CUPP.Enabled = true;
-                        //    rdo_Crossborder.Visible = false;
-                        //    rdo_CrossborderOptions.Visible = false;
-                        //    rdo_CUPP.Checked = true;
-                        //    rdo_HK_Option.Visible = false;
-                        //    rdo_HK.Visible = false;
-                        //    mainpagelogo.ImageUrl = "images/_layouts/15/Images/CBP_Images/HK.png";
-                        //    mainpagelogo.CssClass = "head-logo";
-                        //}
                     }
 
                     lblIntake.Text = objProgram.Intake_Number.ToString();
@@ -549,6 +515,9 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         txtPosition_2ndApplicant.Text = objIncubation.Principal_2nd_Position_Title;
                         lblPosition_2ndApplicant.Text = objIncubation.Principal_2nd_Position_Title;
 
+                        txt_Email_2ndApplicant.Text = objIncubation.Principal_2nd_Email;
+                        lbl_Email_2ndApplicant.Text = objIncubation.Principal_2nd_Email;
+
                         if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Declaration)))
                             chkDeclaration.Checked = Convert.ToBoolean(objIncubation.Declaration);
                         if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Marketing_Information)))
@@ -718,11 +687,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             lblPosition_PrincipalApplicant.Visible = true;
 
             #region 2nd Applicant for CCMFGBAYEP
-            //txtName_2ndApplicant.Visible = false;
-            //lblName_2ndApplicant.Visible = true;
+            txtName_2ndApplicant.Visible = false;
+            lblName_2ndApplicant.Visible = true;
 
-            //txtPosition_2ndApplicant.Visible = false;
-            //lblPosition_2ndApplicant.Visible = true;
+            txtPosition_2ndApplicant.Visible = false;
+            lblPosition_2ndApplicant.Visible = true;
+
+            txt_Email_2ndApplicant.Visible = false;
+            lbl_Email_2ndApplicant.Visible = true;
             #endregion
 
             ddlsmartspace.Visible = false;
@@ -1017,14 +989,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             {
                 SaveStep4Data();
             }
-            else if (ActiveStep == 5)
-            {
-                SaveStep5Data(out IsError);
-            }
-            else if (ActiveStep == 6)
-            {
-                SaveStep6Data();
-            }
+            //else if (ActiveStep == 5)
+            //{
+            //    SaveStep5Data(out IsError);
+            //}
+            //else if (ActiveStep == 6)
+            //{
+            //    SaveStep6Data();
+            //}
             ShowHideControlsBasedUponUserData();
 
         }
@@ -2166,6 +2138,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             objIncubation.Principal_Position_Title = txtPosition_PrincipalApplicant.Text.Trim();
                             objIncubation.Principal_2nd_Full_Name = txtName_2ndApplicant.Text.Trim();
                             objIncubation.Principal_2nd_Position_Title = txtPosition_2ndApplicant.Text.Trim();
+                            objIncubation.Principal_2nd_Email = txt_Email_2ndApplicant.Text.Trim();
 
                             dbContext.SaveChanges();
                             ShowbottomMessage("Saved Successfully", true);
@@ -2244,6 +2217,8 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     bool status = Membership.Providers[SqlMembershipProvider].ValidateUser(txtLogin2ndSignEmail.Text.Trim(), txtLogin2ndSignPassword.Text);
                     #endregion
 
+                    //bool status = SPClaimsUtility.AuthenticateFormsUser(Context.Request.UrlReferrer, txtLogin2ndSignEmail.Text, txtLogin2ndSignPassword.Text);
+
                     if (!status)
                     {
                         Incubation2ndSignGroup.Visible = true;
@@ -2254,10 +2229,16 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         Incubation2ndSignGroup.Visible = true;
                         UserCustomerrorLogin2.InnerText = "Email cannot same as current login user";
                     }
+                    else if (string.IsNullOrEmpty(txtInsert2ndFullName.Text.Trim()) || string.IsNullOrEmpty(txtInsert2ndPosition.Text.Trim()))
+                    {
+                        Incubation2ndSignGroup.Visible = true;
+                        UserCustomerrorLogin2.InnerText = "Please input both full name and position title";
+                    }
                     else
                     {
-                        txtName_2ndApplicant.Text = txtInsert2ndFullName.Text;
-                        txtPosition_2ndApplicant.Text = txtInsert2ndPosition.Text;
+                        txtName_2ndApplicant.Text = txtInsert2ndFullName.Text.Trim();
+                        txtPosition_2ndApplicant.Text = txtInsert2ndPosition.Text.Trim();
+                        txt_Email_2ndApplicant.Text = txtLogin2ndSignEmail.Text.Trim();
                         Incubation2ndSignGroup.Visible = false;
                         ShowbottomMessage("Full Name and Position Title of Principal Applicant (GuangDong or Macau Leader) added successfully", true);
                     }
@@ -2361,6 +2342,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     oldObjCCMF.Principal_Position_Title = objCCMF.Principal_Position_Title;
                                     oldObjCCMF.Principal_2nd_Full_Name = objCCMF.Principal_2nd_Full_Name;               //new field for CCMFGBAYEP
                                     oldObjCCMF.Principal_2nd_Position_Title = objCCMF.Principal_2nd_Position_Title;     //new field for CCMFGBAYEP
+                                    oldObjCCMF.Principal_2nd_Email = objCCMF.Principal_2nd_Email;     //new field for CCMFGBAYEP
                                     //oldObjCCMF.Modified_Date = DateTime.Now;
                                     oldObjCCMF.Programme_ID = objCCMF.Programme_ID;
                                     oldObjCCMF.Programme_Type = objCCMF.Programme_Type;
@@ -3130,607 +3112,176 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     if (objIncubation != null)
                     {
                         String Activation = "";
-                        bool CheckActivation = false;
-                        bool IsYepApplication = false;
-                        if (objIncubation.Programme_Type.ToLower() == "hongkong" || objIncubation.Programme_Type.ToLower() == "cupp")
+                        //bool CheckActivation = false;
+                        //bool IsYepApplication = false;
+
+                        #region Add validation on CCMFGBAYEP
+                        #region Step 1 - Types of CCMF
+                        /*Types of CCMF*/
+                        #endregion
+                        
+                        #region Step 2 - Your Profile and Eligibility
+                        /*Your Profile and Eligibility*/
+                        //if (rdo_CCMFApplication.SelectedValue == "Individual")
+
+                        if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
                         {
-                            //if (objTB_APPLICATION_ATTACHMENT.Attachment_Type.ToLower() != enumAttachmentType.Student_ID.ToString().ToLower())
-                            //{
-                            //    IsError = true;
-
-                            //    errlist.Add("Please upload document in the required field:  BR Copy.");
-                            //}
-                            if (!string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream))
-                            {
-                                //ss8 Validation
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question1_3)))
-                                {
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_1_3"));
-                                }
-                                else if (objIncubation.Question1_3 == true)
-                                {
-                                    IsError = true;
-
-                                    errlist.Add(Localize("Error_1_3Ageval"));
-                                }
-
-
-                                if (objIncubation.Hong_Kong_Programme_Stream.ToLower() == "professional")
-                                {
-                                    if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                                    {
-                                        Activation = objIncubation.CCMF_Application_Type;
-
-                                        //Added 2.1.1a is required for all Prof
-                                        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                        {
-                                            IsError = true;
-
-                                            errlist.Add(Localize("Error_2_1_1a"));
-                                        }
-
-                                        //for prof, only is company application and 2.1.1a is yes the 2.1.1b can be empty
-                                        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                        {
-                                            if (Activation.ToLower() == "company")
-                                            {
-                                                if (objIncubation.Question2_1_1a == false)
-                                                {
-                                                    IsError = true;
-
-                                                    errlist.Add(Localize("Error_2_1_1b"));
-                                                }
-
-                                            }
-                                            else
-                                            {
-                                                IsError = true;
-
-                                                errlist.Add(Localize("Error_2_1_1b"));
-
-                                            }
-                                        }
-
-                                    }
-
-
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2a)))
-                                    {
-                                        IsError = true;
-
-                                        errlist.Add(Localize("Error_2_1_2a"));
-                                    }
-
-
-                                    if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                                    {
-                                        Activation = objIncubation.CCMF_Application_Type;
-                                        if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2b)))
-                                        {
-                                            IsError = true;
-
-                                            errlist.Add(Localize("Error_2_1_2b"));
-                                        }
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2c"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2d"));
-
-                                    }
-                                    if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)))
-                                    {
-                                        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2e)) && objIncubation.Question2_1_2d == true)
-                                        {
-
-                                            IsError = true;
-                                            errlist.Add(Localize("Error_2_1_2dreq"));
-
-                                        }
-                                    }
-
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2f"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f_1)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2g"));
-
-                                    }
-
-                                    //if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1h)))
-                                    //{
-                                    //    CheckActivation = Convert.ToBoolean(objIncubation.Question2_1_1h);
-                                    //    if (CheckActivation == false && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1i)))
-                                    //    {
-                                    //        IsError = true;
-                                    //        errlist.Add("Please select Question 2.1.1(I)");
-                                    //    }
-                                    //}
-
-
-
-                                    //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1j)))
-                                    //{
-
-                                    //    IsError = true;
-                                    //    errlist.Add("Please select Question 2.1.1(J)");
-
-                                    //}
-                                }
-
-                                else
-                                {
-
-                                    if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                                    {
-                                        IsYepApplication = true;
-                                        Activation = objIncubation.CCMF_Application_Type;
-                                        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                        {
-                                            IsError = true;
-
-                                            errlist.Add(Localize("Error_2_1_1a"));
-                                        }
-                                        //Activation.ToLower() == "company" && 
-                                        //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)) && objIncubation.Question2_1_1a == true)
-                                        //{
-
-                                        //    IsError = true;
-
-                                        //    errlist.Add("Please select yes / no in the required field: 2.1.1(b)");
-                                        //}
-
-                                        if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                        {
-                                            if (Activation.ToLower() == "company")
-                                            {
-                                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)) && objIncubation.Question2_1_1a == false)
-                                                {
-                                                    IsError = true;
-
-                                                    errlist.Add(Localize("Error_2_1_1b"));
-                                                }
-                                            }
-                                            else
-                                            {
-                                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                                {
-                                                    IsError = true;
-
-                                                    errlist.Add(Localize("Error_2_1_2breq"));
-                                                }
-                                            }
-                                        }
-                                        //if (!objIncubation.Question2_1_1c.HasValue)
-                                        //{
-                                        //    IsError = true;
-                                        //    errlist.Add(Localize("Error_2_1_1c"));
-                                        //}
-                                        //else if (objIncubation.Question2_1_1c.Value == false)
-                                        //{
-                                        //    IsError = true;
-                                        //    errlist.Add(Localize("Error_Age_Validation"));
-                                        //}
-
-                                        //if (objTB_APPLICATION_ATTACHMENT != null && Activation.ToLower() == "company" && !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                        //{
-                                        //    if (Convert.ToBoolean(objIncubation.Question2_1_1b) == true && (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.BR_COPY.ToString().ToLower())))
-
-                                        //    {
-
-
-
-                                        //        IsError = true;
-
-                                        //        errlist.Add("Please upload document in the required field:  BR Copy if 2.1.2(B) is yes .");
-                                        //    }
-
-                                        //}
-                                    }
-
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2a"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2b"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2e)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2c"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2d"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g)) && Convert.ToBoolean(objIncubation.Question2_1_2f) == true)
-                                        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g)))
-                                        {
-
-                                            IsError = true;
-                                            errlist.Add(Localize("Error_2_1_2e"));
-
-                                        }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2h)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2f"));
-
-                                    }
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f_1)))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2g"));
-
-                                    }
-                                    //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
-                                    //{
-
-                                    //    IsError = true;
-                                    //    errlist.Add("Please select Question 2.1.2(K)");
-
-                                    //}
-                                }
-                            }
-                            if (objIncubation.Programme_Type.ToLower() == "cupp")
-                            {
-
-                                if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                                {
-                                    Activation = objIncubation.CCMF_Application_Type;
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                    {
-                                        IsError = true;
-
-                                        errlist.Add(Localize("Error_2_1_1a"));
-                                    }
-
-                                    if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                    {
-                                        IsError = true;
-
-                                        errlist.Add(Localize("Error_2_1_1b"));
-                                    }
-                                    //if (objTB_APPLICATION_ATTACHMENT != null && Activation.ToLower() == "company" && !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                    //{
-                                    //    if (Convert.ToBoolean(objIncubation.Question2_1_1b) == true && (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.BR_COPY.ToString().ToLower())))
-
-                                    //    {
-
-
-                                    //        IsError = true;
-
-                                    //        errlist.Add("Please upload document in the required field:  BR Copy if 2.1.2(B) is yes .");
-                                    //    }
-
-                                    //}
-                                }
-
-
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2a)))
-                                {
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2a"));
-                                }
-
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2b)))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2b"));
-
-                                }
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2c"));
-
-                                }
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2d"));
-
-                                }
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2e)))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2e"));
-
-                                }
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2f"));
-
-                                }
-                                if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
-                                {
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g)) && objIncubation.Question2_1_2f == true)
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_2_1_2greq"));
-
-                                    }
-                                }
-                                //if(string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g)))
-                                //{
-
-                                //    IsError = true;
-                                //    errlist.Add("Please select yes / no in the required field: Question 2.1.2(g)");
-
-                                //}
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2h)))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_2_1_2h"));
-
-                                }
-                                //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
-                                //{
-
-                                //    IsError = true;
-                                //    errlist.Add("Please select Question 2.1.2(K)");
-
-                                //}
-                            }
+                            Activation = objIncubation.CCMF_Application_Type;
                         }
 
-                        else if (objIncubation.Programme_Type.ToLower().Contains("crossborder"))
+                        //if (rdo_CCMFApplication.SelectedValue == "Individual")
+                        if (Activation.ToLower() == "individual")
                         {
-                            if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                            {
-                                Activation = objIncubation.CCMF_Application_Type;
-                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                {
-                                    IsError = true;
-
-                                    errlist.Add(Localize("Error_2_1_1a"));
-                                }
-
-                                if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                {
-                                    IsError = true;
-
-                                    errlist.Add(Localize("Error_2_1_1b"));
-                                }
-                                // if (objTB_APPLICATION_ATTACHMENT != null && Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                //{
-                                //    if (Convert.ToBoolean(objIncubation.Question2_1_1b) == true && (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.BR_COPY.ToString().ToLower())))
-                                //    {
-                                //        IsError = true;
-
-                                //        errlist.Add("Please upload document in the required field:  BR Copy if 2.1.2(B) is yes");
-                                //    }
-                                //}
-                            }
-
-                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2a)))
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
                             {
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2a"));
-                            }
-
-
-                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2b)))
-                            {
-
-                                IsError = true;
-                                errlist.Add(Localize("Error_2_1_2b"));
-
+                                errlist.Add(Localize("Error_2_1_1a"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2c"));
-
+                                errlist.Add(Localize("Error_2_1_2b"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2d"));
-
+                                errlist.Add(Localize("Error_2_1_2c"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2e)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2e"));
-
+                                errlist.Add(Localize("Error_2_1_2d"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2f"));
-
+                                errlist.Add(Localize("Error_2_1_2e"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2g"));
-
+                                errlist.Add(Localize("Error_2_1_2f"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2h)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2h"));
-
+                                errlist.Add(Localize("Error_2_1_2g"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2i)))
                             {
-
                                 IsError = true;
-                                errlist.Add(Localize("Error_2_1_2i"));
-
+                                errlist.Add(Localize("Error_2_1_2h"));
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2j)))
                             {
-
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2i"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
+                            {
                                 IsError = true;
                                 errlist.Add(Localize("Error_2_1_2j"));
-
                             }
-                            //if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
-                            //{
-                            //    CheckActivation = Convert.ToBoolean(objIncubation.Question2_1_2k);
-                            //    if (CheckActivation == false && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2l)))
-                            //    {
-                            //        IsError = true;
-                            //        errlist.Add("Please select Question 2.2(L)");
-                            //    }
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2m)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.2(M)");
-
-                            //}
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2k"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2m)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2l"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2n)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2m"));
+                            }
                         }
-                        else
+
+                        ///if (rdo_CCMFApplication.SelectedValue == "Company")
+                        if (Activation.ToLower() == "company")
                         {
-                            //if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                            //{
-                            //    Activation = objIncubation.CCMF_Application_Type;
-                            //    if (Activation.ToLower() == "individual" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1a)))
-                            //    {
-                            //        IsError = true;
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_1a"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_1b"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2c"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2d"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2e)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2e"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2f"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2g"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2h)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2h"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2i)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2i"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2j)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2j"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2k"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2l"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2m)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2m"));
+                            }
+                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2n)))
+                            {
+                                IsError = true;
+                                errlist.Add(Localize("Error_2_1_2n"));
+                            }
 
-                            //        errlist.Add("Please select Question 2.3.1(A)");
-                            //    }
-                            //}
-                            //if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                            //{
-                            //    Activation = objIncubation.CCMF_Application_Type;
-                            //    if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1b)))
-                            //    {
-                            //        IsError = true;
-
-                            //        errlist.Add("Please select Question  2.3.2)(B)");
-                            //    }
-                            //    else
-                            //    {
-                            //        if (Convert.ToBoolean(objIncubation.Question2_1_2b) == true && objTB_APPLICATION_ATTACHMENT.Attachment_Type.ToLower() != enumAttachmentType.BR_COPY.ToString().ToLower())
-                            //        {
-                            //            IsError = true;
-
-                            //            errlist.Add("Please upload document in the required field:  BR Copy.");
-                            //        }
-                            //    }
-                            //}
-                            //if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
-                            //{
-                            //    Activation = objIncubation.CCMF_Application_Type;
-                            //    if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1c)))
-                            //    {
-                            //        IsError = true;
-                            //        errlist.Add("Please select Question 2.3.1(C)");
-                            //    }
-                            //}
-                            //if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2i)))
-                            //{
-                            //    CheckActivation = Convert.ToBoolean(objIncubation.Question2_1_2i);
-                            //    if (CheckActivation == true && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1j)))
-                            //    {
-                            //        IsError = true;
-                            //        errlist.Add("Please select Question 2.3.1(J)");
-                            //    }
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1d)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(D)");
-
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1e)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(E)");
-
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1f)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(F)");
-
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1g)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(G)");
-
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1h)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(H)");
-
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1i)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(I)");
-
-                            //}
-                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1k)))
-                            //{
-
-                            //    IsError = true;
-                            //    errlist.Add("Please select Question 2.3.1(K)");
-
-                            //}
                         }
 
 
 
+                        
+                        #endregion
+
+                        #region Step 3 - Project Information
+                        /*Project Information*/
                         if (string.IsNullOrEmpty(objIncubation.Project_Name_Eng))
                         {
                             IsError = true;
@@ -3738,35 +3289,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         }
 
                         string apptype = objIncubation.CCMF_Application_Type;
-
-
-                        if (objIncubation.Programme_Type == "HongKong")
+                        if (apptype == "Company")
                         {
-                            if (apptype == "Company")
+                            if (string.IsNullOrEmpty(objIncubation.Company_Name))
                             {
-
-                                if (string.IsNullOrEmpty(objIncubation.Company_Name))
-                                {
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_Company_Name_Required"));
-                                }
-
-                                //if (!objIncubation.Establishment_Year.HasValue)
-                                //{
-                                //    IsError = true;
-                                //    errlist.Add(Localize("Error_Establishment_Year_Required"));
-                                //}
-
-                                //if (!objIncubation.NEW_to_HK.HasValue)
-                                //{
-                                //    IsError = true;
-                                //    errlist.Add(Localize("Error_New_to_HK_Required"));
-                                //}
-
-
+                                IsError = true;
+                                errlist.Add(Localize("Error_Company_Name_Required"));
                             }
                         }
-
 
                         if (string.IsNullOrEmpty(objIncubation.Abstract_Eng))
                         {
@@ -3778,6 +3308,20 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             IsError = true;
                             errlist.Add(Localize("Error_Businessarea"));
                         }
+
+                        if (!string.IsNullOrEmpty(objIncubation.Business_Area))
+                        {
+                            if (objIncubation.Business_Area.ToLower() == "others")
+                            {
+                                Activation = objIncubation.Business_Area;
+                                if (objIncubation.Business_Area.ToLower() == "others" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Other_Business_Area)))
+                                {
+                                    IsError = true;
+                                    errlist.Add(Localize("Error_Businessarea_other"));
+                                }
+                            }
+                        }
+
                         if (objIncubation.Commencement_Date == null)
                         {
                             IsError = true;
@@ -3794,42 +3338,21 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             errlist.Add(Localize("Error_completion_and_commencemnt"));
                         }
 
-
-
-                        if (objIncubation.Programme_Type == "HongKong")
+                        if (string.IsNullOrEmpty(objIncubation.SmartSpace))
                         {
-                            if (string.IsNullOrEmpty(objIncubation.SmartSpace))
-                            {
-                                IsError = true;
-                                errlist.Add(Localize("Error_3_6"));
-                            }
+                            IsError = true;
+                            errlist.Add(Localize("Error_3_6"));
                         }
+                        #endregion
 
-
+                        #region Step 4 - Application Information
+                        /*Application Information*/
                         if (Objcoremembers.Count == 0)
                         {
                             IsError = true;
                             errlist.Add(Localize("Error_Projectmember_atleast"));
                         }
-                        if (!string.IsNullOrEmpty(objIncubation.Business_Area))
-                        {
-                            if (objIncubation.Business_Area.ToLower() == "others")
-                            {
-                                Activation = objIncubation.Business_Area;
-                                if (objIncubation.Business_Area.ToLower() == "others" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Other_Business_Area)))
-                                {
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_Businessarea_other"));
-                                }
-                            }
-                        }
-                        /*
-                        if (string.IsNullOrEmpty(objIncubation.Advisor_Info))
-                        {
-                            IsError = true;
-                            errlist.Add("Please fill in the required field 4.1(b) Advisor Info");
-                        }
-                        */
+
                         if (string.IsNullOrEmpty(objIncubation.Business_Model))
                         {
                             IsError = true;
@@ -3845,11 +3368,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             IsError = true;
                             errlist.Add(Localize("Error_social_responsibility"));
                         }
-                        //if (string.IsNullOrEmpty(objIncubation.Competition_Analysis))
-                        //{
-                        //    IsError = true;
-                        //    errlist.Add("Please fill in the required field 4.5 Competition Analysis");
-                        //}
+
                         if (string.IsNullOrEmpty(objIncubation.Project_Milestone_M1) || string.IsNullOrEmpty(objIncubation.Project_Milestone_M2) || string.IsNullOrEmpty(objIncubation.Project_Milestone_M3) ||
                            string.IsNullOrEmpty(objIncubation.Project_Milestone_M4) || string.IsNullOrEmpty(objIncubation.Project_Milestone_M5) ||
                            string.IsNullOrEmpty(objIncubation.Project_Milestone_M6))
@@ -3857,60 +3376,32 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             IsError = true;
                             errlist.Add(Localize("Error_Project_Milestone"));
                         }
-                        //if (string.IsNullOrEmpty(objIncubation.Project_Milestone_M2))
-                        //{
-                        //    IsError = true;
-                        //    errlist.Add("Please fill in the required field: 4.4.6 Second 6 months Project Milestone.");
-                        //}
-                        //if (string.IsNullOrEmpty(objIncubation.Project_Milestone_M3))
-                        //{
-                        //    IsError = true;
-                        //    errlist.Add("Please fill in the required field: 4.4.6 Second 6 months Project Milestone.");
-                        //}
-                        //if (string.IsNullOrEmpty(objIncubation.Project_Milestone_M4))
-                        //{
-                        //    IsError = true;
-                        //    errlist.Add("Please fill in the required field: 4.4.6 Forth 6 months Project Milestone.");
-                        //}
-                        //if (string.IsNullOrEmpty(objIncubation.Project_Milestone_M4))
-                        //{
-                        //    IsError = true;
-                        //    errlist.Add("Please fill in the required field: 4.4.6 Second 6 months Project Milestone.");
-                        //}
-                        //if (string.IsNullOrEmpty(objIncubation.Project_Milestone_M6))
-                        //{
-                        //    IsError = true;
-                        //    errlist.Add("Please fill in the required field: 4.4.6 Forth 6 months Project Milestone.");
-                        //}
+
                         if (string.IsNullOrEmpty(objIncubation.Cost_Projection))
                         {
                             IsError = true;
                             errlist.Add(Localize("Error_Cost_Projection"));
                         }
 
-
-
-                        foreach (TB_APPLICATION_FUNDING_STATUS obj in ObjFundingStatus)
+                        /*Check 4.8 if Question2_1_2i or Question2_1_2j or Question2_1_2k is true*/
+                        if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2i)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2j)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
                         {
-                            if (obj.Date == null || obj.Programme_Name == null || obj.Application_Status == null || obj.Funding_Status == null || obj.Expenditure_Nature == null
-                                || obj.Amount_Received == null || obj.Maximum_Amount == null)
+
+                            if ((Convert.ToBoolean(objIncubation.Question2_1_2i) == true || Convert.ToBoolean(objIncubation.Question2_1_2j) == true || Convert.ToBoolean(objIncubation.Question2_1_2k) == true))
                             {
-                                IsError = true;
-                                errlist.Add(Localize("Error_Fundingall"));
+                                foreach (TB_APPLICATION_FUNDING_STATUS obj in ObjFundingStatus)
+                                {
+                                    if (obj.Date == null || obj.Programme_Name == null || obj.Application_Status == null || obj.Funding_Status == null || obj.Expenditure_Nature == null
+                                        || obj.Amount_Received == null || obj.Maximum_Amount == null)
+                                    {
+                                        IsError = true;
+                                        errlist.Add(Localize("Error_Fundingall"));
+                                    }
+
+                                }
                             }
-
                         }
-                        //if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1j)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2j))
-                        //    || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2l)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2m))
-                        //   || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1j)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1k)))
-                        //{
 
-                        //    if ((Convert.ToBoolean(objIncubation.Question2_1_2e) == true || Convert.ToBoolean(objIncubation.Question2_1_2f) == true) && string.IsNullOrEmpty(Convert.ToString(objIncubation.Additional_Information)))
-                        //    {
-                        //        IsError = true;
-                        //        errlist.Add("Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(e) or 2.1.2(f) answer is Yes.");
-                        //    }
-                        //}
 
                         foreach (TB_APPLICATION_COMPANY_CORE_MEMBER obj1 in Objcoremembers)
                         {
@@ -3922,228 +3413,28 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             }
 
                         }
-                        //if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1f)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1g))
-                        //   || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1h)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2g))
-                        //  || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2h)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2i))
-                        //   || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2i)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2j))
-                        //    || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_2k)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1g))
-                        //     || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1h)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_3_1i)))
-                        //{
 
-                        //    if ((Convert.ToBoolean(objIncubation.Question2_1_1f) == true || Convert.ToBoolean(objIncubation.Question2_1_1g) == true || Convert.ToBoolean(objIncubation.Question2_1_1h) == true
-                        //        || Convert.ToBoolean(objIncubation.Question2_1_2g) == true || Convert.ToBoolean(objIncubation.Question2_1_2h) == true || Convert.ToBoolean(objIncubation.Question2_1_2i) == true
-                        //        || Convert.ToBoolean(objIncubation.Question2_2i) == true || Convert.ToBoolean(objIncubation.Question2_2j) == true || Convert.ToBoolean(objIncubation.Question2_2k) == true
-                        //         || Convert.ToBoolean(objIncubation.Question2_3_1g) == true || Convert.ToBoolean(objIncubation.Question2_3_1h) == true || Convert.ToBoolean(objIncubation.Question2_3_1i) == true)
-                        //         && (ObjFundingStatus.Count == 0))
-
-                        //    {
-                        //        IsError = true;
-                        //        errlist.Add("Please Add at least one Funding status in 3.8");
-                        //    }
-                        //}
-
-                        if (objIncubation.Programme_Type.ToLower() == "hongkong")
+                        /*Check 4.10 if Question2_1_2l or Question2_1_2m or Question2_1_2n is true*/
+                        if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2m)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2n)))
                         {
-                            if (objIncubation.Hong_Kong_Programme_Stream.ToLower() == "professional")
+
+                            if ((Convert.ToBoolean(objIncubation.Question2_1_2l) == true || Convert.ToBoolean(objIncubation.Question2_1_2m) == true || Convert.ToBoolean(objIncubation.Question2_1_2n) == true) && string.IsNullOrEmpty(objIncubation.Additional_Information))
                             {
-                                if (Convert.ToString(objIncubation.Question2_1_2b) != null || Convert.ToString(objIncubation.Question2_1_2c) != null || Convert.ToString(objIncubation.Question2_1_2d) != null)
-                                {
-                                    bool queb = Convert.ToBoolean(objIncubation.Question2_1_2b);
-                                    bool quec = Convert.ToBoolean(objIncubation.Question2_1_2c);
-                                    bool qued = Convert.ToBoolean(objIncubation.Question2_1_2d);
-                                    if ((queb == true || quec == true || qued == true) && (ObjFundingStatus.Count == 0))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_fundingatleast"));
-
-                                    }
-
-                                    else if (queb == true || quec == true || qued == true)
-                                    {
-
-                                        foreach (TB_APPLICATION_FUNDING_STATUS obj1 in ObjFundingStatus)
-                                        {
-                                            if ((obj1.Currency == null) || (Convert.ToString(obj1.Date) == null) || (obj1.Programme_Name == "")
-                                                || (obj1.Expenditure_Nature == "") || (obj1.Funding_Status == "") || (Convert.ToString(obj1.Maximum_Amount) == null)
-                                                || (Convert.ToString(obj1.Amount_Received) == null))
-                                            {
-                                                IsError = true;
-                                                errlist.Add(Localize("Error_Fundingall"));
-                                            }
-
-                                        }
-                                    }
-                                }
-                                if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2d)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)))
-                                {
-
-                                    if ((Convert.ToBoolean(objIncubation.Question2_1_2d) == true || Convert.ToBoolean(objIncubation.Question2_1_2f) == true) && string.IsNullOrEmpty(objIncubation.Additional_Information))
-                                    {
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_additinal_info"));
-                                    }
-                                }
-
-                            }
-                            else
-                            {
-                                if (Convert.ToString(objIncubation.Question2_1_2d) != null || Convert.ToString(objIncubation.Question2_1_2e) != null || Convert.ToString(objIncubation.Question2_1_2f) != null)
-                                {
-                                    bool qued = Convert.ToBoolean(objIncubation.Question2_1_2d);
-                                    bool quee = Convert.ToBoolean(objIncubation.Question2_1_2e);
-                                    bool quef = Convert.ToBoolean(objIncubation.Question2_1_2f);
-                                    if ((qued == true || quee == true || quef == true) && (ObjFundingStatus.Count == 0))
-                                    {
-
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_fundingatleast"));
-                                    }
-                                    else if (qued == true || quee == true || quef == true)
-                                    {
-
-                                        foreach (TB_APPLICATION_FUNDING_STATUS obj1 in ObjFundingStatus)
-                                        {
-                                            if ((obj1.Currency == null) || (Convert.ToString(obj1.Date) == null) || (obj1.Programme_Name == "")
-                                                || (obj1.Expenditure_Nature == "") || (obj1.Funding_Status == "") || (Convert.ToString(obj1.Maximum_Amount) == null)
-                                                || (Convert.ToString(obj1.Amount_Received) == null))
-                                            {
-                                                IsError = true;
-                                                errlist.Add(Localize("Error_Fundingall"));
-                                            }
-
-                                        }
-                                    }
-                                }
-                                if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2f)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2h)))
-                                {
-
-                                    if ((Convert.ToBoolean(objIncubation.Question2_1_2f) == true || Convert.ToBoolean(objIncubation.Question2_1_2h) == true) && string.IsNullOrEmpty(objIncubation.Additional_Information))
-                                    {
-                                        IsError = true;
-                                        errlist.Add(Localize("Error_additinalreq").Replace("2.1.2(g)", "2.1.2(e)").Replace("2.1.2(h)", "2.1.2(f)"));
-                                    }
-                                }
-
+                                IsError = true;
+                                errlist.Add(Localize("Error_additinal_info"));
                             }
                         }
 
-                        if (objIncubation.Programme_Type.ToLower().Contains("crossborder"))
-                        {
-                            if (Convert.ToString(objIncubation.Question2_1_2f) != null || Convert.ToString(objIncubation.Question2_1_2g) != null || Convert.ToString(objIncubation.Question2_1_2h) != null)
-                            {
-                                bool quef = Convert.ToBoolean(objIncubation.Question2_1_2f);
-                                bool queg = Convert.ToBoolean(objIncubation.Question2_1_2g);
-                                bool queh = Convert.ToBoolean(objIncubation.Question2_1_2h);
-                                if ((quef == true || queg == true || queh == true) && (ObjFundingStatus.Count == 0))
-                                {
+                        #endregion
 
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_fundingreq1"));
-
-                                }
-                                else if (quef == true || queg == true || queh == true)
-                                {
-
-                                    foreach (TB_APPLICATION_FUNDING_STATUS obj1 in ObjFundingStatus)
-                                    {
-                                        if ((obj1.Currency == null) || (Convert.ToString(obj1.Date) == null) || (obj1.Programme_Name == "")
-                                            || (obj1.Expenditure_Nature == "") || (obj1.Funding_Status == "") || (Convert.ToString(obj1.Maximum_Amount) == null)
-                                            || (Convert.ToString(obj1.Amount_Received) == null))
-                                        {
-                                            IsError = true;
-                                            errlist.Add(Localize("Error_Fundingall"));
-                                        }
-
-                                    }
-                                }
-                            }
-
-                            //if(Convert.ToString(objIncubation.Question2_1_2i) != null || Convert.ToString(objIncubation.Question2_1_2j)!= null)
-                            //{
-                            //    bool quei = Convert.ToBoolean(objIncubation.Question2_1_2i);
-                            //    bool quej = Convert.ToBoolean(objIncubation.Question2_1_2j);
-
-                            //    if (quei == true || quej == true)
-                            //    {
-
-                            //        IsError = true;
-                            //        errlist.Add("Additional Information, if 2.1.2(i) or 2.1.2(j) is Yes ");
-
-                            //    }
-                            //}
-                        }
-
-                        if (objIncubation.Programme_Type.ToLower() == "cupp")
-                        {
-                            if (Convert.ToString(objIncubation.Question2_1_2d) != null || Convert.ToString(objIncubation.Question2_1_2e) != null || Convert.ToString(objIncubation.Question2_1_2f) != null)
-                            {
-                                bool qued = Convert.ToBoolean(objIncubation.Question2_1_2d);
-                                bool quee = Convert.ToBoolean(objIncubation.Question2_1_2e);
-                                bool quef = Convert.ToBoolean(objIncubation.Question2_1_2f);
-                                if ((qued == true || quee == true || quef == true) && (ObjFundingStatus.Count == 0))
-                                {
-
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_fundingreq"));
-
-                                }
-                                else if (quef == true || qued == true || quee == true)
-                                {
-
-                                    foreach (TB_APPLICATION_FUNDING_STATUS obj1 in ObjFundingStatus)
-                                    {
-                                        if ((obj1.Currency == null) || (Convert.ToString(obj1.Date) == null) || (obj1.Programme_Name == "")
-                                            || (obj1.Expenditure_Nature == "") || (obj1.Funding_Status == "") || (Convert.ToString(obj1.Maximum_Amount) == null)
-                                            || (Convert.ToString(obj1.Amount_Received) == null))
-                                        {
-                                            IsError = true;
-                                            errlist.Add(Localize("Error_Fundingall"));
-                                        }
-
-                                    }
-                                }
-                            }
-                        }
-                        //if (!string.IsNullOrEmpty(objIncubation.Programme_Type) && !string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream))
-                        //{
-                        //    Activation = objIncubation.Programme_Type;
-                        //    string activation1 = objIncubation.Hong_Kong_Programme_Stream;
-                        //    if (Activation.ToLower() == "hongkong" && activation1.ToLower() == "Young Entrepreneur")
-                        //    {
-                        //        if (objTB_APPLICATION_ATTACHMENT != null)
-                        //        {
-                        //            if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.Student_ID.ToString().ToLower()))
-                        //            {
-                        //                IsError = true;
-
-                        //                errlist.Add("Please upload document in the required field:  Student ID");
-                        //            }
-                        //        }
-                        //    }
-                        //}
-                        //if (!string.IsNullOrEmpty(objIncubation.Programme_Type) && !string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream))
-                        //{
-                        //    Activation = objIncubation.Programme_Type;
-                        //    string activation1 = objIncubation.Hong_Kong_Programme_Stream;
-                        //    if (Activation.ToLower() == "cross_border")
-                        //    {
-                        //        if (objTB_APPLICATION_ATTACHMENT != null)
-                        //        {
-                        //            if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.Student_ID.ToString().ToLower()))
-                        //            {
-                        //                IsError = true;
-
-                        //                errlist.Add("Please upload document in the required field:  Student ID");
-                        //            }
-                        //        }
-                        //    }
-                        //}
+                        #region Step 5 - Contact Details
+                        /*Contact Details*/
                         if (ObjTB_APPLICATION_CONTACT_DETAIL.Count == 0)
                         {
                             IsError = true;
                             errlist.Add(Localize("Error_contact_atleast"));
                         }
+
                         int i = 1;
                         foreach (TB_APPLICATION_CONTACT_DETAIL obj in ObjTB_APPLICATION_CONTACT_DETAIL)
                         {
@@ -4187,15 +3478,21 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             }
                             i++;
                         }
-                        if (objIncubation.Programme_Type.ToLower().Contains("crossborder") && ObjTB_APPLICATION_CONTACT_DETAIL.Count != 0)
+
+                        if (ObjTB_APPLICATION_CONTACT_DETAIL.Count != 0)
                         {
                             if ((ObjTB_APPLICATION_CONTACT_DETAIL.Where(x => x.Area == "HongKong")).Count() == 0 || (ObjTB_APPLICATION_CONTACT_DETAIL.Where(x => x.Area == "China")).Count() == 0)
                             {
+                                IsError = true;
                                 errlist.Add(Localize("Error_contact_area"));
                             }
 
                         }
-                        //string apptype = objIncubation.CCMF_Application_Type;
+
+                        #endregion
+
+                        #region Step 6 - Attachment, Declaration and Statement
+                        /*Attachment, Declaration and Statement*/
                         if (apptype.ToLower() == "company")
                         {
                             if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
@@ -4206,106 +3503,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                     errlist.Add(Localize("Error_brcopy"));
                                 }
                             }
-                        }
-
-                        //if (!string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream))
-                        //{
-                        //    if (objIncubation.Hong_Kong_Programme_Stream.ToLower() != "professional")
-                        //    {
-
-                        //        if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.Student_ID.ToString().ToLower()))
-                        //        {
-                        //            IsError = true;
-                        //            errlist.Add(Localize("Error_studentid"));
-                        //        }
-
-                        //    }
-                        //}
-                        if (objIncubation.Programme_Type.ToLower() != "hongkong")
-                        {
-
-                            if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.Student_ID.ToString().ToLower()))
-                            {
-                                IsError = true;
-                                errlist.Add(Localize("Error_studentid"));
-                            }
-
-
-                        }
-                        string apptype1 = objIncubation.CCMF_Application_Type;
-                        if (apptype1.ToLower() == "individual" || IsYepApplication == true)
-                        {
-
-                            if (!string.IsNullOrEmpty(objIncubation.Hong_Kong_Programme_Stream) && !objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                            {
-                                // HK ID Changes for Professional with question
-                                if (objIncubation.Hong_Kong_Programme_Stream.ToLower() == "professional")
-                                {
-                                    if (objIncubation.Question2_1_1b.HasValue)
-                                    {
-                                        if (objIncubation.Question2_1_1b.Value == true)
-                                        {
-                                            IsError = true;
-                                            errlist.Add(Localize("Error_hkid"));
-                                        }
-                                    }
-                                }
-                                else // For all individual and YEP
-                                {
-                                    IsError = true;
-                                    errlist.Add(Localize("Error_hkid"));
-                                }
-
-
-                                /* if (objIncubation.Hong_Kong_Programme_Stream.ToLower() == "professional")
-                                {
-                                    if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
-                                    {
-                                        if (Convert.ToBoolean(objIncubation.Question2_1_1b) == true && !objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                                        {
-                                            IsError = true;
-                                            if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                                            {
-
-                                                errlist.Add("Please upload document in the required field: HK ID");
-                                            }
-                                        }
-                                    }
-                                }
-                                else if (objIncubation.Hong_Kong_Programme_Stream.ToLower() == "young entrepreneur")
-                                {
-                                    if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                    {
-                                        if (Convert.ToBoolean(objIncubation.Question2_1_1a) == true && !objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                                        {
-                                            IsError = true;
-                                            if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                                            {
-
-                                                errlist.Add("Please upload document in the required field: HK ID");
-                                            }
-                                        }
-                                    }
-
-                                }*/
-
-                            }
-                            else if (objIncubation.Programme_Type.ToLower() == "cupp")
-                            {
-                                if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
-                                {
-                                    if (Convert.ToBoolean(objIncubation.Question2_1_1a) == true && !objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                                    {
-                                        IsError = true;
-                                        if (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.HK_ID.ToString().ToLower()))
-                                        {
-
-                                            errlist.Add(Localize("Error_hkid"));
-                                        }
-                                    }
-                                }
-                            }
-
                         }
 
                         if (objIncubation.Declaration == false)
@@ -4328,66 +3525,21 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             IsError = true;
                             errlist.Add(Localize("Error_applicant_position"));
                         }
-                        //if (Convert.ToString(objIncubation.CCMF_Application_Type) != "")
-                        //{
-                        //    Activation = objIncubation.CCMF_Application_Type;
-                        //    if (Activation.ToLower() == "individual" && Convert.ToString(objIncubation.Question2_3_1a) == "")
-                        //    {
-                        //        IsError = true;
 
-                        //        ErrorMessage += "Please select Question 2.3.1(A)<br>";
-                        //    }
-                        //}
-                        //if (Convert.ToString(objIncubation.CCMF_Application_Type) != "")
-                        //{
-                        //    Activation = objIncubation.CCMF_Application_Type;
-                        //    if (Activation.ToLower() == "company" && Convert.ToString(objIncubation.Question2_3_1b) == "")
-                        //    {
-                        //        IsError = true;
+                        /*Add Check error of 2nd Principal Appicant (Name, Position)*/
+                        if (objIncubation.Principal_2nd_Full_Name == "")
+                        {
+                            IsError = true;
+                            errlist.Add(Localize("Error_full_2nd_applicant"));
+                        }
+                        if (objIncubation.Principal_2nd_Position_Title == "")
+                        {
+                            IsError = true;
+                            errlist.Add(Localize("Error_2nd_applicant_position"));
+                        }
+                        #endregion
 
-                        //        ErrorMessage += "Please select Question 2.3.1(B)<br>";
-                        //    }
-                        //}
-                        //if (Convert.ToString(objIncubation.CCMF_Application_Type) != "")
-                        //{
-                        //    Activation = objIncubation.CCMF_Application_Type;
-                        //    if (Activation.ToLower() == "company" && Convert.ToString(objIncubation.Question2_3_1c) == "")
-                        //    {
-                        //        IsError = true;
-                        //        ErrorMessage += "Please select Question 2.3.1(C)<br>";
-                        //    }
-                        //}
-                        //    List<TB_APPLICATION_FUNDING_STATUS> ObjFundingStatus = IncubationContext.APPLICATION_FUNDING_STATUS_GET(objIncubation.CCMF_ID);
-                        //    if (ObjFundingStatus.Count == 0)
-                        //    {
-                        //        IsError = true;
-                        //        ErrorMessage += "At least one Funding Status required<br>";
-                        //    }
-                        //    if ((objIncubation.Question1_8 == true || objIncubation.Question1_9 == true) && string.IsNullOrEmpty(objIncubation.Additional_Information.Trim()))
-                        //    {
-                        //        IsError = true;
-                        //        ErrorMessage += "2.3.2.4 Additional Information can not be empty<br>";
-                        //    }
-
-                        //    if (Convert.ToString(objIncubation.Resubmission) != "")
-                        //    {
-
-                        //        if ((bool)objIncubation.Resubmission)
-                        //        {
-
-                        //            if (string.IsNullOrEmpty(objIncubation.Resubmission_Project_Reference.Trim()) ||
-                        //                string.IsNullOrEmpty(objIncubation.Resubmission_Main_Differences.Trim()))
-                        //            {
-                        //                IsError = true;
-                        //                ErrorMessage += "Section 2.4.7 and 2.4.8 can not be empty<br>";
-
-                        //            }
-
-
-                        //        }
-                        //    }
-
-
+                        #endregion                                                                      
                     }
                 }
             }
@@ -4397,16 +3549,17 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                 errlist.Add(ex.Message);
 
             }
-            //if (IsError == true)
-            //{
-            lblgrouperror.DataSource = errlist;
-            lblgrouperror.DataBind();
-            ShowbottomMessage("", false);
-            //}
-            //else
-            //{
-            //    ShowbottomMessage("", true);
-            //}
+
+            if (IsError == true)
+            {
+                lblgrouperror.DataSource = errlist;
+                lblgrouperror.DataBind();
+                ShowbottomMessage("", false);
+            }
+            else
+            {
+                ShowbottomMessage("", true);
+            }
             return IsError;
 
         }
@@ -4439,11 +3592,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     TB_CCMF_APPLICATION objIncubation = GetExistingCCMF(dbContext, progId);
                     if (objIncubation != null)
                     {
-                        if (objIncubation.Programme_Type.ToLower().Contains("crossborder"))
-                        {
-                            RadioButtonList Area = (RadioButtonList)e.Row.FindControl("rdo_Area");
-                            Area.Visible = true;
-                        }
+                        //if (objIncubation.Programme_Type.ToLower().Contains("crossborder"))
+                        //{
+                        //    RadioButtonList Area = (RadioButtonList)e.Row.FindControl("rdo_Area");
+                        //    Area.Visible = true;
+                        //}
+
+                        RadioButtonList Area = (RadioButtonList)e.Row.FindControl("rdo_Area");
+                        Area.Visible = true;
                     }
                 }
             }
@@ -5447,14 +4603,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     if (rdo212f_1.SelectedValue != "")
                         objCCMF.Question2_1_2f_1 = Convert.ToBoolean(rdo212f_1.SelectedValue);
                     //CCMFGBAYEP
-                    //if (rdo212k.SelectedValue != "")
-                    //    objCCMF.Question2_1_2k = Convert.ToBoolean(rdo212k.SelectedValue);
-                    //if (rdo212l.SelectedValue != "")
-                    //    objCCMF.Question2_1_2l = Convert.ToBoolean(rdo212l.SelectedValue);
-                    //if (rdo212m.SelectedValue != "")
-                    //    objCCMF.Question2_1_2m = Convert.ToBoolean(rdo212m.SelectedValue);
-                    //if (rdo212n.SelectedValue != "")
-                    //    objCCMF.Question2_1_2n = Convert.ToBoolean(rdo212n.SelectedValue);
+                    if (rdo212k.SelectedValue != "")
+                        objCCMF.Question2_1_2k = Convert.ToBoolean(rdo212k.SelectedValue);
+                    if (rdo212l.SelectedValue != "")
+                        objCCMF.Question2_1_2l = Convert.ToBoolean(rdo212l.SelectedValue);
+                    if (rdo212m.SelectedValue != "")
+                        objCCMF.Question2_1_2m = Convert.ToBoolean(rdo212m.SelectedValue);
+                    if (rdo212n.SelectedValue != "")
+                        objCCMF.Question2_1_2n = Convert.ToBoolean(rdo212n.SelectedValue);
 
 
                     if (!string.IsNullOrEmpty(English.Text) && !CBPRegularExpression.RegExValidate(CBPRegularExpression.StringExpression(1, 255, true, AllowAllSymbol: true), English.Text))
@@ -5627,6 +4783,19 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         ErrorLIst.Add(Localize("Error_Applicant_position_lenghth"));
                     else
                         objCCMF.Principal_Position_Title = txtPosition_PrincipalApplicant.Text.Trim();
+
+                    if (!string.IsNullOrEmpty(txtName_2ndApplicant.Text) && !CBPRegularExpression.RegExValidate(CBPRegularExpression.StringExpression(1, 255, true, AllowAllSymbol: true), txtName_2ndApplicant.Text))
+                        ErrorLIst.Add(Localize("Error_Applicant_name_title"));
+                    else
+                        objCCMF.Principal_2nd_Full_Name = txtName_2ndApplicant.Text.Trim();
+
+                    if (!string.IsNullOrEmpty(txtPosition_2ndApplicant.Text) && !CBPRegularExpression.RegExValidate(CBPRegularExpression.StringExpression(1, 255, true, AllowAllSymbol: true), txtPosition_2ndApplicant.Text))
+                        ErrorLIst.Add(Localize("Error_Applicant_position_lenghth"));
+                    else
+                        objCCMF.Principal_2nd_Position_Title = txtPosition_2ndApplicant.Text.Trim();
+
+                    objCCMF.Principal_2nd_Email = txt_Email_2ndApplicant.Text.Trim();
+
                     List<TB_APPLICATION_FUNDING_STATUS> objTB_APPLICATION_FUNDING_STATUS = GetFundingStatusForSave(IsSubmitClick, ref ErrorLIst);
                     List<TB_APPLICATION_COMPANY_CORE_MEMBER> objTB_APPLICATION_COMPANY_CORE_MEMBER = GetCoreMemberForSave(IsSubmitClick, ref ErrorLIst);
                     List<TB_APPLICATION_CONTACT_DETAIL> objTB_APPLICATION_CONTACT_DETAIL = GetContactDetailsForSave(IsSubmitClick, ref ErrorLIst);

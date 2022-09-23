@@ -727,6 +727,51 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Please select yes / no in the required field: Question 2.1.2(k).
+        /// </summary>
+        internal static string Error_2_1_2k {
+            get {
+                return ResourceManager.GetString("Error_2_1_2k", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select yes / no in the required field: Question 2.1.2(l).
+        /// </summary>
+        internal static string Error_2_1_2l {
+            get {
+                return ResourceManager.GetString("Error_2_1_2l", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select yes / no in the required field: Question 2.1.2(m).
+        /// </summary>
+        internal static string Error_2_1_2m {
+            get {
+                return ResourceManager.GetString("Error_2_1_2m", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please select yes / no in the required field: Question 2.1.2(n).
+        /// </summary>
+        internal static string Error_2_1_2n {
+            get {
+                return ResourceManager.GetString("Error_2_1_2n", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please fill in position/title of Principal Applicant (GuangDong or Macau Leader) in page 6.
+        /// </summary>
+        internal static string Error_2nd_applicant_position {
+            get {
+                return ResourceManager.GetString("Error_2nd_applicant_position", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Please select a option in the required field: 3.6.
         /// </summary>
         internal static string Error_3_6 {
@@ -763,7 +808,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(e) is filled or 2.1.2(f) is Yes.
+        ///   Looks up a localized string similar to Please fill in the required field: 4.10 Additional Information.
         /// </summary>
         internal static string Error_additinal_info {
             get {
@@ -1308,6 +1353,15 @@ namespace CBP_EMS_SP.Resources.Resources {
         internal static string Error_First_Name_Eng {
             get {
                 return ResourceManager.GetString("Error_First_Name_Eng", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please fill in full name of Principal Applicant (GuangDong or Macau Leader) in page 6.
+        /// </summary>
+        internal static string Error_full_2nd_applicant {
+            get {
+                return ResourceManager.GetString("Error_full_2nd_applicant", resourceCulture);
             }
         }
         
@@ -2856,6 +2910,15 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to (Principal Applicant / Guangdong or Macau Team Leader).
+        /// </summary>
+        internal static string Step_5_Principal_2nd_Applicant {
+            get {
+                return ResourceManager.GetString("Step_5_Principal_2nd_Applicant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to (Principal Applicant / HK Team Leader).
         /// </summary>
         internal static string Step_5_Principal_Applicant {
@@ -2888,6 +2951,15 @@ namespace CBP_EMS_SP.Resources.Resources {
         internal static string Step_5_Student_idcard {
             get {
                 return ResourceManager.GetString("Step_5_Student_idcard", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Email of Principal Applicant (GuangDong or Macau Leader).
+        /// </summary>
+        internal static string Step_6_2nd_Email {
+            get {
+                return ResourceManager.GetString("Step_6_2nd_Email", resourceCulture);
             }
         }
         

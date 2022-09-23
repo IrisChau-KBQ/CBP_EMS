@@ -1197,7 +1197,7 @@
                                             <h2 class="subheading text-left">
                                                 <span>5.<%# Container.DataItemIndex+1 %></span>
                                                 <%=SPFunctions.LocalizeUI("Step_5_Contact_Person", "CyberportEMS_CCMFGBAYEP") %> <%# Container.DataItemIndex+1 %>
-                                                <asp:Label ID="lblContactSubTitle" runat="server" Visible="true"><%#Container.DataItemIndex == 0 ? SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CCMFGBAYEP") : "" %></asp:Label>
+                                                <asp:Label ID="lblContactSubTitle" runat="server" Visible="true"><%#Container.DataItemIndex == 0 ? SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CCMFGBAYEP") : (Container.DataItemIndex == 1 ? SPFunctions.LocalizeUI("Step_5_Principal_2nd_Applicant", "CyberportEMS_CCMFGBAYEP") : "") %></asp:Label>
                                             </h2>
                                             <div class="form-group sidemargin">
                                                 <div class="form-box form-group" data-id="<%# Container.DataItemIndex+1 %>">
@@ -1709,12 +1709,20 @@
                         </div>
                         <div class="col-md-6">
                             <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Title_2nd_Applicant", "CyberportEMS_CCMFGBAYEP") %></p>
-                            <asp:TextBox CssClass="input-sm" ID="txtPosition_2ndApplicant" runat="server" Enable ="false"/>
+                            <asp:TextBox CssClass="input-sm" ID="txtPosition_2ndApplicant" runat="server" ReadOnly ="false"/>
                             <asp:Label CssClass="label-text" ID="lblPosition_2ndApplicant" runat="server" Visible ="false" />
                         </div>
                     </div>
                     <div class="row">
-                        <asp:Button ID="btn_gotoInsert2ndSign" Visible="true" OnClick="btn_gotoInsert2ndSign_Click" runat="server" Text="Insert GuangDong or Macau Leader Full name and Position Title" CssClass="btnSubmitIncubation apply-btn skytheme" />
+                        <div class="col-md-6">
+                            <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_2nd_Email", "CyberportEMS_CCMFGBAYEP") %></p>
+                            <asp:TextBox CssClass="input-sm" ID="txt_Email_2ndApplicant" runat="server" ReadOnly="true"/>
+                            <asp:Label CssClass="label-text" ID="lbl_Email_2ndApplicant" runat="server" Visible="false" />
+                        </div>
+                        <div class="col-md-6">
+                            <p class="form-group lbl"></p>
+                            <asp:Button ID="btn_gotoInsert2ndSign" Visible="true" OnClick="btn_gotoInsert2ndSign_Click" runat="server" Text="Input GuangDong or Macau Leader Information" CssClass="btnSubmitIncubation apply-btn skytheme" />
+                        </div>
                     </div>
 
                     <h2 class="subheading text-center" style="margin: 20px 0;"><%=SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CCMFGBAYEP") %> 

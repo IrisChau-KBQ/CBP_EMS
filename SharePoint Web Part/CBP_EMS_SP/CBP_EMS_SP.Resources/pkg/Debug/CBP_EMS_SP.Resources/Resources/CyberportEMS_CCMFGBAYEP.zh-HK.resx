@@ -135,6 +135,9 @@
   <data name="CCMF_GBAYEP_Header" xml:space="preserve">
     <value>數碼港創意微型基金 - 大灣區青年創業計劃</value>
   </data>
+  <data name="CCMF_GBAYEP_Heading" xml:space="preserve">
+    <value>數碼港創意微型基金支持之數碼港大灣區青年創業計劃</value>
+  </data>
   <data name="CCMF_HK_Header" xml:space="preserve">
     <value>數碼港創意微型基金 - 香港計劃</value>
   </data>
@@ -231,6 +234,9 @@
   <data name="Cyberport_University_Partnership_Programme" xml:space="preserve">
     <value>數碼港創意微型基金支持之跨港計劃</value>
   </data>
+  <data name="Cyberport_Greater_Bay_Area_Young_Entrepreneurship_Programme_Supported_by_CCMF" xml:space="preserve">
+    <value>數碼港創意微型基金支持之數碼港大灣區青年創業計劃</value>
+  </data>
   <data name="Error6_Deadline_Message" xml:space="preserve">
     <value>Changes are not saved or submitted</value>
   </data>
@@ -291,6 +297,18 @@
   <data name="Error_2_1_2j" xml:space="preserve">
     <value>Please select yes / no in the required field: Question 2.1.2(j)</value>
   </data>
+  <data name="Error_2_1_2k" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(k)</value>
+  </data>
+  <data name="Error_2_1_2l" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(l)</value>
+  </data>
+  <data name="Error_2_1_2m" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(m)</value>
+  </data>
+  <data name="Error_2_1_2n" xml:space="preserve">
+    <value>Please select yes / no in the required field: Question 2.1.2(n)</value>
+  </data>
   <data name="Error_3_6" xml:space="preserve">
     <value>Please select a option in the required field: 3.6</value>
   </data>
@@ -307,7 +325,7 @@
     <value>Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(g) is filled or 2.1.2(h) is Yes</value>
   </data>
   <data name="Error_additinal_info" xml:space="preserve">
-    <value>Please fill in the required field: 4.10 Additional Information, if Question 2.1.2(e) is filled or 2.1.2(f) is Yes</value>
+    <value>Please fill in the required field: 4.10 Additional Information</value>
   </data>
   <data name="Error_Age_Validation" xml:space="preserve">
     <value>Only 18-30 of Age are Allowed to submit the Application at 2.1.1 (c)</value>
@@ -317,6 +335,9 @@
   </data>
   <data name="Error_applicant_position" xml:space="preserve">
     <value>Please fill in position/title of Principal Applicant in page 6</value>
+  </data>
+  <data name="Error_2nd_applicant_position" xml:space="preserve">
+    <value>Please fill in position/title of Principal Applicant (GuangDong or Macau Leader) in page 6</value>
   </data>
   <data name="Error_Applicant_position_lenghth" xml:space="preserve">
     <value>Principal Position Title length should be less than 255 characters.</value>
@@ -480,6 +501,9 @@
   <data name="Error_full_applicant" xml:space="preserve">
     <value>Please fill in full name of Principal Applicant in page 6</value>
   </data>
+  <data name="Error_full_2nd_applicant" xml:space="preserve">
+    <value>Please fill in full name of Principal Applicant (GuangDong or Macau Leader) in page 6</value>
+  </data>
   <data name="Error_Fundingall" xml:space="preserve">
     <value>Please fill in all fields in 4.8 Funding status</value>
   </data>
@@ -626,12 +650,12 @@
   </data>
   <data name="HKP_Pro_Stream_IndComp_2_F_note" xml:space="preserve">
     <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。&lt;br/&gt;&lt;br/&gt;如採用同一個項目申請數碼港創意微型基金及數碼港培育計劃 ，數碼港管理有限公司只會考慮您於現招募提交的數碼港培育計劃申請，而不另行通知。&lt;/b&gt;&lt;/b&gt;
-有關CCMF之申請資格，請先詳閱&lt;a href="http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf" target="_blank"&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項,&lt;/a&gt;。</value>
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="HKP_Pro_Stream_IndComp_Step_1_2_note" xml:space="preserve">
     <value>註: 個人名義申請者，其主要申請人須持有香港永久居民身份證。 否則，請考慮以公司名義申請。&lt;br/&gt;&lt;br/&gt;
 
-有關CCMF之申請資格，請先詳閱&lt;a href=""&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項。&lt;/a&gt;</value>
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf"&gt;數碼港大灣區青年創業計劃申請指引及需知。&lt;/a&gt;</value>
   </data>
   <data name="HKP_Pro_Stream_Ind_1_A" xml:space="preserve">
     <value>您的年齡是否18歲或以上?</value>
@@ -669,12 +693,12 @@
   </data>
   <data name="HKP_Pro_Young_Comp_2_F_Note" xml:space="preserve">
     <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。&lt;br/&gt;&lt;br/&gt;
-有關CCMF之申請資格，請先詳閱&lt;a href="http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf" target="_blank"&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。</value>
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="HKP_Pro_Young_Comp_Step_1_2_note" xml:space="preserve">
     <value>註: 個人名義申請者，其主要申請人須持有香港永久居民身份證。 否則，請考慮以公司名義申請。&lt;br/&gt;&lt;br/&gt;
 
-有關CCMF之申請資格，請先詳閱(a href=""&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。
+有關CCMF之申請資格，請先詳閱(a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。
 </value>
   </data>
   <data name="HKP_Pro_Young_IndComp_2_A" xml:space="preserve">
@@ -777,7 +801,7 @@
     <value>當所需信息是不適用或無法使用時，填上&lt;mark&gt;“NA”&lt;/mark&gt;;</value>
   </data>
   <data name="Instruction_2" xml:space="preserve">
-    <value>遞交申請表格前，請先詳閱&lt;mark class="mark-2"&gt;&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;數碼港創意微型基金之申請指南及注意事項(ENC.RF.015a)&lt;/a&gt;&lt;/mark&gt;，請特別注意第1, 2及3部份。</value>
+    <value>遞交申請表格前，請先詳閱&lt;mark class="mark-2"&gt;&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;數碼港大灣區青年創業計劃申請指引及需知(ENC.RF.015b)&lt;/a&gt;&lt;/mark&gt;，請特別注意第1, 2及3部份。</value>
   </data>
   <data name="Instruction_3" xml:space="preserve">
     <value>申請表格必須由申請人填寫。如果申請人是一家公司，表格必須由申請機構的董事或擁有人填寫。否則，將不獲處理。</value>
@@ -806,6 +830,9 @@
   <data name="Instruction_8" xml:space="preserve">
     <value>香港數碼港管理有限公司</value>
   </data>
+  <data name="CompanyDocument" xml:space="preserve">
+    <value>公司文件(如適用)</value>
+  </data>
   <data name="OtherAttachment" xml:space="preserve">
     <value>其他補充資料, 如商業計劃書 (如適用)</value>
   </data>
@@ -830,14 +857,14 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
 
 如申請之CCMF項目已完成開發其最小可行性產品/雛型產品或已推出市場， 其項目可能不適合申請CCMF 。 如有查詢，請電郵到 &lt;a href="ccmf_enquiry@cyberport.hk"&gt;ccmf_enquiry@cyberport.hk&lt;/a&gt; 。&lt;br/&gt;&lt;br/&gt;
 
-如有意申請數碼港培育計劃，&lt;a href=""&gt;請按此。&lt;/a&gt;</value>
+如有意申請數碼港培育計劃，&lt;a href="https://cyberport.hk/zh_tw/about_cyberport/cyberport_entrepreneurs/cyberport_incubation_programme"&gt;請按此。&lt;/a&gt;</value>
   </data>
   <data name="Step1_CCMF_Selection" xml:space="preserve">
     <value>請選擇以下其中一個CCMF類別:</value>
   </data>
   <data name="Step1_Note" xml:space="preserve">
     <value>註: 個人名義申請者，其主要申請人須持有香港永久居民身份證。 否則，請考慮以公司名義申請。&lt;br/&gt;&lt;br/&gt;
-有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt; 數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。</value>
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt; 數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="Step1_Question1_3" xml:space="preserve">
     <value>你現正提交申請CCMF的項目是否已超過早期開發階段, 例如:已推出市場及產生可持續收入或正在計劃/將會計劃拓展海外市場?</value>
@@ -851,7 +878,7 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
   <data name="Step2_Note" xml:space="preserve">
     <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。&lt;br/&gt;&lt;br/&gt;如採用同一個項目申請數碼港創意微型基金及數碼港培育計劃 ，數碼港管理有限公司只會考慮您於現招募提交的數碼港培育計劃申請，而不另行通知。
 &lt;br/&gt;&lt;/br/&gt;
-有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。</value>
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="Step3_1a_ProjectName" xml:space="preserve">
     <value>項目名稱</value>
@@ -964,7 +991,7 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
   <data name="Step_1_CCMF_app_note" xml:space="preserve">
     <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。&lt;br/&gt;&lt;br/&gt;
 
-有關CCMF之申請資格，請先詳閱&lt;a href=""&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。</value>
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="Step_1_Remark" xml:space="preserve">
     <value>如你的項目已超過早期開發階段, 你可考慮申請數碼港培育計劃。</value>
@@ -1057,10 +1084,10 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>資助狀況</value>
   </data>
   <data name="Step_4_Funding_Statussub" xml:space="preserve">
-    <value>(詳細列出(i)申請人(或由其成立的公司)在未來18個月內或在過去的18個月內，所有已獲得或將獲得或有權獲得的所有任何公營及/或私人機構/計劃資助和資金;(ii)這些資助來源所覆蓋/將覆蓋的支出性質;及(iii)由這些資助來源獲得/將獲得的金額及最高可獲金額 )&lt;br/&gt;&lt;br/&gt;註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。  有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。</value>
+    <value>(詳細列出(i)申請人(或由其成立的公司)在未來18個月內或在過去的18個月內，所有已獲得或將獲得或有權獲得的所有任何公營及/或私人機構/計劃資助和資金;(ii)這些資助來源所覆蓋/將覆蓋的支出性質;及(iii)由這些資助來源獲得/將獲得的金額及最高可獲金額 )&lt;br/&gt;&lt;br/&gt;註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。  有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="Step_4_Funding_Statussub2" xml:space="preserve">
-    <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。  有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;數碼港創意微型基金 - 香港計劃之申請指南及注意事項&lt;/a&gt;。</value>
+    <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。  有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;數碼港大灣區青年創業計劃申請指引及需知&lt;/a&gt;。</value>
   </data>
   <data name="Step_4_Maximum_amount" xml:space="preserve">
     <value>最高可獲金額</value>
@@ -1162,7 +1189,10 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>職位:</value>
   </data>
   <data name="Step_5_Principal_Applicant" xml:space="preserve">
-    <value>(主要申請人 / 香港隊長)</value>
+    <value>(主要申請人 / 香港團隊領導者)</value>
+  </data>
+  <data name="Step_5_Principal_2nd_Applicant" xml:space="preserve">
+    <value>(主要申請人 / 廣東或澳門團隊領導者)</value>
   </data>
   <data name="Step_5_Programme_Enrolled_Eng" xml:space="preserve">
     <value>登記學科(英文)</value>
@@ -1172,6 +1202,9 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
   </data>
   <data name="Step_5_Student_idcard" xml:space="preserve">
     <value>學生編號</value>
+  </data>
+  <data name="Step_5_Notice" xml:space="preserve">
+    <value>* 資金會根據數碼港大灣區青年創業計劃申請指引及需知(ENC.RF.015b)第8.1條款，發放至香港團隊領導者的個人銀行戶口（個人申請）。</value>
   </data>
   <data name="Step_6_Access" xml:space="preserve">
     <value>Access to and Correction of Your Data</value>
@@ -1183,7 +1216,7 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>In consideration of Hong Kong Cyberport Management Company Limited (“HKCMCL”) considering and processing our application for funding from CCMF, we confirm our agreement and undertake the following by checking this box</value>
   </data>
   <data name="Step_6_Consideration_1" xml:space="preserve">
-    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants (ENC.RF.O15)&lt;/a&gt; governing the application of the Cyberport Creative Micro Fund Scheme.</value>
+    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme (ENC.RF.015b)&lt;/a&gt; governing the application of the Cyberport Creative Micro Fund Scheme.</value>
   </data>
   <data name="Step_6_Consideration_2" xml:space="preserve">
     <value>All information provided in this application as well as the accompanying information is true, not misleading in any manner and reflects the status of affairs as at the date of submission. I shall inform the Administration of the Cyberport Creative Micro Fund immediately if there are any changes to the above information.</value>
@@ -1207,7 +1240,7 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>We give our consent to authorised Cyberport staff to carry out necessary due diligence/reference check for the purpose of assessing this application.</value>
   </data>
   <data name="Step_6_Consideration_9" xml:space="preserve">
-    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants (ENC.RF.O15)&lt;/a&gt;, this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
+    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC-RF-015b.pdf" target="_blank"&gt;Guides and Notes for Applicants – CCMF Greater Bay Area Young EntrepreneurshipProgramme (ENC.RF.015b)&lt;/a&gt;, this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
   </data>
   <data name="Step_6_cyberport" xml:space="preserve">
     <value>“Cyberport”</value>
@@ -1228,7 +1261,13 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>In connection with direct marketing, we intend to use your name and email address to market and promote the services, products, facilities, activities, contests, conferences, lucky draws, events and promotional campaigns from time to time available relating to us or "Cyberport", or shops or merchants or hotel in the "Cyberport" or offered or hosted at "Cyberport" (including consumer goods, food and beverages, books and stationery, children goods and services, fashion and accessories, optical products, watches, jewellery, luxurious goods, personal care, health and beauty products and services, furniture and lifestyle goods, home furnishing and appliances, florists, sports gear and products, electronic products and appliances, banking and financial services, cinemas and theatres, cultural, entertainment facilities and activities, charity activities, leisure activities and performances, gift redemptions and car parking facilities)</value>
   </data>
   <data name="Step_6_Full_Name" xml:space="preserve">
-    <value>Full Name of Principal Applicant</value>
+    <value>Full Name of Principal Applicant (HK Leader)</value>
+  </data>
+  <data name="Step_6_Full_Name_2" xml:space="preserve">
+    <value>Full Name of Principal Applicant (GuangDong or Macau Leader)</value>
+  </data>
+  <data name="Step_6_2nd_Email" xml:space="preserve">
+    <value>Email of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="step_6_marketing" xml:space="preserve">
     <value>I agree to receive direct marketing information.</value>
@@ -1282,7 +1321,10 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
     <value>This Statement is written in the English language and may be translated into other languages. In the event of any inconsistency between the English version and the translated version of this Statement, the English version shall prevail.</value>
   </data>
   <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
-    <value>Position Title of Principal Applicant</value>
+    <value>Position Title of Principal Applicant (HK Leader)</value>
+  </data>
+  <data name="Step_6_Title_2nd_Applicant" xml:space="preserve">
+    <value>Position Title of Principal Applicant (GuangDong or Macau Leader)</value>
   </data>
   <data name="Step_6_Transfer_data" xml:space="preserve">
     <value>Transfer of Your Data</value>
@@ -1307,5 +1349,50 @@ CCMF為高潛力的數碼科技及商業創意項目提供10萬港元種子基�
   </data>
   <data name="VideoClip" xml:space="preserve">
     <value>視頻剪輯</value>
+  </data>
+  <data name="CCMFGBAYEP_Ind_1_A" xml:space="preserve">
+    <value>下文第4.1節列出項目的香港管理團隊隊長是否擁有香港居民身份證及下文第4.1節列出項目的澳門/廣東管理團隊隊長是否擁有澳門/中國居民身份證?</value>
+  </data>
+  <data name="CCMFGBAYEP_Comp_1_A" xml:space="preserve">
+    <value>您是否於香港擁有以法人身份註冊的公司?</value>
+  </data>
+  <data name="CCMFGBAYEP_Comp_1_B" xml:space="preserve">
+    <value>如否,您是否同意於被數碼港創意微型基金錄取之時於香港註冊成立公司?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_C" xml:space="preserve">
+    <value>您及您於下文第4.1節列出的所有項目管理團隊隊員均參加及完成創業培訓?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_D" xml:space="preserve">
+    <value>您及您於下文第4.1節列出的所有項目管理團隊隊員在計劃報名截止日期前是否介乎18到30 歲之間?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_E" xml:space="preserve">
+    <value>下文第4.1節列出的項目管理團隊是否由50%或以上的香港居民組成?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_F" xml:space="preserve">
+    <value>下文第4.1節列出的所有香港項目管理團隊隊員現在是否就讀於香港/澳門/廣東地區註冊的大專院校或畢業於上述院校不超過三年?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_G" xml:space="preserve">
+    <value>下文第4.1節列出的所有廣東/澳門項目管理團隊隊員現在是否分別就讀於廣東/澳門註冊的大專院校或畢業於上述院校不超過三年?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_H" xml:space="preserve">
+    <value>您的申請項目與數碼科技範疇是否相關?</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_I" xml:space="preserve">
+    <value>您現正提交申請CCMF的項目或與之相似的項目有否在過去的18個月內申請或收到任何公營及/或私人機構/計劃的資金或資助？如回答“是”，請在下文第4.8節詳細列出。</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_J" xml:space="preserve">
+    <value>您現正提交申請CCMF的項目或與之相似的項目有否申請，或在未來18個月將會申請，或預期接受，任何公營及/或私人機構/計劃的資金或資助？如回答“是”，請在下文第4.8節詳細列出。</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_K" xml:space="preserve">
+    <value>您現正提交申請CCMF的項目或與之相似的項目有否申請數碼港培育計劃？如回答“是”，請在下文第4.8節詳細列出。</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_L" xml:space="preserve">
+    <value>如您於問題2.2 (j) 回答“是”，您是以相同或相似的培育項目在申請CCMF嗎？如果相似或不同，請澄清，並在下文第4.10節詳細列出，使我們的評審小組能區別這申請及任何其他申請。</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_M" xml:space="preserve">
+    <value>申請人是否有機會構成任何利益衝突？如回答“是”， 請在下文第4.10節詳細列出。</value>
+  </data>
+  <data name="CCMFGBAYEP_IndComp_2_N" xml:space="preserve">
+    <value>此申請是否過去曾提交到數碼港及 / 或其他公營機構的資助計劃？ 若是，請在下文第4.10節列明先前申請的項目並指出此申請與過去的申請的主要分別。</value>
   </data>
 </root>

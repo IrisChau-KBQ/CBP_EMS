@@ -926,6 +926,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.TextBox txt_Email_2ndApplicant;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Label lbl_Email_2ndApplicant;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
         protected global::System.Web.UI.WebControls.Button btn_gotoInsert2ndSign;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
@@ -8064,7 +8072,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             System.Web.UI.DataBoundLiteralControl target;
             target = ((System.Web.UI.DataBoundLiteralControl)(sender));
             Container = ((System.Web.UI.IDataItemContainer)(target.BindingContainer));
-            target.SetDataBoundString(0, global::System.Convert.ToString(Container.DataItemIndex == 0 ? SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CCMFGBAYEP") : "", global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(0, global::System.Convert.ToString(Container.DataItemIndex == 0 ? SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CCMFGBAYEP") : (Container.DataItemIndex == 1 ? SPFunctions.LocalizeUI("Step_5_Principal_2nd_Applicant", "CyberportEMS_CCMFGBAYEP") : ""), global::System.Globalization.CultureInfo.CurrentCulture));
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -11328,7 +11336,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.CssClass = "input-sm";
             @__ctrl.ID = "txtPosition_2ndApplicant";
-            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Enable", "false");
+            @__ctrl.ReadOnly = false;
             return @__ctrl;
         }
         
@@ -11349,6 +11357,34 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.TextBox @__BuildControltxt_Email_2ndApplicant() {
+            global::System.Web.UI.WebControls.TextBox @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.TextBox();
+            this.txt_Email_2ndApplicant = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "input-sm";
+            @__ctrl.ID = "txt_Email_2ndApplicant";
+            @__ctrl.ReadOnly = true;
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Label @__BuildControllbl_Email_2ndApplicant() {
+            global::System.Web.UI.WebControls.Label @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Label();
+            this.lbl_Email_2ndApplicant = @__ctrl;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.CssClass = "label-text";
+            @__ctrl.ID = "lbl_Email_2ndApplicant";
+            @__ctrl.Visible = false;
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
         private global::System.Web.UI.WebControls.Button @__BuildControlbtn_gotoInsert2ndSign() {
             global::System.Web.UI.WebControls.Button @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Button();
@@ -11356,7 +11392,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "btn_gotoInsert2ndSign";
             @__ctrl.Visible = true;
-            @__ctrl.Text = "Insert GuangDong or Macau Leader Full name and Position Title";
+            @__ctrl.Text = "Input GuangDong or Macau Leader Information";
             @__ctrl.CssClass = "btnSubmitIncubation apply-btn skytheme";
             @__ctrl.Click -= new System.EventHandler(this.btn_gotoInsert2ndSign_Click);
             @__ctrl.Click += new System.EventHandler(this.btn_gotoInsert2ndSign_Click);
@@ -11486,15 +11522,21 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             global::System.Web.UI.WebControls.Label @__ctrl28;
             @__ctrl28 = this.@__BuildControllblPosition_2ndApplicant();
             @__parser.AddParsedSubObject(@__ctrl28);
-            global::System.Web.UI.WebControls.Button @__ctrl29;
-            @__ctrl29 = this.@__BuildControlbtn_gotoInsert2ndSign();
+            global::System.Web.UI.WebControls.TextBox @__ctrl29;
+            @__ctrl29 = this.@__BuildControltxt_Email_2ndApplicant();
             @__parser.AddParsedSubObject(@__ctrl29);
-            global::System.Web.UI.WebControls.CheckBox @__ctrl30;
-            @__ctrl30 = this.@__BuildControlPersonal_Information();
+            global::System.Web.UI.WebControls.Label @__ctrl30;
+            @__ctrl30 = this.@__BuildControllbl_Email_2ndApplicant();
             @__parser.AddParsedSubObject(@__ctrl30);
-            global::System.Web.UI.WebControls.CheckBox @__ctrl31;
-            @__ctrl31 = this.@__BuildControlMarketing_Information();
+            global::System.Web.UI.WebControls.Button @__ctrl31;
+            @__ctrl31 = this.@__BuildControlbtn_gotoInsert2ndSign();
             @__parser.AddParsedSubObject(@__ctrl31);
+            global::System.Web.UI.WebControls.CheckBox @__ctrl32;
+            @__ctrl32 = this.@__BuildControlPersonal_Information();
+            @__parser.AddParsedSubObject(@__ctrl32);
+            global::System.Web.UI.WebControls.CheckBox @__ctrl33;
+            @__ctrl33 = this.@__BuildControlMarketing_Information();
+            @__parser.AddParsedSubObject(@__ctrl33);
             @__ctrl.SetRenderMethodDelegate(new System.Web.UI.RenderMethod(this.@__Renderpnl_IncubationStep6));
             return @__ctrl;
         }
@@ -11639,10 +11681,20 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__w.Write("\r\n                            ");
             parameterContainer.Controls[27].RenderControl(@__w);
             @__w.Write("\r\n                        </div>\r\n                    </div>\r\n                   " +
-                    " <div class=\"row\">\r\n                        ");
+                    " <div class=\"row\">\r\n                        <div class=\"col-md-6\">\r\n            " +
+                    "                <p class=\"form-group lbl\">");
+                                              @__w.Write(SPFunctions.LocalizeUI("Step_6_2nd_Email", "CyberportEMS_CCMFGBAYEP") );
+
+            @__w.Write("</p>\r\n                            ");
             parameterContainer.Controls[28].RenderControl(@__w);
-            @__w.Write("\r\n                    </div>\r\n\r\n                    <h2 class=\"subheading text-ce" +
-                    "nter\" style=\"margin: 20px 0;\">");
+            @__w.Write("\r\n                            ");
+            parameterContainer.Controls[29].RenderControl(@__w);
+            @__w.Write("\r\n                        </div>\r\n                        <div class=\"col-md-6\">\r" +
+                    "\n                            <p class=\"form-group lbl\"></p>\r\n                   " +
+                    "         ");
+            parameterContainer.Controls[30].RenderControl(@__w);
+            @__w.Write("\r\n                        </div>\r\n                    </div>\r\n\r\n                 " +
+                    "   <h2 class=\"subheading text-center\" style=\"margin: 20px 0;\">");
                                                                        @__w.Write(SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CCMFGBAYEP") );
 
             @__w.Write(" \r\n                    </h2>\r\n\r\n                    <p class=\"form-group\">");
@@ -11727,12 +11779,12 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
 
             @__w.Write(" </p>\r\n\r\n\r\n                    <div class=\"green-clr-theme\">\r\n                   " +
                     "     ");
-            parameterContainer.Controls[29].RenderControl(@__w);
+            parameterContainer.Controls[31].RenderControl(@__w);
             @__w.Write("\r\n                        ");
                 @__w.Write(SPFunctions.LocalizeUI("step_6_personal_information_collection", "CyberportEMS_CCMFGBAYEP") );
 
             @__w.Write("\r\n                        <br />\r\n                        ");
-            parameterContainer.Controls[30].RenderControl(@__w);
+            parameterContainer.Controls[32].RenderControl(@__w);
             @__w.Write("\r\n                        ");
                 @__w.Write(SPFunctions.LocalizeUI("step_6_marketing", "CyberportEMS_CCMFGBAYEP") );
 
