@@ -977,18 +977,18 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     }
                 }
             }
-            else if (ActiveStep == 2)
-            {
-                SaveStep2Data();
-            }
-            else if (ActiveStep == 3)
-            {
-                SaveStep3Data();
-            }
-            else if (ActiveStep == 4)
-            {
-                SaveStep4Data();
-            }
+            //else if (ActiveStep == 2)
+            //{
+            //    SaveStep2Data();
+            //}
+            //else if (ActiveStep == 3)
+            //{
+            //    SaveStep3Data();
+            //}
+            //else if (ActiveStep == 4)
+            //{
+            //    SaveStep4Data();
+            //}
             //else if (ActiveStep == 5)
             //{
             //    SaveStep5Data(out IsError);
@@ -2216,8 +2216,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
 
                     bool status = Membership.Providers[SqlMembershipProvider].ValidateUser(txtLogin2ndSignEmail.Text.Trim(), txtLogin2ndSignPassword.Text);
                     #endregion
-
-                    //bool status = SPClaimsUtility.AuthenticateFormsUser(Context.Request.UrlReferrer, txtLogin2ndSignEmail.Text, txtLogin2ndSignPassword.Text);
 
                     if (!status)
                     {
