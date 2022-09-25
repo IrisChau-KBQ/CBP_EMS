@@ -163,7 +163,6 @@
         return true;
     }
 </script>
-
 <asp:HiddenField ID="btnExportPDFList" runat="server" />
 <asp:Panel ID="PanelApplist" runat="server">
     <div class="outsideboard  page_main_block" style="width: 100%">

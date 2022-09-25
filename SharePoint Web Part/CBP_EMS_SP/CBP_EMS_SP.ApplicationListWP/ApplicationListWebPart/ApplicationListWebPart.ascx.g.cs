@@ -1611,7 +1611,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart {
                         "    }\r\n\r\n\r\n    $(document).ready(function () {\r\n        $(\".savebtn\").attr(\"Styl" +
                         "e\", \"width:\" + $(\".griidviewTable\")[0].clientWidth + \"px\");\r\n    })\r\n    functio" +
                         "n setFormSubmitToFalse() {\r\n        setTimeout(function () { _spFormOnSubmitCall" +
-                        "ed = false; }, 3000);\r\n        return true;\r\n    }\r\n</script>\r\n\r\n"));
+                        "ed = false; }, 3000);\r\n        return true;\r\n    }\r\n</script>\r\n"));
             global::System.Web.UI.WebControls.HiddenField @__ctrl1;
             @__ctrl1 = this.@__BuildControlbtnExportPDFList();
             @__parser.AddParsedSubObject(@__ctrl1);
@@ -1619,7 +1619,6 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart {
             global::System.Web.UI.WebControls.Panel @__ctrl2;
             @__ctrl2 = this.@__BuildControlPanelApplist();
             @__parser.AddParsedSubObject(@__ctrl2);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n"));
         }
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +

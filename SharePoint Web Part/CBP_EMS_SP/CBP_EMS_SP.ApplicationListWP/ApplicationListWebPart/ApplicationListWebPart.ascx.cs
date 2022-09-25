@@ -915,8 +915,8 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             + "FROM TB_CCMF_APPLICATION App "
                             + "left join TB_APPLICATION_SHORTLISTING sl on sl.Application_Number = App.Application_Number "
                             + "where App.Intake_Number=@IntakeNumber "
-                            //+ "and Hong_Kong_Programme_Stream like '%' "
-                            //+ "and App.Status like @Status "
+                //+ "and Hong_Kong_Programme_Stream like '%' "
+                //+ "and App.Status like @Status "
                             + "and App.Status <> 'Saved' "
                             + "and App.Status <> 'Deleted' ";
 
@@ -990,14 +990,14 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             + ",Incubation_ID"
                             + ",isNUll(App.Programme_ID, '') as Programme_ID"
                             + ",isNUll(Business_Area, '') as Business_Area"
-                            //+ ",isNUll(Abstract, '') as PrjDesc"
+                //+ ",isNUll(Abstract, '') as PrjDesc"
                             + ",REPLACE(REPLACE(REPLACE(CAST(Abstract as NVARCHAR(MAX)),char(13)+char(10),' '),char(9),' '),char(59),',') as PrjDesc"
                             + ",isNUll(sl.Remarks_To_Vetting, '') as Remarks_To_Vetting"
                             + ",isNull(sl.Shortlisted, 0) as Shortlisted "
                             + "FROM TB_INCUBATION_APPLICATION App "
                             + "left join TB_APPLICATION_SHORTLISTING sl on sl.Application_Number = App.Application_Number "
                             + "where App.Intake_Number = @IntakeNumber "
-                            //+ "and App.Status like @Status "
+                //+ "and App.Status like @Status "
                             + "and App.Status <> 'Saved' "
                             + "and App.Status <> 'Deleted' ";
 
@@ -1049,20 +1049,20 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             string newSql = "SELECT App.CASP_ID, App.Application_No as AppNo"
                             + ",App.Status"
                             + ",App.Submitted_Date"
-                            //+ ",isNUll(Company_Name_Chi, '') as Company_Name_Chi"
-                            //+ ",isNUll((Select Total_Score from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPIP BDM' ),-1) as BDM_Score "
-                            //+ ",isNUll((Select Total_Score from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'Senior Manager' ),-1) as SeniorManager_Score"
-                            //+ ",isNUll((Select Total_Score from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPMO' ),-1) as CPMO_Score"
-                            //+ ",isNUll((Select Remarks from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPIP BDM' ),'') as BDMRemarks"
-                            //+ ",isNUll((Select Remarks from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'Senior Manager' ),'') as SrRemarks"
-                            //+ ",isNUll((Select Remarks from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPMO' ),'') as CPMORemarks"
-                            //+ ",(select Sum([Total_Score]) / "
-                            //+ "(select count(*) from TB_SCREENING_CCMF_SCORE sa where sa.Application_Number = App.Application_Number and Total_Score <> 0) "
-                            //+ "as AvgScore from TB_SCREENING_CCMF_SCORE a where a.Application_Number = App.Application_Number) as Average_Score "
-                            //+ ",Incubation_ID"
-                            // + ",isNUll(Business_Area, '') as Business_Area"
-                            //+ ",isNUll(Abstract, '') as PrjDesc"
-                            //+ ",isNUll(sl.Remarks_To_Vetting, '') as Remarks_To_Vetting"
+                //+ ",isNUll(Company_Name_Chi, '') as Company_Name_Chi"
+                //+ ",isNUll((Select Total_Score from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPIP BDM' ),-1) as BDM_Score "
+                //+ ",isNUll((Select Total_Score from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'Senior Manager' ),-1) as SeniorManager_Score"
+                //+ ",isNUll((Select Total_Score from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPMO' ),-1) as CPMO_Score"
+                //+ ",isNUll((Select Remarks from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPIP BDM' ),'') as BDMRemarks"
+                //+ ",isNUll((Select Remarks from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'Senior Manager' ),'') as SrRemarks"
+                //+ ",isNUll((Select Remarks from TB_SCREENING_INCUBATION_SCORE s where s.Application_Number = App.Application_Number and role = 'CPMO' ),'') as CPMORemarks"
+                //+ ",(select Sum([Total_Score]) / "
+                //+ "(select count(*) from TB_SCREENING_CCMF_SCORE sa where sa.Application_Number = App.Application_Number and Total_Score <> 0) "
+                //+ "as AvgScore from TB_SCREENING_CCMF_SCORE a where a.Application_Number = App.Application_Number) as Average_Score "
+                //+ ",Incubation_ID"
+                // + ",isNUll(Business_Area, '') as Business_Area"
+                //+ ",isNUll(Abstract, '') as PrjDesc"
+                //+ ",isNUll(sl.Remarks_To_Vetting, '') as Remarks_To_Vetting"
 
                             + ",isNUll(App.Programme_ID, '') as Programme_ID"
 
@@ -1071,7 +1071,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             + "left join TB_PROGRAMME_INTAKE intake on intake.Programme_ID = App.Programme_ID "
                             + "left join TB_APPLICATION_SHORTLISTING sl on sl.Application_Number = App.Application_No "
                             + "where intake.Intake_Number = @IntakeNumber "
-                            //+ "and App.Status like @Status "
+                //+ "and App.Status like @Status "
                             + "and App.Status <> 'Saved' "
                             + "and App.Status <> 'Deleted' ";
 
@@ -3375,7 +3375,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
         protected void sharepointsendemail(string toAddress, string subject, string body)
         {
             SPSecurity.RunWithElevatedPrivileges(
-                             delegate ()
+                             delegate()
                              {
                                  using (SPSite site = new SPSite(
                                    SPContext.Current.Site.ID,
@@ -3986,7 +3986,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             //lblrole.Text = "";
             var UserStr = "";
 
-            SPSecurity.RunWithElevatedPrivileges(delegate ()
+            SPSecurity.RunWithElevatedPrivileges(delegate()
             {
                 using (SPSite site = new SPSite(SPContext.Current.Site.ID))
                 {
@@ -4977,8 +4977,12 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             return result;
         }
 
+        //private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
+        //                                  "microsoft-jhenghei-5965ec3170036.ttf");
+        //private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
+        //                                  "wingdng2.ttf");    //Debug - try other font
         private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
-                                          "microsoft-jhenghei-5965ec3170036.ttf");
+                                          "msjh.ttc,0");
         private static BaseFont fontInternational = BaseFont.CreateFont(arialuniTff, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
         private Font Font12blue = new Font(fontInternational, 12, iTextSharp.text.Font.NORMAL, new BaseColor(System.Drawing.ColorTranslator.FromHtml("#075CA9")));
         private Font Font12blueLight = new Font(fontInternational, 12, iTextSharp.text.Font.NORMAL, new BaseColor(System.Drawing.ColorTranslator.FromHtml("#145DAA")));
@@ -5030,7 +5034,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(para1);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para2 = new Paragraph("• Use English to complete the application unless otherwise speciofied;", Font12blueLight);
-                Paragraph para2 = new Paragraph("• "+ TranslateIncubation("Instruction_1_1"), Font12blueLight);
+                Paragraph para2 = new Paragraph("• " + TranslateIncubation("Instruction_1_1"), Font12blueLight);
 
                 para2.IndentationLeft = 30;
                 doc.Add(para2);
@@ -5911,7 +5915,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(para5);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para6 = new Paragraph("2. To read the  CCMF Guides and Notes for the Applicants (ENC.RF.015)  before filling in this Application Form.", Font12blueLight);
-                Paragraph para6 = new Paragraph("2. " + TranslateCCMF("Instruction_2"), Font12blueLight); 
+                Paragraph para6 = new Paragraph("2. " + TranslateCCMF("Instruction_2"), Font12blueLight);
                 doc.Add(para6);
                 doc.Add(new Chunk("\n"));
                 Paragraph para7 = new Paragraph("3. " + TranslateCCMF("Instruction_3"), Font12blueLight);
@@ -5965,7 +5969,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(new Chunk("\n"));
                 if (objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains("hongkong") && objTB_TB_CCMF_APPLICATION.Hong_Kong_Programme_Stream.ToLower().Contains("young entrepreneur"))
                 {
- //                   doc.Add(new Paragraph("Hong Kong Young Entrepreneur Programme", Font12black));
+                    //                   doc.Add(new Paragraph("Hong Kong Young Entrepreneur Programme", Font12black));
                     doc.Add(new Paragraph(TranslateCCMF("Hong_Kong_Young_Entrepreneur"), Font12black));
                 }
                 else if (objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains("hongkong") && objTB_TB_CCMF_APPLICATION.Hong_Kong_Programme_Stream.ToLower().Contains("professional"))
@@ -6194,7 +6198,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 para20.Alignment = Element.ALIGN_CENTER;
                 doc.Add(para20);
                 doc.Add(new Chunk("\n"));
-               // Paragraph para_21 = new Paragraph("4.1(a) Project Management Team", Font15Head);
+                // Paragraph para_21 = new Paragraph("4.1(a) Project Management Team", Font15Head);
                 Paragraph para_21 = new Paragraph("4.1(a) " + TranslateCCMF("Step_4_project_management"), Font15Head);
 
                 doc.Add(para_21);
@@ -6732,7 +6736,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(para_DECLARATION1);
                 doc.Add(new Chunk("\n"));
                 //doc.Add(new Paragraph("7.1 We agree with all the terms and conditions set out in the CCMF Guides (http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf) and Notes for the Applicants (ENC.RF.O15) governing the application of the Cyberport Creative Micro Fund Scheme.", Font12blue));
-                doc.Add(new Paragraph(TranslateCCMF("Step_6_Consideration_1"), Font12blue));              
+                doc.Add(new Paragraph(TranslateCCMF("Step_6_Consideration_1"), Font12blue));
                 doc.Add(new Chunk("\n"));
                 doc.Add(new Paragraph(TranslateCCMF("Step_6_Consideration_2"), Font12blue));
                 doc.Add(new Chunk("\n"));
@@ -7400,9 +7404,9 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             strValue = strValue.Replace("<mark>", "").Replace("</mark>", "").Replace("<small>", "").Replace("</small>", "").Replace("<span class=\"bold graylbl-2\">", "").Replace("<span>", "").Replace("<mark class=\"mark-2\">", "");
             strValue = strValue.Replace("<Blockquote>", "").Replace("</Blockquote>", "").Replace("<i>", "").Replace("</br>", " ").Replace("<u>", "").Replace("</u>", "").Replace("</span>", "").Replace("</p>", "");
             strValue = strValue.Replace("</a>", "").Replace(" target=\"_blank\">", "").Replace("<a href=\"https://www.cyberport.hk/guides_and_notes/cip/ENC_RF_010_eng.pdf\"", "").Replace("</i>", "");
-            strValue = strValue.Replace("<li>", "  • ").Replace("</li>", "\n").Replace("<ul>", "").Replace("</ul>", "").Replace("<br>", "\n").Replace("<p style=\"color:#808080\">","");
+            strValue = strValue.Replace("<li>", "  • ").Replace("</li>", "\n").Replace("<ul>", "").Replace("</ul>", "").Replace("<br>", "\n").Replace("<p style=\"color:#808080\">", "");
             strValue = strValue.Replace("<a href=\"mailto:cip_enquiry@cyberport.hk\">", "");
-            
+
             return strValue;
         }
         private string TranslateCCMF(string key)
@@ -7410,7 +7414,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             string strValue = SPUtility.GetLocalizedString("$Resources:" + key, "CyberportEMS_CCMF", 1033);
             strValue = strValue.Replace("<mark>", "").Replace("</mark>", "").Replace("<small>", "").Replace("</small>", "").Replace("<span class=\"bold graylbl-2\">", "").Replace("<span>", "").Replace("<mark class=\"mark-2\">", "");
             strValue = strValue.Replace("<li>", "  • ").Replace("</li>", "\n").Replace("<ul>", "").Replace("</ul>", "").Replace("<br>", "\n").Replace("<br/>", "\n").Replace("</br>", "\n").Replace("</span>", "");
-            strValue = strValue.Replace("</a>", "").Replace("<a href=\"https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf\"", "").Replace("target=\"_blank\">","").Replace("</i>", "");
+            strValue = strValue.Replace("</a>", "").Replace("<a href=\"https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf\"", "").Replace("target=\"_blank\">", "").Replace("</i>", "");
             strValue = strValue.Replace("<a href= \"mailto:cip_enquiry@cyberport.hk\">", "");
             strValue = strValue.Replace("<a href=\"http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf\"", "");
             return strValue;
