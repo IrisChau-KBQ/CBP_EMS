@@ -1623,7 +1623,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             }
         }
 
-        protected void  SaveStep4Data()
+        protected void SaveStep4Data()
         {
             string ErrorMessage = string.Empty;
             try
@@ -3117,7 +3117,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         #region Step 1 - Types of CCMF
                         /*Types of CCMF*/
                         #endregion
-                        
+
                         #region Step 2 - Your Profile and Eligibility
                         /*Your Profile and Eligibility*/
                         //if (rdo_CCMFApplication.SelectedValue == "Individual")
@@ -3275,7 +3275,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
 
 
 
-                        
+
                         #endregion
 
                         #region Step 3 - Project Information
@@ -3537,7 +3537,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         }
                         #endregion
 
-                        #endregion                                                                      
+                        #endregion
                     }
                 }
             }
@@ -5625,7 +5625,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
         //    }
 
         //}
-    
+
     }
 
 

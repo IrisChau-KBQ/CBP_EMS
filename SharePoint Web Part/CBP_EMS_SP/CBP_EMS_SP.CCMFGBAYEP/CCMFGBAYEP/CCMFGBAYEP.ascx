@@ -1697,7 +1697,7 @@
                         </div>
                         <div class="col-md-6">
                             <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Title_Principal_Applicant", "CyberportEMS_CCMFGBAYEP") %></p>
-                            <asp:TextBox CssClass="input-sm" ID="txtPosition_PrincipalApplicant" runat="server" ReadOnly="true"/>
+                            <asp:TextBox CssClass="input-sm" ID="txtPosition_PrincipalApplicant" runat="server" />
                             <asp:Label CssClass="label-text" ID="lblPosition_PrincipalApplicant" runat="server" Visible="false" />
                         </div>
                     </div>
@@ -1709,7 +1709,7 @@
                         </div>
                         <div class="col-md-6">
                             <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Title_2nd_Applicant", "CyberportEMS_CCMFGBAYEP") %></p>
-                            <asp:TextBox CssClass="input-sm" ID="txtPosition_2ndApplicant" runat="server" ReadOnly ="false"/>
+                            <asp:TextBox CssClass="input-sm" ID="txtPosition_2ndApplicant" runat="server" ReadOnly ="true"/>
                             <asp:Label CssClass="label-text" ID="lblPosition_2ndApplicant" runat="server" Visible ="false" />
                         </div>
                     </div>

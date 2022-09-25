@@ -186,6 +186,9 @@ namespace CBP_EMS_SP.Data.Models
 
         [StringLength(255)]
         public string Principal_2nd_Position_Title { get; set; }
+        
+        [StringLength(50)]
+        public string Principal_2nd_Email { get; set; }
 
         public DateTime? Submission_Date { get; set; }
 

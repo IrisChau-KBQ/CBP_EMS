@@ -11280,7 +11280,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.CssClass = "input-sm";
             @__ctrl.ID = "txtPosition_PrincipalApplicant";
-            @__ctrl.ReadOnly = true;
             return @__ctrl;
         }
         
@@ -11336,7 +11335,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.CssClass = "input-sm";
             @__ctrl.ID = "txtPosition_2ndApplicant";
-            @__ctrl.ReadOnly = false;
+            @__ctrl.ReadOnly = true;
             return @__ctrl;
         }
         
