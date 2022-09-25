@@ -80,12 +80,16 @@ namespace CPB_EMS_SP.UserDashboard.UserDashboard
                     else if (objProgram.Programme_Name.ToLower().Contains("accelerator support"))
                     {
                         HttpContext.Current.Response.Redirect(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CASPProgram.aspx?prog=" + strProgrammeId + "&app=" + strAppId + "&resubmitversion=Y");
-
                     }
+                    #region Add CCMFGBAYEP
+                    else if (objProgram.Programme_Name.ToLower().Contains("gbayep"))
+                    {
+                        HttpContext.Current.Response.Redirect(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + strProgrammeId + "&app=" + strAppId + "&resubmitversion=Y");
+                    }
+                    #endregion
                     else
                     {
                         HttpContext.Current.Response.Redirect(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMF.aspx?prog=" + strProgrammeId + "&app=" + strAppId + "&resubmitversion=Y");
-
                     }
                 }
             }
@@ -131,6 +135,32 @@ namespace CPB_EMS_SP.UserDashboard.UserDashboard
                         img_Program.ImageUrl = "images/_layouts/15/Images/CBP_Images/Programme.png";
                     }
                 }
+                #region 20220829 Add Case for CCMF-GBAYEP
+                //TODO: 20220829 UserDashBoard Add Case for CCMF-GBAYEP
+                else if (DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("gbayep"))
+                {
+                    using (var Intake = new CyberportEMS_EDM())
+                    {                    
+                        lblprogramname.Text = SPFunctions.LocalizeUI("CCMF_GBAYEP_Header", "CyberportEMS_CCMFGBAYEP");
+
+                        //TODO: Pending tto add new object TB_CCMF_GBAYEP_APPLICATION
+                        List<TB_CCMF_APPLICATION> objProgram = Intake.TB_CCMF_APPLICATION.Where(x => x.Programme_ID == ProgramId && (x.Created_By.ToLower() == UserName.ToLower()) && x.Status != formsubmitaction.Deleted.ToString()).OrderBy(x => x.Modified_Date).ToList();
+
+                        if (objProgram.Count == 0)
+                        {
+                            btn_ProgramRedirection.PostBackUrl = SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + DataBinder.Eval(e.Item.DataItem, "Programme_ID").ToString() + "&app=" + Guid.NewGuid().ToString() + "&resubmitversion=Y" + "&new=Y"; ;
+                            btn_ProgramRedirection.Text = SPFunctions.LocalizeUI("Apply", "CyberportEMS_Common");
+                        }
+                        else
+                        {
+                            btn_ProgramRedirection.PostBackUrl = SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + DataBinder.Eval(e.Item.DataItem, "Programme_ID").ToString() + "&app=" + objProgram.FirstOrDefault().CCMF_ID + "&resubmitversion=Y";
+                            btn_ProgramRedirection.Text = SPFunctions.LocalizeUI("Edit_Submission", "CyberportEMS_Common");
+                        }
+
+                        img_Program.ImageUrl = "images/_layouts/15/Images/CBP_Images/HK.png";
+                    }
+                }
+                #endregion
                 else if (DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("hong kong") || DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("university partnerhip"))
                 {
                     using (var Intake = new CyberportEMS_EDM())
