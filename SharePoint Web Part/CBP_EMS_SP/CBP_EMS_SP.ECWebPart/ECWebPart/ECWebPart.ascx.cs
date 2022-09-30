@@ -79,6 +79,8 @@ namespace CBP_EMS_SP.ECWebPart.ECWebPart
             m_ApplicationID = HttpContext.Current.Request.QueryString["App"];
             if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport Creative Micro Fund - Hong Kong")
                 m_CCMF = 1;
+            else if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport Creative Micro Fund - GBAYEP")  /*Test Debug*/
+                m_CCMF = 1;
             else if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport Incubation Programme")
                 m_INCUBATION = 1;
             else
@@ -89,6 +91,7 @@ namespace CBP_EMS_SP.ECWebPart.ECWebPart
             // Convert application ID to application name
             using (SqlConnection conn = new SqlConnection(connStr))
             {
+                #region 20220926 uncomment this section for count application type instead of progName
                 //using (SqlCommand cmd = new SqlCommand("SELECT COUNT('Incubation_ID') FROM [TB_INCUBATION_APPLICATION] WHERE Incubation_ID = @ApplicationID", conn))
                 //{
                 //    cmd.Parameters.Add(new SqlParameter("@ApplicationID", m_ApplicationID));
@@ -116,6 +119,7 @@ namespace CBP_EMS_SP.ECWebPart.ECWebPart
                 //        conn.Close();
                 //    }
                 //}
+                #endregion
 
                 if (m_INCUBATION != 0)
                 {

@@ -68,6 +68,32 @@
         </FooterTemplate>
     </asp:Repeater>
 
+    <asp:Repeater ID="rptrMyApplicationsCCMFGBAYEP" runat="server" OnItemCommand="rptrMyApplicationsIncubation_ItemCommand">
+        <HeaderTemplate>
+            <table>
+        </HeaderTemplate>
+        <ItemTemplate>
+            <tr>
+                <td style="width: 86%; padding: 8px 0;">
+                    <a href='<%# SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + Eval("Programme_ID") + "&app=" + Eval("Programme_guid")  + "&resubmitversion=Y"%> '>
+                        <%# System.Web.HttpUtility.HtmlEncode(Eval("Programme_Name")) %> - <%# System.Web.HttpUtility.HtmlEncode(Eval("Intake_Number")) %> - <%# Eval("ApplicationNumber") + (!string.IsNullOrEmpty( Convert.ToString( System.Web.HttpUtility.HtmlEncode(Eval("ProjectName"))))?" - "+System.Web.HttpUtility.HtmlEncode(Eval("ProjectName")):"" ) %> 
+                    </a>
+                </td>
+                
+                <td>
+                    <asp:LinkButton ID="lnkCollaboration" CommandName="c" CommandArgument='<%#Eval("Programme_ID")+":"+Eval("ApplicationNumber")+":"+Eval("Programme_guid") %>' runat="server" CssClass="apply-btn theme-green" ><%#SPFunctions.LocalizeUI("btn_Collaboration", "CyberportEMS_Common") %></asp:LinkButton>
+                </td>
+                 <td style="width: 6%;text-align: right;">
+                     <asp:ImageButton ID="imgBtnDelete" CommandName="Delete" CommandArgument='<%#Eval("Programme_ID")+":"+Eval("ApplicationNumber")+":"+Eval("Programme_guid")  %>' ImageUrl="/_layouts/15/images/CBP_Images/Internal%20Use-6.5-Delete.png" runat="server"  Visible='<%#Convert.ToDateTime(Eval("Application_Deadline")) >= DateTime.Now?true:false %>'/>
+                </td>
+            </tr>
+        </ItemTemplate>
+        <FooterTemplate>
+            </table>
+
+        </FooterTemplate>
+    </asp:Repeater>
+
     <asp:Repeater ID="rptrMyApplicationCASP" runat="server" OnItemCommand="rptrMyApplicationsIncubation_ItemCommand">
         <HeaderTemplate>
             <table>
@@ -130,6 +156,27 @@
                 </td>
                 <td>
                     <%--                    <asp:LinkButton ID="lnkCollaboration" CommandName="c" CommandArgument='<%#Eval("Programme_ID")+":"+Eval("ApplicationNumber") %>' Text="Collaboration" runat="server" CssClass="apply-btn theme-green"/>--%>
+                </td>
+            </tr>
+        </ItemTemplate>
+        <FooterTemplate>
+            </table>
+
+        </FooterTemplate>
+    </asp:Repeater>
+
+    <asp:Repeater ID="rptrMyApplicationsCCMFGBAYEPColb" runat="server" OnItemCommand="rptrMyApplicationsIncubation_ItemCommand">
+        <HeaderTemplate>
+            <table style="width: 100%">
+        </HeaderTemplate>
+        <ItemTemplate>
+            <tr>
+                <td style="width: 86%; padding: 8px 0;">
+                    <a href='<%# SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + Eval("Programme_ID") + "&app=" + Eval("Programme_guid")+"&type=fed46de9f573" %> '>
+                        <%# System.Web.HttpUtility.HtmlEncode(Eval("Programme_Name")) %> - <%# System.Web.HttpUtility.HtmlEncode(Eval("Intake_Number")) %> - <%# System.Web.HttpUtility.HtmlEncode(Eval("ApplicationNumber"))  + (!string.IsNullOrEmpty( Convert.ToString( System.Web.HttpUtility.HtmlEncode(Eval("ProjectName"))))?" - "+System.Web.HttpUtility.HtmlEncode(Eval("ProjectName")):"" ) %> 
+                    </a>
+                </td>
+                <td>
                 </td>
             </tr>
         </ItemTemplate>

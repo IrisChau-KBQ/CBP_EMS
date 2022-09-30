@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="a87fb93c-f5e1-456a-b00a-b8d26c6fcdb8" solutionId="a87fb93c-f5e1-456a-b00a-b8d26c6fcdb8" resetWebServer="false" sharePointProductVersion="15.0" name="CBP_EMS_SP.ECWebPart" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
   <assemblies>
-    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="C:\bin\ICSharpCode.SharpZipLib.dll" />
+    <customAssembly location="ICSharpCode.SharpZipLib.dll" deploymentTarget="GlobalAssemblyCache" sourcePath="..\CBP_EMS_SP.ApplicationListWP\Library\ICSharpCode.SharpZipLib.dll" />
   </assemblies>
   <features>
     <featureReference itemId="4dad6360-0510-46da-b96c-618659f73675" />

@@ -470,7 +470,7 @@
                                             <asp:Label ID="lbl212j" runat="server" class="bluelbl" /></span>
                                     </td>
                                     <td>
-                                        <asp:RadioButtonList ID="rdo212j" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss">
+                                        <asp:RadioButtonList ID="rdo212j" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" OnSelectedIndexChanged="rdo212j_SelectedIndexChanged" AutoPostBack="true">
                                             <asp:ListItem Value="True" Text="&nbsp;"></asp:ListItem>
                                             <asp:ListItem Value="False" Text="&nbsp;"></asp:ListItem>
                                         </asp:RadioButtonList>
@@ -506,7 +506,7 @@
                                 </tr>
                                 <tr id="div212l" runat="server">
                                     <td class="tr_width">
-                                        <span runat="server" id="spn212l" class="col-md-1">l)</span>
+                                        <span runat="server" id="spn212l" class="col-md-1"><asp:Label Text="l)" runat="server" ID="lbl212ltdd" /></span>
                                         <span class="col-md-11">
                                             <asp:Label ID="lbl212l" runat="server" class="bluelbl" /></span>
                                     </td>
@@ -1210,7 +1210,7 @@
                                                             <asp:HiddenField ID="hdn_Area" Value='<%# Bind("Area") %>' runat="server" />
                                                             <asp:RadioButtonList ID="rdo_Area" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" Visible="false">
                                                                 <asp:ListItem Value="HongKong" Text="&nbsp;">Hongkong</asp:ListItem>
-                                                                <asp:ListItem Value="China" Text="&nbsp;">China</asp:ListItem>
+                                                                <asp:ListItem Value="China" Text="&nbsp;">Guangdong / Macau</asp:ListItem>
                                                             </asp:RadioButtonList>
 
                                                         </div>
@@ -1721,7 +1721,7 @@
                         </div>
                         <div class="col-md-6">
                             <p class="form-group lbl"></p>
-                            <asp:Button ID="btn_gotoInsert2ndSign" Visible="true" OnClick="btn_gotoInsert2ndSign_Click" runat="server" Text="Input GuangDong or Macau Leader Information" CssClass="btnSubmitIncubation apply-btn skytheme" />
+                            <asp:Button ID="btn_gotoInsert2ndSign" Visible="true" OnClick="btn_gotoInsert2ndSign_Click" runat="server" Text="Input 2nd Principal Applicant Information" CssClass="btnSubmitIncubation apply-btn skytheme" />
                         </div>
                     </div>
 
@@ -1815,21 +1815,21 @@
         <div class="pos-relative card-theme full-width">
             <p class="popup--para">                	 
                 <%--<%=SPFunctions.LocalizeUI("Submission_popup_password_GDorMacau", "CyberportEMS_Common") %>--%>
-                Please input GuangDong or Macau Leader login email and password for confirmation.
+                Please input Full Name and Position Title of 2nd Principal Applicant for confirmation.
             </p>
 
             <div class="table full-width">
-                <div class="form-group">
+                <%--<div class="form-group">
                     <asp:TextBox CssClass="input" placeholder="Email" ID="txtLogin2ndSignEmail" runat="server"></asp:TextBox>
                 </div>
                 <div class="form-group">
                     <asp:TextBox CssClass="input" placeholder="Password" TextMode="Password" ID="txtLogin2ndSignPassword" runat="server"></asp:TextBox>
+                </div>--%>
+                <div class="form-group">
+                    <asp:TextBox CssClass="input" placeholder="Full Name of 2nd Principal Applicant" ID="txtInsert2ndFullName" runat="server"></asp:TextBox>
                 </div>
                 <div class="form-group">
-                    <asp:TextBox CssClass="input" placeholder="Full Name of Principal Applicant (GuandDong or Macau Leader)" ID="txtInsert2ndFullName" runat="server"></asp:TextBox>
-                </div>
-                <div class="form-group">
-                    <asp:TextBox CssClass="input" placeholder="Position Title of Principal Applicant (GuandDong or Macau Leader)" ID="txtInsert2ndPosition" runat="server"></asp:TextBox>
+                    <asp:TextBox CssClass="input" placeholder="Position Title of 2nd Principal Applicant" ID="txtInsert2ndPosition" runat="server"></asp:TextBox>
                 </div>
 
                 <div class="form-group">

@@ -121,7 +121,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications
 
                 var objCCMF = (from oIncub in dbContext.TB_CCMF_APPLICATION
                                join oIntake in dbContext.TB_PROGRAMME_INTAKE on oIncub.Programme_ID equals oIntake.Programme_ID
-                               where oIncub.Created_By.ToLower() == strCurrentUser && oIncub.Application_Parent_ID == null && oIncub.Status != formsubmitaction.Deleted.ToString()
+                               where oIncub.Created_By.ToLower() == strCurrentUser && oIncub.Application_Parent_ID == null && oIncub.Status != formsubmitaction.Deleted.ToString() && oIntake.Programme_Name != "Cyberport Creative Micro Fund - GBAYEP"
                                select new
                                {
                                    Programme_guid = oIncub.CCMF_ID,
@@ -135,6 +135,23 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications
                                });
                 rptrMyApplicationsCCMF.DataSource = objCCMF.Where(x => !objCCMF.Any(y => x.Programme_guid == y.Programme_guid && x.Application_Deadline < DateTime.Now && x.Status.ToLower() == "saved")).ToList();
                 rptrMyApplicationsCCMF.DataBind();
+
+                var objCCMFGBAYEP = (from oIncub in dbContext.TB_CCMF_APPLICATION
+                               join oIntake in dbContext.TB_PROGRAMME_INTAKE on oIncub.Programme_ID equals oIntake.Programme_ID
+                                     where oIncub.Created_By.ToLower() == strCurrentUser && oIncub.Application_Parent_ID == null && oIncub.Status != formsubmitaction.Deleted.ToString() && oIntake.Programme_Name == "Cyberport Creative Micro Fund - GBAYEP"
+                               select new
+                               {
+                                   Programme_guid = oIncub.CCMF_ID,
+                                   Programme_ID = oIntake.Programme_ID,
+                                   Programme_Name = oIntake.Programme_Name,
+                                   Intake_Number = oIntake.Intake_Number,
+                                   ApplicationNumber = oIncub.Application_Number,
+                                   ProjectName = oIncub.Project_Name_Eng,
+                                   Application_Deadline = oIntake.Application_Deadline,
+                                   Status = oIncub.Status
+                               });
+                rptrMyApplicationsCCMFGBAYEP.DataSource = objCCMFGBAYEP.Where(x => !objCCMF.Any(y => x.Programme_guid == y.Programme_guid && x.Application_Deadline < DateTime.Now && x.Status.ToLower() == "saved")).ToList();
+                rptrMyApplicationsCCMFGBAYEP.DataBind();
 
                 var objIncCol = (from oIncubcol in dbContext.TB_APPLICATION_COLLABORATOR
                                  join oIncub in dbContext.TB_INCUBATION_APPLICATION on new { oIncubcol.Programme_ID, oIncubcol.Application_Number } equals new { oIncub.Programme_ID, oIncub.Application_Number }
@@ -159,7 +176,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications
                 var objCCMFCol = (from oIncubcol in dbContext.TB_APPLICATION_COLLABORATOR
                                   join oIncub in dbContext.TB_CCMF_APPLICATION on new { oIncubcol.Programme_ID, oIncubcol.Application_Number } equals new { oIncub.Programme_ID, oIncub.Application_Number }
                                   join oIntake in dbContext.TB_PROGRAMME_INTAKE on oIncub.Programme_ID equals oIntake.Programme_ID
-                                  where oIncubcol.Email.ToLower() == strCurrentUser && !string.IsNullOrEmpty(oIncub.Application_Number)
+                                  where oIncubcol.Email.ToLower() == strCurrentUser && !string.IsNullOrEmpty(oIncub.Application_Number) && oIntake.Programme_Name != "Cyberport Creative Micro Fund - GBAYEP"
                                   && oIncub.Application_Parent_ID == null
                                   select new
                                   {
@@ -175,7 +192,24 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications
                 rptrMyApplicationsCCMFColb.DataSource = objCCMFCol.Where(x => !objCCMFCol.Any(y => x.Programme_guid == y.Programme_guid && x.Application_Deadline < DateTime.Now && x.Status.ToLower() == "saved")).ToList();
                 rptrMyApplicationsCCMFColb.DataBind();
 
-
+                var objCCMFGBAYEPCol = (from oIncubcol in dbContext.TB_APPLICATION_COLLABORATOR
+                                  join oIncub in dbContext.TB_CCMF_APPLICATION on new { oIncubcol.Programme_ID, oIncubcol.Application_Number } equals new { oIncub.Programme_ID, oIncub.Application_Number }
+                                  join oIntake in dbContext.TB_PROGRAMME_INTAKE on oIncub.Programme_ID equals oIntake.Programme_ID
+                                        where oIncubcol.Email.ToLower() == strCurrentUser && !string.IsNullOrEmpty(oIncub.Application_Number) && oIntake.Programme_Name == "Cyberport Creative Micro Fund - GBAYEP"
+                                  && oIncub.Application_Parent_ID == null
+                                  select new
+                                  {
+                                      Programme_guid = oIncub.CCMF_ID,
+                                      Programme_ID = oIntake.Programme_ID,
+                                      Programme_Name = oIntake.Programme_Name,
+                                      Intake_Number = oIntake.Intake_Number,
+                                      ApplicationNumber = oIncub.Application_Number,
+                                      ProjectName = oIncub.Project_Name_Eng,
+                                      Application_Deadline = oIntake.Application_Deadline,
+                                      Status = oIncub.Status
+                                  });
+                rptrMyApplicationsCCMFGBAYEPColb.DataSource = objCCMFGBAYEPCol.Where(x => !objCCMFCol.Any(y => x.Programme_guid == y.Programme_guid && x.Application_Deadline < DateTime.Now && x.Status.ToLower() == "saved")).ToList();
+                rptrMyApplicationsCCMFGBAYEPColb.DataBind();
 
 
                 var objCASP = (from oCASP in dbContext.TB_CASP_APPLICATION
@@ -315,7 +349,8 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications
                                     objCBPTokenGeneration.Add("ProgrammeId", Convert.ToString(ProgId));
                                     objCBPTokenGeneration.Add("AppId", Convert.ToString(Appid));
                                     objCBPTokenGeneration.Add("Collaboratoremail", txtCollaboratorEmail.Text.ToLower().Trim());
-                                    string applicationType = oIntake.Programme_Name.Contains("Cyberport Incubation Program") ? "IncubationProgram.aspx" : "CCMF.aspx";
+                                    //string applicationType = oIntake.Programme_Name.Contains("Cyberport Incubation Program") ? "IncubationProgram.aspx" : "CCMF.aspx";
+                                    string applicationType = oIntake.Programme_Name.Contains("Cyberport Incubation Program") ? "IncubationProgram.aspx" : (oIntake.Programme_Name.Contains("Cyberport Creative Micro Fund - GBAYEP") ? "CCMFGBAYEP.aspx" : "CCMF.aspx");
                                     string token = "/SitePages/" + applicationType + "?prog=" + ProgId + "&app=" + Appid;
                                     strEmailContent = strEmailContent.Replace("@@ProgramName", oIntake.Programme_Name);
                                     strEmailContent = strEmailContent.Replace("@@ApplicationUrl", WebsiteUrl + token);
@@ -488,7 +523,8 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications
                             strEmailContent = strEmailContent.Replace("@@ApplicantEmail", new SPFunctions().GetCurrentUser());
                             strEmailContent = strEmailContent.Replace("@@ProgramName", ProgramName);
                             strEmailContent = strEmailContent.Replace("@@ForgotPasswordLink", UserID);
-                            string applicationType = ProgramName.Contains("Cyberport Incubation Program") ? "IncubationProgram.aspx" : "CCMF.aspx";
+                            //string applicationType = ProgramName.Contains("Cyberport Incubation Program") ? "IncubationProgram.aspx" : "CCMF.aspx";
+                            string applicationType = ProgramName.Contains("Cyberport Incubation Program") ? "IncubationProgram.aspx" : (ProgramName.Contains("Cyberport Creative Micro Fund - GBAYEP") ? "CCMFGBAYEP.aspx" : "CCMF.aspx");
                             string token = "/SitePages/" + applicationType + "?prog=" + ProgId + "&app=" + Appid;
                             strEmailContent = strEmailContent.Replace("@@ApplicationUrl", WebsiteUrl + token);
                             int IsEmailed = CBPEmail.SendMail(UserEmail, Localize("Mail_Invite_Collaborator"), strEmailContent);

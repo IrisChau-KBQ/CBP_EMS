@@ -346,6 +346,15 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         //                           }
                         //                       }
                         lblApplicant.Text = SPHttpUtility.HtmlEncode(objIncubation.Created_By);
+                        if (lblApplicant.Text.Equals(objSp.GetCurrentUser()))
+                        {
+                            btn_gotoInsert2ndSign.Visible = false;
+                        }
+                        else
+                        {
+                            btn_gotoInsert2ndSign.Visible = true;
+                        }
+
                         hdn_ApplicationID.Value = objIncubation.CCMF_ID.ToString();
 
                         lblApplicationNo.Text = SPHttpUtility.HtmlEncode(objIncubation.Application_Number);
@@ -540,6 +549,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                     else if (objProgram.Application_Deadline >= DateTime.Now && objProgram.Application_Start <= DateTime.Now)
                     {
                         lblApplicant.Text = objSp.GetCurrentUser();
+                        btn_gotoInsert2ndSign.Visible = false;
                         hdn_ApplicationID.Value = string.Empty;
                         //FillContact(Guid.NewGuid());
                         int count = 0;
@@ -2204,49 +2214,74 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
         {
             try
             {
-                if (CBPRegularExpression.RegExValidate(CBPRegularExpression.Email, txtLogin2ndSignEmail.Text) && !string.IsNullOrEmpty(txtLogin2ndSignPassword.Text))
+                SPFunctions objSp = new SPFunctions();
+
+                #region Validation of 2nd Principal Applicant
+                if (objSp.GetCurrentUser().Equals(lblApplicant.Text))
                 {
-                    #region 20220922 Use MembershipUser Object
-                    String SqlMembershipProvider = string.Empty;
-
-                    using (var db = new CBP_EMS_SP.Data.Models.CyberportEMS_EDM())
-                    {
-                        SqlMembershipProvider = db.TB_SYSTEM_PARAMETER.FirstOrDefault(x => x.Config_Code == "SqlMembershipProvider").Value;
-                    }
-
-                    bool status = Membership.Providers[SqlMembershipProvider].ValidateUser(txtLogin2ndSignEmail.Text.Trim(), txtLogin2ndSignPassword.Text);
-                    #endregion
-
-                    if (!status)
-                    {
-                        Incubation2ndSignGroup.Visible = true;
-                        UserCustomerrorLogin2.InnerText = Localize("Error_Finalsubmit_emalandpass");
-                    }
-                    else if (txtLogin2ndSignEmail.Text.Equals(lblApplicant.Text))
-                    {
-                        Incubation2ndSignGroup.Visible = true;
-                        UserCustomerrorLogin2.InnerText = "Email cannot same as current login user";
-                    }
-                    else if (string.IsNullOrEmpty(txtInsert2ndFullName.Text.Trim()) || string.IsNullOrEmpty(txtInsert2ndPosition.Text.Trim()))
-                    {
-                        Incubation2ndSignGroup.Visible = true;
-                        UserCustomerrorLogin2.InnerText = "Please input both full name and position title";
-                    }
-                    else
-                    {
-                        txtName_2ndApplicant.Text = txtInsert2ndFullName.Text.Trim();
-                        txtPosition_2ndApplicant.Text = txtInsert2ndPosition.Text.Trim();
-                        txt_Email_2ndApplicant.Text = txtLogin2ndSignEmail.Text.Trim();
-                        Incubation2ndSignGroup.Visible = false;
-                        ShowbottomMessage("Full Name and Position Title of Principal Applicant (GuangDong or Macau Leader) added successfully", true);
-                    }
-
+                    Incubation2ndSignGroup.Visible = true;
+                    UserCustomerrorLogin2.InnerText = "Current Login Email cannot same as Applicant";
+                }
+                else if (string.IsNullOrEmpty(txtInsert2ndFullName.Text.Trim()) || string.IsNullOrEmpty(txtInsert2ndPosition.Text.Trim()))
+                {
+                    Incubation2ndSignGroup.Visible = true;
+                    UserCustomerrorLogin2.InnerText = "Please input both full name and position title";
                 }
                 else
                 {
-                    Incubation2ndSignGroup.Visible = true;
-                    UserCustomerrorLogin2.InnerText = Localize("Error_Finalsubmit_emalandpass");
+                    txtName_2ndApplicant.Text = txtInsert2ndFullName.Text.Trim();
+                    txtPosition_2ndApplicant.Text = txtInsert2ndPosition.Text.Trim();
+                    txt_Email_2ndApplicant.Text = objSp.GetCurrentUser();
+                    Incubation2ndSignGroup.Visible = false;
+                    ShowbottomMessage("Full Name and Position Title of 2nd Principal Applicant added successfully", true);
                 }
+                #endregion
+
+                #region (Not in use) Input 2nd Principal Applicant with login
+                //if (CBPRegularExpression.RegExValidate(CBPRegularExpression.Email, txtLogin2ndSignEmail.Text) && !string.IsNullOrEmpty(txtLogin2ndSignPassword.Text))
+                //{
+                //    #region 20220922 Use MembershipUser Object
+                //    String SqlMembershipProvider = string.Empty;
+
+                //    using (var db = new CBP_EMS_SP.Data.Models.CyberportEMS_EDM())
+                //    {
+                //        SqlMembershipProvider = db.TB_SYSTEM_PARAMETER.FirstOrDefault(x => x.Config_Code == "SqlMembershipProvider").Value;
+                //    }
+
+                //    bool status = Membership.Providers[SqlMembershipProvider].ValidateUser(txtLogin2ndSignEmail.Text.Trim(), txtLogin2ndSignPassword.Text);
+                //    #endregion
+
+                //    if (!status)
+                //    {
+                //        Incubation2ndSignGroup.Visible = true;
+                //        UserCustomerrorLogin2.InnerText = Localize("Error_Finalsubmit_emalandpass");
+                //    }
+                //    else if (txtLogin2ndSignEmail.Text.Equals(lblApplicant.Text))
+                //    {
+                //        Incubation2ndSignGroup.Visible = true;
+                //        UserCustomerrorLogin2.InnerText = "Email cannot same as current login user";
+                //    }
+                //    else if (string.IsNullOrEmpty(txtInsert2ndFullName.Text.Trim()) || string.IsNullOrEmpty(txtInsert2ndPosition.Text.Trim()))
+                //    {
+                //        Incubation2ndSignGroup.Visible = true;
+                //        UserCustomerrorLogin2.InnerText = "Please input both full name and position title";
+                //    }
+                //    else
+                //    {
+                //        txtName_2ndApplicant.Text = txtInsert2ndFullName.Text.Trim();
+                //        txtPosition_2ndApplicant.Text = txtInsert2ndPosition.Text.Trim();
+                //        txt_Email_2ndApplicant.Text = txtLogin2ndSignEmail.Text.Trim();
+                //        Incubation2ndSignGroup.Visible = false;
+                //        ShowbottomMessage("Full Name and Position Title of Principal Applicant (GuangDong or Macau Leader) added successfully", true);
+                //    }
+
+                //}
+                //else
+                //{
+                //    Incubation2ndSignGroup.Visible = true;
+                //    UserCustomerrorLogin2.InnerText = Localize("Error_Finalsubmit_emalandpass");
+                //}
+                #endregion
             }
             catch (Exception ex)
             {
@@ -3022,7 +3057,8 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         lbl212itd.Text = "i)";
                         spn212j.InnerHtml = "j)";
                         spn212k.InnerHtml = "k)";
-                        spn212l.InnerHtml = "l)";
+                        //spn212l.InnerHtml = "l)";
+                        lbl212ltdd.Text = "l)";
                         spn212m.InnerHtml = "m)";
                         spn212n.InnerHtml = "n)";
                         lbl212c.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_C", "CyberportEMS_CCMFGBAYEP");
@@ -3063,8 +3099,9 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         lbl212itd.Text = "h)";
                         spn212j.InnerHtml = "i)";
                         spn212k.InnerHtml = "j)";
-                        spn212l.InnerHtml = "k)";
-                        spn212m.InnerHtml = "l)";
+                        //spn212l.InnerHtml = "k)";
+                        lbl212ltdd.Text = "k)";
+                        spn212m.InnerHtml = "l)";                        
                         spn212n.InnerHtml = "m)";
                         lbl212c.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_C", "CyberportEMS_CCMFGBAYEP");
                         lbl212d.Text = SPFunctions.LocalizeUI("CCMFGBAYEP_IndComp_2_D", "CyberportEMS_CCMFGBAYEP");
@@ -3116,6 +3153,17 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         #region Add validation on CCMFGBAYEP
                         #region Step 1 - Types of CCMF
                         /*Types of CCMF*/
+                        if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question1_3)))
+                        {
+                            IsError = true;
+                            errlist.Add(Localize("Error_1_3"));
+                        }
+                        else if (objIncubation.Question1_3 == true)
+                        {
+                            IsError = true;
+
+                            errlist.Add(Localize("Error_1_3Ageval"));
+                        }
                         #endregion
 
                         #region Step 2 - Your Profile and Eligibility
@@ -3175,16 +3223,26 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                 IsError = true;
                                 errlist.Add(Localize("Error_2_1_2i"));
                             }
+                            if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2j)))
+                            {
+                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)) && objIncubation.Question2_1_2j == true)
+                                {
+                                    IsError = true;
+                                    errlist.Add(Localize("Error_2_1_2k"));
+                                }
+                            }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
                             {
                                 IsError = true;
                                 errlist.Add(Localize("Error_2_1_2j"));
                             }
-                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)))
-                            {
-                                IsError = true;
-                                errlist.Add(Localize("Error_2_1_2k"));
-                            }
+                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)))
+                            //{
+
+                            //    IsError = true;
+                            //    errlist.Add(Localize("Error_2_1_2k"));
+
+                            //}
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2m)))
                             {
                                 IsError = true;
@@ -3207,8 +3265,11 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
                             {
-                                IsError = true;
-                                errlist.Add(Localize("Error_2_1_1b"));
+                                if (objIncubation.Question2_1_1a == false)
+                                {
+                                    IsError = true;
+                                    errlist.Add(Localize("Error_2_1_1b"));
+                                }                                
                             }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2c)))
                             {
@@ -3250,16 +3311,24 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                 IsError = true;
                                 errlist.Add(Localize("Error_2_1_2j"));
                             }
+                            if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2j)))
+                            {
+                                if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)) && objIncubation.Question2_1_2j == true)
+                                {
+                                    IsError = true;
+                                    errlist.Add(Localize("Error_2_1_2l"));
+                                }
+                            }
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2k)))
                             {
                                 IsError = true;
                                 errlist.Add(Localize("Error_2_1_2k"));
                             }
-                            if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)))
-                            {
-                                IsError = true;
-                                errlist.Add(Localize("Error_2_1_2l"));
-                            }
+                            //if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)))
+                            //{
+                            //    IsError = true;
+                            //    errlist.Add(Localize("Error_2_1_2l"));
+                            //}
                             if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2m)))
                             {
                                 IsError = true;
@@ -3272,9 +3341,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                             }
 
                         }
-
-
-
 
                         #endregion
 
@@ -3387,6 +3453,13 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
 
                             if ((Convert.ToBoolean(objIncubation.Question2_1_2i) == true || Convert.ToBoolean(objIncubation.Question2_1_2j) == true || Convert.ToBoolean(objIncubation.Question2_1_2k) == true))
                             {
+
+                                if (ObjFundingStatus.Count == 0)
+                                {
+                                    IsError = true;
+                                    errlist.Add(Localize("Error_Fundingall"));
+                                }
+
                                 foreach (TB_APPLICATION_FUNDING_STATUS obj in ObjFundingStatus)
                                 {
                                     if (obj.Date == null || obj.Programme_Name == null || obj.Application_Status == null || obj.Funding_Status == null || obj.Expenditure_Nature == null
@@ -3416,7 +3489,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         if (!string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2l)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2m)) || !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_2n)))
                         {
 
-                            if ((Convert.ToBoolean(objIncubation.Question2_1_2l) == true || Convert.ToBoolean(objIncubation.Question2_1_2m) == true || Convert.ToBoolean(objIncubation.Question2_1_2n) == true) && string.IsNullOrEmpty(objIncubation.Additional_Information))
+                            if (((Convert.ToBoolean(objIncubation.Question2_1_2j) == true && (Convert.ToBoolean(objIncubation.Question2_1_2l) == true)) || Convert.ToBoolean(objIncubation.Question2_1_2m) == true || Convert.ToBoolean(objIncubation.Question2_1_2n) == true) && string.IsNullOrEmpty(objIncubation.Additional_Information))
                             {
                                 IsError = true;
                                 errlist.Add(Localize("Error_additinal_info"));
@@ -4292,12 +4365,24 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                         #region 20220922 Setup Step 6 in CCMFGBAYEP
                         attachhkid.Visible = false;
                         attachstudentid.Visible = false;
-                        attachbrcopy.Visible = true;
+                        string apptype = objIncubation.CCMF_Application_Type;
+                        if (apptype.ToLower() == "company")
+                        {
+                            attachbrcopy.Visible = true;
 
-                        br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
-                        video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
-                        presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
-                        other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                            br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMFGBAYEP");//BR Copy";
+                            video_clip.InnerText = "6.2 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                            presentation_slide.InnerText = "6.3 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                            other.InnerText = "6.4 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        }
+                        else
+                        {
+                            attachbrcopy.Visible = false;
+
+                            video_clip.InnerText = "6.1 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMFGBAYEP");//Video Clip";
+                            presentation_slide.InnerText = "6.2 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMFGBAYEP");//Presentation Slide";
+                            other.InnerText = "6.3 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMFGBAYEP");//Other Attachment";
+                        }                        
                         #endregion
 
                         //string apptype = objIncubation.CCMF_Application_Type;
@@ -5032,6 +5117,32 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             }
         }
 
+        protected void rdo212j_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            using (var dbContext = new CyberportEMS_EDM())
+            {
+                string selectedValue = rdo212j.SelectedValue;
+
+                if (Convert.ToBoolean(selectedValue) == true)
+                {
+                    rdo212l.Enabled = true;
+                    lbl212ltdd.Enabled = true;
+                    lbl212l.Enabled = true;
+                    rdo212l.SelectedIndex = -1;
+                }
+                else
+                {
+                    rdo212l.Enabled = false;
+                    lbl212ltdd.Enabled = false;
+                    lbl212l.Enabled = false;                    
+                    rdo212l.SelectedIndex = -1;
+
+                }
+            }
+        }
+
+
+
         protected void Attachments_ItemCommand(object source, RepeaterCommandEventArgs e)
         {
             if (e.CommandName == "RemoveAttachment")
@@ -5177,15 +5288,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                 }
                 else
                 {
-                    //if (Convert.ToBoolean(selectedValue) == false)
-                    //{
-                    //    lbl211b.Enabled = false;
-                    //    //div211b.Enabled = false;
-                    //    rdo211b.Enabled = false;
-                    //    rdo211b.SelectedIndex = -1;
-                    //}
-                    //else
-                    //{
+
                     // Always enable
                     lbl211b.Enabled = true;
                     //div211b.Enabled = true;

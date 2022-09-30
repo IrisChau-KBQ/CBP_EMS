@@ -340,7 +340,7 @@
     <value>Please fill in position/title of Principal Applicant in page 6</value>
   </data>
   <data name="Error_2nd_applicant_position" xml:space="preserve">
-    <value>Please fill in position/title of Principal Applicant (GuangDong or Macau Leader) in page 6</value>
+    <value>Please fill in position/title of 2nd Principal Applicant in page 6</value>
   </data>
   <data name="Error_Applicant_position_lenghth" xml:space="preserve">
     <value>Principal Position Title length should be less than 255 characters.</value>
@@ -505,7 +505,7 @@
     <value>Please fill in full name of Principal Applicant in page 6</value>
   </data>
   <data name="Error_full_2nd_applicant" xml:space="preserve">
-    <value>Please fill in full name of Principal Applicant (GuangDong or Macau Leader) in page 6</value>
+    <value>Please fill in full name of 2nd Principal Applicant in page 6</value>
   </data>
   <data name="Error_Fundingall" xml:space="preserve">
     <value>Please fill in all fields in 4.8 Funding status</value>
@@ -1250,13 +1250,13 @@
     <value>In connection with direct marketing, we intend to use your name and email address to market and promote the services, products, facilities, activities, contests, conferences, lucky draws, events and promotional campaigns from time to time available relating to us or "Cyberport", or shops or merchants or hotel in the "Cyberport" or offered or hosted at "Cyberport" (including consumer goods, food and beverages, books and stationery, children goods and services, fashion and accessories, optical products, watches, jewellery, luxurious goods, personal care, health and beauty products and services, furniture and lifestyle goods, home furnishing and appliances, florists, sports gear and products, electronic products and appliances, banking and financial services, cinemas and theatres, cultural, entertainment facilities and activities, charity activities, leisure activities and performances, gift redemptions and car parking facilities)</value>
   </data>
   <data name="Step_6_Full_Name" xml:space="preserve">
-    <value>Full Name of Principal Applicant (HK Leader)</value>
+    <value>Full Name of Principal Applicant</value>
   </data>
   <data name="Step_6_Full_Name_2" xml:space="preserve">
-    <value>Full Name of Principal Applicant (GuangDong or Macau Leader)</value>
+    <value>Full Name of 2nd Principal Applicant</value>
   </data>
   <data name="Step_6_2nd_Email" xml:space="preserve">
-    <value>Email of Principal Applicant (GuangDong or Macau Leader)</value>
+    <value>Email of 2nd Principal Applicant</value>
   </data>
   <data name="step_6_marketing" xml:space="preserve">
     <value>I agree to receive direct marketing information.</value>
@@ -1310,10 +1310,10 @@
     <value>This Statement is written in the English language and may be translated into other languages. In the event of any inconsistency between the English version and the translated version of this Statement, the English version shall prevail.</value>
   </data>
   <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
-    <value>Position Title of Principal Applicant (HK Leader)</value>
+    <value>Position Title of Principal Applicant</value>
   </data>
   <data name="Step_6_Title_2nd_Applicant" xml:space="preserve">
-    <value>Position Title of Principal Applicant (GuangDong or Macau Leader)</value>
+    <value>Position Title of 2nd Principal Applicant</value>
   </data>
   <data name="Step_6_Transfer_data" xml:space="preserve">
     <value>Transfer of Your Data</value>

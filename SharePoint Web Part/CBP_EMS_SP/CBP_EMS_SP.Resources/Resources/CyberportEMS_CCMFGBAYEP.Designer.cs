@@ -763,7 +763,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please fill in position/title of Principal Applicant (GuangDong or Macau Leader) in page 6.
+        ///   Looks up a localized string similar to Please fill in position/title of 2nd Principal Applicant in page 6.
         /// </summary>
         internal static string Error_2nd_applicant_position {
             get {
@@ -1357,7 +1357,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please fill in full name of Principal Applicant (GuangDong or Macau Leader) in page 6.
+        ///   Looks up a localized string similar to Please fill in full name of 2nd Principal Applicant in page 6.
         /// </summary>
         internal static string Error_full_2nd_applicant {
             get {
@@ -2955,7 +2955,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Email of Principal Applicant (GuangDong or Macau Leader).
+        ///   Looks up a localized string similar to Email of 2nd Principal Applicant.
         /// </summary>
         internal static string Step_6_2nd_Email {
             get {
@@ -3126,7 +3126,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Full Name of Principal Applicant (HK Leader).
+        ///   Looks up a localized string similar to Full Name of Principal Applicant.
         /// </summary>
         internal static string Step_6_Full_Name {
             get {
@@ -3135,7 +3135,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Full Name of Principal Applicant (GuangDong or Macau Leader).
+        ///   Looks up a localized string similar to Full Name of 2nd Principal Applicant.
         /// </summary>
         internal static string Step_6_Full_Name_2 {
             get {
@@ -3297,7 +3297,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Position Title of Principal Applicant (GuangDong or Macau Leader).
+        ///   Looks up a localized string similar to Position Title of 2nd Principal Applicant.
         /// </summary>
         internal static string Step_6_Title_2nd_Applicant {
             get {
@@ -3306,7 +3306,7 @@ namespace CBP_EMS_SP.Resources.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Position Title of Principal Applicant (HK Leader).
+        ///   Looks up a localized string similar to Position Title of Principal Applicant.
         /// </summary>
         internal static string Step_6_Title_Principal_Applicant {
             get {

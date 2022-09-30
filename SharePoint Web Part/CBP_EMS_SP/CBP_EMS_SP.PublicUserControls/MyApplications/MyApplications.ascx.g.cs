@@ -54,6 +54,10 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Repeater rptrMyApplicationsCCMFGBAYEP;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
         protected global::System.Web.UI.WebControls.Repeater rptrMyApplicationCASP;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
@@ -63,6 +67,10 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
         protected global::System.Web.UI.WebControls.Repeater rptrMyApplicationsCCMFColb;
+        
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        protected global::System.Web.UI.WebControls.Repeater rptrMyApplicationsCCMFGBAYEPColb;
         
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
@@ -489,16 +497,15 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             "artCodeGenerator", "12.0.0.0")]
         private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control18() {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl;
-            @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(6, 5);
+            @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(5, 4);
             @__ctrl.TemplateControl = this;
             @__ctrl.SetStaticString(0, "\r\n            <tr>\r\n                <td style=\"width: 86%; padding: 8px 0;\">\r\n   " +
                     "                 <a href=\'");
             @__ctrl.SetStaticString(1, " \'>\r\n                        ");
             @__ctrl.SetStaticString(2, " - ");
             @__ctrl.SetStaticString(3, " - ");
-            @__ctrl.SetStaticString(4, " - [");
-            @__ctrl.SetStaticString(5, " ]\r\n                    </a>\r\n                </td>\r\n                \r\n          " +
-                    "      <td>\r\n                    ");
+            @__ctrl.SetStaticString(4, " \r\n                    </a>\r\n                </td>\r\n                \r\n           " +
+                    "     <td>\r\n                    ");
             @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control18);
             return @__ctrl;
         }
@@ -511,11 +518,10 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             System.Web.UI.DataBoundLiteralControl target;
             target = ((System.Web.UI.DataBoundLiteralControl)(sender));
             Container = ((System.Web.UI.WebControls.RepeaterItem)(target.BindingContainer));
-            target.SetDataBoundString(0, global::System.Convert.ToString(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CASPProgram.aspx?prog=" + Eval("Programme_ID") + "&app=" + Eval("Programme_guid")  + "&resubmitversion=Y", global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(0, global::System.Convert.ToString(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + Eval("Programme_ID") + "&app=" + Eval("Programme_guid")  + "&resubmitversion=Y", global::System.Globalization.CultureInfo.CurrentCulture));
             target.SetDataBoundString(1, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Programme_Name")), global::System.Globalization.CultureInfo.CurrentCulture));
             target.SetDataBoundString(2, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Intake_Number")), global::System.Globalization.CultureInfo.CurrentCulture));
             target.SetDataBoundString(3, global::System.Convert.ToString(Eval("ApplicationNumber") + (!string.IsNullOrEmpty( Convert.ToString( System.Web.HttpUtility.HtmlEncode(Eval("ProjectName"))))?" - "+System.Web.HttpUtility.HtmlEncode(Eval("ProjectName")):"" ), global::System.Globalization.CultureInfo.CurrentCulture));
-            target.SetDataBoundString(4, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Status")), global::System.Globalization.CultureInfo.CurrentCulture));
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -626,14 +632,14 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Repeater @__BuildControlrptrMyApplicationCASP() {
+        private global::System.Web.UI.WebControls.Repeater @__BuildControlrptrMyApplicationsCCMFGBAYEP() {
             global::System.Web.UI.WebControls.Repeater @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Repeater();
-            this.rptrMyApplicationCASP = @__ctrl;
+            this.rptrMyApplicationsCCMFGBAYEP = @__ctrl;
             @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control16));
             @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control17));
             @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control22));
-            @__ctrl.ID = "rptrMyApplicationCASP";
+            @__ctrl.ID = "rptrMyApplicationsCCMFGBAYEP";
             @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
             @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
             return @__ctrl;
@@ -644,13 +650,176 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             "artCodeGenerator", "12.0.0.0")]
         private void @__BuildControl__control23(System.Web.UI.Control @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            <table style=\"width: 100%\">\r\n        "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            <table>\r\n        "));
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
         private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control25() {
+            global::System.Web.UI.DataBoundLiteralControl @__ctrl;
+            @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(6, 5);
+            @__ctrl.TemplateControl = this;
+            @__ctrl.SetStaticString(0, "\r\n            <tr>\r\n                <td style=\"width: 86%; padding: 8px 0;\">\r\n   " +
+                    "                 <a href=\'");
+            @__ctrl.SetStaticString(1, " \'>\r\n                        ");
+            @__ctrl.SetStaticString(2, " - ");
+            @__ctrl.SetStaticString(3, " - ");
+            @__ctrl.SetStaticString(4, " - [");
+            @__ctrl.SetStaticString(5, " ]\r\n                    </a>\r\n                </td>\r\n                \r\n          " +
+                    "      <td>\r\n                    ");
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control25);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBind__control25(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.RepeaterItem Container;
+            System.Web.UI.DataBoundLiteralControl target;
+            target = ((System.Web.UI.DataBoundLiteralControl)(sender));
+            Container = ((System.Web.UI.WebControls.RepeaterItem)(target.BindingContainer));
+            target.SetDataBoundString(0, global::System.Convert.ToString(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CASPProgram.aspx?prog=" + Eval("Programme_ID") + "&app=" + Eval("Programme_guid")  + "&resubmitversion=Y", global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(1, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Programme_Name")), global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(2, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Intake_Number")), global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(3, global::System.Convert.ToString(Eval("ApplicationNumber") + (!string.IsNullOrEmpty( Convert.ToString( System.Web.HttpUtility.HtmlEncode(Eval("ProjectName"))))?" - "+System.Web.HttpUtility.HtmlEncode(Eval("ProjectName")):"" ), global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(4, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Status")), global::System.Globalization.CultureInfo.CurrentCulture));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control27() {
+            global::System.Web.UI.DataBoundLiteralControl @__ctrl;
+            @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(1, 1);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control27);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBind__control27(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.RepeaterItem Container;
+            System.Web.UI.DataBoundLiteralControl target;
+            target = ((System.Web.UI.DataBoundLiteralControl)(sender));
+            Container = ((System.Web.UI.WebControls.RepeaterItem)(target.BindingContainer));
+            target.SetDataBoundString(0, global::System.Convert.ToString(SPFunctions.LocalizeUI("btn_Collaboration", "CyberportEMS_Common"), global::System.Globalization.CultureInfo.CurrentCulture));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.LinkButton @__BuildControl__control26() {
+            global::System.Web.UI.WebControls.LinkButton @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.LinkButton();
+            @__ctrl.TemplateControl = this;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "lnkCollaboration";
+            @__ctrl.CommandName = "c";
+            @__ctrl.CssClass = "apply-btn theme-green";
+            global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
+            @__ctrl1 = this.@__BuildControl__control27();
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(@__ctrl1);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control26);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBinding__control26(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.LinkButton dataBindingExpressionBuilderTarget;
+            System.Web.UI.WebControls.RepeaterItem Container;
+            dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.LinkButton)(sender));
+            Container = ((System.Web.UI.WebControls.RepeaterItem)(dataBindingExpressionBuilderTarget.BindingContainer));
+            dataBindingExpressionBuilderTarget.CommandArgument = global::System.Convert.ToString(Eval("Programme_ID")+":"+Eval("ApplicationNumber")+":"+Eval("Programme_guid") , global::System.Globalization.CultureInfo.CurrentCulture);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.ImageButton @__BuildControl__control28() {
+            global::System.Web.UI.WebControls.ImageButton @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.ImageButton();
+            @__ctrl.TemplateControl = this;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "imgBtnDelete";
+            @__ctrl.CommandName = "Delete";
+            @__ctrl.ImageUrl = "/_layouts/15/images/CBP_Images/Internal%20Use-6.5-Delete.png";
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control28);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBinding__control28(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.ImageButton dataBindingExpressionBuilderTarget;
+            System.Web.UI.WebControls.RepeaterItem Container;
+            dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.ImageButton)(sender));
+            Container = ((System.Web.UI.WebControls.RepeaterItem)(dataBindingExpressionBuilderTarget.BindingContainer));
+            dataBindingExpressionBuilderTarget.CommandArgument = global::System.Convert.ToString(Eval("Programme_ID")+":"+Eval("ApplicationNumber")+":"+Eval("Programme_guid")  , global::System.Globalization.CultureInfo.CurrentCulture);
+            dataBindingExpressionBuilderTarget.Visible = ((bool)(Convert.ToDateTime(Eval("Application_Deadline")) >= DateTime.Now?true:false ));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private void @__BuildControl__control24(System.Web.UI.Control @__ctrl) {
+            global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
+            @__ctrl1 = this.@__BuildControl__control25();
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(@__ctrl1);
+            global::System.Web.UI.WebControls.LinkButton @__ctrl2;
+            @__ctrl2 = this.@__BuildControl__control26();
+            @__parser.AddParsedSubObject(@__ctrl2);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n                 <td style=\"width: 6%;text-align: right;" +
+                        "\">\r\n                     "));
+            global::System.Web.UI.WebControls.ImageButton @__ctrl3;
+            @__ctrl3 = this.@__BuildControl__control28();
+            @__parser.AddParsedSubObject(@__ctrl3);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                </td>\r\n            </tr>\r\n        "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private void @__BuildControl__control29(System.Web.UI.Control @__ctrl) {
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </table>\r\n\r\n        "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Repeater @__BuildControlrptrMyApplicationCASP() {
+            global::System.Web.UI.WebControls.Repeater @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Repeater();
+            this.rptrMyApplicationCASP = @__ctrl;
+            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control23));
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control24));
+            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control29));
+            @__ctrl.ID = "rptrMyApplicationCASP";
+            @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
+            @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private void @__BuildControl__control30(System.Web.UI.Control @__ctrl) {
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            <table style=\"width: 100%\">\r\n        "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control32() {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl;
             @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(5, 4);
             @__ctrl.TemplateControl = this;
@@ -661,14 +830,14 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             @__ctrl.SetStaticString(3, " - ");
             @__ctrl.SetStaticString(4, "\r\n                    </a>\r\n\r\n                </td>\r\n                <td>\r\n      " +
                     "              \r\n                </td>\r\n            </tr>\r\n        ");
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control25);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control32);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBind__control25(object sender, System.EventArgs e) {
+        public void @__DataBind__control32(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.RepeaterItem Container;
             System.Web.UI.DataBoundLiteralControl target;
             target = ((System.Web.UI.DataBoundLiteralControl)(sender));
@@ -682,9 +851,9 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control24(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control31(System.Web.UI.Control @__ctrl) {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control25();
+            @__ctrl1 = this.@__BuildControl__control32();
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(@__ctrl1);
         }
@@ -692,7 +861,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control26(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control33(System.Web.UI.Control @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </table>\r\n\r\n        "));
         }
@@ -704,9 +873,9 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             global::System.Web.UI.WebControls.Repeater @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Repeater();
             this.rptrMyApplicationsIncubationColb = @__ctrl;
-            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control23));
-            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control24));
-            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control26));
+            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control30));
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control31));
+            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control33));
             @__ctrl.ID = "rptrMyApplicationsIncubationColb";
             @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
             @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
@@ -716,7 +885,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control27(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control34(System.Web.UI.Control @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            <table style=\"width: 100%\">\r\n        "));
         }
@@ -724,7 +893,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control29() {
+        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control36() {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl;
             @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(5, 4);
             @__ctrl.TemplateControl = this;
@@ -735,14 +904,14 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             @__ctrl.SetStaticString(3, " - ");
             @__ctrl.SetStaticString(4, " \r\n                    </a>\r\n                </td>\r\n                <td>\r\n       " +
                     "             \r\n                </td>\r\n            </tr>\r\n        ");
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control29);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control36);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBind__control29(object sender, System.EventArgs e) {
+        public void @__DataBind__control36(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.RepeaterItem Container;
             System.Web.UI.DataBoundLiteralControl target;
             target = ((System.Web.UI.DataBoundLiteralControl)(sender));
@@ -756,9 +925,9 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control28(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control35(System.Web.UI.Control @__ctrl) {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control29();
+            @__ctrl1 = this.@__BuildControl__control36();
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(@__ctrl1);
         }
@@ -766,7 +935,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control30(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control37(System.Web.UI.Control @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </table>\r\n\r\n        "));
         }
@@ -778,9 +947,9 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             global::System.Web.UI.WebControls.Repeater @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Repeater();
             this.rptrMyApplicationsCCMFColb = @__ctrl;
-            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control27));
-            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control28));
-            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control30));
+            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control34));
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control35));
+            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control37));
             @__ctrl.ID = "rptrMyApplicationsCCMFColb";
             @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
             @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
@@ -790,7 +959,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control31(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control38(System.Web.UI.Control @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            <table style=\"width: 100%\">\r\n        "));
         }
@@ -798,7 +967,81 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control33() {
+        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control40() {
+            global::System.Web.UI.DataBoundLiteralControl @__ctrl;
+            @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(5, 4);
+            @__ctrl.TemplateControl = this;
+            @__ctrl.SetStaticString(0, "\r\n            <tr>\r\n                <td style=\"width: 86%; padding: 8px 0;\">\r\n   " +
+                    "                 <a href=\'");
+            @__ctrl.SetStaticString(1, " \'>\r\n                        ");
+            @__ctrl.SetStaticString(2, " - ");
+            @__ctrl.SetStaticString(3, " - ");
+            @__ctrl.SetStaticString(4, " \r\n                    </a>\r\n                </td>\r\n                <td>\r\n       " +
+                    "         </td>\r\n            </tr>\r\n        ");
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control40);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBind__control40(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.RepeaterItem Container;
+            System.Web.UI.DataBoundLiteralControl target;
+            target = ((System.Web.UI.DataBoundLiteralControl)(sender));
+            Container = ((System.Web.UI.WebControls.RepeaterItem)(target.BindingContainer));
+            target.SetDataBoundString(0, global::System.Convert.ToString(SPContext.GetContext(System.Web.HttpContext.Current).Site.Url + "/SitePages/CCMFGBAYEP.aspx?prog=" + Eval("Programme_ID") + "&app=" + Eval("Programme_guid")+"&type=fed46de9f573", global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(1, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Programme_Name")), global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(2, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("Intake_Number")), global::System.Globalization.CultureInfo.CurrentCulture));
+            target.SetDataBoundString(3, global::System.Convert.ToString(System.Web.HttpUtility.HtmlEncode(Eval("ApplicationNumber"))  + (!string.IsNullOrEmpty( Convert.ToString( System.Web.HttpUtility.HtmlEncode(Eval("ProjectName"))))?" - "+System.Web.HttpUtility.HtmlEncode(Eval("ProjectName")):"" ), global::System.Globalization.CultureInfo.CurrentCulture));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private void @__BuildControl__control39(System.Web.UI.Control @__ctrl) {
+            global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
+            @__ctrl1 = this.@__BuildControl__control40();
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(@__ctrl1);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private void @__BuildControl__control41(System.Web.UI.Control @__ctrl) {
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </table>\r\n\r\n        "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Repeater @__BuildControlrptrMyApplicationsCCMFGBAYEPColb() {
+            global::System.Web.UI.WebControls.Repeater @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.Repeater();
+            this.rptrMyApplicationsCCMFGBAYEPColb = @__ctrl;
+            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control38));
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control39));
+            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control41));
+            @__ctrl.ID = "rptrMyApplicationsCCMFGBAYEPColb";
+            @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
+            @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private void @__BuildControl__control42(System.Web.UI.Control @__ctrl) {
+            System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            <table style=\"width: 100%\">\r\n        "));
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control44() {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl;
             @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(6, 5);
             @__ctrl.TemplateControl = this;
@@ -810,14 +1053,14 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             @__ctrl.SetStaticString(4, " - [");
             @__ctrl.SetStaticString(5, " ]\r\n                    </a>\r\n                </td>\r\n                <td>\r\n      " +
                     "              \r\n                </td>\r\n            </tr>\r\n        ");
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control33);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control44);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBind__control33(object sender, System.EventArgs e) {
+        public void @__DataBind__control44(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.RepeaterItem Container;
             System.Web.UI.DataBoundLiteralControl target;
             target = ((System.Web.UI.DataBoundLiteralControl)(sender));
@@ -832,9 +1075,9 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control32(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control43(System.Web.UI.Control @__ctrl) {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control33();
+            @__ctrl1 = this.@__BuildControl__control44();
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(@__ctrl1);
         }
@@ -842,7 +1085,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control34(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control45(System.Web.UI.Control @__ctrl) {
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n            </table>\r\n\r\n        "));
         }
@@ -854,9 +1097,9 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             global::System.Web.UI.WebControls.Repeater @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Repeater();
             this.rptrMyApplicationsCASPColb = @__ctrl;
-            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control31));
-            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control32));
-            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control34));
+            @__ctrl.HeaderTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control42));
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control43));
+            @__ctrl.FooterTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control45));
             @__ctrl.ID = "rptrMyApplicationsCASPColb";
             @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
             @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrMyApplicationsIncubation_ItemCommand);
@@ -929,21 +1172,21 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control36() {
+        private global::System.Web.UI.DataBoundLiteralControl @__BuildControl__control47() {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl;
             @__ctrl = new global::System.Web.UI.DataBoundLiteralControl(2, 1);
             @__ctrl.TemplateControl = this;
             @__ctrl.SetStaticString(0, "\r\n                                <div class=\"row-btm\">\r\n                        " +
                     "            <span class=\"card-input\">");
             @__ctrl.SetStaticString(1, "</span>\r\n                                    ");
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control36);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBind__control47);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBind__control36(object sender, System.EventArgs e) {
+        public void @__DataBind__control47(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.RepeaterItem Container;
             System.Web.UI.DataBoundLiteralControl target;
             target = ((System.Web.UI.DataBoundLiteralControl)(sender));
@@ -954,21 +1197,21 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ImageButton @__BuildControl__control37() {
+        private global::System.Web.UI.WebControls.ImageButton @__BuildControl__control48() {
             global::System.Web.UI.WebControls.ImageButton @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ImageButton();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ImageUrl = "/_layouts/15/Images/CBP_Images/delete.png";
             @__ctrl.CommandName = "delete";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control37);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control48);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control37(object sender, System.EventArgs e) {
+        public void @__DataBinding__control48(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.ImageButton dataBindingExpressionBuilderTarget;
             System.Web.UI.WebControls.RepeaterItem Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.ImageButton)(sender));
@@ -979,13 +1222,13 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control35(System.Web.UI.Control @__ctrl) {
+        private void @__BuildControl__control46(System.Web.UI.Control @__ctrl) {
             global::System.Web.UI.DataBoundLiteralControl @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control36();
+            @__ctrl1 = this.@__BuildControl__control47();
             System.Web.UI.IParserAccessor @__parser = ((System.Web.UI.IParserAccessor)(@__ctrl));
             @__parser.AddParsedSubObject(@__ctrl1);
             global::System.Web.UI.WebControls.ImageButton @__ctrl2;
-            @__ctrl2 = this.@__BuildControl__control37();
+            @__ctrl2 = this.@__BuildControl__control48();
             @__parser.AddParsedSubObject(@__ctrl2);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                </div>\r\n                            "));
         }
@@ -997,7 +1240,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             global::System.Web.UI.WebControls.Repeater @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Repeater();
             this.rptrCollaboratorList = @__ctrl;
-            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control35));
+            @__ctrl.ItemTemplate = new System.Web.UI.CompiledTemplateBuilder(new System.Web.UI.BuildTemplateMethod(this.@__BuildControl__control46));
             @__ctrl.ID = "rptrCollaboratorList";
             @__ctrl.ItemCommand -= new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrCollaboratorList_ItemCommand);
             @__ctrl.ItemCommand += new System.Web.UI.WebControls.RepeaterCommandEventHandler(this.rptrCollaboratorList_ItemCommand);
@@ -1021,7 +1264,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control38() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control49() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.ApplyStyleSheetSkin(this.Page);
@@ -1106,7 +1349,7 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             @__parser.AddParsedSubObject(@__ctrl7);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl8;
-            @__ctrl8 = this.@__BuildControl__control38();
+            @__ctrl8 = this.@__BuildControl__control49();
             @__parser.AddParsedSubObject(@__ctrl8);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                        "));
             global::System.Web.UI.WebControls.ImageButton @__ctrl9;
@@ -1272,28 +1515,36 @@ namespace CBP_EMS_SP.PublicUserControls.MyApplications {
             @__parser.AddParsedSubObject(@__ctrl3);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n    "));
             global::System.Web.UI.WebControls.Repeater @__ctrl4;
-            @__ctrl4 = this.@__BuildControlrptrMyApplicationCASP();
+            @__ctrl4 = this.@__BuildControlrptrMyApplicationsCCMFGBAYEP();
             @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n    "));
             global::System.Web.UI.WebControls.Repeater @__ctrl5;
-            @__ctrl5 = this.@__BuildControlrptrMyApplicationsIncubationColb();
+            @__ctrl5 = this.@__BuildControlrptrMyApplicationCASP();
             @__parser.AddParsedSubObject(@__ctrl5);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n    "));
             global::System.Web.UI.WebControls.Repeater @__ctrl6;
-            @__ctrl6 = this.@__BuildControlrptrMyApplicationsCCMFColb();
+            @__ctrl6 = this.@__BuildControlrptrMyApplicationsIncubationColb();
             @__parser.AddParsedSubObject(@__ctrl6);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    \r\n    "));
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n    "));
             global::System.Web.UI.WebControls.Repeater @__ctrl7;
-            @__ctrl7 = this.@__BuildControlrptrMyApplicationsCASPColb();
+            @__ctrl7 = this.@__BuildControlrptrMyApplicationsCCMFColb();
             @__parser.AddParsedSubObject(@__ctrl7);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n    "));
-            global::System.Web.UI.WebControls.Panel @__ctrl8;
-            @__ctrl8 = this.@__BuildControlpnlcollaboratorPopup();
+            global::System.Web.UI.WebControls.Repeater @__ctrl8;
+            @__ctrl8 = this.@__BuildControlrptrMyApplicationsCCMFGBAYEPColb();
             @__parser.AddParsedSubObject(@__ctrl8);
-            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n      "));
-            global::System.Web.UI.WebControls.Panel @__ctrl9;
-            @__ctrl9 = this.@__BuildControlpnldeleteapplication();
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n    \r\n    "));
+            global::System.Web.UI.WebControls.Repeater @__ctrl9;
+            @__ctrl9 = this.@__BuildControlrptrMyApplicationsCASPColb();
             @__parser.AddParsedSubObject(@__ctrl9);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n\r\n    "));
+            global::System.Web.UI.WebControls.Panel @__ctrl10;
+            @__ctrl10 = this.@__BuildControlpnlcollaboratorPopup();
+            @__parser.AddParsedSubObject(@__ctrl10);
+            @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n      "));
+            global::System.Web.UI.WebControls.Panel @__ctrl11;
+            @__ctrl11 = this.@__BuildControlpnldeleteapplication();
+            @__parser.AddParsedSubObject(@__ctrl11);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n</div>\r\n"));
         }
         
