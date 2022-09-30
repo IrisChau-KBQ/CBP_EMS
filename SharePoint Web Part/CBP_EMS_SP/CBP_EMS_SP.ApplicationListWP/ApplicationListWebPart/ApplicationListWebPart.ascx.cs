@@ -34,6 +34,9 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
         [Personalizable(), WebBrowsable, DefaultValue("https://ems.cyberport.hk/SitePages/CCMF_Internal.aspx"), WebDisplayName("CCMF URL"), Category("Configuration")]
         public String CCMF_URL { get; set; }
 
+        [Personalizable(), WebBrowsable, DefaultValue("https://ems.cyberport.hk/SitePages/CCMFGBAYEP_Internal.aspx"), WebDisplayName("CCMFGBAYEP URL"), Category("Configuration")]
+        public String CCMFGBAYEP_URL { get; set; }
+
         [Personalizable(), WebBrowsable, DefaultValue("https://ems.cyberport.hk/SitePages/IncubationProgram_Internal.aspx"), WebDisplayName("CPIP URL"), Category("Configuration")]
         public String CPIP_URL { get; set; }
 
@@ -795,6 +798,8 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                     return "CCMF-CB";
                 case "Cyberport Accelerator Support Programme":
                     return "CASP";
+                case  "Cyberport Creative Micro Fund - GBAYEP":
+                    return "CCMFGBAYEP";
             }
             return "";
         }
@@ -824,8 +829,19 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 GridViewApplication.Columns[GridViewColumnOrder["Shortlisted"]].Visible = false;
                 GridViewApplication.Columns[GridViewColumnOrder["SmartSpace"]].Visible = true;
 
+            }
+            else if (m_Program == "CCMFGBAYEP")
+            {
+                GridViewApplication.Columns[GridViewColumnOrder["ProjectName"]].Visible = true;
+                GridViewApplication.Columns[GridViewColumnOrder["ProgrammeType"]].Visible = true;
+                GridViewApplication.Columns[GridViewColumnOrder["HongKongProgrammeStream"]].Visible = false;
+                GridViewApplication.Columns[GridViewColumnOrder["ApplicationType"]].Visible = true;
+                GridViewApplication.Columns[GridViewColumnOrder["CompanyName"]].Visible = false;
+                GridViewApplication.Columns[GridViewColumnOrder["Shortlisted"]].Visible = false;
+                GridViewApplication.Columns[GridViewColumnOrder["SmartSpace"]].Visible = true;
 
             }
+
             if (m_Role == "CCMF BDM" || m_Role == "CPIP BDM" || m_Role == "CPMO" || m_Role == "Senior Manager")
             {
                 GridViewApplication.Columns[GridViewColumnOrder["BDMScore"]].Visible = true;
@@ -1144,6 +1160,19 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             + "&" + m_qryStrSortOrder1 + "=" + radioSortCluster.SelectedValue;
                 URL = CASP_URL;
             }
+            else if (m_Programme == "CCMFGBAYEP")
+            {
+                qrystring = "&" + m_qryStrProgName + "=" + lstCyberportProgramme.SelectedValue
+                    + "&" + m_qryStrIntakeNo + "=" + lstIntakeNumber.SelectedValue
+                    + "&" + m_qryStrCluster + "=" + lstCluster.SelectedValue
+                    + "&" + m_qryStrStream + "=" + lststream.SelectedValue
+                    + "&" + m_qryStrStatus + "=" + lstStatus.SelectedValue
+                    + "&" + m_qryStrSortColumn1 + "=" + lstSortCluster.SelectedValue
+                    + "&" + m_qryStrSortColumn2 + "=" + lstSortApplicationNo.SelectedValue
+                    + "&" + m_qryStrSortOrder1 + "=" + radioSortCluster.SelectedValue;
+                //URL = CCMFGBAYEP_URL;
+                URL = CCMF_URL.Replace("CCMF_Internal", "CCMFGBAYEP_Internal");
+            }
             else
             {
                 //CCMF
@@ -1183,6 +1212,15 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                         applst.HongKongProgrammeStream = "PRO";
                     else
                         applst.HongKongProgrammeStream = "YEP";
+                }
+                else if (m_programme == "CCMFGBAYEP")
+                {
+                    applst.ProjectName = (String)reader.GetValue(reader.GetOrdinal("Project_Name_Eng"));
+                    applst.ProjectNameChinese = (String)reader.GetValue(reader.GetOrdinal("Project_Name_Chi"));
+                    applst.ProgrammeType = (String)reader.GetValue(reader.GetOrdinal("Programme_Type"));
+                    applst.ApplicationType = (String)reader.GetValue(reader.GetOrdinal("CCMF_Application_Type"));
+                    applst.ApplicationID = Convert.ToString(reader.GetGuid(reader.GetOrdinal("CCMF_ID")));
+                    applst.SmartSpace = Convert.ToString(reader.GetValue(reader.GetOrdinal("SmartSpace")));                    
                 }
                 else if (m_programme == "CASP")
                 {
@@ -1290,7 +1328,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
 
             string sql = "";
             //Ccmf-cb added for ss8 
-            if (m_Program == "CCMF" || m_Program == "CCMF-CB")
+            if (m_Program == "CCMF" || m_Program == "CCMF-CB" || m_Program == "CCMFGBAYEP")
             {
                 sql = constructCCMFScript();
             }
@@ -4979,10 +5017,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
 
         //private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
         //                                  "microsoft-jhenghei-5965ec3170036.ttf");
-        //private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
-        //                                  "wingdng2.ttf");    //Debug - try other font
-        private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),
-                                          "msjh.ttc,0");
+        private static string arialuniTff = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.Fonts),"msjh.ttc,0");
         private static BaseFont fontInternational = BaseFont.CreateFont(arialuniTff, BaseFont.IDENTITY_H, BaseFont.EMBEDDED);
         private Font Font12blue = new Font(fontInternational, 12, iTextSharp.text.Font.NORMAL, new BaseColor(System.Drawing.ColorTranslator.FromHtml("#075CA9")));
         private Font Font12blueLight = new Font(fontInternational, 12, iTextSharp.text.Font.NORMAL, new BaseColor(System.Drawing.ColorTranslator.FromHtml("#145DAA")));
