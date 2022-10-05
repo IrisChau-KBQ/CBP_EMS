@@ -727,7 +727,11 @@ namespace CBP_EMS_SP.AppProgIntake.AppProgIntake
                 HiddenField HiddenApplication_ID = (HiddenField)row.FindControl("HiddenApplication_ID");
                 urlstring = m_prog;
 
-                if (m_Programme_Type == "CCMF")
+                if (m_Programme_Type == "CCMF" && lblProName.Text.Equals("Cyberport Creative Micro Fund - GBAYEP"))
+                {
+                    Context.Response.Redirect("/SitePages/CCMFGBAYEP.aspx?prog=" + urlstring + "&app=" + HiddenApplication_ID.Value.ToString());
+                }
+                else if (m_Programme_Type == "CCMF")
                 {
                     Context.Response.Redirect("/SitePages/CCMF.aspx?prog=" + urlstring + "&app=" + HiddenApplication_ID.Value.ToString());
                 }
