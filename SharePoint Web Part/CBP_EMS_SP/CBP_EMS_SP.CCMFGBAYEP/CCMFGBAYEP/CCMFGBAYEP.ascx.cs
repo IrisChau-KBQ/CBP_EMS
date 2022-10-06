@@ -593,8 +593,7 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             if (ObjContactDetails.Count == 0)
             {
                 ObjContactDetails = new List<TB_APPLICATION_CONTACT_DETAIL>();
-                ObjContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0 });
-
+                ObjContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0, Area = "HongKong" });  //20221006 set area of 1st item to HongKong
             }
 
             gv_CONTACT_DETAIL.DataSource = ObjContactDetails;
@@ -1940,6 +1939,8 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
 
                     HiddenField contactId = (HiddenField)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("CONTACT_DETAILS_ID");
                     RadioButtonList Area = (RadioButtonList)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("rdo_Area");
+                    if (i == 0) Area.SelectedIndex = 0;
+                    if (i == 1) Area.SelectedIndex = 1;
                     TextBox txtContactLast_name = (TextBox)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("txtContactLast_name");
                     TextBox txtContactFirst_name = (TextBox)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("txtContactFirst_name");
                     TextBox txtlastchiname = (TextBox)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("txtlast_chiname");
@@ -2471,7 +2472,6 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                                 string WebsiteUrl = objTbParams.FirstOrDefault(x => x.Config_Code == "WebsiteUrl").Value;
                                 WebsiteUrl = WebsiteUrl.EndsWith("/") ? (WebsiteUrl.Remove(WebsiteUrl.LastIndexOf("/"))) : WebsiteUrl;
 
-                                //string applicationType = "CCMF.aspx";
                                 string applicationType = "CCMFGBAYEP.aspx";
                                 string token = "/SitePages/" + applicationType + "?prog=" + objCCMF.Programme_ID + "&app=" + objCCMF.CCMF_ID;
                                 if (isrequestor == true)
@@ -4260,12 +4260,11 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             {
                 try
                 {
-
-
-
                     HiddenField contactId = (HiddenField)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("CONTACT_DETAILS_ID");
                     //Label lblcontactSubTitle = (Label)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("lblContactSubTitle");
                     RadioButtonList Area = (RadioButtonList)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("rdo_Area");
+                    if (i == 0) Area.SelectedIndex = 0;
+                    if (i == 1) Area.SelectedIndex = 1;
                     TextBox txtContactLast_name = (TextBox)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("txtContactLast_name");
                     TextBox txtContactFirst_name = (TextBox)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("txtContactFirst_name");
                     TextBox txtlastchiname = (TextBox)gv_CONTACT_DETAIL.Rows[i].Cells[0].FindControl("txtlast_chiname");
@@ -4336,9 +4335,14 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
             }
             if (IsError == false)
             {
-                objContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0 });
-
-
+                if (objContactDetails.Count == 1)
+                {
+                    objContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0, Area = "China" });
+                }
+                else
+                {
+                    objContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0 });
+                }                
                 gv_CONTACT_DETAIL.DataSource = objContactDetails;
                 gv_CONTACT_DETAIL.DataBind();
             }
@@ -5484,7 +5488,18 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP
                 {
                     if (objContactDetails.Count == 0)
                     {
-                        objContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0 });
+                        objContactDetails.Add(new TB_APPLICATION_CONTACT_DETAIL() { CONTACT_DETAILS_ID = 0, Area = "HongKong" });
+                    }
+
+                    if (objContactDetails.Count == 1)
+                    {
+                        objContactDetails[0].Area = "HongKong";
+                    }
+
+                    if (objContactDetails.Count >= 2)
+                    {
+                        objContactDetails[0].Area = "HongKong";
+                        objContactDetails[1].Area = "China";
                     }
 
                     gv_CONTACT_DETAIL.DataSource = objContactDetails;

@@ -760,6 +760,7 @@ namespace CBP_EMS_SP.Data
                     objFundsDb.Graduation_Year = objFunds.Graduation_Year;
                     objFundsDb.Salutation = objFunds.Salutation;
                     objFundsDb.Nationality = objFunds.Nationality;
+                    objFundsDb.Area = objFunds.Area;
                     
                 }
             }

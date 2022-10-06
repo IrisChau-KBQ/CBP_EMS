@@ -1208,7 +1208,7 @@
                                                                 <asp:Label Text="text" runat="server" Id="lblarea"></asp:label>
                                                             </p>--%>
                                                             <asp:HiddenField ID="hdn_Area" Value='<%# Bind("Area") %>' runat="server" />
-                                                            <asp:RadioButtonList ID="rdo_Area" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" Visible="false">
+                                                            <asp:RadioButtonList ID="rdo_Area" runat="server" RepeatDirection="Horizontal" CssClass="width90 listcss" Visible="false" Enabled="<%# Container.DataItemIndex <= 1 ? false : true %>">
                                                                 <asp:ListItem Value="HongKong" Text="&nbsp;">Hongkong</asp:ListItem>
                                                                 <asp:ListItem Value="China" Text="&nbsp;">Guangdong / Macau</asp:ListItem>
                                                             </asp:RadioButtonList>

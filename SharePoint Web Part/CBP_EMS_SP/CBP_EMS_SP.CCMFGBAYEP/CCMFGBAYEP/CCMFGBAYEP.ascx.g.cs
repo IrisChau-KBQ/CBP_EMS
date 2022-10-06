@@ -8211,7 +8211,19 @@ namespace CBP_EMS_SP.CCMFGBAYEP.CCMFGBAYEP {
             @__ctrl.CssClass = "width90 listcss";
             @__ctrl.Visible = false;
             this.@__BuildControl__control198(@__ctrl.Items);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control197);
             return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        public void @__DataBinding__control197(object sender, System.EventArgs e) {
+            System.Web.UI.WebControls.RadioButtonList dataBindingExpressionBuilderTarget;
+            System.Web.UI.IDataItemContainer Container;
+            dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.RadioButtonList)(sender));
+            Container = ((System.Web.UI.IDataItemContainer)(dataBindingExpressionBuilderTarget.BindingContainer));
+            dataBindingExpressionBuilderTarget.Enabled = ((bool)( Container.DataItemIndex <= 1 ? false : true ));
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
