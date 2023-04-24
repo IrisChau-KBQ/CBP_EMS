@@ -1947,6 +1947,11 @@ namespace CBP_EMS_SP.PreListAppWP.PreListApp
                 m_subject = "Invitation to Presentation Session for CPIP" + m_Intake_Number;
                 m_body = getEmailTemplate("Presentation_Invitation_CPIP");
             }
+            else if (m_Programme_Name.Contains("GBAYEP")) {
+                //CCMF-GBAYEP
+                m_subject = "Invitation to Presentation Session for GBAYPE " + m_Intake_Number;
+                m_body = getEmailTemplate("Presentation_Invitation_GBAYEP");
+            }
             else
             {
                 //CCMF

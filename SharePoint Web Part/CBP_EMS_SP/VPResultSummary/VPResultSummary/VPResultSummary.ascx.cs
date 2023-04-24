@@ -1072,7 +1072,7 @@ namespace VPResultSummary.VisualWebPart1
             {
               GetCPIPSPFiles(vetting_metting_id, msTable);
             }
-            else if (objPrsentationResultSummary.FirstOrDefault().Application_Number.ToLower().Contains("ccmf"))
+            else if (objPrsentationResultSummary.FirstOrDefault().Application_Number.ToLower().Contains("ccmf") || objPrsentationResultSummary.FirstOrDefault().Application_Number.ToLower().Contains("gbayep") || objPrsentationResultSummary.FirstOrDefault().Application_Number.ToLower().Contains("cupp"))
             {
               GetCCMFSPFiles(vetting_metting_id, msTable);
             }

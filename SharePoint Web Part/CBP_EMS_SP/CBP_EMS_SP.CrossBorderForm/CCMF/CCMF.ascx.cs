@@ -2557,8 +2557,10 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                         lbl211b.Enabled = true;
                         rdo211b.Enabled = true;
                         //rdo211b.SelectedIndex = -1;
-                        //   lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CCMF");
-                        //    lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CCMF");
+
+                        // reopen for CUPP change 20230302
+                           lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CCMF");
+                            lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CCMF");
                         lbl212c.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_C", "CyberportEMS_CCMF");
                         lbl212d.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_D", "CyberportEMS_CCMF");
                         lbl212e.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_E", "CyberportEMS_CCMF");
@@ -2568,7 +2570,11 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
 
                         div212i.Visible = false;
                         div212j.Visible = false;
-                        div212a.Visible = false;
+
+                        // reopen for CUPP change 20230302
+                        div212a.Visible = true;
+                        div212b.Visible = true;
+                        //div212a.Visible = false;
                         //div212f_1.Visible = false;
                         rdo211b_SetUpDisable();
                     }
@@ -2586,9 +2592,9 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                         rdo211b.Enabled = true;
                         lbl211btd.Disabled = false;
                         //rdo211b.SelectedIndex = -1;
-
-                        //      lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CCMF");
-                        //      lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CCMF");
+                        // reopen for CUPP change 20230302
+                              lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CCMF");
+                              lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CCMF");
                         lbl212c.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_C", "CyberportEMS_CCMF");
                         lbl212d.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_D", "CyberportEMS_CCMF");
                         lbl212e.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_E", "CyberportEMS_CCMF");
@@ -2597,7 +2603,10 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                         lbl212h.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_H", "CyberportEMS_CCMF");
                         div212i.Visible = false;
                         div212j.Visible = false;
-                        div212a.Visible = false;
+                        // reopen for CUPP change 20230302
+                        div212a.Visible = true;
+                        div212b.Visible = true;
+                        //div212a.Visible = false;
                         //div212f_1.Visible = false;
                         rdo211b_SetUpDisable();
                     }

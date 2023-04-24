@@ -522,4 +522,7 @@
   <data name="Error_CI_Copy" xml:space="preserve">
     <value>Please upload document in the required field: 5.1 Certificate of Incorporation / Receipt of Application</value>
   </data>
+  <data name="Submission_popup_password_GDorMacau" xml:space="preserve">
+    <value>Please input GuangDong or Macau Leader login email and password for confirmation.</value>
+  </data>
 </root>

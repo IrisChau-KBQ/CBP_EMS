@@ -465,4 +465,7 @@
   <data name="Footer_Message" xml:space="preserve">
     <value>香港数码港管理有限公司 。</value>
   </data>
+  <data name="Submission_popup_password_GDorMacau" xml:space="preserve">
+    <value>Please input GuangDong or Macau Leader login email and password for confirmation.</value>
+  </data>
 </root>

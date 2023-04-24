@@ -98,8 +98,12 @@
                                             <asp:ListItem Text="Cyberport Incubation Programme" Value="Cyberport Incubation Programme" />
                                             <asp:ListItem Text="Cyberport Creative Micro Fund - Hong Kong" Value="Cyberport Creative Micro Fund - Hong Kong" />
                                             <asp:ListItem Text="Cyberport Creative Micro Fund - GBAYEP" Value="Cyberport Creative Micro Fund - GBAYEP" />
-<%--                                            <asp:ListItem Text="Cyberport University Partnerhip Programme" Value="Cyberport University Partnerhip Programme" />
-                                            <asp:ListItem Text="Cyberport Creative Micro Fund - Cross Border" Value="Cyberport Creative Micro Fund - Cross Border"></asp:ListItem>--%>
+                                             
+                                            <%--<asp:ListItem Text="Cyberport Creative Micro Fund - CUPP" Value="Cyberport Creative Micro Fund - CUPP" />--%>
+
+                                            <%-- 20230225 Update for Cyberport Creative Micro Fund - CUPP --%>
+                                         <asp:ListItem Text="Cyberport University Partnerhip Programme" Value="Cyberport University Partnerhip Programme" />
+<%--                                               <asp:ListItem Text="Cyberport Creative Micro Fund - Cross Border" Value="Cyberport Creative Micro Fund - Cross Border"></asp:ListItem>--%>
                                             <asp:ListItem Text="Cyberport Accelerator Support Programme" Value="Cyberport Accelerator Support Programme"></asp:ListItem>
                                         </asp:DropDownList>
                                         <asp:RequiredFieldValidator InitialValue="0" ErrorMessage="*" CssClass="text-danger" Display="Dynamic" ValidationGroup="vgIntakeProgram" ControlToValidate="ddlProgramName" runat="server" />

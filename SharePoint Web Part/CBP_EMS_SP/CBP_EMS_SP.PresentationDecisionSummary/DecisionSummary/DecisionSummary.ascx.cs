@@ -871,7 +871,7 @@ namespace CBP_EMS_SP.PresentationDecisionSummary.DecisionSummary
                         listPrsentationResultSummary.Add(objPrsentationResultSummary);
                     }
                 }
-                else if (objTB_VETTING_APPLICATION.FirstOrDefault().Application_Number.ToLower().Contains("ccmf"))
+                else if (objTB_VETTING_APPLICATION.FirstOrDefault().Application_Number.ToLower().Contains("ccmf") || objTB_VETTING_APPLICATION.FirstOrDefault().Application_Number.ToLower().Contains("gbayep") || objTB_VETTING_APPLICATION.FirstOrDefault().Application_Number.ToLower().Contains("cupp"))
                 {
                     foreach (TB_VETTING_APPLICATION item in objTB_VETTING_APPLICATION)
                     {

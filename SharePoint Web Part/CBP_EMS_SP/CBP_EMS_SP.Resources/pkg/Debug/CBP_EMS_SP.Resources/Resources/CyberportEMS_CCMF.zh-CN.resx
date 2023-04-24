@@ -739,6 +739,9 @@
   <data name="CCMF_HK_Header" xml:space="preserve">
     <value>数码港创意微型基金 - 香港计划</value>
   </data>
+  <data name="CCMF_GBAYEP_Header" xml:space="preserve">
+    <value>数码港创意微型基金 - 大湾区青年创业计划</value>
+  </data>
   <data name="CUPP_Header" xml:space="preserve">
     <value>数码港创意微型基金 - 数码港大学合作伙伴计划</value>
   </data>

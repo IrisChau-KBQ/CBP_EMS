@@ -2278,6 +2278,15 @@ namespace CBP_EMS_SP.VMCreateWP.VMCreateWP
                     headers.Add("cc", _CCEmailCPIPVetting);
                 _ApplicationType = "CPIP";
             }
+            else if (m_Programme_Name.Contains("Cyberport Incubation Program"))
+            {
+                //CCMF
+                m_subject = m_VettingDate.ToString("d MMMM yyyy (ddd)") + " - Vetting Meeting and Presentation Session for Cyberport Creative Micro Fund(CCMF) - " + m_Intake_Number ;
+                m_body += getEmailTemplate("Vetting_Team_Invitaion_CCMF");
+                if (!string.IsNullOrEmpty(_CCEmailCCMFVetting) && ccOn)
+                    headers.Add("cc", _CCEmailCCMFVetting);
+                _ApplicationType="CCMF";
+            }
             else
             {
                 //CCMF

@@ -378,6 +378,17 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         private global::System.Web.UI.WebControls.ListItem @__BuildControl__control21() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
+            @__ctrl.Text = "Cyberport University Partnerhip Programme";
+            @__ctrl.Value = "Cyberport University Partnerhip Programme";
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control22() {
+            global::System.Web.UI.WebControls.ListItem @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "Cyberport Accelerator Support Programme";
             @__ctrl.Value = "Cyberport Accelerator Support Programme";
             return @__ctrl;
@@ -402,6 +413,9 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
             global::System.Web.UI.WebControls.ListItem @__ctrl5;
             @__ctrl5 = this.@__BuildControl__control21();
             @__ctrl.Add(@__ctrl5);
+            global::System.Web.UI.WebControls.ListItem @__ctrl6;
+            @__ctrl6 = this.@__BuildControl__control22();
+            @__ctrl.Add(@__ctrl6);
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
@@ -424,7 +438,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control22() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control23() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -441,21 +455,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control23() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control24() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtintakenumber";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control23);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control24);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control23(object sender, System.EventArgs e) {
+        public void @__DataBinding__control24(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -466,7 +480,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control24() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control25() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -482,7 +496,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.CheckBox @__BuildControl__control25() {
+        private global::System.Web.UI.WebControls.CheckBox @__BuildControl__control26() {
             global::System.Web.UI.WebControls.CheckBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.CheckBox();
             @__ctrl.TemplateControl = this;
@@ -496,7 +510,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.CheckBox @__BuildControl__control26() {
+        private global::System.Web.UI.WebControls.CheckBox @__BuildControl__control27() {
             global::System.Web.UI.WebControls.CheckBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.CheckBox();
             @__ctrl.TemplateControl = this;
@@ -510,21 +524,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control27() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control28() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtapplicationno";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control27);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control28);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control27(object sender, System.EventArgs e) {
+        public void @__DataBinding__control28(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -535,7 +549,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control28() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control29() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -551,21 +565,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control29() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control30() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm input-width datepickerDMY");
             @__ctrl.ID = "txtappstartdate";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control29);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control30);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control29(object sender, System.EventArgs e) {
+        public void @__DataBinding__control30(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -576,7 +590,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Image @__BuildControl__control30() {
+        private global::System.Web.UI.WebControls.Image @__BuildControl__control31() {
             global::System.Web.UI.WebControls.Image @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Image();
             @__ctrl.TemplateControl = this;
@@ -589,7 +603,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control31() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control32() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -605,7 +619,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control34() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control35() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "12 am";
@@ -616,7 +630,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control35() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control36() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "1 am";
@@ -627,7 +641,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control36() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control37() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "2 am";
@@ -638,7 +652,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control37() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control38() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "3 am";
@@ -649,7 +663,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control38() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control39() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "4 am";
@@ -660,7 +674,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control39() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control40() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "5 am";
@@ -671,7 +685,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control40() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control41() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "6 am";
@@ -682,7 +696,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control41() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control42() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "7 am";
@@ -693,7 +707,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control42() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control43() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "8 am";
@@ -704,7 +718,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control43() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control44() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "9 am";
@@ -715,7 +729,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control44() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control45() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "10 am";
@@ -726,7 +740,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control45() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control46() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "11 am";
@@ -737,7 +751,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control46() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control47() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "12 pm";
@@ -748,7 +762,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control47() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control48() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "1 pm";
@@ -759,7 +773,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control48() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control49() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "2 pm";
@@ -770,7 +784,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control49() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control50() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "3 pm";
@@ -781,7 +795,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control50() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control51() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "4 pm";
@@ -792,7 +806,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control51() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control52() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "5 pm";
@@ -803,7 +817,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control52() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control53() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "6 pm";
@@ -814,7 +828,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control53() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control54() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "7 pm";
@@ -825,7 +839,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control54() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control55() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "8 pm";
@@ -836,7 +850,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control55() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control56() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "9 pm";
@@ -847,7 +861,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control56() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control57() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "10 pm";
@@ -858,7 +872,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control57() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control58() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "11 pm";
@@ -869,116 +883,105 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control33(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
+        private void @__BuildControl__control34(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
             global::System.Web.UI.WebControls.ListItem @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control34();
+            @__ctrl1 = this.@__BuildControl__control35();
             @__ctrl.Add(@__ctrl1);
             global::System.Web.UI.WebControls.ListItem @__ctrl2;
-            @__ctrl2 = this.@__BuildControl__control35();
+            @__ctrl2 = this.@__BuildControl__control36();
             @__ctrl.Add(@__ctrl2);
             global::System.Web.UI.WebControls.ListItem @__ctrl3;
-            @__ctrl3 = this.@__BuildControl__control36();
+            @__ctrl3 = this.@__BuildControl__control37();
             @__ctrl.Add(@__ctrl3);
             global::System.Web.UI.WebControls.ListItem @__ctrl4;
-            @__ctrl4 = this.@__BuildControl__control37();
+            @__ctrl4 = this.@__BuildControl__control38();
             @__ctrl.Add(@__ctrl4);
             global::System.Web.UI.WebControls.ListItem @__ctrl5;
-            @__ctrl5 = this.@__BuildControl__control38();
+            @__ctrl5 = this.@__BuildControl__control39();
             @__ctrl.Add(@__ctrl5);
             global::System.Web.UI.WebControls.ListItem @__ctrl6;
-            @__ctrl6 = this.@__BuildControl__control39();
+            @__ctrl6 = this.@__BuildControl__control40();
             @__ctrl.Add(@__ctrl6);
             global::System.Web.UI.WebControls.ListItem @__ctrl7;
-            @__ctrl7 = this.@__BuildControl__control40();
+            @__ctrl7 = this.@__BuildControl__control41();
             @__ctrl.Add(@__ctrl7);
             global::System.Web.UI.WebControls.ListItem @__ctrl8;
-            @__ctrl8 = this.@__BuildControl__control41();
+            @__ctrl8 = this.@__BuildControl__control42();
             @__ctrl.Add(@__ctrl8);
             global::System.Web.UI.WebControls.ListItem @__ctrl9;
-            @__ctrl9 = this.@__BuildControl__control42();
+            @__ctrl9 = this.@__BuildControl__control43();
             @__ctrl.Add(@__ctrl9);
             global::System.Web.UI.WebControls.ListItem @__ctrl10;
-            @__ctrl10 = this.@__BuildControl__control43();
+            @__ctrl10 = this.@__BuildControl__control44();
             @__ctrl.Add(@__ctrl10);
             global::System.Web.UI.WebControls.ListItem @__ctrl11;
-            @__ctrl11 = this.@__BuildControl__control44();
+            @__ctrl11 = this.@__BuildControl__control45();
             @__ctrl.Add(@__ctrl11);
             global::System.Web.UI.WebControls.ListItem @__ctrl12;
-            @__ctrl12 = this.@__BuildControl__control45();
+            @__ctrl12 = this.@__BuildControl__control46();
             @__ctrl.Add(@__ctrl12);
             global::System.Web.UI.WebControls.ListItem @__ctrl13;
-            @__ctrl13 = this.@__BuildControl__control46();
+            @__ctrl13 = this.@__BuildControl__control47();
             @__ctrl.Add(@__ctrl13);
             global::System.Web.UI.WebControls.ListItem @__ctrl14;
-            @__ctrl14 = this.@__BuildControl__control47();
+            @__ctrl14 = this.@__BuildControl__control48();
             @__ctrl.Add(@__ctrl14);
             global::System.Web.UI.WebControls.ListItem @__ctrl15;
-            @__ctrl15 = this.@__BuildControl__control48();
+            @__ctrl15 = this.@__BuildControl__control49();
             @__ctrl.Add(@__ctrl15);
             global::System.Web.UI.WebControls.ListItem @__ctrl16;
-            @__ctrl16 = this.@__BuildControl__control49();
+            @__ctrl16 = this.@__BuildControl__control50();
             @__ctrl.Add(@__ctrl16);
             global::System.Web.UI.WebControls.ListItem @__ctrl17;
-            @__ctrl17 = this.@__BuildControl__control50();
+            @__ctrl17 = this.@__BuildControl__control51();
             @__ctrl.Add(@__ctrl17);
             global::System.Web.UI.WebControls.ListItem @__ctrl18;
-            @__ctrl18 = this.@__BuildControl__control51();
+            @__ctrl18 = this.@__BuildControl__control52();
             @__ctrl.Add(@__ctrl18);
             global::System.Web.UI.WebControls.ListItem @__ctrl19;
-            @__ctrl19 = this.@__BuildControl__control52();
+            @__ctrl19 = this.@__BuildControl__control53();
             @__ctrl.Add(@__ctrl19);
             global::System.Web.UI.WebControls.ListItem @__ctrl20;
-            @__ctrl20 = this.@__BuildControl__control53();
+            @__ctrl20 = this.@__BuildControl__control54();
             @__ctrl.Add(@__ctrl20);
             global::System.Web.UI.WebControls.ListItem @__ctrl21;
-            @__ctrl21 = this.@__BuildControl__control54();
+            @__ctrl21 = this.@__BuildControl__control55();
             @__ctrl.Add(@__ctrl21);
             global::System.Web.UI.WebControls.ListItem @__ctrl22;
-            @__ctrl22 = this.@__BuildControl__control55();
+            @__ctrl22 = this.@__BuildControl__control56();
             @__ctrl.Add(@__ctrl22);
             global::System.Web.UI.WebControls.ListItem @__ctrl23;
-            @__ctrl23 = this.@__BuildControl__control56();
+            @__ctrl23 = this.@__BuildControl__control57();
             @__ctrl.Add(@__ctrl23);
             global::System.Web.UI.WebControls.ListItem @__ctrl24;
-            @__ctrl24 = this.@__BuildControl__control57();
+            @__ctrl24 = this.@__BuildControl__control58();
             @__ctrl.Add(@__ctrl24);
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control32() {
+        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control33() {
             global::System.Web.UI.WebControls.DropDownList @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "dldstartinghours";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "height: 30px");
-            this.@__BuildControl__control33(@__ctrl.Items);
+            this.@__BuildControl__control34(@__ctrl.Items);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Image @__BuildControl__control58() {
+        private global::System.Web.UI.WebControls.Image @__BuildControl__control59() {
             global::System.Web.UI.WebControls.Image @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Image();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ImageUrl = "/_layouts/15/Images/CBP_Images/Intrnal%20Use-Drop%20Down.png";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "vertical-align: top");
-            return @__ctrl;
-        }
-        
-        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
-            "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control61() {
-            global::System.Web.UI.WebControls.ListItem @__ctrl;
-            @__ctrl = new global::System.Web.UI.WebControls.ListItem();
-            @__ctrl.Text = "";
-            @__ctrl.Value = "";
             return @__ctrl;
         }
         
@@ -1029,42 +1032,53 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control60(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
-            global::System.Web.UI.WebControls.ListItem @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control61();
-            @__ctrl.Add(@__ctrl1);
-            global::System.Web.UI.WebControls.ListItem @__ctrl2;
-            @__ctrl2 = this.@__BuildControl__control62();
-            @__ctrl.Add(@__ctrl2);
-            global::System.Web.UI.WebControls.ListItem @__ctrl3;
-            @__ctrl3 = this.@__BuildControl__control63();
-            @__ctrl.Add(@__ctrl3);
-            global::System.Web.UI.WebControls.ListItem @__ctrl4;
-            @__ctrl4 = this.@__BuildControl__control64();
-            @__ctrl.Add(@__ctrl4);
-            global::System.Web.UI.WebControls.ListItem @__ctrl5;
-            @__ctrl5 = this.@__BuildControl__control65();
-            @__ctrl.Add(@__ctrl5);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
-            "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control59() {
-            global::System.Web.UI.WebControls.DropDownList @__ctrl;
-            @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
-            @__ctrl.TemplateControl = this;
-            @__ctrl.ApplyStyleSheetSkin(this.Page);
-            @__ctrl.ID = "ddlstartingmins";
-            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "height: 30px");
-            this.@__BuildControl__control60(@__ctrl.Items);
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control66() {
+            global::System.Web.UI.WebControls.ListItem @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.ListItem();
+            @__ctrl.Text = "";
+            @__ctrl.Value = "";
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Image @__BuildControl__control66() {
+        private void @__BuildControl__control61(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
+            global::System.Web.UI.WebControls.ListItem @__ctrl1;
+            @__ctrl1 = this.@__BuildControl__control62();
+            @__ctrl.Add(@__ctrl1);
+            global::System.Web.UI.WebControls.ListItem @__ctrl2;
+            @__ctrl2 = this.@__BuildControl__control63();
+            @__ctrl.Add(@__ctrl2);
+            global::System.Web.UI.WebControls.ListItem @__ctrl3;
+            @__ctrl3 = this.@__BuildControl__control64();
+            @__ctrl.Add(@__ctrl3);
+            global::System.Web.UI.WebControls.ListItem @__ctrl4;
+            @__ctrl4 = this.@__BuildControl__control65();
+            @__ctrl.Add(@__ctrl4);
+            global::System.Web.UI.WebControls.ListItem @__ctrl5;
+            @__ctrl5 = this.@__BuildControl__control66();
+            @__ctrl.Add(@__ctrl5);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control60() {
+            global::System.Web.UI.WebControls.DropDownList @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
+            @__ctrl.TemplateControl = this;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "ddlstartingmins";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "height: 30px");
+            this.@__BuildControl__control61(@__ctrl.Items);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Image @__BuildControl__control67() {
             global::System.Web.UI.WebControls.Image @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Image();
             @__ctrl.TemplateControl = this;
@@ -1077,21 +1091,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control67() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control68() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm datepickerDMY input-width");
             @__ctrl.ID = "txtappdeadline";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control67);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control68);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control67(object sender, System.EventArgs e) {
+        public void @__DataBinding__control68(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1102,7 +1116,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Image @__BuildControl__control68() {
+        private global::System.Web.UI.WebControls.Image @__BuildControl__control69() {
             global::System.Web.UI.WebControls.Image @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Image();
             @__ctrl.TemplateControl = this;
@@ -1115,7 +1129,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control69() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control70() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1131,7 +1145,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control72() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control73() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "12 am";
@@ -1142,7 +1156,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control73() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control74() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "1 am";
@@ -1153,7 +1167,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control74() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control75() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "2 am";
@@ -1164,7 +1178,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control75() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control76() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "3 am";
@@ -1175,7 +1189,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control76() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control77() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "4 am";
@@ -1186,7 +1200,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control77() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control78() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "5 am";
@@ -1197,7 +1211,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control78() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control79() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "6 am";
@@ -1208,7 +1222,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control79() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control80() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "7 am";
@@ -1219,7 +1233,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control80() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control81() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "8 am";
@@ -1230,7 +1244,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control81() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control82() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "9 am";
@@ -1241,7 +1255,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control82() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control83() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "10 am";
@@ -1252,7 +1266,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control83() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control84() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "11 am";
@@ -1263,7 +1277,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control84() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control85() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "12 pm";
@@ -1274,7 +1288,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control85() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control86() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "1 pm";
@@ -1285,7 +1299,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control86() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control87() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "2 pm";
@@ -1296,7 +1310,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control87() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control88() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "3 pm";
@@ -1307,7 +1321,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control88() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control89() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "4 pm";
@@ -1318,7 +1332,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control89() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control90() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "5 pm";
@@ -1329,7 +1343,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control90() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control91() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "6 pm";
@@ -1340,7 +1354,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control91() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control92() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "7 pm";
@@ -1351,7 +1365,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control92() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control93() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "8 pm";
@@ -1362,7 +1376,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control93() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control94() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "9 pm";
@@ -1373,7 +1387,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control94() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control95() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "10 pm";
@@ -1384,7 +1398,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control95() {
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control96() {
             global::System.Web.UI.WebControls.ListItem @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.ListItem();
             @__ctrl.Text = "11 pm";
@@ -1395,116 +1409,105 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control71(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
+        private void @__BuildControl__control72(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
             global::System.Web.UI.WebControls.ListItem @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control72();
+            @__ctrl1 = this.@__BuildControl__control73();
             @__ctrl.Add(@__ctrl1);
             global::System.Web.UI.WebControls.ListItem @__ctrl2;
-            @__ctrl2 = this.@__BuildControl__control73();
+            @__ctrl2 = this.@__BuildControl__control74();
             @__ctrl.Add(@__ctrl2);
             global::System.Web.UI.WebControls.ListItem @__ctrl3;
-            @__ctrl3 = this.@__BuildControl__control74();
+            @__ctrl3 = this.@__BuildControl__control75();
             @__ctrl.Add(@__ctrl3);
             global::System.Web.UI.WebControls.ListItem @__ctrl4;
-            @__ctrl4 = this.@__BuildControl__control75();
+            @__ctrl4 = this.@__BuildControl__control76();
             @__ctrl.Add(@__ctrl4);
             global::System.Web.UI.WebControls.ListItem @__ctrl5;
-            @__ctrl5 = this.@__BuildControl__control76();
+            @__ctrl5 = this.@__BuildControl__control77();
             @__ctrl.Add(@__ctrl5);
             global::System.Web.UI.WebControls.ListItem @__ctrl6;
-            @__ctrl6 = this.@__BuildControl__control77();
+            @__ctrl6 = this.@__BuildControl__control78();
             @__ctrl.Add(@__ctrl6);
             global::System.Web.UI.WebControls.ListItem @__ctrl7;
-            @__ctrl7 = this.@__BuildControl__control78();
+            @__ctrl7 = this.@__BuildControl__control79();
             @__ctrl.Add(@__ctrl7);
             global::System.Web.UI.WebControls.ListItem @__ctrl8;
-            @__ctrl8 = this.@__BuildControl__control79();
+            @__ctrl8 = this.@__BuildControl__control80();
             @__ctrl.Add(@__ctrl8);
             global::System.Web.UI.WebControls.ListItem @__ctrl9;
-            @__ctrl9 = this.@__BuildControl__control80();
+            @__ctrl9 = this.@__BuildControl__control81();
             @__ctrl.Add(@__ctrl9);
             global::System.Web.UI.WebControls.ListItem @__ctrl10;
-            @__ctrl10 = this.@__BuildControl__control81();
+            @__ctrl10 = this.@__BuildControl__control82();
             @__ctrl.Add(@__ctrl10);
             global::System.Web.UI.WebControls.ListItem @__ctrl11;
-            @__ctrl11 = this.@__BuildControl__control82();
+            @__ctrl11 = this.@__BuildControl__control83();
             @__ctrl.Add(@__ctrl11);
             global::System.Web.UI.WebControls.ListItem @__ctrl12;
-            @__ctrl12 = this.@__BuildControl__control83();
+            @__ctrl12 = this.@__BuildControl__control84();
             @__ctrl.Add(@__ctrl12);
             global::System.Web.UI.WebControls.ListItem @__ctrl13;
-            @__ctrl13 = this.@__BuildControl__control84();
+            @__ctrl13 = this.@__BuildControl__control85();
             @__ctrl.Add(@__ctrl13);
             global::System.Web.UI.WebControls.ListItem @__ctrl14;
-            @__ctrl14 = this.@__BuildControl__control85();
+            @__ctrl14 = this.@__BuildControl__control86();
             @__ctrl.Add(@__ctrl14);
             global::System.Web.UI.WebControls.ListItem @__ctrl15;
-            @__ctrl15 = this.@__BuildControl__control86();
+            @__ctrl15 = this.@__BuildControl__control87();
             @__ctrl.Add(@__ctrl15);
             global::System.Web.UI.WebControls.ListItem @__ctrl16;
-            @__ctrl16 = this.@__BuildControl__control87();
+            @__ctrl16 = this.@__BuildControl__control88();
             @__ctrl.Add(@__ctrl16);
             global::System.Web.UI.WebControls.ListItem @__ctrl17;
-            @__ctrl17 = this.@__BuildControl__control88();
+            @__ctrl17 = this.@__BuildControl__control89();
             @__ctrl.Add(@__ctrl17);
             global::System.Web.UI.WebControls.ListItem @__ctrl18;
-            @__ctrl18 = this.@__BuildControl__control89();
+            @__ctrl18 = this.@__BuildControl__control90();
             @__ctrl.Add(@__ctrl18);
             global::System.Web.UI.WebControls.ListItem @__ctrl19;
-            @__ctrl19 = this.@__BuildControl__control90();
+            @__ctrl19 = this.@__BuildControl__control91();
             @__ctrl.Add(@__ctrl19);
             global::System.Web.UI.WebControls.ListItem @__ctrl20;
-            @__ctrl20 = this.@__BuildControl__control91();
+            @__ctrl20 = this.@__BuildControl__control92();
             @__ctrl.Add(@__ctrl20);
             global::System.Web.UI.WebControls.ListItem @__ctrl21;
-            @__ctrl21 = this.@__BuildControl__control92();
+            @__ctrl21 = this.@__BuildControl__control93();
             @__ctrl.Add(@__ctrl21);
             global::System.Web.UI.WebControls.ListItem @__ctrl22;
-            @__ctrl22 = this.@__BuildControl__control93();
+            @__ctrl22 = this.@__BuildControl__control94();
             @__ctrl.Add(@__ctrl22);
             global::System.Web.UI.WebControls.ListItem @__ctrl23;
-            @__ctrl23 = this.@__BuildControl__control94();
+            @__ctrl23 = this.@__BuildControl__control95();
             @__ctrl.Add(@__ctrl23);
             global::System.Web.UI.WebControls.ListItem @__ctrl24;
-            @__ctrl24 = this.@__BuildControl__control95();
+            @__ctrl24 = this.@__BuildControl__control96();
             @__ctrl.Add(@__ctrl24);
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control70() {
+        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control71() {
             global::System.Web.UI.WebControls.DropDownList @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ID = "dldendinghours";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "height: 30px");
-            this.@__BuildControl__control71(@__ctrl.Items);
+            this.@__BuildControl__control72(@__ctrl.Items);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Image @__BuildControl__control96() {
+        private global::System.Web.UI.WebControls.Image @__BuildControl__control97() {
             global::System.Web.UI.WebControls.Image @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Image();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             @__ctrl.ImageUrl = "/_layouts/15/Images/CBP_Images/Intrnal%20Use-Drop%20Down.png";
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "vertical-align: top");
-            return @__ctrl;
-        }
-        
-        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
-            "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control99() {
-            global::System.Web.UI.WebControls.ListItem @__ctrl;
-            @__ctrl = new global::System.Web.UI.WebControls.ListItem();
-            @__ctrl.Text = "";
-            @__ctrl.Value = "";
             return @__ctrl;
         }
         
@@ -1555,42 +1558,53 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private void @__BuildControl__control98(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
-            global::System.Web.UI.WebControls.ListItem @__ctrl1;
-            @__ctrl1 = this.@__BuildControl__control99();
-            @__ctrl.Add(@__ctrl1);
-            global::System.Web.UI.WebControls.ListItem @__ctrl2;
-            @__ctrl2 = this.@__BuildControl__control100();
-            @__ctrl.Add(@__ctrl2);
-            global::System.Web.UI.WebControls.ListItem @__ctrl3;
-            @__ctrl3 = this.@__BuildControl__control101();
-            @__ctrl.Add(@__ctrl3);
-            global::System.Web.UI.WebControls.ListItem @__ctrl4;
-            @__ctrl4 = this.@__BuildControl__control102();
-            @__ctrl.Add(@__ctrl4);
-            global::System.Web.UI.WebControls.ListItem @__ctrl5;
-            @__ctrl5 = this.@__BuildControl__control103();
-            @__ctrl.Add(@__ctrl5);
-        }
-        
-        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
-        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
-            "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control97() {
-            global::System.Web.UI.WebControls.DropDownList @__ctrl;
-            @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
-            @__ctrl.TemplateControl = this;
-            @__ctrl.ApplyStyleSheetSkin(this.Page);
-            @__ctrl.ID = "dldendingmins";
-            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "height: 30px");
-            this.@__BuildControl__control98(@__ctrl.Items);
+        private global::System.Web.UI.WebControls.ListItem @__BuildControl__control104() {
+            global::System.Web.UI.WebControls.ListItem @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.ListItem();
+            @__ctrl.Text = "";
+            @__ctrl.Value = "";
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Image @__BuildControl__control104() {
+        private void @__BuildControl__control99(System.Web.UI.WebControls.ListItemCollection @__ctrl) {
+            global::System.Web.UI.WebControls.ListItem @__ctrl1;
+            @__ctrl1 = this.@__BuildControl__control100();
+            @__ctrl.Add(@__ctrl1);
+            global::System.Web.UI.WebControls.ListItem @__ctrl2;
+            @__ctrl2 = this.@__BuildControl__control101();
+            @__ctrl.Add(@__ctrl2);
+            global::System.Web.UI.WebControls.ListItem @__ctrl3;
+            @__ctrl3 = this.@__BuildControl__control102();
+            @__ctrl.Add(@__ctrl3);
+            global::System.Web.UI.WebControls.ListItem @__ctrl4;
+            @__ctrl4 = this.@__BuildControl__control103();
+            @__ctrl.Add(@__ctrl4);
+            global::System.Web.UI.WebControls.ListItem @__ctrl5;
+            @__ctrl5 = this.@__BuildControl__control104();
+            @__ctrl.Add(@__ctrl5);
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.DropDownList @__BuildControl__control98() {
+            global::System.Web.UI.WebControls.DropDownList @__ctrl;
+            @__ctrl = new global::System.Web.UI.WebControls.DropDownList();
+            @__ctrl.TemplateControl = this;
+            @__ctrl.ApplyStyleSheetSkin(this.Page);
+            @__ctrl.ID = "dldendingmins";
+            ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("Style", "height: 30px");
+            this.@__BuildControl__control99(@__ctrl.Items);
+            return @__ctrl;
+        }
+        
+        [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
+        [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
+            "artCodeGenerator", "12.0.0.0")]
+        private global::System.Web.UI.WebControls.Image @__BuildControl__control105() {
             global::System.Web.UI.WebControls.Image @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Image();
             @__ctrl.TemplateControl = this;
@@ -1603,21 +1617,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control105() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control106() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtappdeadlineengtxt";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control105);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control106);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control105(object sender, System.EventArgs e) {
+        public void @__DataBinding__control106(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1628,7 +1642,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control106() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control107() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1644,21 +1658,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control107() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control108() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtappdeadlinetradchitxt";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control107);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control108);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control107(object sender, System.EventArgs e) {
+        public void @__DataBinding__control108(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1669,7 +1683,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control108() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control109() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1685,21 +1699,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control109() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control110() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtappdeadlinesimpchitxt";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control109);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control110);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control109(object sender, System.EventArgs e) {
+        public void @__DataBinding__control110(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1710,7 +1724,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control110() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control111() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1726,21 +1740,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control111() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control112() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtvnpeng";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control111);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control112);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control111(object sender, System.EventArgs e) {
+        public void @__DataBinding__control112(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1751,7 +1765,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control112() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control113() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1767,21 +1781,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control113() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control114() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtvnptradchi";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control113);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control114);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control113(object sender, System.EventArgs e) {
+        public void @__DataBinding__control114(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1792,7 +1806,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control114() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control115() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1808,21 +1822,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control115() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control116() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtvnpsimchi";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control115);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control116);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control115(object sender, System.EventArgs e) {
+        public void @__DataBinding__control116(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1833,7 +1847,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control116() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control117() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1849,21 +1863,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control117() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control118() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtresulteng";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control117);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control118);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control117(object sender, System.EventArgs e) {
+        public void @__DataBinding__control118(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1874,7 +1888,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control118() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control119() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1890,21 +1904,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control119() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control120() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtresulttradchi";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control119);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control120);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control119(object sender, System.EventArgs e) {
+        public void @__DataBinding__control120(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1915,7 +1929,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control120() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control121() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1931,21 +1945,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control121() {
+        private global::System.Web.UI.WebControls.TextBox @__BuildControl__control122() {
             global::System.Web.UI.WebControls.TextBox @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.TextBox();
             @__ctrl.TemplateControl = this;
             @__ctrl.ApplyStyleSheetSkin(this.Page);
             ((System.Web.UI.IAttributeAccessor)(@__ctrl)).SetAttribute("class", "input-sm");
             @__ctrl.ID = "txtresultsimchi";
-            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control121);
+            @__ctrl.DataBinding += new System.EventHandler(this.@__DataBinding__control122);
             return @__ctrl;
         }
         
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        public void @__DataBinding__control121(object sender, System.EventArgs e) {
+        public void @__DataBinding__control122(object sender, System.EventArgs e) {
             System.Web.UI.WebControls.TextBox dataBindingExpressionBuilderTarget;
             System.Web.UI.IDataItemContainer Container;
             dataBindingExpressionBuilderTarget = ((System.Web.UI.WebControls.TextBox)(sender));
@@ -1956,7 +1970,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control122() {
+        private global::System.Web.UI.WebControls.RequiredFieldValidator @__BuildControl__control123() {
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.RequiredFieldValidator();
             @__ctrl.TemplateControl = this;
@@ -1972,7 +1986,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Button @__BuildControl__control123() {
+        private global::System.Web.UI.WebControls.Button @__BuildControl__control124() {
             global::System.Web.UI.WebControls.Button @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Button();
             @__ctrl.TemplateControl = this;
@@ -1989,7 +2003,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Never)]
         [GeneratedCodeAttribute("Microsoft.VisualStudio.SharePoint.ProjectExtensions.CodeGenerators.SharePointWebP" +
             "artCodeGenerator", "12.0.0.0")]
-        private global::System.Web.UI.WebControls.Button @__BuildControl__control124() {
+        private global::System.Web.UI.WebControls.Button @__BuildControl__control125() {
             global::System.Web.UI.WebControls.Button @__ctrl;
             @__ctrl = new global::System.Web.UI.WebControls.Button();
             @__ctrl.TemplateControl = this;
@@ -2024,7 +2038,7 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
             @__parser.AddParsedSubObject(@__ctrl1);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl2;
-            @__ctrl2 = this.@__BuildControl__control22();
+            @__ctrl2 = this.@__BuildControl__control23();
             @__parser.AddParsedSubObject(@__ctrl2);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
 
@@ -2035,11 +2049,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl3;
-            @__ctrl3 = this.@__BuildControl__control23();
+            @__ctrl3 = this.@__BuildControl__control24();
             @__parser.AddParsedSubObject(@__ctrl3);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl4;
-            @__ctrl4 = this.@__BuildControl__control24();
+            @__ctrl4 = this.@__BuildControl__control25();
             @__parser.AddParsedSubObject(@__ctrl4);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2051,12 +2065,12 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                     <div class=""col-md-4"""">
                                           "));
             global::System.Web.UI.WebControls.CheckBox @__ctrl5;
-            @__ctrl5 = this.@__BuildControl__control25();
+            @__ctrl5 = this.@__BuildControl__control26();
             @__parser.AddParsedSubObject(@__ctrl5);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                    </div>\r\n                                   " +
                         " <div class=\"col-md-4\">\r\n                                        "));
             global::System.Web.UI.WebControls.CheckBox @__ctrl6;
-            @__ctrl6 = this.@__BuildControl__control26();
+            @__ctrl6 = this.@__BuildControl__control27();
             @__parser.AddParsedSubObject(@__ctrl6);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2069,11 +2083,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl7;
-            @__ctrl7 = this.@__BuildControl__control27();
+            @__ctrl7 = this.@__BuildControl__control28();
             @__parser.AddParsedSubObject(@__ctrl7);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl8;
-            @__ctrl8 = this.@__BuildControl__control28();
+            @__ctrl8 = this.@__BuildControl__control29();
             @__parser.AddParsedSubObject(@__ctrl8);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2093,15 +2107,15 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                                 <div class=""dirbox"">
                                                     "));
             global::System.Web.UI.WebControls.TextBox @__ctrl9;
-            @__ctrl9 = this.@__BuildControl__control29();
+            @__ctrl9 = this.@__BuildControl__control30();
             @__parser.AddParsedSubObject(@__ctrl9);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                        "));
             global::System.Web.UI.WebControls.Image @__ctrl10;
-            @__ctrl10 = this.@__BuildControl__control30();
+            @__ctrl10 = this.@__BuildControl__control31();
             @__parser.AddParsedSubObject(@__ctrl10);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                    "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl11;
-            @__ctrl11 = this.@__BuildControl__control31();
+            @__ctrl11 = this.@__BuildControl__control32();
             @__parser.AddParsedSubObject(@__ctrl11);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                                 </div>
@@ -2116,11 +2130,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                                      
                                                     "));
             global::System.Web.UI.WebControls.DropDownList @__ctrl12;
-            @__ctrl12 = this.@__BuildControl__control32();
+            @__ctrl12 = this.@__BuildControl__control33();
             @__parser.AddParsedSubObject(@__ctrl12);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                    "));
             global::System.Web.UI.WebControls.Image @__ctrl13;
-            @__ctrl13 = this.@__BuildControl__control58();
+            @__ctrl13 = this.@__BuildControl__control59();
             @__parser.AddParsedSubObject(@__ctrl13);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                                 </div>
@@ -2131,11 +2145,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                                    
                                                     "));
             global::System.Web.UI.WebControls.DropDownList @__ctrl14;
-            @__ctrl14 = this.@__BuildControl__control59();
+            @__ctrl14 = this.@__BuildControl__control60();
             @__parser.AddParsedSubObject(@__ctrl14);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                    "));
             global::System.Web.UI.WebControls.Image @__ctrl15;
-            @__ctrl15 = this.@__BuildControl__control66();
+            @__ctrl15 = this.@__BuildControl__control67();
             @__parser.AddParsedSubObject(@__ctrl15);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                                 </div>
@@ -2154,15 +2168,15 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                                 <div class=""dirbox"">
                                                     "));
             global::System.Web.UI.WebControls.TextBox @__ctrl16;
-            @__ctrl16 = this.@__BuildControl__control67();
+            @__ctrl16 = this.@__BuildControl__control68();
             @__parser.AddParsedSubObject(@__ctrl16);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                        "));
             global::System.Web.UI.WebControls.Image @__ctrl17;
-            @__ctrl17 = this.@__BuildControl__control68();
+            @__ctrl17 = this.@__BuildControl__control69();
             @__parser.AddParsedSubObject(@__ctrl17);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                    "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl18;
-            @__ctrl18 = this.@__BuildControl__control69();
+            @__ctrl18 = this.@__BuildControl__control70();
             @__parser.AddParsedSubObject(@__ctrl18);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                                 </div>
@@ -2176,11 +2190,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                                 <div class=""dirbox"">
                                                     "));
             global::System.Web.UI.WebControls.DropDownList @__ctrl19;
-            @__ctrl19 = this.@__BuildControl__control70();
+            @__ctrl19 = this.@__BuildControl__control71();
             @__parser.AddParsedSubObject(@__ctrl19);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                    "));
             global::System.Web.UI.WebControls.Image @__ctrl20;
-            @__ctrl20 = this.@__BuildControl__control96();
+            @__ctrl20 = this.@__BuildControl__control97();
             @__parser.AddParsedSubObject(@__ctrl20);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                                 </div>
@@ -2191,11 +2205,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                                 <div class=""dirbox"">
                                                     "));
             global::System.Web.UI.WebControls.DropDownList @__ctrl21;
-            @__ctrl21 = this.@__BuildControl__control97();
+            @__ctrl21 = this.@__BuildControl__control98();
             @__parser.AddParsedSubObject(@__ctrl21);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                                    "));
             global::System.Web.UI.WebControls.Image @__ctrl22;
-            @__ctrl22 = this.@__BuildControl__control104();
+            @__ctrl22 = this.@__BuildControl__control105();
             @__parser.AddParsedSubObject(@__ctrl22);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                                 </div>
@@ -2214,11 +2228,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl23;
-            @__ctrl23 = this.@__BuildControl__control105();
+            @__ctrl23 = this.@__BuildControl__control106();
             @__parser.AddParsedSubObject(@__ctrl23);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl24;
-            @__ctrl24 = this.@__BuildControl__control106();
+            @__ctrl24 = this.@__BuildControl__control107();
             @__parser.AddParsedSubObject(@__ctrl24);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2228,11 +2242,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl25;
-            @__ctrl25 = this.@__BuildControl__control107();
+            @__ctrl25 = this.@__BuildControl__control108();
             @__parser.AddParsedSubObject(@__ctrl25);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl26;
-            @__ctrl26 = this.@__BuildControl__control108();
+            @__ctrl26 = this.@__BuildControl__control109();
             @__parser.AddParsedSubObject(@__ctrl26);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2242,11 +2256,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl27;
-            @__ctrl27 = this.@__BuildControl__control109();
+            @__ctrl27 = this.@__BuildControl__control110();
             @__parser.AddParsedSubObject(@__ctrl27);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl28;
-            @__ctrl28 = this.@__BuildControl__control110();
+            @__ctrl28 = this.@__BuildControl__control111();
             @__parser.AddParsedSubObject(@__ctrl28);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2259,11 +2273,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl29;
-            @__ctrl29 = this.@__BuildControl__control111();
+            @__ctrl29 = this.@__BuildControl__control112();
             @__parser.AddParsedSubObject(@__ctrl29);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl30;
-            @__ctrl30 = this.@__BuildControl__control112();
+            @__ctrl30 = this.@__BuildControl__control113();
             @__parser.AddParsedSubObject(@__ctrl30);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2273,11 +2287,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl31;
-            @__ctrl31 = this.@__BuildControl__control113();
+            @__ctrl31 = this.@__BuildControl__control114();
             @__parser.AddParsedSubObject(@__ctrl31);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl32;
-            @__ctrl32 = this.@__BuildControl__control114();
+            @__ctrl32 = this.@__BuildControl__control115();
             @__parser.AddParsedSubObject(@__ctrl32);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2288,11 +2302,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
 
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl33;
-            @__ctrl33 = this.@__BuildControl__control115();
+            @__ctrl33 = this.@__BuildControl__control116();
             @__parser.AddParsedSubObject(@__ctrl33);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl34;
-            @__ctrl34 = this.@__BuildControl__control116();
+            @__ctrl34 = this.@__BuildControl__control117();
             @__parser.AddParsedSubObject(@__ctrl34);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2306,11 +2320,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
 
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl35;
-            @__ctrl35 = this.@__BuildControl__control117();
+            @__ctrl35 = this.@__BuildControl__control118();
             @__parser.AddParsedSubObject(@__ctrl35);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl36;
-            @__ctrl36 = this.@__BuildControl__control118();
+            @__ctrl36 = this.@__BuildControl__control119();
             @__parser.AddParsedSubObject(@__ctrl36);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2320,11 +2334,11 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl37;
-            @__ctrl37 = this.@__BuildControl__control119();
+            @__ctrl37 = this.@__BuildControl__control120();
             @__parser.AddParsedSubObject(@__ctrl37);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl38;
-            @__ctrl38 = this.@__BuildControl__control120();
+            @__ctrl38 = this.@__BuildControl__control121();
             @__parser.AddParsedSubObject(@__ctrl38);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl(@"
                                     </div>
@@ -2334,21 +2348,21 @@ namespace CBP_EMS_SP.PublicUserControls.ProgrammeManagement {
                                         </p>
                                         "));
             global::System.Web.UI.WebControls.TextBox @__ctrl39;
-            @__ctrl39 = this.@__BuildControl__control121();
+            @__ctrl39 = this.@__BuildControl__control122();
             @__parser.AddParsedSubObject(@__ctrl39);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                        "));
             global::System.Web.UI.WebControls.RequiredFieldValidator @__ctrl40;
-            @__ctrl40 = this.@__BuildControl__control122();
+            @__ctrl40 = this.@__BuildControl__control123();
             @__parser.AddParsedSubObject(@__ctrl40);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                    </div>\r\n                                </d" +
                         "iv>\r\n\r\n                                <div style=\"margin-top: 50px;\" class=\"btn" +
                         "-box\">\r\n                                    "));
             global::System.Web.UI.WebControls.Button @__ctrl41;
-            @__ctrl41 = this.@__BuildControl__control123();
+            @__ctrl41 = this.@__BuildControl__control124();
             @__parser.AddParsedSubObject(@__ctrl41);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                    "));
             global::System.Web.UI.WebControls.Button @__ctrl42;
-            @__ctrl42 = this.@__BuildControl__control124();
+            @__ctrl42 = this.@__BuildControl__control125();
             @__parser.AddParsedSubObject(@__ctrl42);
             @__parser.AddParsedSubObject(new System.Web.UI.LiteralControl("\r\n                                </div>\r\n\r\n                            </div>\r\n\r" +
                         "\n                        </div>\r\n                    "));
