@@ -80,7 +80,7 @@ namespace CBP_EMS_SP.PublicUserControls.InternalUserApplications
             List<ListItem> objIncubation = new List<ListItem>();
             objIncubation.Add(new ListItem() { Value = "HongKong", Text = "Cyberport Creative Micro Fund - Hong Kong" });
             objIncubation.Add(new ListItem() { Value = "CrossBorder", Text = "Cyberport Creative Micro Fund - Cross Border" });
-            objIncubation.Add(new ListItem() { Value = "CUPP", Text = "Cyberport University Partnerhip Programme" });
+            objIncubation.Add(new ListItem() { Value = "CUPP", Text = "Cyberport University Partnership Programme" });
             objIncubation.Add(new ListItem() { Value = "CCMFGBAYEP", Text = "Cyberport Creative Micro Fund - GBAYEP" });    //20220929 mew program
             ddlProgramName.DataSource = objIncubation;
             ddlProgramName.DataTextField = "Text";
@@ -94,7 +94,7 @@ namespace CBP_EMS_SP.PublicUserControls.InternalUserApplications
             objIncubation.Add(new ListItem() { Value = "Cyberport Incubation Program", Text = "Cyberport Incubation Program" });
             objIncubation.Add(new ListItem() { Value = "HongKong", Text = "Cyberport Creative Micro Fund - Hong Kong" });
             objIncubation.Add(new ListItem() { Value = "CrossBorder", Text = "Cyberport Creative Micro Fund - Cross Border" });
-            objIncubation.Add(new ListItem() { Value = "CUPP", Text = "Cyberport University Partnerhip Programme" });
+            objIncubation.Add(new ListItem() { Value = "CUPP", Text = "Cyberport University Partnership Programme" });
             objIncubation.Add(new ListItem() { Value = "CCMFGBAYEP", Text = "Cyberport Creative Micro Fund - GBAYEP" });    //20220929 mew program
             ddlProgramName.DataSource = objIncubation;
             ddlProgramName.DataTextField = "Text";

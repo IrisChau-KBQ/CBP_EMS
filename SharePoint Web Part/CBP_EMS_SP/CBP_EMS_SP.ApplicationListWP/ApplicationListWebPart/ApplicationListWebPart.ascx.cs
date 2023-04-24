@@ -166,7 +166,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 getSYSTEMPARAMETER();
 
                 if (lstCyberportProgramme.SelectedValue.ToString().Contains("Cyberport Incubation Program") ||
-                    lstCyberportProgramme.SelectedValue.ToString().Contains("Cyberport University Partnerhip Programme") || lstCyberportProgramme.SelectedValue.ToString() == "Cyberport Accelerator Support Programme")
+                    lstCyberportProgramme.SelectedValue.ToString().Contains("Cyberport University Partnership Programme") || lstCyberportProgramme.SelectedValue.ToString() == "Cyberport Accelerator Support Programme")
                 {
                     //CPIP
                     lststream.Visible = false;
@@ -792,7 +792,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                     return "CPIP";
                 case "Cyberport Creative Micro Fund - Hong Kong":
                     return "CCMF";
-                case "Cyberport University Partnerhip Programme":
+                case "Cyberport University Partnership Programme":
                     return "CUPP";
                 case "Cyberport Creative Micro Fund - Cross Border":
                     return "CCMF-CB";
@@ -1481,7 +1481,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
         //            case "Cyberport Creative Micro Fund - Hong Kong" :
         //                m_Program = "CCMF";
         //                break;
-        //            case "Cyberport University Partnerhip Programme" :
+        //            case "Cyberport University Partnership Programme" :
         //                m_Program = "CUPP";
         //                break;
         //            case "Cyberport Creative Micro Fund - Cross Border" :
@@ -2176,7 +2176,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             btnDownload.Enabled = true;
 
             if (lstCyberportProgramme.SelectedValue.ToString().Contains("Cyberport Incubation Program"))// ||
-            //    lstCyberportProgramme.SelectedValue.ToString().Contains("Cyberport University Partnerhip Programme"))
+            //    lstCyberportProgramme.SelectedValue.ToString().Contains("Cyberport University Partnership Programme"))
             {
                 //CPIP
                 lststream.Visible = false;
