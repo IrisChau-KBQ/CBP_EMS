@@ -56,6 +56,8 @@ namespace CBP_EMS_SP.PreListAppWP.PreListApp
 
         private string _CCEmailCCMF = "";
         private string _CCEmailCPIP = "";
+        private string _CCEmailCUPP = "";
+        private string _CCEmailGBAYEP = "";
 
         //string m_username = SPContext.Current.Web.CurrentUser.Name.ToString();
 
@@ -1947,7 +1949,8 @@ namespace CBP_EMS_SP.PreListAppWP.PreListApp
                 m_subject = "Invitation to Presentation Session for CPIP" + m_Intake_Number;
                 m_body = getEmailTemplate("Presentation_Invitation_CPIP");
             }
-            else if (m_Programme_Name.Contains("GBAYEP")) {
+            else if (m_Programme_Name.Contains("GBAYEP"))
+            {
                 //CCMF-GBAYEP
                 m_subject = "Invitation to Presentation Session for GBAYPE " + m_Intake_Number;
                 m_body = getEmailTemplate("Presentation_Invitation_GBAYEP");
@@ -2249,6 +2252,16 @@ namespace CBP_EMS_SP.PreListAppWP.PreListApp
                     if (reader.GetString(0) == "CCEmailCCMF")
                     {
                         _CCEmailCCMF = reader.GetString(1);
+
+                    }
+                    if (reader.GetString(0) == "CCEmailCUPP")
+                    {
+                        _CCEmailCUPP = reader.GetString(1);
+
+                    }
+                    if (reader.GetString(0) == "CCEmailGBAYEP")
+                    {
+                        _CCEmailGBAYEP = reader.GetString(1);
 
                     }
                 }

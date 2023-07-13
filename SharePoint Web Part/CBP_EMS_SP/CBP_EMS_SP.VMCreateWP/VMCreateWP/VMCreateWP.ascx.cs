@@ -94,10 +94,14 @@ namespace CBP_EMS_SP.VMCreateWP.VMCreateWP
         DateTime m_ApplicationDeadline;
         string m_PreviewCCMFInvitEmailTo = "";
         string m_PreviewCPIPInvitEmailTo = "";
+        string m_PreviewCUPPInvitEmailTo = "";
+        string m_PreviewGBAYEPInvitEmailTo = "";
         bool m_InviteEmailSent = false;
         
         private string _CCEmailCCMFVetting = "";
         private string _CCEmailCPIPVetting = "";
+        private string _CCEmailCUPPVetting = "";
+        private string _CCEmailGBAYEPVetting = "";
         private string _VettingInvitationAttachment = "";
         private ListItem m_oldLeader;
 
@@ -2278,14 +2282,23 @@ namespace CBP_EMS_SP.VMCreateWP.VMCreateWP
                     headers.Add("cc", _CCEmailCPIPVetting);
                 _ApplicationType = "CPIP";
             }
-            else if (m_Programme_Name.Contains("Cyberport Incubation Program"))
+            else if (m_Programme_Name.Contains("Cyberport University Partnership Programme"))
             {
-                //CCMF
-                m_subject = m_VettingDate.ToString("d MMMM yyyy (ddd)") + " - Vetting Meeting and Presentation Session for Cyberport Creative Micro Fund(CCMF) - " + m_Intake_Number ;
-                m_body += getEmailTemplate("Vetting_Team_Invitaion_CCMF");
-                if (!string.IsNullOrEmpty(_CCEmailCCMFVetting) && ccOn)
-                    headers.Add("cc", _CCEmailCCMFVetting);
+                //CUPP
+                m_subject = m_VettingDate.ToString("d MMMM yyyy (ddd)") + " - Vetting Meeting and Presentation Session for Cyberport University Partnership PRogramme(CUPP) - " + m_Intake_Number ;
+                m_body += getEmailTemplate("Vetting_Team_Invitaion_CUPP");
+                if (!string.IsNullOrEmpty(_CCEmailCUPPVetting) && ccOn)
+                    headers.Add("cc", _CCEmailCUPPVetting);
                 _ApplicationType="CCMF";
+            }
+            else if (m_Programme_Name.ToLower().Contains("gbayep"))
+            {
+                //GBAYEP
+                m_subject = m_VettingDate.ToString("d MMMM yyyy (ddd)") + " - Vetting Meeting and Presentation Session for Cyberport Creative Micro Fund - Greater Bay Area Young Entrepreneurship Programme - " + m_Intake_Number;
+                m_body += getEmailTemplate("Vetting_Team_Invitaion_GBAYEP");
+                if (!string.IsNullOrEmpty(_CCEmailGBAYEPVetting) && ccOn)
+                    headers.Add("cc", _CCEmailGBAYEPVetting);
+                _ApplicationType = "CCMF";
             }
             else
             {
@@ -2551,6 +2564,16 @@ namespace CBP_EMS_SP.VMCreateWP.VMCreateWP
                         m_PreviewCPIPInvitEmailTo = reader.GetString(1);
 
                     }
+                    if (reader.GetString(0) == "PreviewCUPPInvitEmailTo")
+                    {
+                        m_PreviewCUPPInvitEmailTo = reader.GetString(1);
+
+                    }
+                    if (reader.GetString(0) == "PreviewGBAYEPInvitEmailTo")
+                    {
+                        m_PreviewGBAYEPInvitEmailTo = reader.GetString(1);
+
+                    }
                     if (reader.GetString(0) == "CCEmailCPIPVetting")
                     {
                         _CCEmailCPIPVetting = reader.GetString(1);
@@ -2559,6 +2582,14 @@ namespace CBP_EMS_SP.VMCreateWP.VMCreateWP
                     if (reader.GetString(0) == "CCEmailCCMFVetting")
                     {
                         _CCEmailCCMFVetting = reader.GetString(1);
+                    }
+                    if (reader.GetString(0) == "CCEmailCUPPVetting")
+                    {
+                        _CCEmailCUPPVetting = reader.GetString(1);
+                    }
+                    if (reader.GetString(0) == "CCEmailGBAYEPVetting")
+                    {
+                        _CCEmailGBAYEPVetting = reader.GetString(1);
                     }
                     if (reader.GetString(0) == "VettingInvitationAttachment")
                     {

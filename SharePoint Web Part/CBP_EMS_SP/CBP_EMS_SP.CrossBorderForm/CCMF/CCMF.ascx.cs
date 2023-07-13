@@ -64,7 +64,7 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
             btn_StepSave.Text = SPFunctions.LocalizeUI("Save", "CyberportEMS_Common");
             rdo_HK.Text = SPFunctions.LocalizeUI("Hong_Kong_Programme", "CyberportEMS_CCMF");
             rdo_Crossborder.Text = SPFunctions.LocalizeUI("Cross_Border_Programme_Supported_by_CCMF", "CyberportEMS_CCMF");
-            rdo_CUPP.Text = SPFunctions.LocalizeUI("Cyberport_University_Partnership_Programme", "CyberportEMS_CCMF");
+            rdo_CUPP.Text = SPFunctions.LocalizeUI("CUPP_heading", "CyberportEMS_CUPP");
 
             string ctrlname = HttpContext.Current.Request.Params.Get("__EVENTTARGET");
             if (!Page.IsPostBack && string.IsNullOrEmpty(ctrlname))
@@ -126,6 +126,18 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
             rdo_CCMFApplication.DataBind();
             if (!string.IsNullOrEmpty(HKSelectedValueType))
                 rdo_CCMFApplication.SelectedValue = HKSelectedValueType;
+
+            string ccmfApplication = rdo1_3.SelectedValue;
+            List<ListItem> rdo1_3_Items = new List<ListItem>();
+            rdo1_3_Items.Add(new ListItem() { Value = "Ture", Text = SPFunctions.LocalizeUI("lbl_yes", "CyberportEMS_Common") });
+            rdo1_3_Items.Add(new ListItem() { Value = "False", Text = SPFunctions.LocalizeUI("lbl_no", "CyberportEMS_Common") });
+            rdo1_3.DataSource = rdo1_3_Items;
+            rdo1_3.DataTextField = "Text";
+            rdo1_3.DataValueField = "Value";
+            rdo1_3.DataBind();
+            if (!string.IsNullOrEmpty(ccmfApplication))
+                rdo1_3.SelectedValue = ccmfApplication;
+
 
             string BusinessAreaSelected = RadioButtonList1.SelectedValue;
             List<ListItem> busniessareaoption = new List<ListItem>();
@@ -236,7 +248,7 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                     }
                     else
                     {
-                        mainpageheading.Text = SPFunctions.LocalizeUI("CUPP_Header", "CyberportEMS_CCMF");
+                        mainpageheading.Text = SPFunctions.LocalizeUI("CCMF_Header", "CyberportEMS_CUPP");
                     }
                 }
             }
@@ -2548,35 +2560,44 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                         //heading1.Text = "-" + SPFunctions.LocalizeUI("Cyberport_University_Partnership_Programme", "CyberportEMS_CCMF");
                         Applicant.Text = SPFunctions.LocalizeUI("Company_Applicant", "CyberportEMS_CCMF");
                         BothApplicants.Text = SPFunctions.LocalizeUI("Individual_and_Company_Applicant", "CyberportEMS_CCMF");
-                        hkorcrossborder.Text = SPFunctions.LocalizeUI("CUPP_heading", "CyberportEMS_CCMF");
-                        lbl211a.Text = SPFunctions.LocalizeUI("HKP_Pro_Young_Comp_1_A", "CyberportEMS_CCMF");
+                        hkorcrossborder.Text = SPFunctions.LocalizeUI("CUPP_heading", "CyberportEMS_CUPP");
+                        lbl211a.Text = SPFunctions.LocalizeUI("HKP_Pro_Young_Comp_1_A", "CyberportEMS_CUPP");
                         lbl211b.Text = SPFunctions.LocalizeUI("HKP_Pro_Young_Comp_1_B", "CyberportEMS_CCMF");
+                        lbl211btdi.Text = "b)";
+                        div211a.Visible = true;
                         div211b.Disabled = false;
-
+                        div212a.Visible = false;
                         lbl211btd.Disabled = false;
                         lbl211b.Enabled = true;
                         rdo211b.Enabled = true;
                         //rdo211b.SelectedIndex = -1;
-
-                        // reopen for CUPP change 20230302
-                           lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CCMF");
-                            lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CCMF");
-                        lbl212c.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_C", "CyberportEMS_CCMF");
-                        lbl212d.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_D", "CyberportEMS_CCMF");
-                        lbl212e.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_E", "CyberportEMS_CCMF");
-                        lbl212f.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_F", "CyberportEMS_CCMF");
-                        lbl212g.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_G", "CyberportEMS_CCMF");
-                        lbl212h.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_H", "CyberportEMS_CCMF");
-
-                        div212i.Visible = false;
+                        lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CUPP");
+                        lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CUPP");
+                        lbl212c.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_C", "CyberportEMS_CUPP");
+                        lbl212d.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_D", "CyberportEMS_CUPP");
+                        lbl212e.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_E", "CyberportEMS_CUPP");
+                        lbl212f.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_F", "CyberportEMS_CUPP");
+                        lbl212g.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_G", "CyberportEMS_CUPP");
+                        lbl212h.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_H", "CyberportEMS_CUPP");
+                        lbl212i.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_I", "CyberportEMS_CUPP");
+                        //div212i.Visible = false;
                         div212j.Visible = false;
-
-                        // reopen for CUPP change 20230302
                         div212a.Visible = true;
                         div212b.Visible = true;
-                        //div212a.Visible = false;
                         //div212f_1.Visible = false;
+                        spn212a.InnerText = "c)";
+                        spn212b.InnerText = "d)";
+                        spn212c.InnerText = "e)";
+                        lbl212dtd.Text = "f)";
+                        lbl212etdd.Text = "g)";
+                        lbl212ftd.Text = "h)";
+                        lbl212gtd.Text = "i)";
+                        spn212h.InnerText = "j)";
+                        lbl212itd.Text = "k)";
+
                         rdo211b_SetUpDisable();
+
+                        div32c.Visible = false;
                     }
                     break;
                 case "cbui":
@@ -2586,27 +2607,40 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                         BothApplicants.Text = SPFunctions.LocalizeUI("Individual_and_Company_Applicant", "CyberportEMS_CCMF");
                         lbl211a.Text = SPFunctions.LocalizeUI("HKP_Pro_Young_Ind_1_A", "CyberportEMS_CCMF");
                         lbl211b.Text = SPFunctions.LocalizeUI("HKP_Pro_Young_Ind_1_B", "CyberportEMS_CCMF");
-                        hkorcrossborder.Text = SPFunctions.LocalizeUI("CUPP_heading", "CyberportEMS_CCMF");
+                        hkorcrossborder.Text = SPFunctions.LocalizeUI("CUPP_heading", "CyberportEMS_CUPP");
+                        div211a.Visible = false;
                         div211b.Disabled = false;// always enable individual 
                         lbl211b.Enabled = true;
+                        lbl211btdi.Text = "a)";
                         rdo211b.Enabled = true;
                         lbl211btd.Disabled = false;
+
+                        div32c.Visible = false;
+
                         //rdo211b.SelectedIndex = -1;
-                        // reopen for CUPP change 20230302
-                              lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CCMF");
-                              lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CCMF");
-                        lbl212c.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_C", "CyberportEMS_CCMF");
-                        lbl212d.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_D", "CyberportEMS_CCMF");
-                        lbl212e.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_E", "CyberportEMS_CCMF");
-                        lbl212f.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_F", "CyberportEMS_CCMF");
-                        lbl212g.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_G", "CyberportEMS_CCMF");
-                        lbl212h.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_H", "CyberportEMS_CCMF");
-                        div212i.Visible = false;
+
+                        lbl212a.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_A", "CyberportEMS_CUPP");
+                        lbl212b.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_B", "CyberportEMS_CUPP");
+                        lbl212c.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_C", "CyberportEMS_CUPP");
+                        lbl212d.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_D", "CyberportEMS_CUPP");
+                        lbl212e.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_E", "CyberportEMS_CUPP");
+                        lbl212f.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_F", "CyberportEMS_CUPP");
+                        lbl212g.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_G", "CyberportEMS_CUPP");
+                        lbl212h.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_H", "CyberportEMS_CUPP");
+                        lbl212i.Text = SPFunctions.LocalizeUI("CUPP_IndComp_2_I", "CyberportEMS_CUPP");
+                        spn212a.InnerText = "b)";
+                        spn212b.InnerText = "c)";
+                        spn212c.InnerText = "d)";
+                        lbl212dtd.Text = "e)";
+                        lbl212etdd.Text = "f)";
+                        lbl212ftd.Text = "g)";
+                        lbl212gtd.Text = "h)";
+                        spn212h.InnerText = "i)";
+                        lbl212itd.Text = "j)";
+                        //div212i.Visible = false;
                         div212j.Visible = false;
-                        // reopen for CUPP change 20230302
                         div212a.Visible = true;
                         div212b.Visible = true;
-                        //div212a.Visible = false;
                         //div212f_1.Visible = false;
                         rdo211b_SetUpDisable();
                     }
@@ -3244,19 +3278,41 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                                 if (!string.IsNullOrEmpty(objIncubation.CCMF_Application_Type))
                                 {
                                     Activation = objIncubation.CCMF_Application_Type;
-                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)))
+                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1a)) && Activation.ToLower() == "company")
                                     {
                                         IsError = true;
 
                                         errlist.Add(Localize("Error_2_1_1a"));
                                     }
 
-                                    if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
+                                    if (string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
                                     {
-                                        IsError = true;
+                                        if (Activation.ToLower() == "company")
+                                        {
+                                            if (objIncubation.Question2_1_1a == false)
+                                            {
+                                                IsError = true;
 
-                                        errlist.Add(Localize("Error_2_1_1b"));
+                                                errlist.Add(Localize("Error_2_1_1b"));
+                                            }
+
+                                        }
+                                        else
+                                        {
+                                            IsError = true;
+
+                                            errlist.Add(Localize("Error_2_1_1b"));
+
+                                        }
                                     }
+
+
+                                    //if (Activation.ToLower() == "company" && string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
+                                    //{
+                                    //    IsError = true;
+
+                                    //    errlist.Add(Localize("Error_2_1_1b"));
+                                    //}
                                     //if (objTB_APPLICATION_ATTACHMENT != null && Activation.ToLower() == "company" && !string.IsNullOrEmpty(Convert.ToString(objIncubation.Question2_1_1b)))
                                     //{
                                     //    if (Convert.ToBoolean(objIncubation.Question2_1_1b) == true && (!objTB_APPLICATION_ATTACHMENT.Exists(x => x.Attachment_Type.ToLower() == enumAttachmentType.BR_COPY.ToString().ToLower())))
@@ -4936,16 +4992,36 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                         if (apptype.ToLower() == "company")
                         {
                             attachbrcopy.Visible = true;
-                            attachhkid.Visible = false;
-                            br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF");//BR Copy";
+
+                            if (!rdo_CUPP.Checked)
+                            {
+                                attachhkid.Visible = false;
+                                br_copy.InnerText = "6.1 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF"));//BR Copy";
 
 
-                            studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMF");//Student ID";
+                                studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMF");//Student ID";
 
-                            video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF");//Video Clip";
-                            presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMF");//Presentation Slide";
-                            other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMF");//Other Attachment";
+                                video_clip.InnerText = "6.3 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF"));//Video Clip";
+                                presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMF");//Presentation Slide";
+                                other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMF");//Other Attachment";
 
+
+                            }
+                            else
+                            {
+
+                                attachhkid.Visible = true;
+                                br_copy.InnerText = "6.1 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF"));//BR Copy";
+                               
+                                studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMF");//Student ID";
+                                hk_id.InnerText = "6.3 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("HKID", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF"));//HK ID";
+
+                                video_clip.InnerText = "6.4 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF"));//Video Clip";
+                                presentation_slide.InnerText = "6.5 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMF");//Presentation Slide";
+                                other.InnerText = "6.6 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMF");//Other Attachment";
+
+                            }
+                           
 
                         }
                         else
@@ -4955,8 +5031,8 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
 
 
                             studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMF");//Student ID";
-                            hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF");//HK ID";
-                            video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF");//Video Clip";
+                            hk_id.InnerText = "6.2 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("HKID", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF"));//HK ID";
+                            video_clip.InnerText = "6.3 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF"));//Video Clip";
                             presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMF");//Presentation Slide";
                             other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMF");//Other Attachment";
                         }
@@ -5029,10 +5105,10 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
                             if (apptype.ToLower() == "company")
                             {
 
-                                br_copy.InnerText = "6.1 " + SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF");//BR Copy";
+                                br_copy.InnerText = "6.1 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF"));//BR Copy";
                                 studnt_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMF");//Student ID";
 
-                                video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF");//Video Clip";
+                                video_clip.InnerText = "6.3 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF"));//Video Clip";
                                 presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMF");//Presentation Slide";
                                 other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMF");//Other Attachment";
 
@@ -5043,8 +5119,8 @@ namespace CBP_EMS_SP.CrossBorderForm.CCMF
 
 
                                 studnt_id.InnerText = "6.1 " + SPFunctions.LocalizeUI("StudentID", "CyberportEMS_CCMF");//Student ID";
-                                hk_id.InnerText = "6.2 " + SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF");//HK ID";
-                                video_clip.InnerText = "6.3 " + SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF");//Video Clip";
+                                hk_id.InnerText = "6.2 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("HKID", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF"));//HK ID";
+                                video_clip.InnerText = "6.3 " + (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF"));//Video Clip";
                                 presentation_slide.InnerText = "6.4 " + SPFunctions.LocalizeUI("PresentationSlide", "CyberportEMS_CCMF");//Presentation Slide";
                                 other.InnerText = "6.5 " + SPFunctions.LocalizeUI("OtherAttachment", "CyberportEMS_CCMF");//Other Attachment";
                             }

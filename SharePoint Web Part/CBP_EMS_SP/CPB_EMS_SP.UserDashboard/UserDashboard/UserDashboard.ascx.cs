@@ -143,7 +143,6 @@ namespace CPB_EMS_SP.UserDashboard.UserDashboard
                     {                    
                         lblprogramname.Text = SPFunctions.LocalizeUI("CCMF_GBAYEP_Header", "CyberportEMS_CCMFGBAYEP");
 
-                        //TODO: Pending tto add new object TB_CCMF_GBAYEP_APPLICATION
                         List<TB_CCMF_APPLICATION> objProgram = Intake.TB_CCMF_APPLICATION.Where(x => x.Programme_ID == ProgramId && (x.Created_By.ToLower() == UserName.ToLower()) && x.Status != formsubmitaction.Deleted.ToString()).OrderBy(x => x.Modified_Date).ToList();
 
                         if (objProgram.Count == 0)
@@ -161,7 +160,7 @@ namespace CPB_EMS_SP.UserDashboard.UserDashboard
                     }
                 }
                 #endregion
-                else if (DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("hong kong") || DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("university partnerhip"))
+                else if (DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("hong kong") || DataBinder.Eval(e.Item.DataItem, "Programme_Name").ToString().ToLower().Contains("university partnership"))
                 {
                     using (var Intake = new CyberportEMS_EDM())
                     {
@@ -171,7 +170,7 @@ namespace CPB_EMS_SP.UserDashboard.UserDashboard
                         }
                         else
                         {
-                            lblprogramname.Text = SPFunctions.LocalizeUI(" CUPP_Header", "CyberportEMS_CCMF");
+                            lblprogramname.Text = SPFunctions.LocalizeUI("CUPP_Header", "CyberportEMS_CUPP");
                         }
 
                         List<TB_CCMF_APPLICATION> objProgram = Intake.TB_CCMF_APPLICATION.Where(x => x.Programme_ID == ProgramId && (x.Created_By.ToLower() == UserName.ToLower()) && x.Status != formsubmitaction.Deleted.ToString()).OrderBy(x => x.Modified_Date).ToList();

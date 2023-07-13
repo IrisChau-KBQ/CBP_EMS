@@ -5912,9 +5912,13 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             using (var dbcontext = new CyberportEMS_EDM())
             {
 
+                
+
                 //TB_CCMF_APPLICATION objTB_INCUBATION_APPLICATION = dbcontext.TB_CCMF_APPLICATION.FirstOrDefault(x => x.Application_Number == ApplicationNumber);
                 TB_CCMF_APPLICATION objTB_TB_CCMF_APPLICATION = dbcontext.TB_CCMF_APPLICATION.FirstOrDefault(x => x.Application_Number == ApplicationNumber && (x.Status != "Saved" && x.Status != "Deleted") && string.IsNullOrEmpty(x.Application_Parent_ID));
                 TB_PROGRAMME_INTAKE objTB_PROGRAMME_INTAKE = dbcontext.TB_PROGRAMME_INTAKE.FirstOrDefault(x => x.Programme_ID == objTB_TB_CCMF_APPLICATION.Programme_ID);
+
+                bool isCUPP = objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains("cupp");
 
                 PdfPTable table_2 = new PdfPTable(2);
                 table_2.DefaultCell.Border = Rectangle.NO_BORDER;
@@ -5960,18 +5964,18 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(para5);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para6 = new Paragraph("2. To read the  CCMF Guides and Notes for the Applicants (ENC.RF.015)  before filling in this Application Form.", Font12blueLight);
-                Paragraph para6 = new Paragraph("2. " + TranslateCCMF("Instruction_2"), Font12blueLight);
+                Paragraph para6 = new Paragraph("2. " + (isCUPP ? TranslateCUPP("Instruction_2") : TranslateCCMF("Instruction_2")), Font12blueLight);
                 doc.Add(para6);
                 doc.Add(new Chunk("\n"));
                 Paragraph para7 = new Paragraph("3. " + TranslateCCMF("Instruction_3"), Font12blueLight);
                 doc.Add(para7);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para8 = new Paragraph("4. ONE email address for EACH CCMF Programme application , and that email address would receive all the emails in respect of the submitted application.  If you have another project to apply for CCMF Programme, please use a separate email address for that application.", Font12blueLight);
-                Paragraph para8 = new Paragraph("4. " + TranslateCCMF("Instruction_4"), Font12blueLight);
+                Paragraph para8 = new Paragraph("4. " + (isCUPP ? TranslateCUPP("Instruction_4") : TranslateCCMF("Instruction_4")), Font12blueLight);
                 doc.Add(para8);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para9 = new Paragraph("5. Please prepare and upload the requested supporting documents in Section 6 including, but not limited, to the following: ", Font12blueLight);
-                Paragraph para9 = new Paragraph("5. " + TranslateCCMF("Instruction_4_1"), Font12blueLight);
+                Paragraph para9 = new Paragraph("5. " + (isCUPP ? TranslateCUPP("Instruction_4_1") : TranslateCCMF("Instruction_4_1")), Font12blueLight);
                 doc.Add(para9);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para10 = new Paragraph("• Company documents (e.g. Business Registration, Certificate of Incorporation, etc.) (if applicable)", Font12blueLight);
@@ -6032,7 +6036,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 }
                 else if (objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower() == "cupp")
                 {
-                    doc.Add(new Paragraph("Cyberport University Partnership Programme", Font12black));
+                    doc.Add(new Paragraph("Cyberport University Partnership Programme (CUPP) Supported by CCMF​", Font12black));
                 }
                 else if (objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains( "gbayep"))
                 {
@@ -6045,7 +6049,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(new Paragraph(objTB_TB_CCMF_APPLICATION.CCMF_Application_Type + " Application", Font12black));
                 doc.Add(new Chunk("\n"));
 
-                doc.Add(new Paragraph("1.3 " + TranslateCCMF("Step1_Question1_3"), Font15Head));
+                doc.Add(new Paragraph("1.3 " + (isCUPP ? TranslateCUPP("Step1_Question1_3") : TranslateCCMF("Step1_Question1_3")), Font15Head));
                 doc.Add(new Chunk("\n"));
                 doc.Add(new Paragraph(objTB_TB_CCMF_APPLICATION.Question1_3.HasValue ? (objTB_TB_CCMF_APPLICATION.Question1_3.Value == true ? "Yes" : "No") : "" + " Application", Font12black));
                 doc.Add(new Chunk("\n"));
@@ -6075,16 +6079,17 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                     Paragraph para_16 = new Paragraph("2.1 " + TranslateCCMF("Cross_Border_Programme_Supported_by_CCMF"), Font15Head);
                     doc.Add(para_16);
                 }
-                else if (objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains("gbayep"))
+                else if (objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains("cupp"))
+                {
+                    Paragraph para_16 = new Paragraph("2.1 " + TranslateCUPP("CUPP_heading"), Font15Head);
+                    doc.Add(para_16);
+                }
+                else 
                 {
                     Paragraph para_16 = new Paragraph("2.1 " + TranslateCCMF("CCMF_GBAYEP_Header"), Font15Head);
                     doc.Add(para_16);
                 }
-                else
-                {
-                    Paragraph para_16 = new Paragraph("2.1 " + TranslateCCMF("CUPP_Header"), Font15Head);
-                    doc.Add(para_16);
-                }
+                
                 PdfPTable table = new PdfPTable(3);
                 table.DefaultCell.Border = Rectangle.NO_BORDER;
                 table.TotalWidth = 500f;
@@ -6128,11 +6133,11 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 {
                     if (objTB_TB_CCMF_APPLICATION.CCMF_Application_Type.ToLower() == "individual")
                     {
-                        Switch2UI(objTB_TB_CCMF_APPLICATION, "cbui", ref table, ref doc);
+                        Switch2UI(objTB_TB_CCMF_APPLICATION, "cbuicupp", ref table, ref doc);
                     }
                     else if (objTB_TB_CCMF_APPLICATION.CCMF_Application_Type.ToLower() == "company")
                     {
-                        Switch2UI(objTB_TB_CCMF_APPLICATION, "cbuc", ref table, ref doc);
+                        Switch2UI(objTB_TB_CCMF_APPLICATION, "cbuccupp", ref table, ref doc);
                     }
 
                 }
@@ -6158,7 +6163,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
 
                 //doc.Add(new Chunk("\n"));
                 //doc.Add(new Paragraph("Application eligibility of CCMF Hong Kong Programme is stated in the CCMF Guides and Notes for Applicants – Hong Kong Programme.", Font12black));
-                doc.Add(new Paragraph(TranslateCCMF("Step2_Note"), Font12black));
+                doc.Add(new Paragraph((isCUPP ? TranslateCUPP("Step2_Note") : TranslateCCMF("Step2_Note")), Font12black));
                 doc.Add(new Chunk("\n"));
 
                 Paragraph para17 = new Paragraph("3. " + TranslateCCMF("Step3_PROJECT_INFORMATION"), Font18blue);
@@ -6183,7 +6188,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
 
                 Paragraph para_yearEsta = new Paragraph("3.2a " + TranslateCCMF("Step3_1c_Establishment"), Font12blue);
                 para_yearEsta.Add(new Chunk(glue));
-                para_yearEsta.Add("3.2b " + TranslateCCMF("Step3_1d_CountryOFOrigin"));
+                para_yearEsta.Add("3.2b " + (isCUPP ? TranslateCUPP("Step3_1d_CountryOFOrigin") : TranslateCCMF("Step3_1d_CountryOFOrigin")));
                 doc.Add(para_yearEsta);
                 Paragraph para_yearEstaVal = new Paragraph(objTB_TB_CCMF_APPLICATION.Establishment_Year.HasValue ? objTB_TB_CCMF_APPLICATION.Establishment_Year.Value.ToString("dd-MMM-yyyy") : "", Font12black);
 
@@ -6192,11 +6197,15 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(para_yearEstaVal);
                 doc.Add(new Chunk("\n"));
 
-                Paragraph para_New2HK = new Paragraph("3.2c " + TranslateCCMF("Step3_1d_NewHK"), Font12blue);
-                doc.Add(para_New2HK);
-                Paragraph para_New2HKval = new Paragraph((objTB_TB_CCMF_APPLICATION.NEW_to_HK.HasValue ? (objTB_TB_CCMF_APPLICATION.NEW_to_HK.Value == true ? "Yes" : "No") : ""), Font12black);
-                doc.Add(para_New2HKval);
-                doc.Add(new Chunk("\n"));
+                if (!isCUPP)
+                {
+                    Paragraph para_New2HK = new Paragraph("3.2c " + TranslateCCMF("Step3_1d_NewHK"), Font12blue);
+                    doc.Add(para_New2HK);
+                    Paragraph para_New2HKval = new Paragraph((objTB_TB_CCMF_APPLICATION.NEW_to_HK.HasValue ? (objTB_TB_CCMF_APPLICATION.NEW_to_HK.Value == true ? "Yes" : "No") : ""), Font12black);
+                    doc.Add(para_New2HKval);
+                    doc.Add(new Chunk("\n"));
+                }
+               
 
                 para_yearEsta.Add(new Chunk(glue));
                 Paragraph para21 = new Paragraph("3.3 " + TranslateCCMF("Step3_Abstract"), Font15Head);
@@ -6254,7 +6263,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(new Chunk("\n"));
 
 
-                doc.Add(new Paragraph("3.6 " + TranslateCCMF("Step_3_Smart_Space"), Font15Head));
+                doc.Add(new Paragraph("3.6 " + (isCUPP ? TranslateCUPP("Step_3_Smart_Space") : TranslateCCMF("Step_3_Smart_Space")), Font15Head));
                 doc.Add(new Chunk("\n"));
                 string SmartSpace = objTB_TB_CCMF_APPLICATION.SmartSpace;
                 doc.Add(new Paragraph(SmartSpace == "Other" ? TranslateCCMF("Step_3_Smart_Space_Others") : (SmartSpace == "SS8" ? TranslateCCMF("Step_3_Smart_Space_SS8") : SmartSpace), Font12black));
@@ -6404,7 +6413,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(para_61);
                 doc.Add(new Chunk("\n"));
                 //Paragraph para35 = new Paragraph("List out in detail(i) all grants and funding received / to be received from other publicly and / or privately funded organizations / programmes which the applicant(or companies established by he / she / it) has applied for, will receive or will be entitled to receive in the coming 18 months, or have received in the past 18 months; (ii)the nature of expenditure covered / to be covered by such funding sources; and(iii) the amount and the maximum amount received / to be received under such funding sources ) ", Font10blue);
-                Paragraph para35 = new Paragraph(TranslateCCMF("Step_4_Funding_Statussub"), Font10blue);
+                Paragraph para35 = new Paragraph((isCUPP ? TranslateCUPP("Step_4_Funding_Statussub") : TranslateCCMF("Step_4_Funding_Statussub")), Font10blue);
                 doc.Add(para35);
                 doc.Add(new Chunk("\n"));
                 List<TB_APPLICATION_FUNDING_STATUS> objTB_APPLICATION_FUNDING_STATUS = dbcontext.TB_APPLICATION_FUNDING_STATUS.Where(x => x.Application_ID == objTB_TB_CCMF_APPLICATION.CCMF_ID).ToList();
@@ -6582,7 +6591,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                     doc.Add(new Chunk("\n"));
                 }
 
-                Paragraph para_1 = new Paragraph("6. " + TranslateCCMF("Step6_Attachment_Header"), Font18blue);
+                Paragraph para_1 = new Paragraph("6. " + (isCUPP ? TranslateCUPP("Step6_Attachment_Header") : TranslateCCMF("Step6_Attachment_Header")), Font18blue);
                 para_1.Alignment = Element.ALIGN_CENTER;
                 doc.Add(para_1);
                 doc.Add(new Chunk("\n"));
@@ -6652,7 +6661,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                         if (apptype.ToLower() == "company")
                         {
 
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "BRCOPY", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("BRCOPY") : SPUtility.GetLocalizedString("$Resources:" + "BRCOPY", "CyberportEMS_CCMF", 1033)), Font12blue));
                             //doc.Add(new Paragraph("6.1 BR Copy ", Font12blue));
                             doc.Add(brCopy);
                             doc.Add(new Chunk("\n"));
@@ -6661,7 +6670,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             doc.Add(studentID);
                             doc.Add(new Chunk("\n"));
 
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("VideoClip") : SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(vdoClip);
                             doc.Add(new Chunk("\n"));
 
@@ -6683,10 +6692,10 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "StudentID", "CyberportEMS_CCMF", 1033), Font12blue));
                             doc.Add(studentID);
                             doc.Add(new Chunk("\n"));
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKID", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("HKID") : SPUtility.GetLocalizedString("$Resources:" + "HKID", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(hkIDAttach);
                             doc.Add(new Chunk("\n"));
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("VideoClip") : SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(vdoClip);
                             doc.Add(new Chunk("\n"));
 
@@ -6705,12 +6714,12 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                         if (apptype.ToLower() == "company")
                         {
 
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "BRCOPY", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("BRCOPY") : SPUtility.GetLocalizedString("$Resources:" + "BRCOPY", "CyberportEMS_CCMF", 1033)), Font12blue));
                             //doc.Add(new Paragraph(BR Copy ", Font12blue));
                             doc.Add(brCopy);
 
                             doc.Add(new Chunk("\n"));
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("VideoClip") : SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(vdoClip);
 
                             doc.Add(new Chunk("\n"));
@@ -6726,10 +6735,10 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                         else
                         {
 
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKID", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("HKID") : SPUtility.GetLocalizedString("$Resources:" + "HKID", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(hkIDAttach);
                             doc.Add(new Chunk("\n"));
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("VideoClip") : SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(vdoClip);
 
                             doc.Add(new Chunk("\n"));
@@ -6746,7 +6755,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 {
                     if (apptype.ToLower() == "company")
                     {
-                        doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "BRCOPY", "CyberportEMS_CCMF", 1033), Font12blue));
+                        doc.Add(new Paragraph((isCUPP ? TranslateCUPP("BRCOPY") : SPUtility.GetLocalizedString("$Resources:" + "BRCOPY", "CyberportEMS_CCMF", 1033)), Font12blue));
                         //doc.Add(new Paragraph("6.1 BR Copy ", Font12blue));
                         doc.Add(brCopy);
                         if (!objTB_TB_CCMF_APPLICATION.Programme_Type.ToLower().Contains("gbayep"))
@@ -6758,7 +6767,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                         
 
                         doc.Add(new Chunk("\n"));
-                        doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033), Font12blue));
+                        doc.Add(new Paragraph((isCUPP ? TranslateCUPP("VideoClip") : SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033)), Font12blue));
                         doc.Add(vdoClip);
 
                         doc.Add(new Chunk("\n"));
@@ -6777,12 +6786,12 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                             doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "StudentID", "CyberportEMS_CCMF", 1033), Font12blue));
                             doc.Add(studentID);
                             doc.Add(new Chunk("\n"));
-                            doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKID", "CyberportEMS_CCMF", 1033), Font12blue));
+                            doc.Add(new Paragraph((isCUPP ? TranslateCUPP("HKID") : SPUtility.GetLocalizedString("$Resources:" + "HKID", "CyberportEMS_CCMF", 1033)), Font12blue));
                             doc.Add(hkIDAttach);
                             doc.Add(new Chunk("\n"));
                        
                         }
-                        doc.Add(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033), Font12blue));
+                        doc.Add(new Paragraph((isCUPP ? TranslateCUPP("VideoClip") : SPUtility.GetLocalizedString("$Resources:" + "VideoClip", "CyberportEMS_CCMF", 1033)), Font12blue));
                         doc.Add(vdoClip);
 
                         doc.Add(new Chunk("\n"));
@@ -6819,7 +6828,7 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                 doc.Add(new Chunk("\n"));
                 doc.Add(new Paragraph(TranslateCCMF("Step_6_Consideration_5"), Font12blue));
                 doc.Add(new Chunk("\n"));
-                doc.Add(new Paragraph(TranslateCCMF("Step_6_Consideration_6"), Font12blue));
+                doc.Add(new Paragraph((isCUPP ? TranslateCUPP("Step_6_Consideration_6") : TranslateCCMF("Step_6_Consideration_6")), Font12blue));
                 doc.Add(new Chunk("\n"));
                 doc.Add(new Paragraph(TranslateCCMF("Step_6_Consideration_7"), Font12blue));
                 doc.Add(new Chunk("\n"));
@@ -7130,9 +7139,66 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
 
                     }
                     break;
+                case "cbuccupp":
+                    {
+                        doc.Add(new Paragraph("2.1.1 Company Applicant", Font12blue));
+
+                        table.AddCell(new Paragraph("a)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKP_Pro_Young_Comp_1_A", "CyberportEMS_CCMF", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_1a.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_1a.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("b)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKP_Pro_Young_Comp_1_B", "CyberportEMS_CCMF", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_1b.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_1b.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("2.1.2", Font12blue));
+                        table.AddCell(new Paragraph(" Individual and Company Applicant", Font12blue));
+                        table.AddCell("");
+
+
+                        table.AddCell(new Paragraph("a)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_A", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2a.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2a.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("b)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_B", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2b.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2b.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("c)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_C", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2c.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2c.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("d)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_D", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2d.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2d.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("e)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_E", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2e.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2e.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("f)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_F", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2f.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2f.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("g)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_G", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2g.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2g.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("h)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_H", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2h.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2h.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("i)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_I", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2i.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2i.ToString() == "True" ? "Yes" : "No", Font12black));
+
+
+                    }
+                    break;
                 case "cbui":
                     {
                         doc.Add(new Paragraph("2.1.1 Individual Applicant", Font12blue));
+
                         table.AddCell(new Paragraph("a)", Font12blue));
                         table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKP_Pro_Young_Ind_1_A", "CyberportEMS_CCMF", 1033), Font12blue));
                         table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_1a.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_1a.ToString() == "True" ? "Yes" : "No", Font12black));
@@ -7179,6 +7245,64 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
                         table.AddCell(new Paragraph("h)", Font12blue));
                         table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_H", "CyberportEMS_CCMF", 1033), Font12blue));
                         table.AddCell(new Paragraph(objTB_INCUBATION_APPLICATION.Question2_1_2h.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                    }
+                    break;
+                case "cbuicupp":
+                    {
+                        doc.Add(new Paragraph("2.1.1 Individual Applicant", Font12blue));
+
+                        //table.AddCell(new Paragraph("a)", Font12blue));
+                        //table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKP_Pro_Young_Ind_1_A", "CyberportEMS_CCMF", 1033), Font12blue));
+                        //table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_1a.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_1a.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("a)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "HKP_Pro_Young_Ind_1_B", "CyberportEMS_CCMF", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_1b.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_1b.ToString() == "True" ? "Yes" : "No", Font12black));
+
+
+
+                        table.AddCell(new Paragraph("2.1.2", Font12blue));
+                        table.AddCell(new Paragraph(" Individual and Company Applicant", Font12blue));
+                        table.AddCell("");
+
+
+                        table.AddCell(new Paragraph("a)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_A", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2a.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2a.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("b)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_B", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2b.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2b.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("c)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_C", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2c.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2c.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("d)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_D", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2d.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2d.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("e)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_E", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2e.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2e.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("f)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_F", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2f.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2f.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("g)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_G", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(string.IsNullOrEmpty(objTB_INCUBATION_APPLICATION.Question2_1_2g.ToString()) ? "" : objTB_INCUBATION_APPLICATION.Question2_1_2g.ToString() == "True" ? "Yes" : "No", Font12black));
+
+                        table.AddCell(new Paragraph("h)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_H", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(objTB_INCUBATION_APPLICATION.Question2_1_2h.ToString() == "True" ? "Yes" : "No", Font12black));
+
+
+                        table.AddCell(new Paragraph("i)", Font12blue));
+                        table.AddCell(new Paragraph(SPUtility.GetLocalizedString("$Resources:" + "CUPP_IndComp_2_I", "CyberportEMS_CUPP", 1033), Font12blue));
+                        table.AddCell(new Paragraph(objTB_INCUBATION_APPLICATION.Question2_1_2i.ToString() == "True" ? "Yes" : "No", Font12black));
 
                     }
                     break;
@@ -7647,6 +7771,18 @@ namespace CBP_EMS_SP.ApplicationListWP.ApplicationListWebPart
             strValue = strValue.Replace("<mark>", "").Replace("</mark>", "").Replace("<small>", "").Replace("</small>", "").Replace("<span class=\"bold graylbl-2\">", "").Replace("<span>", "").Replace("<mark class=\"mark-2\">", "");
             strValue = strValue.Replace("<li>", "  • ").Replace("</li>", "\n").Replace("<ul>", "").Replace("</ul>", "").Replace("<br>", "\n").Replace("<br/>", "\n").Replace("</br>", "\n").Replace("</span>", "");
             strValue = strValue.Replace("</a>", "").Replace("<a href=\"https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf\"", "").Replace("target=\"_blank\">", "").Replace("</i>", "");
+            strValue = strValue.Replace("<a href= \"mailto:cip_enquiry@cyberport.hk\">", "");
+            strValue = strValue.Replace("<a href=\"http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf\"", "");
+            return strValue;
+        }
+
+        private string TranslateCUPP(string key)
+        {
+            string strValue = SPUtility.GetLocalizedString("$Resources:" + key, "CyberportEMS_CUPP", 1033);
+            strValue = strValue.Replace("<mark>", "").Replace("</mark>", "").Replace("<small>", "").Replace("</small>", "").Replace("<span class=\"bold graylbl-2\">", "").Replace("<span>", "").Replace("<mark class=\"mark-2\">", "");
+            strValue = strValue.Replace("<li>", "  • ").Replace("</li>", "\n").Replace("<ul>", "").Replace("</ul>", "").Replace("<br>", "\n").Replace("<br/>", "\n").Replace("</br>", "\n").Replace("</span>", "");
+            strValue = strValue.Replace("</a>", "").Replace("<a href=\"https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015c_eng.pdf\"", "").Replace("target=\"_blank\">", "").Replace("</i>", "");
+            strValue = strValue.Replace("</a>", "").Replace("<a href=\"https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf\"", "").Replace("target=\"_blank\">", "").Replace("</i>", "");
             strValue = strValue.Replace("<a href= \"mailto:cip_enquiry@cyberport.hk\">", "");
             strValue = strValue.Replace("<a href=\"http://www.cyberport.hk/files/ccmf/ENC_RF_015a_CCMF_Guides_and_Notes_for_Applicants_CCMF.pdf\"", "");
             return strValue;
