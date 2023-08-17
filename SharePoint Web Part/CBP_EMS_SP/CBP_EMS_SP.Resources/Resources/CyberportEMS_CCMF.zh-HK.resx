@@ -698,7 +698,7 @@
     <value>演示文件</value>
   </data>
   <data name="Step_1_CCMF_app" xml:space="preserve">
-    <value>您的年齡是否18歲或以上?</value>
+    <value>請選擇以下其中一個申請CCMF方式 : ​</value>
   </data>
   <data name="Step_5_Principal_Applicant" xml:space="preserve">
     <value>(主要申請人 / 香港隊長)</value>

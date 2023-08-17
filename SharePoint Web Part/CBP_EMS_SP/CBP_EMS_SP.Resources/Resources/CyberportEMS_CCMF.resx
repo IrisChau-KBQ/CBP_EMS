@@ -558,7 +558,7 @@
     <value>We acknowledge that HKCMCL has absolute discretion</value>
   </data>
   <data name="CUPP_heading" xml:space="preserve">
-    <value>Cyberport University Partnership Programme</value>
+    <value>Cyberport University Partnership Programme (CUPP) Supported by CCMF​</value>
   </data>
   <data name="CUPP_IndComp_2_A" xml:space="preserve">
     <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) between the ages of 18 and 30 upon the application deadline?</value>
@@ -579,13 +579,13 @@
     <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
   </data>
   <data name="CUPP_IndComp_2_G" xml:space="preserve">
-    <value>If you have answered “yes” to Question 2.1.2 (i) above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+    <value>If you have answered “yes” to Question 2.1.2 g)​ above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
   </data>
   <data name="CUPP_IndComp_2_H" xml:space="preserve">
     <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 4.10 below.  Also, please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
   </data>
   <data name="Cyberport_University_Partnership_Programme" xml:space="preserve">
-    <value>Cyberport University Partnership Programme</value>
+    <value>Cyberport University Partnership Programme </value>
   </data>
   <data name="step3_Commencement" xml:space="preserve">
     <value>Commencement Date</value>
@@ -606,7 +606,7 @@
     <value>In consideration of Hong Kong Cyberport Management Company Limited (“HKCMCL”) considering and processing our application for funding from CCMF, we confirm our agreement and undertake the following by checking this box</value>
   </data>
   <data name="Step_6_Consideration_1" xml:space="preserve">
-    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.O15) governing the application of the Cyberport Creative Micro Fund Scheme.</value>
+    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.015) governing the application of the Cyberport Creative Micro Fund Scheme.</value>
   </data>
   <data name="Step_6_Consideration_2" xml:space="preserve">
     <value>All information provided in this application as well as the accompanying information is true, not misleading in any manner and reflects the status of affairs as at the date of submission. I shall inform the Administration of the Cyberport Creative Micro Fund immediately if there are any changes to the above information.</value>
@@ -630,7 +630,7 @@
     <value>We give our consent to authorised Cyberport staff to carry out necessary due diligence/reference check for the purpose of assessing this application.</value>
   </data>
   <data name="Step_6_Consideration_9" xml:space="preserve">
-    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.O15), this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
+    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.015), this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
   </data>
   <data name="Step_6_cyberport" xml:space="preserve">
     <value>“Cyberport”</value>
@@ -1283,5 +1283,14 @@ Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href=
   </data>
   <data name="Remarks" xml:space="preserve">
     <value>Remarks</value>
+  </data>
+  <data name="Contact_China" xml:space="preserve">
+    <value>Contact_China</value>
+  </data>
+  <data name="Contact_HongKong" xml:space="preserve">
+    <value>Contact_HongKong</value>
+  </data>
+  <data name="CUPP_IndComp_2_I" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
   </data>
 </root>

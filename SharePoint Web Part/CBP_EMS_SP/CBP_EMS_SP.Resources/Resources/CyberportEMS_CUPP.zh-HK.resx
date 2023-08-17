@@ -1,0 +1,262 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BRCOPY" xml:space="preserve">
+    <value>公司文件(如適用)</value>
+  </data>
+  <data name="CCMF_Comp_1_A" xml:space="preserve">
+    <value>您是否於香港擁有以法人身份註冊的公司?</value>
+  </data>
+  <data name="CCMF_Header" xml:space="preserve">
+    <value>數碼港創意微型基金 (“CCMF”)​</value>
+  </data>
+  <data name="CUPP_Header" xml:space="preserve">
+    <value>數碼港大學合作夥伴計劃</value>
+  </data>
+  <data name="CUPP_heading" xml:space="preserve">
+    <value>數碼港創意微型基金支持之數碼港大學合作夥伴計劃</value>
+  </data>
+  <data name="CUPP_IndComp_2_A" xml:space="preserve">
+    <value>您及您於下文第 4.1 節列出的所有項目管理團隊隊員在計劃報名截止日期前是否介乎 18 到 30 歲之間?</value>
+  </data>
+  <data name="CUPP_IndComp_2_B" xml:space="preserve">
+    <value>您及您於下文第4.1 節列出的所有項目管理團隊隊員(如有)現在是否就讀於香港註冊的大專院校或畢業於上述院校不超過三年?</value>
+  </data>
+  <data name="CUPP_IndComp_2_C" xml:space="preserve">
+    <value>您的申請項目與數碼科技範疇是否相關?</value>
+  </data>
+  <data name="CUPP_IndComp_2_D" xml:space="preserve">
+    <value>您現正提交申請 CCMF 的項目或與之相似的項目有否在過去的 18 個月內申請或收到任何公營及/或私人機構/計劃的資金或資助？如回答“是”，請在下文第 4.8 節詳細列出。</value>
+  </data>
+  <data name="CUPP_IndComp_2_E" xml:space="preserve">
+    <value>您現正提交申請 CCMF 的項目或與之相似的項目有否申請，或在未來 18 個月將會申請，或預期接受，任何公營及/或私人機構/計劃的資金或資助？如回答“是”，請在下文第 4.8 節詳細列出。</value>
+  </data>
+  <data name="CUPP_IndComp_2_F" xml:space="preserve">
+    <value>您現正提交申請 CCMF 的項目或與之相似的項目有否申請數碼港培育計劃？如回答“是”，請在下文第 4.8 節詳細列出。</value>
+  </data>
+  <data name="CUPP_IndComp_2_G" xml:space="preserve">
+    <value>如您於問題 2.1.2 (f) 回答“是”，您是以相同或相似的培育項目在申請 CCMF 嗎？如果相似或不同，請澄清，並在下文第 4.10 節詳細列出，使我們的評審小組能區別這申請及任何其他申請。</value>
+  </data>
+  <data name="CUPP_IndComp_2_H" xml:space="preserve">
+    <value>申請人是否有機會構成任何利益衝突？如回答“是”， 請在下文第 4.10 節詳細列出。</value>
+  </data>
+  <data name="CUPP_IndComp_2_I" xml:space="preserve">
+    <value>此申請是否過去曾提交到數碼港及 / 或其他公營機構的資助計劃？ 若是，請在下文第 4.10 節列明先前申請的項目並指出此申請與過去的申請的主要分別</value>
+  </data>
+  <data name="HKID" xml:space="preserve">
+    <value>香港身份證或身份證明文件 (如適用)</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_1_A" xml:space="preserve">
+    <value>您是否於香港擁有以法人身份註冊的公司?</value>
+  </data>
+  <data name="Instruction_2" xml:space="preserve">
+    <value>遞交申請表格前，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;數碼港創意微型基金之申請指南及注意事項 &lt;/a&gt;, 請特別注意第 1, 2 及 3 部份。</value>
+  </data>
+  <data name="Instruction_4" xml:space="preserve">
+    <value>如提交多於一個項目，請用另一個電郵作申請用途。</value>
+  </data>
+  <data name="Instruction_4_1" xml:space="preserve">
+    <value>請準備並於第六節上傳包括但不限於下列文件：&lt;br/&gt;&lt;br/&gt;
+&lt;ul&gt;
+ &lt;li&gt;公司文件 (如商業登記、公司註冊證書、公司始創人擁有權架構等) (如適用&lt;/li&gt;
+  &lt;li&gt;其他補充資料如公司組織結構、項目管理團隊個人履歷、圖像、圖表、商業計劃書等以闡述項目(如適用)&lt;/li&gt;
+&lt;li&gt;建議您準備 1 分鐘的視頻剪輯/演示文件/幻燈片播放來闡述項目，請提供網址以下載有關檔案(如適用)。
+&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Step1_Note" xml:space="preserve">
+    <value>註: 個人名義申請者，其主要申請人須持有香港永久居民身份證。 否則，請考慮以公司名義申請。
+&lt;br/&gt;有關CCMF之申請資格，請先詳閱 &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;數碼港創意微型基金 - 申請指南及注意事項(ENC.RF.015c)&lt;/a&gt;。&lt;br/&gt;</value>
+  </data>
+  <data name="Step1_Question1_3" xml:space="preserve">
+    <value>你現正提交申請 CCMF 的項目是否已超過早期開發階段, 例如: 已推出市場及產生可持續收入或正在計劃/將會計劃拓展海外市場?</value>
+  </data>
+  <data name="Step2_Note" xml:space="preserve">
+    <value>註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反CCMF之申請守則，有關申請可被視為不乎合資格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。 &lt;br&gt;&lt;br&gt;
+如採用同一個項目申請數碼港創意微型基金及數碼港培育計劃 ，數碼港管理有限公司只會考慮您於現招募提交的數碼港培育計劃申請，而不另行通知。
+&lt;br&gt;&lt;br&gt;
+有關CCMF之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;數碼港創意微型基金 - 申請指南及注意事項(ENC.RF.015c) &lt;/a&gt;。</value>
+  </data>
+  <data name="Step3_1d_CountryOFOrigin" xml:space="preserve">
+    <value>企業原生國家</value>
+  </data>
+  <data name="Step6_Attachment_Header" xml:space="preserve">
+    <value>附件</value>
+  </data>
+  <data name="Step_3_Smart_Space" xml:space="preserve">
+    <value>你及你公司/你的團隊成員目前是否數碼港 Smart-Space 的租戶?</value>
+  </data>
+  <data name="Step_4_Funding_Statussub" xml:space="preserve">
+    <value>(詳細列出(i)申請人(或由其成立的公司)在未來 18 個月內或在過去的 18 個月內，所有已獲得或將獲得或有權獲得的
+所有任何公營及/或私人機構/計劃資助和資金;(ii)這些資助來源所覆蓋/將覆蓋的支出性質;及(iii)由這些資助來源獲得
+/將獲得的金額及最高可獲金額 )&lt;br/&gt;&lt;br/&gt;註: 申請人須披露真實、完整和準確的信息。 如在申請期間違反 CCMF 之申請守則，有關申請可被視為不乎合資
+格，數碼港將有絕對權取消申請人的申請資格或終止已獲錄取的項目。 有關 CCMF 之申請資格，請先詳閱&lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;閱數碼港創意微型基金 - 申請指南及注意事項&lt;/a&gt;。</value>
+  </data>
+  <data name="Step_6_Consideration_6" xml:space="preserve">
+    <value>申請人只會運用 CCMF 資助資金於開發及發展該項目。 申請人不會與他人攤分或分享任何 CCMF 資助資金，或運用 CCMF 資助資金作出任何違法行爲或違反任何適用於向 CCMF 申請資助資金的條款。</value>
+  </data>
+  <data name="VideoClip" xml:space="preserve">
+    <value>視頻剪輯 (如適用)</value>
+  </data>
+  <data name="Step_5_Principal_Applicant" xml:space="preserve">
+    <value>(主要申請人 / 香港團隊領導者​)</value>
+  </data>
+  <data name="Step_6_Consideration" xml:space="preserve">
+    <value>作爲數碼港考慮及審批申請人有關CCMF資助資金之申請的對價，申請人透過勾選此格確認同意及遵守以下細則: ​</value>
+  </data>
+  <data name="Step_6_Consideration_1" xml:space="preserve">
+    <value>申請人同意申請&lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;數碼港創意微型基金之 “申請指南及注意事項” (ENC.RF.035a)&lt;/a&gt;內所有條款及條件。</value>
+  </data>
+  <data name="Step_6_Consideration_2" xml:space="preserve">
+    <value>所有申請表格及附上之文件內容均屬實，無誤導成分，並反映提交申請表格日期之事態。如有任何資料更改，申請人必會即時通知數碼港。​</value>
+  </data>
+  <data name="Step_6_Consideration_3" xml:space="preserve">
+    <value>申請人爲本CCMF申請表第3節中所描述的申請項目（「該項目」）的原創者，而該項目為原創的項目。 據本申請人所知， 該項目及將作為該項目一部份而開發的產品及/或服務並不是他人發展中或已完成的項目、產品及/或服務。 ​</value>
+  </data>
+  <data name="Step_6_Consideration_4" xml:space="preserve">
+    <value>開發、發展及使用該項目及將作為該項目一部份而開發的產品及/或服務不會侵犯他人的權利或知識産權（不論有否註冊），包括但不限於專利、商標及版權。 ​</value>
+  </data>
+  <data name="Step_6_Consideration_5" xml:space="preserve">
+    <value>除了申請人於本CCMF申請表格第4.8節所述的資助計劃外，申請人（無論個人或作爲任何團隊的一員）沒有在過去的18個月內爲該項目申請或收到任何公營及/或私人機構/計劃的資金或資助; 亦不會在未來18個月爲該項目申請，或有資格接受，任何公營及/或私人機構/計劃的資金或資助。如申請人爲該項目申請或接受任何公營及/或私人機構/計劃的資金或資助，申請人必會即時通知數碼港，並按數碼港要求提供有關接受及使用資金或資助的證據。 ​</value>
+  </data>
+  <data name="Step_6_Consideration_61" xml:space="preserve">
+    <value>We will use any grant to be received from the CCMF (if any) for the sole purpose of developing and completing the Project. We will not give away, share or othen/vise use any grant to be received from the CCMF in contravention of the law or any of the terms which apply to application for funding from the CCMF.</value>
+  </data>
+  <data name="Step_6_Consideration_7" xml:space="preserve">
+    <value>申請人明白此申請表中之資料將透露予獲授權之數碼港職員及評審委員會，以作初步審閱及評審之用途。數碼港或其獲授權之職員及評審委員會成員均不需與申請人簽署任何形式之保密協定。 ​</value>
+  </data>
+  <data name="Step_6_Consideration_8" xml:space="preserve">
+    <value>申請人同意獲授權之數碼港職員可查閱已收取的資料以作申請手續之用途 ​</value>
+  </data>
+  <data name="Step_6_Consideration_9" xml:space="preserve">
+    <value>申請人確認若申請人團隊任何一員違反申請 &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;數碼港創意微型基金之 “申請指南及注意事項” (ENC.RF.035a) &lt;/a&gt; 、本CCMF申請表及任何與數碼港所簽署的有關合約內的任何條款及細則，數碼港將有絕對權取消申請人的申請資格及索償已派發資助資金全額。 如任何違規事件可能涉及刑事成份， 數碼港將會交予相關執法機構跟進。 ​</value>
+  </data>
+  <data name="Step_6_DECLARATION" xml:space="preserve">
+    <value>聲明</value>
+  </data>
+  <data name="Step_6_Full_Name" xml:space="preserve">
+    <value>主要申請人姓名​</value>
+  </data>
+  <data name="Step_6_PERSONAL_INFORMATION" xml:space="preserve">
+    <value>個人資料收集聲明​</value>
+  </data>
+  <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
+    <value>主要申請人於主要申請機構之職位 </value>
+  </data>
+</root>

@@ -95,24 +95,24 @@
                                 </li>
                                 <li><%=SPFunctions.LocalizeUI("Instruction_1_3", "CyberportEMS_CCMF") %>
                                 </li>
-                                <li><%=SPFunctions.LocalizeUI("Instruction_1_4", "CyberportEMS_CCMF") %>
+                                <li><%=  SPFunctions.LocalizeUI("Instruction_1_4", "CyberportEMS_CCMF") %>
                                 </li>
                             </ol>
                         </li>
                         <li class="eligibility__list">
-                            <%=SPFunctions.LocalizeUI("Instruction_2", "CyberportEMS_CCMF") %>
+                            <%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Instruction_2", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("Instruction_2", "CyberportEMS_CCMF") %>
                         </li>
                         <li class="eligibility__list">
                             <%=SPFunctions.LocalizeUI("Instruction_3", "CyberportEMS_CCMF") %>
                         </li>
 
                         <li class="eligibility__list">
-                            <%=SPFunctions.LocalizeUI("Instruction_4", "CyberportEMS_CCMF") %>
+                            <%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Instruction_4", "CyberportEMS_CUPP"): SPFunctions.LocalizeUI("Instruction_4", "CyberportEMS_CCMF") %>
 
                            
                         </li>
                         <li class="eligibility__list" style="padding-top: 10px;">
-                            <%=SPFunctions.LocalizeUI("Instruction_4_1", "CyberportEMS_CCMF") %>
+                            <%=rdo_CUPP.Checked ?  SPFunctions.LocalizeUI("Instruction_4_1", "CyberportEMS_CUPP"): SPFunctions.LocalizeUI("Instruction_4_1", "CyberportEMS_CCMF") %>
                         </li>
                         <li class="eligibility__list">
                             <%=SPFunctions.LocalizeUI("Instruction_5", "CyberportEMS_CCMF") %>
@@ -136,7 +136,7 @@
             <asp:Panel ID="pnl_programDetail" Visible="false" runat="server">
                 <div class="form__upr">
                     <div class="row">
-                        <div class="col-md-2 boldgraylbl"><%=SPFunctions.LocalizeUI("Application_Summary_Lbl_Intake", "CyberportEMS_Common") %></div>
+                        <div class="col-md-2 boldgraylbl"><%= SPFunctions.LocalizeUI("Application_Summary_Lbl_Intake", "CyberportEMS_Common") %></div>
                         <div class="col-md-3">
                             <asp:Label ID="lblIntake" runat="server" Text=""></asp:Label>
 
@@ -255,14 +255,14 @@
                             </div>
                             <div class="sidemargin">
                                 <%--<asp:Label runat="server" id="lblstep12Note" Visible="false"></asp:Label>--%>
-                                <span><%=SPFunctions.LocalizeUI("Step1_Note", "CyberportEMS_CCMF") %></span>
+                                <span><%=rdo_CUPP.Checked ?  SPFunctions.LocalizeUI("Step1_Note", "CyberportEMS_CUPP"): SPFunctions.LocalizeUI("Step1_Note", "CyberportEMS_CCMF") %></span>
 
                             </div>
-                            <div class="form-group" style="margin-top:10px;">
-                                <h2 class="subheading text-left" style="line-height:35px;">
+                            <div class="form-group" style="margin-top: 10px;">
+                                <h2 class="subheading text-left" style="line-height: 35px;">
                                     <span>1.3</span>
 
-                                    <%=SPFunctions.LocalizeUI("Step1_Question1_3", "CyberportEMS_CCMF") %></h2>
+                                    <%=rdo_CUPP.Checked ?  SPFunctions.LocalizeUI("Step1_Question1_3", "CyberportEMS_CUPP"):SPFunctions.LocalizeUI("Step1_Question1_3", "CyberportEMS_CCMF") %></h2>
                                 <div class="sidemargin">
                                     <asp:RadioButtonList ID="rdo1_3" runat="server" AutoPostBack="true" OnSelectedIndexChanged="rdo1_3_SelectedIndexChanged" RepeatDirection="Vertical" CssClass="width90 listcss">
                                         <asp:ListItem Value="True" Text="Yes"></asp:ListItem>
@@ -525,7 +525,7 @@
                                     </td>
                                 </tr>
                                 <%--Extended Question for CCMF 12 dec 2019--%>
-                                    <tr id="div212f_1" visible="false" runat="server">
+                                <tr id="div212f_1" visible="false" runat="server">
 
                                     <td class="tr_width">
                                         <span runat="server" id="spn212f_1" class="col-md-1">j)</span>
@@ -543,7 +543,7 @@
                         </div>
                         <div class="form-group">
                             <div class="sidemargin">
-                                <span><%=SPFunctions.LocalizeUI("Step2_Note", "CyberportEMS_CCMF") %></span>
+                                <span><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step2_Note", "CyberportEMS_CUPP"):SPFunctions.LocalizeUI("Step2_Note", "CyberportEMS_CCMF") %></span>
                             </div>
                         </div>
                     </div>
@@ -593,7 +593,7 @@
                                 </div>
                                 <div class="col-md-6">
                                     <h4 class="subheading2">
-                                        <span>3.2 b</span> <%=SPFunctions.LocalizeUI("Step3_1d_CountryOFOrigin", "CyberportEMS_CCMF") %>
+                                        <span>3.2 b</span> <%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step3_1d_CountryOFOrigin", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("Step3_1d_CountryOFOrigin", "CyberportEMS_CCMF") %>
                                     </h4>
 
                                     <%--   <asp:TextBox runat="server" ID="txtCountryOrigin" CssClass="input-sm"></asp:TextBox>
@@ -605,7 +605,7 @@
                                 </div>
                             </div>
 
-                            <div class="form-group sidemargin">
+                            <div class="form-group sidemargin" id="div32c" runat="server">
 
                                 <h4 class="subheading2">
                                     <span>3.2 c</span> <%=SPFunctions.LocalizeUI("Step3_1d_NewHK", "CyberportEMS_CCMF") %>
@@ -689,7 +689,7 @@
                         <div class="form-group">
                             <h2 class="subheading text-left">
                                 <span>3.6</span>
-                                <%=SPFunctions.LocalizeUI("Step_3_Smart_Space", "CyberportEMS_CCMF") %></h2>
+                                <%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_3_Smart_Space", "CyberportEMS_CUPP") :  SPFunctions.LocalizeUI("Step_3_Smart_Space", "CyberportEMS_CCMF") %></h2>
                             <div class="col-md-12">
 
                                 <asp:RadioButtonList runat="server" ID="ddlsmartspace" RepeatDirection="Vertical" CssClass="radiocss"></asp:RadioButtonList>
@@ -996,7 +996,7 @@
                                     <span>4.8</span>
                                     <%=SPFunctions.LocalizeUI("Step_4_Funding_Status", "CyberportEMS_CCMF") %> 
                                 </h2>
-                                <p class="sidemargin subheading2"><small class="italic"><%=SPFunctions.LocalizeUI("Step_4_Funding_Statussub", "CyberportEMS_CCMF") %> </small></p>
+                                <p class="sidemargin subheading2"><small class="italic"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_4_Funding_Statussub", "CyberportEMS_CUPP") : SPFunctions.LocalizeUI("Step_4_Funding_Statussub", "CyberportEMS_CCMF") %> </small></p>
                                 <div class="form-group sidemargin">
                                     <asp:GridView ID="Grd_FundingStatus" runat="server" ShowFooter="false" AutoGenerateColumns="False"
                                         ShowHeader="false"
@@ -1190,7 +1190,7 @@
                                             <h2 class="subheading text-left">
                                                 <span>5.<%# Container.DataItemIndex+1 %></span>
                                                 <%=SPFunctions.LocalizeUI("Step_5_Contact_Person", "CyberportEMS_CCMF") %> <%# Container.DataItemIndex+1 %>
-                                                <asp:Label ID="lblContactSubTitle" runat="server" Visible="true"><%#Container.DataItemIndex == 0 ? SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CCMF") : "" %></asp:Label>
+                                                <asp:Label ID="lblContactSubTitle" runat="server" Visible="true"><%#Container.DataItemIndex == 0 ? (rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CUPP"): SPFunctions.LocalizeUI("Step_5_Principal_Applicant", "CyberportEMS_CCMF")) : "" %></asp:Label>
                                             </h2>
                                             <div class="form-group sidemargin">
                                                 <div class="form-box form-group" data-id="<%# Container.DataItemIndex+1 %>">
@@ -1401,12 +1401,12 @@
                 </asp:Panel>
                 <asp:Panel ID="pnl_IncubationStep6" Visible="false" runat="server">
                     <div class="box-wrpr" style="width: 700px; margin: 0 auto;">
-                        <h2 class="subheading"><%=SPFunctions.LocalizeUI("Step6_Attachment_Header", "CyberportEMS_CCMF") %></h2>
+                        <h2 class="subheading"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step6_Attachment_Header", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step6_Attachment_Header", "CyberportEMS_CCMF") %></h2>
 
 
                         <div class="row" runat="server" id="attachbrcopy" visible="false">
                             <label class="col-md-6 lbl" runat="server" id="br_copy">
-                                <asp:PlaceHolder runat="server"><%=SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF") %></asp:PlaceHolder>
+                                <asp:PlaceHolder runat="server"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("BRCOPY", "CyberportEMS_CCMF") %></asp:PlaceHolder>
                             </label>
                             <div class="col-md-6">
                                 <div class="dirbox">
@@ -1489,7 +1489,7 @@
 
                         <div class="row" runat="server" id="attachhkid" visible="false">
                             <label class="col-md-6 lbl" runat="server" id="hk_id">
-                                <asp:PlaceHolder runat="server"><%=SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF") %></asp:PlaceHolder>
+                                <asp:PlaceHolder runat="server"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("HKID", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("HKID", "CyberportEMS_CCMF") %></asp:PlaceHolder>
                             </label>
                             <div class="col-md-6">
                                 <div class="dirbox">
@@ -1532,7 +1532,7 @@
 
                         <div class="row">
                             <label class="col-md-6 lbl" runat="server" id="video_clip">
-                                <asp:PlaceHolder runat="server"><%=SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF") %></asp:PlaceHolder>
+                                <asp:PlaceHolder runat="server"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("VideoClip", "CyberportEMS_CCMF") %></asp:PlaceHolder>
                             </label>
                             <div class="col-md-6">
                                 <div class="dirbox">
@@ -1624,46 +1624,46 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <h2 class="subheading text-center" style="margin: 20px 0;"><%=SPFunctions.LocalizeUI("Step_6_DECLARATION", "CyberportEMS_CCMF") %></h2>
+                        <h2 class="subheading text-center" style="margin: 20px 0;"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_DECLARATION", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_DECLARATION", "CyberportEMS_CCMF") %></h2>
 
                         <div class="form-group green-clr-theme">
                             <asp:CheckBox ID="chkDeclaration" runat="server" CssClass="listcss" Text="&nbsp;" />
-                            <%=SPFunctions.LocalizeUI("Step_6_Consideration", "CyberportEMS_CCMF") %>
+                            <%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration", "CyberportEMS_CCMF") %>
                         </div>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_1", "CyberportEMS_CCMF") %></p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_1", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_1", "CyberportEMS_CCMF") %></p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_2", "CyberportEMS_CCMF") %></p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_2", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_2", "CyberportEMS_CCMF") %></p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_3", "CyberportEMS_CCMF") %></p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_3", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_3", "CyberportEMS_CCMF") %></p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_4", "CyberportEMS_CCMF") %></p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_4", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_4", "CyberportEMS_CCMF") %></p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_5", "CyberportEMS_CCMF") %></p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_5", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_5", "CyberportEMS_CCMF") %></p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_6", "CyberportEMS_CCMF") %></p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_6", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_6", "CyberportEMS_CCMF") %></p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_7", "CyberportEMS_CCMF") %> </p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_7", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_7", "CyberportEMS_CCMF") %> </p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_8", "CyberportEMS_CCMF") %> </p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_8", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_8", "CyberportEMS_CCMF") %> </p>
 
-                        <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_Consideration_9", "CyberportEMS_CCMF") %> </p>
+                        <p class="form-group"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Consideration_9", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Consideration_9", "CyberportEMS_CCMF") %> </p>
                     </div>
 
 
                     <div class="row">
                         <div class="col-md-6">
-                            <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Full_Name", "CyberportEMS_CCMF") %></p>
+                            <p class="form-group lbl"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Full_Name", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Full_Name", "CyberportEMS_CCMF") %></p>
                             <asp:TextBox CssClass="input-sm" ID="txtName_PrincipalApplicant" runat="server" />
                             <asp:Label CssClass="label-text" ID="lblName_PrincipalApplicant" runat="server" Visible="false" />
                         </div>
                         <div class="col-md-6">
-                            <p class="form-group lbl"><%=SPFunctions.LocalizeUI("Step_6_Title_Principal_Applicant", "CyberportEMS_CCMF") %></p>
+                            <p class="form-group lbl"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_Title_Principal_Applicant", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_Title_Principal_Applicant", "CyberportEMS_CCMF") %></p>
                             <asp:TextBox CssClass="input-sm" ID="txtPosition_PrincipalApplicant" runat="server" />
                             <asp:Label CssClass="label-text" ID="lblPosition_PrincipalApplicant" runat="server" Visible="false" />
                         </div>
                     </div>
-                    <h2 class="subheading text-center" style="margin: 20px 0;"><%=SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CCMF") %> 
+                    <h2 class="subheading text-center" style="margin: 20px 0;"><%=rdo_CUPP.Checked ? SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CUPP") :SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION", "CyberportEMS_CCMF") %> 
                     </h2>
 
                     <p class="form-group"><%=SPFunctions.LocalizeUI("Step_6_PERSONAL_INFORMATION_1", "CyberportEMS_CCMF") %> </p>

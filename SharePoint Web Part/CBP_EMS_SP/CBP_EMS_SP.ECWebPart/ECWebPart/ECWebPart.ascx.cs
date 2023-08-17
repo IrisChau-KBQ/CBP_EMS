@@ -81,7 +81,7 @@ namespace CBP_EMS_SP.ECWebPart.ECWebPart
                 m_CCMF = 1;
             else if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport Creative Micro Fund - GBAYEP")  /*Test Debug*/
                 m_CCMF = 1;
-            else if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport University Partnership Programme") 
+            else if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport University Partnership Programme")  /*Test Debug*/
                 m_CCMF = 1;
             else if (HttpContext.Current.Request.QueryString["ProgName"] == "Cyberport Incubation Programme")
                 m_INCUBATION = 1;

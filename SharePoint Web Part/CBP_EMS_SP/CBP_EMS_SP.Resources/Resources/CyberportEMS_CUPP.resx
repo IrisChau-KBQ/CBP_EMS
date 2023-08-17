@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BRCOPY" xml:space="preserve">
+    <value>Company documents (If applicable)​</value>
+  </data>
+  <data name="CCMF_Comp_1_A" xml:space="preserve">
+    <value>Do you presently have a company registered as a legal entity and incorporated in Hong Kong?​</value>
+  </data>
+  <data name="CCMF_Header" xml:space="preserve">
+    <value>Cyberport Creative Micro Fund (“CCMF”)​</value>
+  </data>
+  <data name="CUPP_Header" xml:space="preserve">
+    <value>Cyberport University Partnership Programme</value>
+  </data>
+  <data name="CUPP_heading" xml:space="preserve">
+    <value>Cyberport University Partnership Programme (CUPP) Supported by CCMF​</value>
+  </data>
+  <data name="CUPP_IndComp_2_A" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) between the ages of 18 and 30 upon the application deadline?</value>
+  </data>
+  <data name="CUPP_IndComp_2_B" xml:space="preserve">
+    <value>Are you and all of your project management team members listed in Section 4.1 (a) below (if any) currently enrolled in or have graduated within 3 years from a registered post-secondary education institution in Hong Kong?</value>
+  </data>
+  <data name="CUPP_IndComp_2_C" xml:space="preserve">
+    <value>Is your project rooted in digital tech related areas?</value>
+  </data>
+  <data name="CUPP_IndComp_2_D" xml:space="preserve">
+    <value>Have your proposed project or your other similar digital tech project(s) applied for or received any grant or funding from any publicly and/or privately funded organizations/ programmes in the past 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CUPP_IndComp_2_E" xml:space="preserve">
+    <value>Is your proposed project or your other similar digital tech projects applying for, or does your project or your other similar digital tech project(s) anticipates to receiving or to becoming entitled to receive any grant or funding from any publicly and/or privately-funded organizations or programmes in the coming 18 months? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CUPP_IndComp_2_F" xml:space="preserve">
+    <value>Have your project or your other similar digital tech project(s) applied for the Cyberport Incubation Programme? If “Yes”, please list out in details in Section 4.8 below.</value>
+  </data>
+  <data name="CUPP_IndComp_2_G" xml:space="preserve">
+    <value>If you have answered “yes” to Question 2.1.2 f)​ above, are you applying for the CCMF using the same or similar project under incubation? If similar or different, please clarify with details in Section 4.10 below to enable our Vetting Team to distinguish this application from any others.</value>
+  </data>
+  <data name="CUPP_IndComp_2_H" xml:space="preserve">
+    <value>Are you aware of any existing relationships or situations that might cause the potential for an actual or perceived conflict of interest?  If “Yes”, please provide details in Section 4.10 below. </value>
+  </data>
+  <data name="CUPP_IndComp_2_I" xml:space="preserve">
+    <value>Please state whether this application is a re-submission of a previously-submitted application to the programme(s) of Cyberport, and / or other publicly-administered funding schemes.  If yes, please set out the project reference of the previous application in section 4.10 and highlight the main differences of this application vis-à-vis the previous one.</value>
+  </data>
+  <data name="HKID" xml:space="preserve">
+    <value>HKID Card or Identity Proof (if applicable)</value>
+  </data>
+  <data name="HKP_Pro_Young_Comp_1_A" xml:space="preserve">
+    <value>Do you presently have a company registered as a legal entity and incorporated in Hong Kong?​</value>
+  </data>
+  <data name="Instruction_2" xml:space="preserve">
+    <value>To read the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants (ENC.RF.015c) &lt;/a&gt;; before filling in this Application Form, especially part 1, 2 and 3.</value>
+  </data>
+  <data name="Instruction_4" xml:space="preserve">
+    <value> If you have another project to apply for CCMF Programme, please use a separate email address for that application.</value>
+  </data>
+  <data name="Instruction_4_1" xml:space="preserve">
+    <value>Please prepare and upload the requested supporting documents in Section 6 including, but not limited to, the following:&lt;br/&gt;&lt;br/&gt;
+&lt;ul&gt;
+ &lt;li&gt;Company documents (e.g. Business Registration, Certificate of Incorporation, Company Ownership document,etc.) (if applicable)&lt;/li&gt;
+  &lt;li&gt;Other supplementary information such as Corporate Structure / Organisation Chart, Curriculum Vitae of team members, pictures, diagrams and business proposal, etc. for illustration of your project (if any) &lt;/li&gt;
+&lt;li&gt;You are recommended to prepare a 1-minute video clip/presentation file/slide show to illustrate your project. Kindly provide the link if there is any.
+&lt;/li&gt;
+&lt;/ul&gt;</value>
+  </data>
+  <data name="Step1_Note" xml:space="preserve">
+    <value>Note: The principal applicant of Individual Application must be permanent HKID card holder.  Otherwise, please consider submit application as Company Application.&lt;br/&gt;Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants (ENC.RF.015c) &lt;/a&gt;.&lt;br/&gt;</value>
+  </data>
+  <data name="Step1_Question1_3" xml:space="preserve">
+    <value>Does your project applying CCMF exceed/not in the early-stage development, for example: launched and generated sustainable revenue, or planning/ going to plan overseas marketing expansion?</value>
+  </data>
+  <data name="Step2_Note" xml:space="preserve">
+    <value>Note: Applicants should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period after admission.  &lt;br&gt;&lt;br&gt;
+If an applicant of the same project applying for Cyberport Creative Micro Fund (CCMF) and Cyberport Incubation Programme (CIP) at the same intake, HKCMCL shall only consider the application of CIP without further notice.
+&lt;br&gt;&lt;br&gt;
+Application eligibility of CCMF Hong Kong Programme is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants (ENC.RF.015c)​&lt;/a&gt;.</value>
+  </data>
+  <data name="Step3_1d_CountryOFOrigin" xml:space="preserve">
+    <value>Country of Origin​</value>
+  </data>
+  <data name="Step6_Attachment_Header" xml:space="preserve">
+    <value>ATTACHMENTS</value>
+  </data>
+  <data name="Step_3_Smart_Space" xml:space="preserve">
+    <value>Are you and your company / your team member(s) currently a Cyberport Smart-Space tenant?​</value>
+  </data>
+  <data name="Step_4_Funding_Statussub" xml:space="preserve">
+    <value>(List out in detail (i) all grants and funding received/to be received from other publicly and/or privately funded organizations/ programmes which the applicant (or companies established by he/she/it) has applied for, will receive or will be entitled to receive in the coming 18 months, or have received in the past 18 months; (ii) the nature of expenditure covered/to be covered by such funding sources; and (iii) the amount and the maximum amount received/to be received under such funding sources )&lt;br/&gt;&lt;br/&gt;Note: Applicant should make a true, full and accurate disclosure on information requested.  The application can be treated as an ineligible application if applicant violates the rule of application.  Cyberport has the absolute right to terminate the admitted project due to violation on CCMF rules while applying and within CCMF project period.    Application eligibility of CCMF is stated in the &lt;a href="https://www.cyberport.hk/2021ccmf/doc/ENC.RF.015c_Oct_2022.pdf" target="_blank"&gt;CCMF Guides and Notes for Applicants (ENC.RF.015c).&lt;/a&gt;</value>
+  </data>
+  <data name="Step_5_Principal_Applicant" xml:space="preserve">
+    <value>(Principal Applicant / HK Team Leader)</value>
+  </data>
+  <data name="Step_6_Consideration" xml:space="preserve">
+    <value>In consideration of Hong Kong Cyberport Management Company Limited (“HKCMCL”) considering and processing our application for funding from CCMF, we confirm our agreement and undertake the following by checking this box</value>
+  </data>
+  <data name="Step_6_Consideration_1" xml:space="preserve">
+    <value>We agree with all the terms and conditions set out in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_035a_tc.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants (ENC.RF.035a)&lt;/a&gt; governing the application of the Cyberport Creative Micro Fund Scheme.</value>
+  </data>
+  <data name="Step_6_Consideration_2" xml:space="preserve">
+    <value>All information provided in this application as well as the accompanying information is true, not misleading in any manner and reflects the status of affairs as at the date of submission. I shall inform the Administration of the Cyberport Creative Micro Fund immediately if there are any changes to the above information.</value>
+  </data>
+  <data name="Step_6_Consideration_3" xml:space="preserve">
+    <value>We are the creators of our proposed project the details of which have been described in Section 3 of this CCMF Application Form ("Project") and our Project is original. To the best of our knowledge, the Project and the product(s) and/or service(s) to be developed as a part of the Project are not under development or available anywhere in the world.</value>
+  </data>
+  <data name="Step_6_Consideration_4" xml:space="preserve">
+    <value>The development, completion and use of the Project and the product(s) and/or service(s) to be developed as a part of the Project will not infringe the rights or intellectual property rights of any other party (whether registered or not), including but not limited to patent rights, trade mark rights, and copyright.</value>
+  </data>
+  <data name="Step_6_Consideration_5" xml:space="preserve">
+    <value>Other than the funding programme(s) specified in Section 4.8 of this Application Form, we (whether individually or as part of any team) have not applied for or received any other grant or funding from any publicly and/or privately funded organisations/programmes for the Project in the past 18 months and we are not applying for nor will we be entitled to receive any other grant or funding from any publicly and/or privately funded organisations/programmes for the Project in the future 18 months. We will notify Cyberport immediately if we apply for or become entitled to any grant or funding from any publicly and/or privately funded organisations/programmes for the Project and when requested, provide evidence of payments made or received in respect of such programmes.</value>
+  </data>
+  <data name="Step_6_Consideration_6" xml:space="preserve">
+    <value>We will use any grant to be received from the CCMF (if any) for the sole purpose of developing and completing the Project. We will not give away, share or otherwise use any grant to be received from the CCMF in contravention of the law or any of the terms which apply to application for funding from the CCMF.</value>
+  </data>
+  <data name="Step_6_Consideration_61" xml:space="preserve">
+    <value>We will use any grant to be received from the CCMF (if any) for the sole purpose of developing and completing the Project. We will not give away, share or othen/vise use any grant to be received from the CCMF in contravention of the law or any of the terms which apply to application for funding from the CCMF.</value>
+  </data>
+  <data name="Step_6_Consideration_7" xml:space="preserve">
+    <value>We understand the information provided in this application will be disclosed to authorised Cyberport staff and vetting team for screening and vetting purposes. No Confidential Agreement of any kind will be signed with Cyberport or the authorised Cyberport staff and vetting members on any occasion.</value>
+  </data>
+  <data name="Step_6_Consideration_8" xml:space="preserve">
+    <value>We give our consent to authorised Cyberport staff to carry out necessary due diligence/reference check for the purpose of assessing this application.</value>
+  </data>
+  <data name="Step_6_Consideration_9" xml:space="preserve">
+    <value>We acknowledge that HKCMCL has absolute discretion to revoke this application and call for refund of the full amount of grant received by the applicant if any member of the team breaches any of the terms and conditions in the &lt;a href="https://www.cyberport.hk/guides_and_notes/ccmf-hk/ENC_RF_015a_eng.pdf" target="_blank"&gt;CCMF Guides and Notes for the Applicants&lt;/a&gt; (ENC.RF.015), this CCMF Application Form and any other relevant agreement(s) between us and HKCMCL. If any of our conduct amounts to or may amount to a breach of criminal law, HKCMCL would report our conduct to the relevant law enforcement body.</value>
+  </data>
+  <data name="Step_6_DECLARATION" xml:space="preserve">
+    <value>DECLARATION</value>
+  </data>
+  <data name="Step_6_Full_Name" xml:space="preserve">
+    <value>Full Name of Principal Applicant</value>
+  </data>
+  <data name="Step_6_PERSONAL_INFORMATION" xml:space="preserve">
+    <value>PERSONAL INFORMATION COLLECTION STATEMENT</value>
+  </data>
+  <data name="Step_6_Title_Principal_Applicant" xml:space="preserve">
+    <value>Position Title of Principal Applicant</value>
+  </data>
+  <data name="VideoClip" xml:space="preserve">
+    <value>Video Clip (if any)​</value>
+  </data>
+</root>
